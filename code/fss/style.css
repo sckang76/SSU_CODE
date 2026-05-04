@@ -172,7 +172,7 @@ body {
 }
 
 .panel-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 800;
     margin-bottom: 16px;
     display: flex;
@@ -310,7 +310,7 @@ body {
 .category-section.cat-water { border-top-color: #06b6d4; }
 
 .category-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 800;
     margin-bottom: 14px;
     display: flex;
@@ -448,7 +448,7 @@ body {
 }
 
 .ref-title-wrapper h2 {
-    font-size: 1.8rem;
+    font-size: 1.15rem;
     font-weight: 800;
     color: var(--text-main);
 }
@@ -491,7 +491,7 @@ body {
 }
 
 .ref-card-header h3 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--text-main);
 }
