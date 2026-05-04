@@ -42,10 +42,10 @@ body.light-theme {
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(160, 160, 160, 0.3); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--accent-color, rgba(160, 160, 160, 0.6)); }
+::-webkit-scrollbar-thumb { background: rgba(150, 150, 150, 0.25); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(150, 150, 150, 0.45); }
 
 body {
     font-family: 'Inter', 'Pretendard', sans-serif;
