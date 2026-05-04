@@ -440,18 +440,28 @@ body {
     border-top: 2px solid #e2e8f0;
 }
 
-.ref-title-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 32px;
+/* ===== SECTION HEADER ===== */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
 }
-
-.ref-title-wrapper h2 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: var(--text-main);
+.section-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px; height: 48px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  flex-shrink: 0;
+  color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+.section-header-icon svg { width: 24px; height: 24px; stroke-width: 2.25; }
+.section-title { font-size: 1.15rem; font-weight: 700; letter-spacing: -.02em; margin-bottom: 0 !important; color: var(--text-main); }
+.section-desc { font-size: .85rem; color: var(--text-muted); margin-top: 3px; }
 
 .ref-grid {
     display: grid;

@@ -32,7 +32,13 @@
     <div class="container">
 
         <section class="selection-section">
-            <h2 style="margin-bottom: 24px; font-weight: 700; font-size: 1.15rem;">1. 대상물 용도 선택</h2>
+            <div class="section-header">
+                <div class="section-header-icon"><i data-lucide="building"></i></div>
+                <div>
+                    <h2 class="section-title">1. 대상물 용도 선택</h2>
+                    <p class="section-desc">점검하실 건축물의 주요 용도를 선택하세요.</p>
+                </div>
+            </div>
             <div id="facilityGrid" class="selector-grid">
                 <!-- Data will be injected here -->
             </div>
@@ -40,7 +46,13 @@
 
         <!-- ===== 2. 건물 준공 시기 섹션 ===== -->
         <section class="filter-section animate-up" style="animation-delay: 0.15s;">
-            <h2 style="font-weight: 700; font-size: 1.15rem; margin-bottom: 24px;">2. 건물 준공 시기</h2>
+            <div class="section-header">
+                <div class="section-header-icon"><i data-lucide="calendar"></i></div>
+                <div>
+                    <h2 class="section-title">2. 건물 준공 시기</h2>
+                    <p class="section-desc">건물 준공(사용승인) 연도에 따른 적용 법령을 선택하세요.</p>
+                </div>
+            </div>
             <div class="control-panel" style="flex-direction: column; gap: 16px;">
                 <!-- 상단: 제목 + 경고 배지 -->
                 <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
@@ -65,7 +77,13 @@
         </section>
 
         <section class="filter-section animate-up" style="animation-delay: 0.2s;">
-            <h2 style="margin-bottom: 24px; font-weight: 700; font-size: 1.15rem;">3. 규모 기준점 선택</h2>
+            <div class="section-header">
+                <div class="section-header-icon"><i data-lucide="scaling"></i></div>
+                <div>
+                    <h2 class="section-title">3. 규모 기준점 선택</h2>
+                    <p class="section-desc">연면적, 층수, 수용인원 등 세부 규모를 설정하세요.</p>
+                </div>
+            </div>
             <div class="control-panel">
                 <!-- Left: Preset Selection -->
                 <div class="preset-side">
@@ -155,8 +173,14 @@
         </section>
 
         <section class="results-section">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                <h2 style="font-weight: 700; font-size: 1.15rem;">4. 소방시설 설치 검토 결과</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                <div class="section-header" style="margin-bottom: 0;">
+                    <div class="section-header-icon"><i data-lucide="clipboard-check"></i></div>
+                    <div>
+                        <h2 class="section-title">4. 소방시설 설치 검토 결과</h2>
+                        <p class="section-desc">입력된 조건에 따라 설치해야 할 소방시설을 확인합니다.</p>
+                    </div>
+                </div>
                 <div style="display: flex; gap: 10px; align-items: center;">
                     <button id="overviewBtn" onclick="openOverviewModal()" style="display: flex; align-items: center; gap: 7px; background: #1e293b; color: white; border: none; padding: 8px 18px; border-radius: 50px; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
                         <i data-lucide="layout-list" style="width:15px;height:15px;"></i> 종합 결과
@@ -195,9 +219,12 @@
         </div>
 
         <section class="reference-section animate-up" style="animation-delay: 0.6s;">
-            <div class="ref-title-wrapper">
-                <i data-lucide="book-open-check" style="color: var(--primary); width: 32px; height: 32px;"></i>
-                <h2>관련 법령 및 규정 참고</h2>
+            <div class="section-header">
+                <div class="section-header-icon"><i data-lucide="book-open-check"></i></div>
+                <div>
+                    <h2 class="section-title">관련 법령 및 규정 참고</h2>
+                    <p class="section-desc">소방안전과 관련된 주요 법령 요약 정보를 확인하세요.</p>
+                </div>
             </div>
             
             <div class="ref-grid">
