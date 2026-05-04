@@ -253,7 +253,7 @@ input, textarea, select, button { font-family: inherit; }
   box-shadow: var(--shadow);
 }
 .section-header-icon svg { width: 30px; height: 30px; stroke-width: 2.25; }
-.section-title { font-size: 1.3rem; font-weight: 700; letter-spacing: -.02em; }
+.section-title { font-size: 1.15rem; font-weight: 700; letter-spacing: -.02em; }
 .section-desc { font-size: .85rem; color: var(--text-muted); margin-top: 3px; }
 
 /* ===== CARD ===== */
@@ -325,7 +325,7 @@ input, textarea, select, button { font-family: inherit; }
   border-right: 1.5px solid var(--border);
 }
 .panel-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--text);
   margin-bottom: 4px;
