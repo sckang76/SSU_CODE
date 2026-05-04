@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check session — initApp() is called at the bottom after all declarations
     const accessData = JSON.parse(localStorage.getItem('ssu_access_data') || 'null');
     const now = new Date().getTime();
-    const alreadyLoggedIn = accessData && (now - accessData.time < 24 * 60 * 60 * 1000); // 24 hours
+    const alreadyLoggedIn = accessData && (now - accessData.time < 30 * 60 * 1000); // 30 minutes
     
     if (alreadyLoggedIn) {
         loginScreen.remove();
