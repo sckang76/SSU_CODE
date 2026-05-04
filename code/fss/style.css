@@ -34,23 +34,57 @@ body {
     padding: 24px 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 28px;
-    animation: fadeInDown 0.8s ease-out;
+/* ===== HEADER ===== */
+.site-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #1e40af 100%);
+  color: #fff;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.header-brand { 
+  display: flex; 
+  align-items: center; 
+  gap: 14px; 
+  text-decoration: none; 
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.header-brand:hover { opacity: 0.9; }
+.header-icon { 
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+.header-icon svg { width: 28px; height: 28px; stroke-width: 2.5; }
+.header-title { font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em; margin-bottom: 0; color: #fff; }
+.header-subtitle { font-size: .75rem; color: #93c5fd; margin-top: 1px; }
+.header-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.meta-tag {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #e2e8f0;
+  font-size: .75rem;
+  padding: 3px 10px;
+  border-radius: 20px;
 }
 
-header h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--text-main);
-    letter-spacing: -1px;
-    margin-bottom: 6px;
-}
-
-header p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .header-title { font-size: 1.1rem; }
 }
 
 /* Category Selector - Compact 2-Row */
@@ -521,8 +555,6 @@ header p {
 
 @media (max-width: 768px) {
     .container { padding: 16px 12px; }
-    header h1 { font-size: 1.5rem; }
-    header p { font-size: 0.85rem; }
 
     /* 용도 선택 3열로 조정 */
     .selector-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
