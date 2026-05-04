@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소방시설 설치 기준 자가진단 | Fire Safety Master</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>소방시설 설치 기준 자가진단</h1>
+            <p>특정소방대상물의 규모와 용도에 따른 법정 소방시설을 실시간으로 확인하세요.</p>
+            <small style="color: var(--text-muted); opacity: 0.7;">기준일: 2024년 12월 개정 및 2025년 현행법 반영</small>
+        </header>
+
+        <section class="selection-section">
+            <h2 style="margin-bottom: 24px; font-weight: 700; font-size: 1.5rem;">1. 대상물 용도 선택</h2>
+            <div id="facilityGrid" class="selector-grid">
+                <!-- Data will be injected here -->
+            </div>
+        </section>
+
+        <!-- ===== 2. 건물 준공 시기 섹션 ===== -->
+        <section class="filter-section animate-up" style="animation-delay: 0.15s;">
+            <h2 style="font-weight: 700; font-size: 1.5rem; margin-bottom: 24px;">2. 건물 준공 시기</h2>
+            <div class="control-panel" style="flex-direction: column; gap: 16px;">
+                <!-- 상단: 제목 + 경고 배지 -->
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+                    <span style="font-size: 0.88rem; font-weight: 700; color: #475569;">건물 준공(사용승인) 연도를 선택하면 해당 시기의 법령 기준으로 판정합니다.</span>
+                    <div style="background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 5px 14px; font-size: 0.78rem; color: #c2410c; font-weight: 600; flex-shrink: 0;">
+                        ⚠️ 준공 시기에 따라 적용 법령 기준이 달라집니다
+                    </div>
+                </div>
+                <!-- 칩 선택 -->
+                <div id="constructionChips" class="chip-container" style="flex-wrap: wrap; gap: 8px;">
+                    <div class="chip" data-value="pre2012">2012년 이전</div>
+                    <div class="chip" data-value="y2012">2012~2017년</div>
+                    <div class="chip" data-value="y2017">2017~2022년</div>
+                    <div class="chip" data-value="y2022">2022~2024년</div>
+                    <div class="chip active" data-value="current">2024년 이후 (현행)</div>
+                </div>
+                <!-- 적용 기준 안내 배너 -->
+                <div id="constructionNotice" style="padding: 10px 16px; background: #f0fdf4; border-radius: 8px; font-size: 0.82rem; color: #166534; border-left: 3px solid #22c55e; font-weight: 500;">
+                    ✅ 현행 기준 적용 — 2024년 개정 기준. 스프링클러 6층 이상 전면 의무화가 적용됩니다.
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-section animate-up" style="animation-delay: 0.2s;">
+            <h2 style="margin-bottom: 24px; font-weight: 700; font-size: 1.5rem;">3. 규모 기준점 선택</h2>
+            <div class="control-panel">
+                <!-- Left: Preset Selection -->
+                <div class="preset-side">
+                    <h3 class="panel-subtitle"><i data-lucide="mouse-pointer-2"></i> 선택형 설정</h3>
+                    <div class="preset-group">
+                        <label>연면적 기준</label>
+                        <div id="areaChips" class="chip-container">
+                            <div class="chip active" data-value="30">33㎡ 미만</div>
+                            <div class="chip" data-value="300">300㎡</div>
+                            <div class="chip" data-value="600">600㎡</div>
+                            <div class="chip" data-value="1500">1,500㎡</div>
+                            <div class="chip" data-value="3000">3,000㎡</div>
+                            <div class="chip" data-value="3500">3,500㎡</div>
+                            <div class="chip" data-value="15000">15,000㎡</div>
+                            <div class="chip" data-value="100000">10만㎡ 이상</div>
+                        </div>
+                    </div>
+                    <div class="preset-group">
+                        <label>층수 기준</label>
+                        
+                        <span class="sub-label">지상</span>
+                        <div id="groundFloorChips" class="chip-container" style="margin-bottom: 16px;">
+                            <div class="chip active" data-value="1">1~3층</div>
+                            <div class="chip" data-value="4">4~5층</div>
+                            <div class="chip" data-value="6">6~10층</div>
+                            <div class="chip" data-value="11">11~29층</div>
+                            <div class="chip" data-value="30">30층 이상</div>
+                        </div>
+
+                        <span class="sub-label">지하</span>
+                        <div id="basementFloorChips" class="chip-container">
+                            <div class="chip active" data-value="0">지하 없음</div>
+                            <div class="chip" data-value="1">지하 1~2층</div>
+                            <div class="chip" data-value="3">지하 3층 이상</div>
+                        </div>
+                    </div>
+                    <div class="preset-group">
+                        <label>수용인원</label>
+                        <div id="capacityChips" class="chip-container">
+                            <div class="chip active" data-value="50">100명 미만</div>
+                            <div class="chip" data-value="100">100~299명</div>
+                            <div class="chip" data-value="300">300~499명</div>
+                            <div class="chip" data-value="500">500명 이상</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Manual Input -->
+                <div class="manual-side">
+                    <h3 class="panel-subtitle"><i data-lucide="keyboard"></i> 직접 입력형</h3>
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label>연면적 (㎡)</label>
+                            <input type="number" id="inputArea" placeholder="예: 30" value="30">
+                            <span class="input-error-msg"></span>
+                        </div>
+                        <div class="input-group">
+                            <label>평수 (평)</label>
+                            <input type="number" id="inputPyung" placeholder="자동 변환">
+                            <span class="input-error-msg"></span>
+                        </div>
+                        <div class="input-group">
+                            <label>층수 (지상)</label>
+                            <input type="number" id="inputFloors" placeholder="예: 1" value="1">
+                            <span class="input-error-msg"></span>
+                        </div>
+                        <div class="input-group">
+                            <label>층수 (지하)</label>
+                            <input type="number" id="inputBasementFloors" placeholder="예: 0" value="0">
+                            <span class="input-error-msg"></span>
+                        </div>
+                        <div class="input-group">
+                            <label>수용인원 (명)</label>
+                            <input type="number" id="inputCapacity" placeholder="예: 50" value="50">
+                            <span class="input-error-msg"></span>
+                        </div>
+                    </div>
+                    <div class="extra-group" style="margin-top: 24px;">
+                        <label>특수 조건 (필수 체크)</label>
+                        <div id="extraChips" class="chip-container">
+                            <div class="chip" data-type="basement">지하층</div>
+                            <div class="chip" data-type="windowless">무창층</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 style="font-weight: 700; font-size: 1.5rem;">4. 소방시설 설치 검토 결과</h2>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button id="overviewBtn" onclick="openOverviewModal()" style="display: flex; align-items: center; gap: 7px; background: #1e293b; color: white; border: none; padding: 8px 18px; border-radius: 50px; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+                        <i data-lucide="layout-list" style="width:15px;height:15px;"></i> 종합 결과
+                    </button>
+                    <div id="selectionBadge" style="background: var(--primary); color: white; padding: 6px 16px; border-radius: 50px; font-size: 0.9rem; font-weight: 600;">선택: 공동주택 (아파트 등)</div>
+                </div>
+            </div>
+            <!-- 입력 가정값 경고 배지 -->
+            <div id="inputWarning" style="display:flex; align-items:center; gap:10px; background:#fff7ed; border:1px solid #fed7aa; border-radius:12px; padding:10px 18px; margin-bottom:16px; font-size:0.84rem; color:#c2410c; font-weight:600;">
+                <i data-lucide="alert-triangle" style="width:16px;height:16px;flex-shrink:0;"></i>
+                <span>현재 <b>기본값(33㎡ 미만, 1층)</b>으로 판정 중입니다. 실제 건물 규모를 입력하면 더 정확한 결과를 확인할 수 있습니다.</span>
+            </div>
+            <div id="resultsGrid" class="results-grid animate-up" style="animation-delay: 0.4s;">
+                <!-- Result categories will be injected here -->
+            </div>
+        </section>
+
+        <!-- Overview Modal -->
+        <div id="overviewModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); backdrop-filter:blur(4px); z-index:1000; justify-content:center; align-items:center; padding:20px;">
+            <div style="background:white; border-radius:24px; width:100%; max-width:820px; height:88vh; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 30px 80px rgba(0,0,0,0.2);">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:20px 28px; border-bottom:1px solid #f1f5f9; flex-shrink:0;">
+                    <div>
+                        <h3 style="font-size:1.25rem; font-weight:800; color:#1e293b;">종합 결과</h3>
+                        <p id="overviewSubtitle" style="font-size:0.82rem; color:#94a3b8; margin-top:3px;">선택된 시설 기준 결과</p>
+                    </div>
+                    <button onclick="closeOverviewModal()" style="background:#f1f5f9; border:none; width:36px; height:36px; border-radius:50%; font-size:1.1rem; cursor:pointer; color:#64748b; display:flex; align-items:center; justify-content:center;">✕</button>
+                </div>
+                <div id="overviewContent" style="overflow-y:auto; flex:1; min-height:0; padding:20px 28px;">
+                    <!-- injected by JS -->
+                </div>
+                <div style="padding:14px 28px; border-top:1px solid #f1f5f9; flex-shrink:0; display:flex; justify-content:flex-end; gap:8px; align-items:center; background:#fff; border-radius:0 0 24px 24px;">
+                    <span style="font-size:0.8rem; color:#94a3b8;">* 직접 입력값 기준으로 판정된 결과입니다.</span>
+                    <button onclick="closeOverviewModal()" style="background:#1e293b; color:white; border:none; padding:8px 22px; border-radius:50px; font-size:0.85rem; font-weight:700; cursor:pointer;">닫기</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="reference-section animate-up" style="animation-delay: 0.6s;">
+            <div class="ref-title-wrapper">
+                <i data-lucide="book-open-check" style="color: var(--primary); width: 32px; height: 32px;"></i>
+                <h2>관련 법령 및 규정 참고</h2>
+            </div>
+            
+            <div class="ref-grid">
+                <!-- 1. 건축허가 동의 대상 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="clipboard-check"></i>
+                        <h3>1. 건축허가 동의 대상 <small>(시설법 시행령 제7조)</small></h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li>가. 기계식 주차시설로 <span class="highlight-red">20대이상</span> 주차할 수 있는 것</li>
+                        <li>나. 학교시설로 연면적 <span class="highlight-red">100㎡</span> 이상의 건축물</li>
+                        <li>다. 지하층 또는 무창층 중 바닥면적 <span class="highlight-red">150㎡</span> 이상 (공연장의 경우 <span class="highlight-red">100㎡</span>) 인 층이 있는 것</li>
+                        <li>라. 차고, 주차장으로 바닥면적이 <span class="highlight-red">200㎡</span> 이상</li>
+                        <li>마. 노유자 시설 및 수련시설로 연면적 <span class="highlight-red">200㎡</span> 이상</li>
+                        <li>바. 정신의료기관, 장애인 의료재활 시설은 연면적 <span class="highlight-red">300㎡</span> 이상의 건축물 ⑦ 요양병원 연면적 <span class="highlight-red">400㎡</span> 이상 또는 <span class="highlight-red">6층이상</span> 건축물</li>
+                        <li>사. 항공기 격납고, 관망탑, 항공관제탑, 방송 송·수신탑</li>
+                        <li>아. 의원, 조산원, 산후조리원, 학원, 지하구, 전기저장시설, 위험물 저장 및 처리 시설, 지하구, 대량 위험물소</li>
+                        <li>자. 노인관련시설, 아동복지시설, 장애인 거주시설, 정신질환자 관련시설, 노숙인자활시설, 노숙인 재활시설 및 노숙인요양시설, 결핵환자나 한센인이 24시간 생활하는 노유자시설</li>
+                        <li>차. 창고시설로 특수가연물 <span class="highlight-red">750배</span> 이상 저장, 취급</li>
+                        <li>카. 가스시설로 탱크저장 용량 합계가 <span class="highlight-red">100톤</span> 이상인것</li>
+                    </ul>
+                </div>
+
+                <!-- 2. 소방감리 대상 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="eye"></i>
+                        <h3>2. 소방감리 대상 <small>(공사업법 시행령 제10조)</small></h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li class="bullet-dot">상주감리 (별표3)</li>
+                        <li class="indent">가. 연면적 <span class="highlight-red">30,000㎡</span> 이상의 특정 소방대상물 (아파트 제외)</li>
+                        <li class="indent">나. 16층 (지하층 포함) 이상으로서 <span class="highlight-red">500세대</span> 이상인 아파트</li>
+                        <li class="bullet-dot">일반감리 (주 1회 이상 현장 배치)</li>
+                        <li class="indent">가. 소방시설의 신설, 개설, 증설... (중략) (캐비넷형 간이S.P, 물분무등 소화설비의 호스릴 방식 제외)</li>
+                        <li class="bullet-dot">현장준공 (공사업법 시행령 제5조)</li>
+                        <li class="indent">가. 문화 및 집회... 보육단기 등</li>
+                        <li class="indent">나. 연면적 <span class="highlight-red">10,000㎡</span> 이상, <span class="highlight-red">11층 이상</span>의 특정 소방대상물 (아파트 제외)</li>
+                        <li class="indent">다. 가연성가스 제조·저장... 탱크의 저장용량 합계가 <span class="highlight-red">1천톤이상</span>인 시설</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 자체점검 대상 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="refresh-cw"></i>
+                        <h3>3. 자체점검 대상 <small>(시설법 시행규칙 제20조, 별표3)</small></h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li class="bullet-dot">작동기능점검 : <span class="highlight-red">연 1회 이상</span> (공공기관 포함)</li>
+                        <li class="indent">(대상) 전 제5조의 특정소방대상물</li>
+                        <li class="indent">(시기) ① 종합점검대상 : 종합정밀점검을 받은 달부터 <span class="highlight-blue">6개월 되는 달</span><br>② 작동대상 : 사용승인일이 속하는 달의 말일까지</li>
+                        <li class="bullet-dot">종합정밀점검 : <span class="highlight-red">연 1회 이상</span> (공공기관 포함)</li>
+                        <li class="indent">※ 최초점검 : 사용승인일로부터 <span class="highlight-blue">60일 이내</span></li>
+                        <li class="indent">① 스프링클러가 설치된 특정소방대상물</li>
+                        <li class="indent">② 물분무등소화설비가 설치된 연면적 <span class="highlight-red">5,000㎡</span> 이상인 특정소방대상물</li>
+                        <li class="indent">③ 다중이용업소 (<span class="highlight-red">2,000㎡</span> 이상인 것)<br>단란/유흥주점, 비디오물감상실, 복합영상물제공업, 영화관, 노래방, 산후조리원, 고시원, 안마시술소</li>
+                        <li class="indent">④ 터 널 : 제연설비가 설치된 것</li>
+                        <li class="indent">⑤ 공공기관 : 옥내, 자탐이 설치된 연면적 <span class="highlight-red">1,000㎡</span> 이상</li>
+                        <li class="bullet-dot">점검결과보고서 (시행규칙 제23조) <span class="highlight-red">※ 2년간 자체 보관 ※</span></li>
+                        <li class="indent">가. 작동 기능 점검 <span class="highlight-blue">(15일 이내 제출)</span></li>
+                        <li class="indent">나. 종합 정밀 점검 <span class="highlight-blue">(15일 이내 제출)</span></li>
+                        <li class="indent"><span class="highlight-red">※ 10일이내 제출 ※ 중대 위반사항 즉시 수리</span></li>
+                    </ul>
+                </div>
+
+                <!-- 4. 성능위주설계 및 방염처리대상 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="shield-check"></i>
+                        <h3>4. 성능위주설계 및 방염처리대상</h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li class="bullet-dot">성능위주 설계 대상물 (시설법 시행령 제 9조)</li>
+                        <li class="indent">가. 연면적 <span class="highlight-red">20만㎡</span> 이상의 특정대상물...</li>
+                        <li class="indent">나. <span class="highlight-blue">30층 이상 (지하층 포함) 이거나 높이 120m 이상</span>인 특정소방대상물</li>
+                        <li class="indent">다. <span class="highlight-blue">50층 이상 (지하층 포함) 이거나 높이 200m 이상</span>인 아파트 등</li>
+                        <li class="indent">라. 연면적 <span class="highlight-red">3만㎡</span> 이상의 철도 및 도시철도 시설, 공항시설</li>
+                        <li class="indent">마. 영화상영관이 <span class="highlight-red">10개 이상</span>인 특정소방대상물</li>
+                        <li class="indent">바. 창고시설 중 연면적 <span class="highlight-red">10만㎡</span> 이상 또는 지하층 층수가 2개층 이상이고 지하층 바닥면적 합계 <span class="highlight-red">3만㎡</span> 이상인 것</li>
+                        <li class="indent">사. 터널 중 수저터널 또는 길이가 <span class="highlight-red">5,000m</span> 이상인 것</li>
+                        <li class="indent">아. 지하연계 복합 건축물 ※내진설계(옥소, SP, 물분무 등)</li>
+                        <li class="bullet-dot">방염처리대상 (시설법 시행령 제 30조)</li>
+                        <li class="indent">가. 근린생활시설 중 의원...</li>
+                        <li class="indent">나. 문화 및 집회...</li>
+                        <li class="indent">다. 의료시설, 교육연구시설...</li>
+                        <li class="indent">라. 다중이용업소</li>
+                        <li class="indent">마. 가호부터 라호에 해당하지 않는 <span class="highlight-red">11층 이상</span> (아파트 제외)</li>
+                    </ul>
+                </div>
+
+                <!-- 5. 특정소방대상물의 안전관리 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="user-cog"></i>
+                        <h3>5. 특정소방대상물의 안전관리 <small>(화재예방법 시행령 별표4)</small></h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li class="bullet-dot">특급 소방안전관리대상물</li>
+                        <li class="indent">가. <span class="highlight-blue">50층 이상 (지하층 포함) 이거나 높이 200m 이상</span>인 아파트</li>
+                        <li class="indent">나. <span class="highlight-blue">30층 이상 (지하층 포함) 이거나 높이 120m 이상</span>인 특정소방대상물</li>
+                        <li class="indent">다. 가목외의 특정소방대상물로 연면적 <span class="highlight-red">10만㎡</span> 이상 (아파트 제외)</li>
+                        <li class="bullet-dot">1급 소방안전관리대상물</li>
+                        <li class="indent">가. <span class="highlight-blue">30층 이상 (지하층 제외) 이거나 높이 120m 이상</span>인 아파트</li>
+                        <li class="indent">나. 연면적 <span class="highlight-red">15,000㎡</span> 이상 (아파트 및 연립주택 제외)</li>
+                        <li class="indent">다. 나목외의 특정소방대상물로 지상 <span class="highlight-red">11층 이상</span>인 곳 (아파트 제외)</li>
+                        <li class="indent">라. 가연성가스 <span class="highlight-red">1,000톤</span> 이상 저장·취급하는 시설</li>
+                        <li class="bullet-dot">2급 소방안전관리대상물</li>
+                        <li class="indent">가. 옥내소화전...</li>
+                        <li class="indent">나. 가스제조시설...</li>
+                        <li class="indent">다. 지하구 라. 공동주택</li>
+                        <li class="bullet-dot">3급 소방안전관리대상물</li>
+                        <li class="bullet-dot">업무대행 (화재예방법 시행령 28조)</li>
+                        <li class="indent">1급 중 11층 이상인 것 (연면적 <span class="highlight-red">15,000㎡</span> 이상과 아파트 제외) 및 2급, 3급 대상물</li>
+                    </ul>
+                </div>
+
+                <!-- 6. 소방·안전시설 완비증명 -->
+                <div class="ref-card">
+                    <div class="ref-card-header">
+                        <i data-lucide="file-badge"></i>
+                        <h3>6. 소방·안전시설 완비증명 <small>(다중이용업소 특별법 시행령)</small></h3>
+                    </div>
+                    <ul class="ref-list verbatim">
+                        <li class="bullet-dot">다중이용업의 범위 (시행령 제2조)</li>
+                        <li class="indent">가. 휴게음식점/일반음식점/제과점 : 바닥면적합계 <span class="highlight-red">100㎡</span>(지하층:<span class="highlight-red"> 66㎡</span>) 이상</li>
+                        <li class="indent">나. 단란주점업...</li>
+                        <li class="indent">다. 학원: 수용인원 <span class="highlight-red">300명이상</span></li>
+                        <li class="indent">※ <span class="highlight-red">수용인원 100~300명 미만</span> : ① 기숙사 구비 ② 학원이 2이상 (<span class="highlight-red">수용인원 300명 이상</span>) ③ 하나 이상의 다중이용업과 함께 있는 것</li>
+                        <li class="indent">라. 목욕장업(<span class="highlight-red">수용인원 100명 이상</span>(찜질방))...</li>
+                        <li class="bullet-dot">안전시설 (시행령 별표1의2)</li>
+                        <li class="indent">라. 방화문, 비상구 (<span class="highlight-red">75cm X 150cm</span> 이상)</li>
+                        <li class="indent">사. 창문 (<span class="highlight-red">50cm X 50cm</span> 이상) : 고시원업의 영업장에 설치</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 80px; text-align: center; border-top: 1px solid #e2e8f0; padding: 40px 0;">
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                © dv sck.. 본 자료는 참고용이며 법적 효력이 없습니다.<br>
+                정확한 기준은 <a href="https://www.law.go.kr" style="color: var(--primary); text-decoration: none;">국가법령정보센터</a>를 확인하세요.
+            </p>
+        </footer>
+    </div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+      import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+      import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyA2jjS9ZmvwCryeM8GXZw5G4anWAwXzeIU",
+        authDomain: "fmdic-26b04.firebaseapp.com",
+        projectId: "fmdic-26b04",
+        storageBucket: "fmdic-26b04.firebasestorage.app",
+        messagingSenderId: "1067688394290",
+        appId: "1:1067688394290:web:9aff07cd5026e0867dc62b",
+        measurementId: "G-J2E1DX5VD9"
+      };
+
+      try {
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+          const db = getFirestore(app);
+
+          window.firebaseAnalytics = { analytics, logEvent };
+          window.firebaseDb = { db, collection, addDoc, serverTimestamp };
+      } catch (e) {
+          console.warn("Firebase initialization skipped or failed:", e);
+      }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

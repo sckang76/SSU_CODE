@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Safety Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Security Gateway -->
+    <div id="login-screen" class="overlay">
+        <div class="login-card">
+            <h1>Fire Safety <span style="font-weight:300;opacity:0.7">Dictionary</span></h1>
+            <p>보안을 위해 비밀번호를 입력하세요.</p>
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="비밀번호 입력">
+                <button id="login-btn">접속하기</button>
+            </div>
+            <p id="login-error" class="error-msg"></p>
+            <div class="login-footer">© dv sck..</div>
+            <div class="version-tag"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-app" class="hidden">
+        <header>
+            <div class="header-content">
+                <div class="brand" style="cursor: pointer;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Fire Safety <span>Dictionary</span></div>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="기호, 명칭, 설명으로 검색...">
+                </div>
+                <label class="theme-switch" title="다크/라이트 모드 전환">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                </label>
+            </div>
+        </header>
+
+        <!-- Level 1: Subject Tabs -->
+        <nav class="subject-tabs" id="subject-tabs">
+            <button class="subject-btn active" data-subject="fluid">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6 9 4 13 4 16a8 8 0 0 0 16 0c0-3-2-7-8-14z"/>
+                </svg>
+                유체역학
+            </button>
+            <button class="subject-btn" data-subject="firemech">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                </svg>
+                소방기계
+            </button>
+            <button class="subject-btn" data-subject="fireelec">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+                소방전기
+            </button>
+            <button class="subject-btn" data-subject="nfsc">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+                </svg>
+                NFSC
+            </button>
+            <button class="subject-btn calc-tab" id="show-calc">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="12" x2="12" y2="12"/><line x1="16" y1="16" x2="12" y2="16"/><path d="M8 12h.01M8 16h.01M12 12h.01"/>
+                </svg>
+                계산기
+            </button>
+            <a href="https://fmdic-26b04.web.app/fss/" target="_blank" class="subject-btn fss-tab" id="show-fss">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+                자가진단
+            </a>
+            <a href="https://fmdic-26b04.web.app/fss3/" target="_blank" class="subject-btn checklist-tab" id="show-checklist">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h10"/>
+                </svg>
+                점검표(예상)
+            </a>
+        </nav>
+
+        <!-- Level 2: Category Tabs (dynamically injected) -->
+        <nav class="category-tabs" id="category-tabs">
+            <!-- Injected by JS -->
+        </nav>
+
+        <main id="symbol-grid" class="grid-container">
+            <!-- Cards will be injected here -->
+        </main>
+
+        <!-- Calculator Modal -->
+        <div id="calc-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>실시간 계산기</h2>
+                <div class="calc-selector">
+                    <select id="calc-type">
+                        <optgroup label="소방 유체역학 (Hydraulics)">
+                            <option value="kfactor">스프링클러 방수량 (K-factor)</option>
+                            <option value="hw">하젠-윌리엄스 손실수두</option>
+                            <option value="bernoulli">베르누이 (P₂ 계산)</option>
+                            <option value="pumphead">소방펌프 총양정</option>
+                            <option value="npsh">유효흡입수두 (NPSHa)</option>
+                        </optgroup>
+                        <optgroup label="소방기계 (Fire Mechanical)">
+                            <option value="watervolume">소화수원 용량</option>
+                            <option value="pumppower">펌프 축동력</option>
+                            <option value="co2agent">CO₂ 약제량</option>
+                            <option value="foamagent">포 약제량</option>
+                            <option value="dischargeintensity">방수강도 (I = Q/A)</option>
+                        </optgroup>
+                        <optgroup label="소방전기 (Fire Electrical)">
+                            <option value="ohm">옴의 법칙 (V = IR)</option>
+                            <option value="epower">전력 계산 (P = VI)</option>
+                            <option value="battery">비상전원 용량 (Ah)</option>
+                            <option value="voltdrop">전압강하</option>
+                        </optgroup>
+                        <optgroup label="NFSC 기준 산정">
+                            <option value="nfsc_sprinkler_water">스프링클러 수원량</option>
+                            <option value="nfsc_hydrant_water">옥내소화전 수원량</option>
+                            <option value="nfsc_detector_count">감지기 설치 개수</option>
+                            <option value="nfsc_motor_power">소방펌프 전동기 출력</option>
+                        </optgroup>
+                        <optgroup label="고급 공학 (Advanced)">
+                            <option value="re">레이놀즈 수 (Re)</option>
+                            <option value="ma">마하 수 (Ma)</option>
+                            <option value="fr">프루드 수 (Fr)</option>
+                            <option value="dw">배관 손실 (Darcy-Weisbach)</option>
+                            <option value="hydro">정수압 (P = ρgh)</option>
+                            <option value="ld">양력/항력</option>
+                            <option value="isentro">등엔트로피 유동</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div id="calc-inputs" class="calc-body">
+                    <!-- Inputs injected here -->
+                </div>
+                <div class="calc-result">
+                    <span class="result-label">결과값:</span>
+                    <span id="calc-output">0.00</span>
+                </div>
+                <div id="calc-solution" class="calc-solution hidden">
+                    <div class="solution-title">📐 풀이 과정</div>
+                    <div id="solution-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SSU_NP Floating Button -->
+        <a href="https://fmdic-26b04.web.app/SSU_NP/" target="_blank" class="floating-btn" id="ssu-np-btn" title="소방용어사전으로 이동">
+            <svg class="floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span class="floating-text">소방용어사전</span>
+        </a>
+
+        <footer>
+            <p>&copy; dv sck..</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="version.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

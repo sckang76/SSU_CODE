@@ -1,0 +1,32 @@
+{
+    "hosting":  {
+                    "public":  ".",
+                    "ignore":  [
+                                   "firebase.json",
+                                   "**/.*",
+                                   "**/node_modules/**",
+                                   "README.md",
+                                   "package.json",
+                                   "package-lock.json",
+                                   "code_ex.txt"
+                               ],
+                    "rewrites":  [
+                                     {
+                                         "source":  "/fss",
+                                         "destination":  "/fss/index.html"
+                                     },
+                                     {
+                                         "source":  "/fss/**",
+                                         "destination":  "/fss/index.html"
+                                     },
+                                     {
+                                         "destination":  "/fss3/index.html",
+                                         "source":  "/fss3"
+                                     },
+                                     {
+                                         "destination":  "/fss3/index.html",
+                                         "source":  "/fss3/**"
+                                     }
+                                 ]
+                }
+}

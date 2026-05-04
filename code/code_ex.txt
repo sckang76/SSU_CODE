@@ -1,0 +1,41 @@
+그대로 복사해서 사용하시면 됩니다.
+
+1. 기본 유체 물성치 (Fluid Properties)
+ρ (Rho) : 밀도 (Density) [kg/m³]
+γ (Gamma) : 비중량 (Specific Weight) [N/m³]
+μ (Mu) : 점성계수 (Dynamic Viscosity) [Pa·s 또는 N·s/m²]
+ν (Nu) : 동점성계수 (Kinematic Viscosity) [m²/s]
+σ (Sigma) : 표면장력 (Surface Tension) [N/m]
+K 또는 Ev : 체적탄성계수 (Bulk Modulus) [Pa 또는 N/m²]
+SG 또는 S : 비중 (Specific Gravity) [무차원]
+
+2. 유동 및 운동학 변수 (Flow and Kinematic Variables)
+P 또는 p : 압력 (Pressure) [Pa 또는 N/m²]
+V 또는 v : 속도 (Velocity) [m/s]
+u, v, w : 각각 x, y, z 방향의 속도 성분 [m/s]
+Q : 체적유량 (Volumetric Flow Rate / Discharge) [m³/s]
+ṁ (m dot) : 질량유량 (Mass Flow Rate) [kg/s]
+a : 가속도 (Acceleration) [m/s²]
+ω (Omega) : 각속도 (Angular Velocity) [rad/s]
+Γ (Capital Gamma) : 순환 (Circulation) [m²/s]
+ψ (Psi) : 유선함수 (Stream Function) [m²/s]
+φ (Phi) : 속도포텐셜 (Velocity Potential) [m²/s]
+
+3. 힘과 에너지 (Forces and Energy)
+F : 힘 (Force) [N]
+τ (Tau) : 전단응력 (Shear Stress) [Pa 또는 N/m²]
+W : 일 (Work) [J]
+P 또는 Ẇ : 동력 (Power) [W]
+h 또는 H : 수두 (Head) [m]
+h_f 또는 h_L : 손실 수두 (Friction/Head Loss) [m]
+g : 중력가속도 (Acceleration of gravity) [m/s²] (보통 9.81 m/s²)
+A : 면적 (Area) [m²]
+∀ 또는 V : 체적 (Volume) [m³]
+
+4. 무차원 수 (Dimensionless Numbers)
+Re : 레이놀즈 수 (Reynolds Number) - 점성력에 대한 관성력의 비
+Ma 또는 M : 마하 수 (Mach Number) - 음속에 대한 유속의 비
+Fr : 프루드 수 (Froude Number) - 중력에 대한 관성력의 비
+We : 웨버 수 (Weber Number) - 표면장력에 대한 관성력의 비
+Cd : 항력 계수 (Drag Coefficient)
+Cl : 양력 계수 (Lift Coefficient)
