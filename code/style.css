@@ -581,6 +581,12 @@ body.dark-theme .moon-icon {
     margin: 1.5rem 0;
 }
 
+.calc-selector select option,
+.calc-selector select optgroup {
+    background-color: var(--modal-bg);
+    color: var(--text-primary);
+}
+
 .calc-body {
     display: flex;
     flex-direction: column;
