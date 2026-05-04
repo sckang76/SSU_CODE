@@ -41,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check session — initApp() is called at the bottom after all declarations
-    const alreadyLoggedIn = sessionStorage.getItem('ssu_access') === 'granted';
+    const accessData = JSON.parse(localStorage.getItem('ssu_access_data') || 'null');
+    const now = new Date().getTime();
+    const alreadyLoggedIn = accessData && (now - accessData.time < 24 * 60 * 60 * 1000); // 24 hours
+    
     if (alreadyLoggedIn) {
         loginScreen.remove();
         mainApp.classList.remove('hidden');
@@ -58,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const inputHash = await sha256(passwordInput.value.toUpperCase());
         const targetHash = '8ee30f72b29d4bf738aed014ce062f32aa181c5fae03e4e250d0dc68bada81fe';
         if (inputHash === targetHash) {
-            sessionStorage.setItem('ssu_access', 'granted');
+            localStorage.setItem('ssu_access_data', JSON.stringify({ granted: true, time: new Date().getTime() }));
             loginScreen.remove();
             mainApp.classList.remove('hidden');
             initApp();
