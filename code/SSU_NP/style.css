@@ -41,6 +41,12 @@ body.light-theme {
     padding: 0;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(160, 160, 160, 0.3); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-color, rgba(160, 160, 160, 0.6)); }
+
 body {
     font-family: 'Inter', 'Pretendard', sans-serif;
     background-color: var(--bg-color);
