@@ -9,14 +9,68 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('close-modal-btn').onclick = () => modal.style.display = 'none';
   modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
 
-  function showModal(name, desc, law) {
+  function showModal(name, desc, law, calcIds) {
     mTitle.textContent = name;
     mDesc.textContent = desc;
     mLaw.textContent = law;
     mSearch.href = 'https://www.google.com/search?q=' + encodeURIComponent('소방 ' + name + ' NFSC');
+    const calcSection  = document.getElementById('calc-section');
+    const calcCardsRow = document.getElementById('calc-cards-row');
+    const inlinePanel  = document.getElementById('inline-calc-panel');
+    if (inlinePanel) { inlinePanel.innerHTML = ''; inlinePanel.classList.remove('open'); }
+    if (calcIds && calcIds.length && calcSection && calcCardsRow) {
+      calcCardsRow.innerHTML = calcIds.map(cid => {
+        const c = CALCS[cid]; if (!c) return '';
+        return `<div class="calc-card" onclick="openInlineCalc('${cid}',this)">
+          <div class="calc-card-label">${c.label}</div>
+          <div class="calc-card-formula">${c.formula}</div>
+          <button class="calc-card-btn">계산하기 →</button>
+        </div>`;
+      }).join('');
+      calcSection.style.display = '';
+    } else if (calcSection) {
+      calcSection.style.display = 'none';
+    }
     modal.style.display = 'flex';
     if (window.lucide) lucide.createIcons();
   }
+
+  window.openInlineCalc = function(cid, cardEl) {
+    const c = CALCS[cid]; if (!c) return;
+    document.querySelectorAll('.calc-card').forEach(el => el.classList.remove('active'));
+    if (cardEl) cardEl.classList.add('active');
+    const panel = document.getElementById('inline-calc-panel');
+    panel.innerHTML = `
+      <div class="inline-calc-title">${c.label}</div>
+      <div class="inline-calc-formula">${c.formula}</div>
+      <div class="inline-calc-inputs">${c.inputs.map(inp =>
+        `<div class="inline-input-row">
+          <label>${inp.label}</label>
+          <input type="number" id="ic_${inp.id}" value="${inp.val}" step="any" oninput="runInlineCalc('${cid}')">
+        </div>`).join('')}
+      </div>
+      <div class="inline-calc-result">
+        <span class="inline-result-label">결과</span>
+        <span id="inline-result-val">—</span>
+        <span class="inline-unit">${c.unit}</span>
+      </div>`;
+    panel.classList.add('open');
+    window.runInlineCalc(cid);
+  };
+
+  window.runInlineCalc = function(cid) {
+    const c = CALCS[cid]; if (!c) return;
+    const v = {};
+    c.inputs.forEach(inp => { v[inp.id] = parseFloat(document.getElementById('ic_' + inp.id)?.value) || 0; });
+    try {
+      const r = c.fn(v);
+      const el = document.getElementById('inline-result-val');
+      if (el) el.textContent = isNaN(r) ? 'Error' : r.toLocaleString(undefined, { maximumFractionDigits: 3 });
+    } catch(e) {
+      const el = document.getElementById('inline-result-val');
+      if (el) el.textContent = 'Error';
+    }
+  };
 
   // P&ID Symbol helpers
   function gate(x, y, r) { // Gate valve symbol
@@ -88,6 +142,67 @@ document.addEventListener('DOMContentLoaded', () => {
       ${plus(lx, ly)}
       </g>`;
   }
+
+  // ── 계산식 정의 ──────────────────────────────────────────
+  const CALCS = {
+    kfactor:          { label:'K-factor 방수량', formula:'Q = K × √P', unit:'L/min',
+      inputs:[{id:'kf',label:'K-factor (L/min/bar⁰·⁵)',val:80},{id:'pbar',label:'방수압력 (bar)',val:1.0}],
+      fn: v => v.kf * Math.sqrt(v.pbar) },
+    pumphead:         { label:'전양정 (H)', formula:'H = h_f + h_m + Δz', unit:'m',
+      inputs:[{id:'hf',label:'마찰손실 수두 h_f (m)',val:20},{id:'hm',label:'부차적 손실 h_m (m)',val:5},{id:'dz',label:'높이 차이 Δz (m)',val:15}],
+      fn: v => v.hf + v.hm + v.dz },
+    motor_power:      { label:'펌프 모터 동력 (P)', formula:'P = γQH / (102 × η)', unit:'kW',
+      inputs:[{id:'pp_q',label:'유량 Q (m³/min)',val:1.6},{id:'pp_h',label:'전양정 H (m)',val:100},{id:'pp_eta',label:'효율 η',val:0.65}],
+      fn: v => { const Qms=v.pp_q/60; return (9800*Qms*v.pp_h)/(102*v.pp_eta*9.81); } },
+    hydrant_water:    { label:'소화전 수원량 (V)', formula:'V = Q × N × t / 1000', unit:'m³',
+      inputs:[{id:'hw_q',label:'방수량 Q (L/min)',val:130},{id:'hw_n',label:'동시 소화전수 N',val:2},{id:'hw_t',label:'방수시간 t (min)',val:20}],
+      fn: v => v.hw_q*v.hw_n*v.hw_t/1000 },
+    sprinkler_water:  { label:'스프링클러 수원량 (V)', formula:'V = Q × N × t / 1000', unit:'m³',
+      inputs:[{id:'sw_q',label:'방수량 Q (L/min)',val:80},{id:'sw_n',label:'동시 헤드수 N',val:10},{id:'sw_t',label:'방수시간 t (min)',val:20}],
+      fn: v => v.sw_q*v.sw_n*v.sw_t/1000 },
+    co2agent:         { label:'CO₂ 약제량 (W)', formula:'W = V × q × 안전계수', unit:'kg',
+      inputs:[{id:'co2_v',label:'방호구역 체적 V (m³)',val:200},{id:'co2_f',label:'포화량계수 q (kg/m³)',val:0.7},{id:'co2_s',label:'안전계수',val:1.2}],
+      fn: v => v.co2_v*v.co2_f*v.co2_s },
+    detector_count:   { label:'감지기 설치 개수 (N)', formula:'N = ⌈ A_실 / A_감지 ⌉', unit:'개',
+      inputs:[{id:'det_area',label:'바닥면적 A (m²)',val:300},{id:'det_cov',label:'감지기 감지면적 (m²)',val:150}],
+      fn: v => Math.ceil(v.det_area/Math.max(v.det_cov,1)) },
+    discharge_int:    { label:'방사강도 (I)', formula:'I = Q / A', unit:'L/min/m²',
+      inputs:[{id:'di_q',label:'방사량 Q (L/min)',val:800},{id:'di_a',label:'방사면적 A (m²)',val:40}],
+      fn: v => v.di_q/Math.max(v.di_a,0.01) },
+    battery_cap:      { label:'축전지 용량 (C)', formula:'C = (P/V) × (t/60) / η', unit:'Ah',
+      inputs:[{id:'bat_p',label:'부하 전력 P (W)',val:50},{id:'bat_t',label:'유지시간 t (min)',val:10},{id:'bat_v',label:'전압 V (V)',val:24},{id:'bat_e',label:'방전효율 η',val:0.8}],
+      fn: v => (v.bat_p/v.bat_v)*(v.bat_t/60)/v.bat_e }
+  };
+
+  // ── 부품 ID → 계산식 매핑 ────────────────────────────────
+  const CALC_MAP = {
+    'p-pump':         ['pumphead','motor_power','kfactor'],
+    'p-jockey':       ['pumphead','kfactor'],
+    'p-tank':         ['hydrant_water','sprinkler_water'],
+    'p-av':           ['kfactor'],
+    'p-head1':        ['kfactor','sprinkler_water'],
+    'p-head1f':       ['kfactor','sprinkler_water'],
+    'p-head3f':       ['kfactor','sprinkler_water'],
+    'p-prv':          ['kfactor'],
+    'p-hydrant':      ['hydrant_water','kfactor'],
+    'p-hydrant-2f':   ['hydrant_water','kfactor'],
+    'p-hydrant-3f':   ['hydrant_water','kfactor'],
+    'p-hydrant-b1':   ['hydrant_water','kfactor'],
+    'p-cyl':          ['co2agent'],
+    'p-gnozzle':      ['discharge_int'],
+    'p-panel':        ['battery_cap','detector_count'],
+    'p-det-3f':       ['detector_count'],
+    'p-det-1f':       ['detector_count'],
+    'p-det-b1':       ['detector_count'],
+    'p-det-smoke':    ['detector_count'],
+    'p-det-heat':     ['detector_count'],
+    'p-bell-alarm-3f':['detector_count'],
+    'p-bell-alarm-2f':['detector_count'],
+    'p-bell-alarm-1f':['detector_count'],
+    'p-bell-alarm-b1':['detector_count'],
+    'p-fan':          ['motor_power'],
+    'p-fan-1f':       ['motor_power'],
+  };
 
   const SVG = `
 <svg id="fire-system-svg" viewBox="-100 0 1200 1060" xmlns="http://www.w3.org/2000/svg">
@@ -476,11 +591,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Attach click handlers
   document.querySelectorAll('.part').forEach(el => {
     el.addEventListener('click', () => {
-      showModal(
-        el.dataset.name,
-        el.dataset.desc,
-        el.dataset.law
-      );
+      showModal(el.dataset.name, el.dataset.desc, el.dataset.law, CALC_MAP[el.id] || []);
       if (window.lucide) lucide.createIcons();
     });
   });
