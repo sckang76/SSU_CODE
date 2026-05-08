@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwordInput = document.getElementById('password-input');
     const loginError  = document.getElementById('login-error');
     const symbolGrid  = document.getElementById('symbol-grid');
+    const logoutBtn   = document.getElementById('logout-btn');
 
     // ════════════════════════════════════════════
     // State
@@ -83,6 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loginBtn.addEventListener('click', handleLogin);
     passwordInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleLogin(); });
+
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            localStorage.removeItem('ssu_access_data');
+            window.location.reload();
+        });
+    }
 
     // (State variables moved above sessionStorage check — see top of DOMContentLoaded)
 

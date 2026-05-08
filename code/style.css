@@ -301,6 +301,25 @@ body.dark-theme .moon-icon {
     color: #ffffff; /* 검은 배경일 때 흰색 달 */
 }
 
+.header-logout-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.2s;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+}
+.header-logout-btn:hover {
+    opacity: 1;
+    color: var(--accent-color);
+    background: rgba(100, 116, 139, 0.1);
+}
+
 /* Level 1: Subject Tabs */
 .subject-tabs {
     display: flex;
