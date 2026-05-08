@@ -112,7 +112,8 @@ h1, h2, h3, .brand, .logo {
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.1);
     border-radius: 24px;
-    padding: 3.5rem 2.5rem;
+    padding: 5rem 2.5rem 4rem; /* 위아래 여백을 대폭 늘려 세로로 20% 정도 확대 */
+    min-height: 540px; /* 고정 최소 높이 설정 */
     text-align: center;
     width: 90%;
     max-width: 420px;
@@ -120,6 +121,7 @@ h1, h2, h3, .brand, .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; /* 내부 아이템들을 균일하게 배치 */
     animation: fadeIn 0.8s ease-out;
 }
 
@@ -229,6 +231,18 @@ h1, h2, h3, .brand, .logo {
 }
 
 .version-tag {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    background: #ff4b2b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+}
 
 input {
     background: var(--input-bg);
