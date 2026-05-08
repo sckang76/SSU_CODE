@@ -24,9 +24,10 @@
             <div class="version-tag"></div>
         </div>
     </div>
-
     <!-- Main Content -->
     <div id="main-app" class="hidden">
+    <!-- Sticky Navigation Wrapper -->
+    <div id="sticky-nav">
         <header>
             <div class="header-content">
                 <div class="brand" style="cursor: pointer;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Fire-<span>kit</span></div>
@@ -93,6 +94,7 @@
         <nav class="category-tabs" id="category-tabs">
             <!-- Injected by JS -->
         </nav>
+    </div><!-- /#sticky-nav -->
 
         <main id="symbol-grid" class="grid-container">
             <!-- Cards will be injected here -->
@@ -170,10 +172,15 @@
             <svg class="floating-icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
             <span class="floating-text">소방용어사전</span>
         </a>
+        <a href="https://fmdic-26b04.web.app/SSU_NP1/" class="floating-btn btn-np1" target="_blank" title="통합 계통도">
+            <svg class="floating-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span class="floating-text">계통도</span>
+        </a>
     </div>
 
         <footer>
-            <p>&copy; dv sck..</p>
+            <p style="text-align:center;">&copy; dv sck..</p>
+    <p style="font-size:0.72rem; color:#94a3b8; margin-top:4px; opacity:0.8;">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
         </footer>
     </div>
 

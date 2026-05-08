@@ -26,6 +26,14 @@
                                      {
                                          "destination":  "/fss3/index.html",
                                          "source":  "/fss3/**"
+                                     },
+                                     {
+                                         "destination":  "/SSU_NP1/index.html",
+                                         "source":  "/SSU_NP1"
+                                     },
+                                     {
+                                         "destination":  "/SSU_NP1/index.html",
+                                         "source":  "/SSU_NP1/**"
                                      }
                                  ]
                 }

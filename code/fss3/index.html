@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -247,10 +247,8 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-text">소방 화재 점검표(예상) &copy; 2026 · dv sck · 소방시설법 및 화재안전기준 기반</p>
-      <p class="footer-sub">본 점검표는 자체 점검 참고용이며, 법적 효력을 갖지 않습니다.</p>
-    </div>
+    <p>&copy; dv sck..</p>
+    <p style="font-size:0.72rem; color:#94a3b8; margin-top:4px; opacity:0.8;">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
   </footer>
 
   <!-- PDF 출력 영역 (숨김) -->
@@ -293,20 +291,24 @@
     </div>
   </div>
 
-  <!-- Floating Buttons -->
-  <div class="floating-btn-group">
-      <a href="https://fmdic-26b04.web.app/" class="floating-btn btn-fsd" title="Fire-kit (메인)">
-          <svg class="floating-icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-          <span class="floating-text">Fire-kit (메인)</span>
-      </a>
-      <a href="https://fmdic-26b04.web.app/fss/" class="floating-btn btn-fss" title="자가진단">
-          <svg class="floating-icon" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-          <span class="floating-text">자가진단</span>
-      </a>
-      <a href="https://fmdic-26b04.web.app/SSU_NP/" class="floating-btn btn-ssu" title="소방용어사전">
-          <svg class="floating-icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-          <span class="floating-text">소방용어사전</span>
-      </a>
+  <!-- Floating Buttons (inline styled for layout safety) -->
+  <div style="position:fixed; bottom:30px; right:30px; display:flex; flex-direction:column; gap:12px; z-index:9999;">
+    <a href="https://fmdic-26b04.web.app/" title="Fire-kit (메인)" style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;text-decoration:none;color:white;font-weight:600;font-size:0.9rem;letter-spacing:0.4px;white-space:nowrap;background:linear-gradient(135deg,#0f172a,#1e3a5f);box-shadow:0 4px 12px rgba(15,23,42,0.3);border:1px solid rgba(255,255,255,0.15);">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Fire-kit (메인)
+    </a>
+    <a href="https://fmdic-26b04.web.app/fss/" title="자가진단" style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;text-decoration:none;color:white;font-weight:600;font-size:0.9rem;letter-spacing:0.4px;white-space:nowrap;background:linear-gradient(135deg,#ef4444,#dc2626);box-shadow:0 4px 12px rgba(239,68,68,0.3);border:1px solid rgba(255,255,255,0.15);">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      자가진단
+    </a>
+    <a href="https://fmdic-26b04.web.app/SSU_NP/" title="소방용어사전" style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;text-decoration:none;color:white;font-weight:600;font-size:0.9rem;letter-spacing:0.4px;white-space:nowrap;background:linear-gradient(135deg,#3b82f6,#2563eb);box-shadow:0 4px 12px rgba(59,130,246,0.3);border:1px solid rgba(255,255,255,0.15);">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      소방용어사전
+    </a>
+    <a href="https://fmdic-26b04.web.app/SSU_NP1/" title="통합 계통도" style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;text-decoration:none;color:white;font-weight:600;font-size:0.9rem;letter-spacing:0.4px;white-space:nowrap;background:linear-gradient(135deg,#f97316,#ea580c);box-shadow:0 4px 12px rgba(249,115,22,0.35);border:1px solid rgba(255,255,255,0.15);">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      계통도
+    </a>
   </div>
 
   <!-- CDN Libraries -->
