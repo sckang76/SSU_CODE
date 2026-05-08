@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -11,18 +11,19 @@
 </head>
 <body class="dark-theme">
     <div class="container">
-        <div class="theme-switch-container">
-            <label class="theme-switch" title="다크/라이트 모드 전환">
-                <input type="checkbox" id="theme-toggle">
-                <span class="slider">
-                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </span>
-            </label>
-        </div>
-        <header>
+        <header style="position: relative;">
             <h1>소방업계 용어 사전</h1>
             <p>신속하고 정확한 소방 용어 검색</p>
+            <!-- 다크모드 스위치: 헤더 우상단 배치 -->
+            <div class="theme-switch-container">
+                <label class="theme-switch" title="다크/라이트 모드 전환">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                </label>
+            </div>
         </header>
 
         <section class="search-section" style="position: relative;">
@@ -63,7 +64,7 @@
 
         <footer style="text-align: center; padding: 2rem 0; color: #94a3b8; font-size: 0.8rem; letter-spacing: 0.5px;">
             <p>&copy; dv sck..</p>
-    <p style="font-size:0.72rem; color:#94a3b8; margin-top:4px; opacity:0.8;">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
+            <p style="font-size:0.72rem; color:#94a3b8; margin-top:4px; opacity:0.8;">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
         </footer>
     </div>
 

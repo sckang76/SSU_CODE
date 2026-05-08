@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --bg-color: #0a0c10;
     --card-bg: rgba(255, 255, 255, 0.05);
     --header-bg: rgba(10, 12, 16, 0.9);
@@ -246,6 +246,7 @@ header p {
 .dropdown-list .term-summary {
     font-size: 0.85rem;
     -webkit-line-clamp: 1; /* 드롭다운에서는 한 줄만 표시 */
+    line-clamp: 1;
 }
 
 /* Term List Items (기존 전체 목록용) */
@@ -284,6 +285,7 @@ header p {
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -485,11 +487,12 @@ header p {
     color: #fff;
 }
 
-/* Theme Switch */
+/* Theme Switch - 헤더 우상단에 절대 배치 */
 .theme-switch-container {
     position: absolute;
-    top: 2rem;
-    right: 1.5rem;
+    top: calc(50% - 18px);
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .theme-switch {

@@ -24,7 +24,7 @@ body { font-family:var(--font); background:var(--bg); color:var(--text); min-hei
 .step-dot .step-icon { width:22px; height:22px; display:flex; align-items:center; justify-content:center; }
 .step-dot .step-label { font-size:.75rem; font-weight:700; text-align:center; }
 
-.main-wrap { flex:1; max-width:1280px; width:100%; margin:0 auto; padding:20px; }
+.main-wrap { flex:1; max-width:1280px; width:100%; margin:0 auto; padding:20px 20px 48px; }
 .section-header { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
 .section-header-icon { width:50px; height:50px; background:var(--surface); border:2px solid var(--border); border-radius:14px; display:flex; align-items:center; justify-content:center; color:var(--primary); }
 .section-title { font-size:1.1rem; font-weight:800; }
@@ -124,7 +124,7 @@ body { font-family:var(--font); background:var(--bg); color:var(--text); min-hei
 .modal-footer-actions { margin-top:16px; }
 .btn-primary { background:var(--primary); color:#fff; border-radius:10px; padding:10px 20px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px; font-size:.88rem; }
 
-.site-footer { background: transparent; margin-top: auto; }
+.site-footer { background: transparent; margin-top: auto; position: relative; top: -24px; }
 
 @media (max-width:768px) { .step-nav-inner { grid-template-columns:repeat(3,1fr); } }
 

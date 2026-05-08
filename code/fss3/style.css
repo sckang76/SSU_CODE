@@ -1,4 +1,4 @@
-﻿/* ===== DESIGN TOKENS ===== */
+/* ===== DESIGN TOKENS ===== */
 :root {
   --bg: #f1f5f9;
   --surface: #ffffff;
@@ -236,7 +236,7 @@ input, textarea, select, button { font-family: inherit; }
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  padding: 28px 20px 48px;
+  padding: 28px 20px 0;
 }
 
 /* ===== SECTION HEADER ===== */
@@ -603,7 +603,7 @@ input, textarea, select, button { font-family: inherit; }
 .pdf-export-mode .result-action-bar { display: none !important; }
 
 /* ===== FOOTER ===== */
-.site-footer { margin-top: auto; }
+.site-footer { margin-top: auto; position: relative; top: -48px; }
 
 
 
@@ -726,9 +726,6 @@ input, textarea, select, button { font-family: inherit; }
 }
 .wizard-section.active { animation: fadeSlideIn .25s ease; }
 
-
-    .floating-text { font-size: 0.8rem; }
-}
 
 /* ===== UNIFIED FLOATING BUTTON GROUP (v3) ===== */
 .floating-btn-group {

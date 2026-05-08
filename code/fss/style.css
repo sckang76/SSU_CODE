@@ -1,4 +1,4 @@
-﻿/* Modern Fire Safety Dashboard Styling */
+/* Modern Fire Safety Dashboard Styling */
 :root {
     --bg-color: #f1f5f9;
     --bg-gradient: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
@@ -610,9 +610,6 @@ body {
     }
 }
 
-
-    .floating-text { font-size: 0.8rem; }
-}
 
 /* ===== UNIFIED FLOATING BUTTON GROUP (v3) ===== */
 .floating-btn-group {

@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // P&ID Symbol helpers
   function gate(x, y, r) { // Gate valve symbol
-    r = r||10;
+    r = r||5;
     return `<path d="M${x-r} ${y-r} L${x+r} ${y+r} M${x-r} ${y+r} L${x+r} ${y-r} Z" fill="#0d1f35" stroke="#38bdf8" stroke-width="1.8"/>
-    <rect x="${x-1.5}" y="${y-r-10}" width="3" height="10" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1"/>
-    <path d="M${x-8} ${y-r-10} H${x+8}" stroke="#38bdf8" stroke-width="2"/>`;
+    <rect x="${x-1}" y="${y-r-6}" width="2" height="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1"/>
+    <path d="M${x-5} ${y-r-6} H${x+5}" stroke="#38bdf8" stroke-width="2"/>`;
   }
   function check(x, y) { // Check valve
     return `<path d="M${x-10} ${y} L${x+10} ${y} M${x} ${y-10} L${x+10} ${y} L${x} ${y+10}" fill="none" stroke="#38bdf8" stroke-width="1.8"/>`;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return `<circle cx="${x}" cy="${y}" r="18" fill="#0d1f35" stroke="#38bdf8" stroke-width="2"/>
     <rect x="${x-28}" y="${y-10}" width="24" height="20" rx="2" fill="#0d1f35" stroke="#38bdf8" stroke-width="1.5"/>
     <path d="M${x-26} ${y-6} H${x-6} M${x-26} ${y} H${x-6} M${x-26} ${y+6} H${x-6}" stroke="#38bdf8" stroke-width="1" opacity=".5"/>
-    <path d="M${x+6} ${y-8} L${x+16} ${y+8} M${x+6} ${y+8} L${x+16} ${y-8}" stroke="#38bdf8" stroke-width="1.8"/>`;
+    <path d="M${x+8.5} ${y-4} L${x+13.5} ${y+4} M${x+8.5} ${y+4} L${x+13.5} ${y-4}" stroke="#38bdf8" stroke-width="1.8"/>`;
   }
   function tank(x, y, w, h) {
     return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="#080f1e" stroke="#38bdf8" stroke-width="2"/>
@@ -171,18 +171,37 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Main vertical riser -->
     <line x1="200" y1="970" x2="200" y2="90" class="pipe-main" stroke="#00d4ff" stroke-width="5" marker-end="url(#arr-water)"/>
     <!-- B1 horizontal supply -->
-    <line x1="80" y1="870" x2="200" y2="870" class="pipe-main" stroke="#1e3a5f"/>
+    <line x1="80" y1="870" x2="200" y2="870" class="pipe-main" stroke="#00d4ff" opacity=".55"/>
     <!-- 1F branch -->
-    <line x1="200" y1="620" x2="700" y2="620" class="pipe-branch" stroke="#1e3a5f" marker-end="url(#arr-water)"/>
+    <line x1="200" y1="620" x2="700" y2="620" class="pipe-branch" stroke="#00d4ff" opacity=".55" marker-end="url(#arr-water)"/>
     <!-- 2F branch -->
-    <line x1="200" y1="390" x2="750" y2="390" class="pipe-branch" stroke="#1e3a5f" marker-end="url(#arr-water)"/>
+    <line x1="200" y1="390" x2="750" y2="390" class="pipe-branch" stroke="#00d4ff" opacity=".55" marker-end="url(#arr-water)"/>
     <!-- 3F branch -->
-    <line x1="200" y1="190" x2="500" y2="190" class="pipe-branch" stroke="#1e3a5f" marker-end="url(#arr-water)"/>
+    <line x1="200" y1="190" x2="500" y2="190" class="pipe-branch" stroke="#00d4ff" opacity=".55" marker-end="url(#arr-water)"/>
     <!-- Flow animations -->
     <line x1="200" y1="970" x2="200" y2="90" class="flow-anim" stroke="#00d4ff" stroke-dashoffset="0"/>
     <line x1="80" y1="870" x2="200" y2="870" class="flow-anim" stroke="#00d4ff"/>
     <line x1="200" y1="620" x2="700" y2="620" class="flow-anim" stroke="#00d4ff"/>
-    <line x1="200" y1="340" x2="750" y2="340" class="flow-anim" stroke="#00d4ff"/>
+    <line x1="200" y1="390" x2="750" y2="390" class="flow-anim" stroke="#00d4ff"/>
+    <line x1="200" y1="190" x2="500" y2="190" class="flow-anim" stroke="#00d4ff"/>
+
+    <!-- ── 옥내소화전 수계 배관 스텁 연결 ── -->
+    <!-- 3F: 분기(y=190) → 소화전(y=108) 수직 스텁 -->
+    <line x1="295" y1="108" x2="295" y2="190" stroke="#00d4ff" stroke-width="2" opacity=".55"/>
+    <line x1="295" y1="190" x2="295" y2="108" class="flow-anim" stroke="#00d4ff" style="animation-duration:8s;animation-direction:reverse"/>
+    <!-- 2F: 분기(y=390) → 소화전(y=445) 수직 스텁 -->
+    <line x1="295" y1="390" x2="295" y2="445" stroke="#00d4ff" stroke-width="2" opacity=".55"/>
+    <line x1="295" y1="390" x2="295" y2="445" class="flow-anim" stroke="#00d4ff" style="animation-duration:8s;"/>
+    <!-- 1F: 분기(y=620) → 소화전(y=590) 수직 스텁 -->
+    <line x1="295" y1="590" x2="295" y2="620" stroke="#00d4ff" stroke-width="2" opacity=".55"/>
+    <line x1="295" y1="620" x2="295" y2="590" class="flow-anim" stroke="#00d4ff" style="animation-duration:8s;animation-direction:reverse"/>
+    <!-- B1: 수직 라이저(x=200) → 소화전(x=380) 수평 스텁 + 수직 연결 -->
+    <line x1="200" y1="840" x2="380" y2="840" stroke="#00d4ff" stroke-width="2" opacity=".55"/>
+    <line x1="380" y1="810" x2="380" y2="840" stroke="#00d4ff" stroke-width="2" opacity=".55"/>
+    <line x1="200" y1="840" x2="380" y2="840" class="flow-anim" stroke="#00d4ff" style="animation-duration:8s;"/>
+    <line x1="380" y1="840" x2="380" y2="810" class="flow-anim" stroke="#00d4ff" style="animation-duration:8s;animation-direction:reverse"/>
+
+    <!-- PS 스텁 제거됨 - 발신기가 옥내소화전 옆에 붙어 직접 연결 -->
 
     ${part('p-tank','소화수조','지하 소화수조로 유효수량을 상시 확보합니다. 내진 설계 적용.','NFTC 102: 폐쇄형 헤드 기준 N×2.6㎥ 이상',
       tank(50,820,110,95) + `<text x="105" y="940" class="comp-label">소화수조</text>`, 155, 828)}
@@ -203,12 +222,45 @@ document.addEventListener('DOMContentLoaded', () => {
       head(600,380) + head(680,380) + head(760,380) +
       `<text x="680" y="420" class="comp-label">폐쇄형 헤드 (2F)</text>`, 800, 368)}
 
-    ${part('p-hydrant','옥내소화전 (1F)','로비·복도에 설치된 옥내소화전 함입니다. 호스·관창 포함.','NFTC 102: 수평거리 25m 이하, 방수압 0.17MPa↑ 방수량 130L/min↑',
+    ${part('p-hydrant','옥내소화전+발신기 (1F)','옥내소화전과 발신기가 함께 설치. 소화전 사용 전 발신기 조작으로 경보 발령.','NFTC 102: 수평거리 25m 이하, 방수압 0.17MPa↑ 방수량 130L/min↑',
       `<rect x="280" y="590" width="30" height="48" rx="3" fill="#080f1e" stroke="#ef4444" stroke-width="2"/>
       <circle cx="295" cy="603" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
       <path d="M295 611 V620" stroke="#ef4444" stroke-width="2"/>
-      <rect x="285" y="621" width="20" height="5" fill="#ef4444" rx="1"/>` +
-      `<text x="295" y="655" class="comp-label">옥내소화전</text>`, 310, 593)}
+      <rect x="285" y="621" width="20" height="5" fill="#ef4444" rx="1"/>
+      <rect x="313" y="592" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="602" r="4" fill="#fff"/>
+      <circle cx="322" cy="615" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>` +
+      `<text x="306" y="655" class="comp-label">소화전+발신기 (1F)</text>`, 332, 593)}
+
+    ${part('p-hydrant-2f','옥내소화전+발신기 (2F)','옥내소화전과 발신기가 함께 설치. 소화전 사용 전 발신기 조작으로 경보 발령.','NFTC 102: 수평거리 25m 이하, 방수압 0.17MPa↑ 방수량 130L/min↑',
+      `<rect x="280" y="445" width="30" height="48" rx="3" fill="#080f1e" stroke="#ef4444" stroke-width="2"/>
+      <circle cx="295" cy="458" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+      <path d="M295 466 V475" stroke="#ef4444" stroke-width="2"/>
+      <rect x="285" y="476" width="20" height="5" fill="#ef4444" rx="1"/>
+      <rect x="313" y="447" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="457" r="4" fill="#fff"/>
+      <circle cx="322" cy="470" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>` +
+      `<text x="306" y="510" class="comp-label">소화전+발신기 (2F)</text>`, 332, 448)}
+
+    ${part('p-hydrant-3f','옥내소화전+발신기 (3F)','옥내소화전과 발신기가 함께 설치. 소화전 사용 전 발신기 조작으로 경보 발령.','NFTC 102: 수평거리 25m 이하, 방수압 0.17MPa↑ 방수량 130L/min↑',
+      `<rect x="280" y="60" width="30" height="48" rx="3" fill="#080f1e" stroke="#ef4444" stroke-width="2"/>
+      <circle cx="295" cy="73" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+      <path d="M295 81 V90" stroke="#ef4444" stroke-width="2"/>
+      <rect x="285" y="91" width="20" height="5" fill="#ef4444" rx="1"/>
+      <rect x="313" y="62" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="72" r="4" fill="#fff"/>
+      <circle cx="322" cy="85" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>` +
+      `<text x="306" y="125" class="comp-label">소화전+발신기 (3F)</text>`, 332, 63)}
+
+    ${part('p-hydrant-b1','옥내소화전+발신기 (B1)','옥내소화전과 발신기가 함께 설치. 소화전 사용 전 발신기 조작으로 경보 발령.','NFTC 102: 수평거리 25m 이하, 방수압 0.17MPa↑ 방수량 130L/min↑',
+      `<rect x="380" y="810" width="30" height="48" rx="3" fill="#080f1e" stroke="#ef4444" stroke-width="2"/>
+      <circle cx="395" cy="823" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+      <path d="M395 831 V840" stroke="#ef4444" stroke-width="2"/>
+      <rect x="385" y="841" width="20" height="5" fill="#ef4444" rx="1"/>
+      <rect x="413" y="812" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="422" cy="822" r="4" fill="#fff"/>
+      <circle cx="422" cy="835" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>` +
+      `<text x="400" y="875" class="comp-label">소화전+발신기 (B1)</text>`, 432, 813)}
 
     ${part('p-head1f','스프링클러 헤드 (1F 폐쇄형)','1층 로비 천장 설치 헤드. 측벽형 적용 가능.','NFTC 103: 측벽형 헤드 수평거리 3.6m 이하',
       head(450,610) + head(530,610) + head(610,610) +
@@ -217,15 +269,19 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- PRV (moved to y=155, above 3F water branch at y=190) -->
     ${part('p-prv','감압밸브 (PRV)','고층부 배관 과압 방지를 위한 감압장치.','NFTC 102: 방사압 0.1~1.2MPa 범위 유지',
       gate(200,155) + isa(200,130,'PCV','') + `<text x="200" y="185" class="comp-label">PRV</text>`, 220, 130)}
+
+    ${part('p-head3f','스프링클러 헤드 (3F 개방형)','Pre-action 연동 개방형 헤드. 가스계 연동 방출 시 살수.','NFTC 103: Pre-action 설비는 개방형 헤드 적용, 교차회로 감지기와 연동',
+      head(300,190) + head(380,190) + head(460,190) +
+      `<text x="380" y="226" class="comp-label">개방형 헤드 (3F)</text>`, 480, 178)}
   </g>
 
   <!-- ========== GAS SYSTEM ========== -->
   <g class="sys-group active" id="g-gas">
     <!-- Gas riser at x=820 to avoid cylinder at x=800 -->
     <line x1="820" y1="450" x2="820" y2="70" class="pipe-main" stroke="#ff6b35" stroke-width="4" marker-end="url(#arr-gas)"/>
-    <line x1="850" y1="150" x2="1000" y2="150" class="pipe-branch" stroke="#ff6b35" stroke-width="3" marker-end="url(#arr-gas)"/>
+    <line x1="820" y1="150" x2="956" y2="150" class="pipe-branch" stroke="#ff6b35" stroke-width="3" marker-end="url(#arr-gas)"/>
     <line x1="820" y1="450" x2="820" y2="70" class="flow-anim" stroke="#ff6b35"/>
-    <line x1="850" y1="150" x2="1000" y2="150" class="flow-anim" stroke="#ff6b35"/>
+    <line x1="820" y1="150" x2="956" y2="150" class="flow-anim" stroke="#ff6b35"/>
 
     ${part('p-cyl','소화약제 저장용기','CO₂ 또는 HFC-227ea 고압 용기. 기동용 가스용기 별도.','NFTC 107: CO₂ 충전비 고압식 1.5 이상',
       cylinder(750,490) + cylinder(790,490) + cylinder(830,490) +
@@ -249,20 +305,37 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- ========== ALARM SYSTEM ========== -->
   <g class="sys-group active" id="g-alarm">
     <!-- Signal lines: vertical trunk + floor branches -->
-    <line x1="500" y1="960" x2="500" y2="60" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9" marker-end="url(#arr-alarm)"/>
-    <!-- 3F alarm branch (y=95, top of 3F zone, clear of water branch at y=190) -->
-    <line x1="500" y1="95" x2="750" y2="95" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
-    <!-- 2F alarm branches (y=355 and y=435, avoid water pipe at y=390) -->
-    <line x1="500" y1="300" x2="750" y2="300" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
-    <line x1="500" y1="360" x2="750" y2="360" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
-    <!-- 1F alarm branch -->
-    <line x1="500" y1="600" x2="750" y2="600" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
-    <!-- B1 alarm branch -->
-    <line x1="500" y1="880" x2="700" y2="880" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <!-- 트렁크: y=895(B1분기 y=880 바로 아래)까지만 → 통합수신기 아래 불필요 연장 제거 -->
+    <line x1="500" y1="880" x2="500" y2="60" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9" marker-end="url(#arr-alarm)"/>
+    <!-- 3F alarm branch → 방출지연 스위치(x=980) + 소화전+발신기 신호선 -->
+    <line x1="500" y1="95" x2="980" y2="95" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <line x1="334" y1="77" x2="500" y2="77" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,4" opacity=".8"/>
+    <!-- SV 스트레이 라인 제거됨 -->
+    <!-- 2F alarm branches (감지기 끝 트림) + 소화전+발신기 신호선 -->
+    <line x1="500" y1="300" x2="645" y2="300" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <line x1="500" y1="360" x2="715" y2="360" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <line x1="334" y1="462" x2="500" y2="462" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,4" opacity=".8"/>
+    <!-- 1F alarm branch (감지기 끝 x=775) + 소화전+발신기 신호선 -->
+    <line x1="500" y1="600" x2="775" y2="600" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <line x1="334" y1="607" x2="500" y2="607" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,4" opacity=".8"/>
+    <!-- B1 alarm branch (감지기 끝 x=695) + 소화전+발신기 신호선 -->
+    <line x1="500" y1="880" x2="695" y2="880" stroke="#fbbf24" stroke-width="2" stroke-dasharray="8,6" opacity=".9"/>
+    <line x1="434" y1="827" x2="500" y2="827" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,4" opacity=".8"/>
     <!-- Glow layer -->
-    <line x1="500" y1="960" x2="500" y2="60" stroke="#fbbf24" stroke-width="5" stroke-dasharray="8,6" opacity=".12"/>
-    <!-- Animated signal pulse -->
-    <line x1="500" y1="960" x2="500" y2="60" class="flow-anim" stroke="#fbbf24" style="animation-duration:7s;animation-direction:reverse"/>
+    <line x1="500" y1="880" x2="500" y2="60" stroke="#fbbf24" stroke-width="5" stroke-dasharray="8,6" opacity=".12"/>
+    <!-- Animated signal pulse - vertical trunk (y=895→y=60 upward to panel) -->
+    <line x1="500" y1="880" x2="500" y2="60" class="flow-anim" stroke="#fbbf24" style="animation-duration:7s;animation-direction:reverse"/>
+    <!-- 감지기 분기 flow-anim -->
+    <line x1="980" y1="95"  x2="500" y2="95"  class="flow-anim" stroke="#fbbf24" style="animation-duration:5s;animation-direction:reverse"/>
+    <line x1="645" y1="300" x2="500" y2="300" class="flow-anim" stroke="#fbbf24" style="animation-duration:5s;animation-direction:reverse"/>
+    <line x1="715" y1="360" x2="500" y2="360" class="flow-anim" stroke="#fbbf24" style="animation-duration:5s;animation-direction:reverse"/>
+    <line x1="775" y1="600" x2="500" y2="600" class="flow-anim" stroke="#fbbf24" style="animation-duration:5s;animation-direction:reverse"/>
+    <line x1="695" y1="880" x2="500" y2="880" class="flow-anim" stroke="#fbbf24" style="animation-duration:5s;animation-direction:reverse"/>
+    <!-- 소화전+발신기 신호 flow-anim -->
+    <line x1="334" y1="77"  x2="500" y2="77"  class="flow-anim" stroke="#fbbf24" style="animation-duration:4s;animation-direction:reverse"/>
+    <line x1="334" y1="462" x2="500" y2="462" class="flow-anim" stroke="#fbbf24" style="animation-duration:4s;animation-direction:reverse"/>
+    <line x1="334" y1="607" x2="500" y2="607" class="flow-anim" stroke="#fbbf24" style="animation-duration:4s;animation-direction:reverse"/>
+    <line x1="434" y1="827" x2="500" y2="827" class="flow-anim" stroke="#fbbf24" style="animation-duration:4s;animation-direction:reverse"/>
 
     ${part('p-panel','통합형 수신기 (R형)','디지털 통신 기반 수신기. 구역 표시, 제어, 기록 기능 통합.','NFTC 203: 상시 사람이 근무하는 곳, 바닥에서 0.8~1.5m',
       panel(470,780) + `<text x="497" y="873" class="comp-label">통합수신기</text>`, 520, 785)}
@@ -287,39 +360,110 @@ document.addEventListener('DOMContentLoaded', () => {
       detector(560,300,'#fbbf24') + detector(630,300,'#fbbf24') +
       `<text x="595" y="330" class="comp-label">차동식 (2F)</text>`, 645, 288)}
 
-    ${part('p-bell','발신기·경종 세트','수동 발신기 + 음향경보기. 층별 설치.','NFTC 203: 보행거리 25m 이하마다 1개, 음량 90dB↑',
-      `<rect x="830" y="345" width="36" height="55" rx="3" fill="#ef4444" stroke="#fff" stroke-width="1.5"/>
-      <circle cx="848" cy="363" r="8" fill="#fff"/>
-      <circle cx="848" cy="385" r="7" fill="#ef4444" stroke="#fff" stroke-width="1.5"/>
-      <text x="848" y="418" class="comp-label">발신기</text>`, 860, 352)}
+    <!-- ── 경보 탭에서도 발신기 표시 (옥내소화전 옆 위치) ── -->
+    ${part('p-bell-alarm-3f','발신기 (3F) — 경보 연동','화재 발견 시 수동 조작 → 경보 수신기에 신호 전송.','NFTC 203: 보행거리 25m 이하마다 1개, 함 내 설치, 음량 90dB↑',
+      `<rect x="313" y="62" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="72" r="4" fill="#fff"/>
+      <circle cx="322" cy="85" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <text x="322" y="110" class="comp-label">발신기 (3F)</text>`, 332, 65)}
+
+    ${part('p-bell-alarm-2f','발신기 (2F) — 경보 연동','화재 발견 시 수동 조작 → 경보 수신기에 신호 전송.','NFTC 203: 보행거리 25m 이하마다 1개, 함 내 설치, 음량 90dB↑',
+      `<rect x="313" y="447" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="457" r="4" fill="#fff"/>
+      <circle cx="322" cy="470" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <text x="322" y="495" class="comp-label">발신기 (2F)</text>`, 332, 450)}
+
+    ${part('p-bell-alarm-1f','발신기 (1F) — 경보 연동','화재 발견 시 수동 조작 → 경보 수신기에 신호 전송.','NFTC 203: 보행거리 25m 이하마다 1개, 함 내 설치, 음량 90dB↑',
+      `<rect x="313" y="592" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="322" cy="602" r="4" fill="#fff"/>
+      <circle cx="322" cy="615" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <text x="322" y="640" class="comp-label">발신기 (1F)</text>`, 332, 595)}
+
+    ${part('p-bell-alarm-b1','발신기 (B1) — 경보 연동','화재 발견 시 수동 조작 → 경보 수신기에 신호 전송.','NFTC 203: 지하층에도 층마다 설치 의무, 음량 90dB↑',
+      `<rect x="413" y="812" width="18" height="30" rx="2" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <circle cx="422" cy="822" r="4" fill="#fff"/>
+      <circle cx="422" cy="835" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+      <text x="422" y="860" class="comp-label">발신기 (B1)</text>`, 432, 815)}
+
+    <!-- ── 경보 탭에서도 방출지연 스위치 표시 (가스계 연동) ── -->
+    ${part('p-abort-alarm','방출지연 스위치 — 경보 연동','교차회로 감지 → 수신기 기동 신호 → 지연스위치 조작 시 30초 방출 지연. 비상 대피 시간 확보.','NFTC 107: 방호구역 출입구 부근, 바닥에서 0.8~1.5m 설치',
+      `<rect x="980" y="70" width="36" height="50" rx="4" fill="#080f1e" stroke="#fbbf24" stroke-width="1.5"/>
+      <circle cx="998" cy="90" r="8" fill="#ef4444"/>
+      <text x="998" y="138" class="comp-label">지연스위치</text>`, 1012, 75)}
   </g>
 
   <!-- ========== SMOKE / EVAC SYSTEM ========== -->
   <g class="sys-group active" id="g-smoke">
-    <line x1="60" y1="260" x2="60" y2="80" class="pipe-main" stroke="#34d399" stroke-width="5" marker-end="url(#arr-smoke)"/>
-    <line x1="60" y1="370" x2="320" y2="370" class="pipe-branch" stroke="#34d399" stroke-width="4" marker-end="url(#arr-smoke)"/>
-    <line x1="60" y1="260" x2="60" y2="80" class="flow-anim" stroke="#34d399"/>
-    <line x1="60" y1="370" x2="320" y2="370" class="flow-anim" stroke="#34d399"/>
+    <!-- Upward duct: 2F fan → 3F stairway -->
+    <line x1="60" y1="370" x2="60" y2="80" class="pipe-main" stroke="#34d399" stroke-width="5" marker-end="url(#arr-smoke)"/>
+    <!-- 2F branch (extended to x=750) -->
+    <line x1="60" y1="370" x2="750" y2="370" class="pipe-branch" stroke="#34d399" stroke-width="3" marker-end="url(#arr-smoke)"/>
+    <!-- Downward duct: 2F → 1F -->
+    <line x1="60" y1="500" x2="60" y2="720" class="pipe-main" stroke="#34d399" stroke-width="4" marker-end="url(#arr-smoke)"/>
+    <!-- 1F branch (extended to x=750) -->
+    <line x1="60" y1="630" x2="750" y2="630" class="pipe-branch" stroke="#34d399" stroke-width="3" marker-end="url(#arr-smoke)"/>
+    <!-- Flow animations -->
+    <line x1="60" y1="370" x2="60" y2="80" class="flow-anim" stroke="#34d399"/>
+    <line x1="60" y1="370" x2="750" y2="370" class="flow-anim" stroke="#34d399"/>
+    <line x1="60" y1="500" x2="60" y2="720" class="flow-anim" stroke="#34d399"/>
+    <line x1="60" y1="630" x2="750" y2="630" class="flow-anim" stroke="#34d399"/>
 
-    ${part('p-fan','제연송풍기 (급기)','비상계단 급기 가압. 방연풍속 0.7m/s 이상 확보.','NFTC 501: 급기량 설계 계산, 차압 40~60Pa 유지',
-      fan(60,350) + `<text x="60" y="395" class="comp-label">제연팬</text>`, 85, 335)}
+    ${part('p-fan','제연송풍기 (2F 급기)','비상계단 급기 가압. 방연풍속 0.7m/s 이상 확보.','NFTC 501: 급기량 설계 계산, 차압 40~60Pa 유지',
+      fan(60,350) + `<text x="60" y="395" class="comp-label">급기팬 (2F)</text>`, 85, 335)}
 
-    ${part('p-damper','자동폐쇄 방화댐퍼 (FD)','화재 시 72°C 퓨즈 용융 → 자동 폐쇄.','NFTC 501: 덕트 관통부마다 설치, 성능인증제품',
-      damper(160,370) + isa(160,338,'FD','') + `<text x="160" y="420" class="comp-label">방화댐퍼</text>`, 182, 343)}
+    ${part('p-fan-1f','제연팬 (1F 배기)','1F 연기 강제 배출용 배기팬.','NFTC 501: 배출량 1시간 기준 5회 이상, 배기구 외부 방향',
+      fan(60,700) + `<text x="60" y="745" class="comp-label">배기팬 (1F)</text>`, 85, 685)}
 
-    ${part('p-vd','배기댐퍼 (VD)','연기 배출구. 제연구역 천장 설치.','NFTC 501: 배출량 1시간 기준 5회 이상',
-      damper(280,370) + isa(280,338,'VD','') + `<text x="280" y="420" class="comp-label">배기댐퍼</text>`, 302, 343)}
+    ${part('p-damper','방화댐퍼 (FD) 2F','화재 시 72°C 퓨즈 용융 → 자동 폐쇄.','NFTC 501: 덕트 관통부마다 설치, 성능인증제품',
+      damper(500,370) + isa(500,338,'FD','') + `<text x="500" y="420" class="comp-label">방화댐퍼 (2F)</text>`, 522, 343)}
 
-    ${part('p-sign','피난유도등 (통로형)','상시 점등. 비상전원 20분 이상 확보.','NFTC 301: 구부러진 모퉁이 및 보행거리 20m마다 설치',
-      `<rect x="320" y="355" width="70" height="28" rx="5" fill="#080f1e" stroke="#22c55e" stroke-width="2"/>
-      <path d="M330 356 L330 383 M330 369 H365" stroke="#22c55e" stroke-width="2.5"/>
-      <path d="M355 362 L368 369 L355 376 Z" fill="#22c55e"/>
-      <text x="355" y="400" class="comp-label">피난유도등</text>`, 388, 358)}
+    ${part('p-vd','배기댐퍼 (VD) 2F','연기 배출구. 제연구역 천장 설치.','NFTC 501: 배출량 1시간 기준 5회 이상',
+      damper(680,370) + isa(680,338,'VD','') + `<text x="680" y="420" class="comp-label">배기댐퍼 (2F)</text>`, 702, 343)}
 
-    ${part('p-esc','비상계단 가압구역','제연팬 → 급기덕트 → 비상계단 가압.','NFTC 501: 계단실 차압 40Pa↑, 방연풍속 확보',
+    ${part('p-damper-1f','방화댐퍼 (FD) 1F','화재 시 72°C 퓨즈 용융 → 자동 폐쇄.','NFTC 501: 덕트 관통부마다 설치, 성능인증제품',
+      damper(500,630) + isa(500,598,'FD','') + `<text x="500" y="680" class="comp-label">방화댐퍼 (1F)</text>`, 522, 603)}
+
+    ${part('p-vd-1f','배기댐퍼 (VD) 1F','연기 배출구. 제연구역 천장 설치.','NFTC 501: 배출량 1시간 기준 5회 이상',
+      damper(680,630) + isa(680,598,'VD','') + `<text x="680" y="680" class="comp-label">배기댐퍼 (1F)</text>`, 702, 603)}
+
+    ${part('p-sign-3f','피난유도등 (3F)','상시 점등. 비상전원 20분 이상 확보.','NFTC 301: 구부러진 모퉁이 및 보행거리 20m마다 설치',
+      `<rect x="700" y="90" width="70" height="28" rx="5" fill="#080f1e" stroke="#22c55e" stroke-width="2"/>
+      <path d="M710 91 L710 118 M710 104 H745" stroke="#22c55e" stroke-width="2.5"/>
+      <path d="M735 97 L748 104 L735 111 Z" fill="#22c55e"/>
+      <text x="735" y="135" class="comp-label">피난유도등 (3F)</text>`, 768, 93)}
+
+    ${part('p-sign','피난유도등 (2F)','상시 점등. 비상전원 20분 이상 확보.','NFTC 301: 구부러진 모퉁이 및 보행거리 20m마다 설치',
+      `<rect x="700" y="355" width="70" height="28" rx="5" fill="#080f1e" stroke="#22c55e" stroke-width="2"/>
+      <path d="M710 356 L710 383 M710 369 H745" stroke="#22c55e" stroke-width="2.5"/>
+      <path d="M735 362 L748 369 L735 376 Z" fill="#22c55e"/>
+      <text x="735" y="400" class="comp-label">피난유도등 (2F)</text>`, 768, 358)}
+
+    ${part('p-sign-1f','피난유도등 (1F)','상시 점등. 비상전원 20분 이상 확보.','NFTC 301: 구부러진 모퉁이 및 보행거리 20m마다 설치',
+      `<rect x="700" y="545" width="70" height="28" rx="5" fill="#080f1e" stroke="#22c55e" stroke-width="2"/>
+      <path d="M710 546 L710 573 M710 559 H745" stroke="#22c55e" stroke-width="2.5"/>
+      <path d="M735 552 L748 559 L735 566 Z" fill="#22c55e"/>
+      <text x="735" y="590" class="comp-label">피난유도등 (1F)</text>`, 768, 548)}
+
+    ${part('p-sign-b1','피난유도등 (B1)','상시 점등. 비상전원 20분 이상 확보.','NFTC 301: 구부러진 모퉁이 및 보행거리 20m마다 설치',
+      `<rect x="700" y="785" width="70" height="28" rx="5" fill="#080f1e" stroke="#22c55e" stroke-width="2"/>
+      <path d="M710 786 L710 813 M710 799 H745" stroke="#22c55e" stroke-width="2.5"/>
+      <path d="M735 792 L748 799 L735 806 Z" fill="#22c55e"/>
+      <text x="735" y="830" class="comp-label">피난유도등 (B1)</text>`, 768, 788)}
+
+    ${part('p-esc','비상계단 가압구역 (3F)','제연팬 → 급기덕트 → 비상계단 가압.','NFTC 501: 계단실 차압 40Pa↑, 방연풍속 확보',
       `<rect x="42" y="155" width="30" height="100" rx="4" fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,3"/>
       <text x="80" y="195" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">비상계단</text>
-      <text x="80" y="210" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">가압구역</text>`, 75, 165)}
+      <text x="80" y="210" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">가압(3F)</text>`, 75, 165)}
+
+    ${part('p-esc-2f','비상계단 가압구역 (2F)','제연팬 → 급기덕트 → 비상계단 가압.','NFTC 501: 계단실 차압 40Pa↑, 방연풍속 확보',
+      `<rect x="42" y="268" width="30" height="90" rx="4" fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="80" y="305" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">비상계단</text>
+      <text x="80" y="320" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">가압(2F)</text>`, 75, 278)}
+
+    ${part('p-esc-1f','비상계단 가압구역 (1F)','제연팬 → 급기덕트 → 비상계단 가압.','NFTC 501: 계단실 차압 40Pa↑, 방연풍속 확보',
+      `<rect x="42" y="510" width="30" height="90" rx="4" fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="80" y="547" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">비상계단</text>
+      <text x="80" y="562" fill="#34d399" font-size="10" font-weight="700" font-family="monospace">가압(1F)</text>`, 75, 520)}
   </g>
 
   <!-- P&ID Standard Watermark -->
