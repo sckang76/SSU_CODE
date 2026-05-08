@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
 
     function applyTheme(isInitial = false) {
-        const savedTheme = localStorage.getItem('theme');
+        const savedTheme = localStorage.getItem('theme_v2');
         // Default to 'light' for main app if no saved theme
         const themeToApply = savedTheme || 'light';
         
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.addEventListener('change', (e) => {
             if (e.target.checked) {
                 document.body.classList.replace('dark-theme', 'light-theme');
-                localStorage.setItem('theme', 'light');
+                localStorage.setItem('theme_v2', 'light');
             } else {
                 document.body.classList.replace('light-theme', 'dark-theme');
-                localStorage.setItem('theme', 'dark');
+                localStorage.setItem('theme_v2', 'dark');
             }
         });
     }

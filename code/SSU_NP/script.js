@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme Management
     // ════════════════════════════════════════════
     const themeToggleBtn = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme_v2');
     
     if (savedTheme === 'dark') {
         document.body.classList.replace('light-theme', 'dark-theme');
@@ -306,10 +306,10 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.addEventListener('change', (e) => {
             if (e.target.checked) {
                 document.body.classList.replace('dark-theme', 'light-theme');
-                localStorage.setItem('theme', 'light');
+                localStorage.setItem('theme_v2', 'light');
             } else {
                 document.body.classList.replace('light-theme', 'dark-theme');
-                localStorage.setItem('theme', 'dark');
+                localStorage.setItem('theme_v2', 'dark');
             }
         });
     }
