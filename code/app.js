@@ -22,10 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // ════════════════════════════════════════════
     const themeToggleBtn = document.getElementById('theme-toggle');
 
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.classList.replace('light-theme', 'dark-theme');
-        if (themeToggleBtn) themeToggleBtn.checked = false;
+    function applyTheme(isInitial = false) {
+        const savedTheme = localStorage.getItem('theme');
+        // Default to 'light' for main app if no saved theme
+        const themeToApply = savedTheme || 'light';
+        
+        if (themeToApply === 'light') {
+            document.body.classList.replace('dark-theme', 'light-theme');
+            if (themeToggleBtn) themeToggleBtn.checked = true;
+        } else {
+            document.body.classList.replace('light-theme', 'dark-theme');
+            if (themeToggleBtn) themeToggleBtn.checked = false;
+        }
     }
 
     if (themeToggleBtn) {
@@ -40,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Check session — initApp() is called at the bottom after all declarations
+    // Check session
     const accessData = JSON.parse(localStorage.getItem('ssu_access_data') || 'null');
     const now = new Date().getTime();
     const alreadyLoggedIn = accessData && (now - accessData.time < 30 * 60 * 1000); // 30 minutes
@@ -48,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (alreadyLoggedIn) {
         loginScreen.remove();
         mainApp.classList.remove('hidden');
+        applyTheme(true);
     }
 
     const sha256 = async (message) => {
@@ -64,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('ssu_access_data', JSON.stringify({ granted: true, time: new Date().getTime() }));
             loginScreen.remove();
             mainApp.classList.remove('hidden');
+            applyTheme(); // Switch to default/saved theme after login
             initApp();
         } else {
             loginError.textContent = '잘못된 비밀번호입니다.';
