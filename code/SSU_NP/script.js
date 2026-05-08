@@ -297,9 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const savedTheme = localStorage.getItem('theme');
     
-    if (savedTheme === 'light') {
-        document.body.classList.replace('dark-theme', 'light-theme');
-        if (themeToggleBtn) themeToggleBtn.checked = true;
+    if (savedTheme === 'dark') {
+        document.body.classList.replace('light-theme', 'dark-theme');
+        if (themeToggleBtn) themeToggleBtn.checked = false;
     }
 
     if (themeToggleBtn) {
