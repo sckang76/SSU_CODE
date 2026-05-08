@@ -588,6 +588,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   host.innerHTML = SVG;
 
+  // 계산식 있는 부품에 has-calc 클래스 부착 → 앰버색 plus 아이콘
+  Object.keys(CALC_MAP).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('has-calc');
+  });
   // Attach click handlers
   document.querySelectorAll('.part').forEach(el => {
     el.addEventListener('click', () => {

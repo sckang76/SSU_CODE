@@ -108,6 +108,20 @@ body { font-family:var(--font); background:var(--bg); color:var(--text); min-hei
 .part { cursor: pointer; }
 .part:hover .comp-body { filter: drop-shadow(0 0 10px currentColor); }
 .part:hover .plus-bg { transform: scale(1.4); fill: #fff; animation-play-state: paused; filter: none; }
+
+/* 계산식 있는 부품 - 앰버(황금) plus 아이콘 */
+@keyframes plus-pulse-calc {
+  0%   { transform: scale(1);    fill: #d97706; filter: drop-shadow(0 0 0px #fbbf24); }
+  50%  { transform: scale(1.45); fill: #f59e0b; filter: drop-shadow(0 0 7px #fbbf24); }
+  100% { transform: scale(1);    fill: #d97706; filter: drop-shadow(0 0 0px #fbbf24); }
+}
+@keyframes plus-ripple-calc {
+  0%   { r: 9;  stroke-opacity: 0.9; }
+  100% { r: 26; stroke-opacity: 0; }
+}
+.part.has-calc .plus-bg   { fill: #d97706; animation: plus-pulse-calc 2s ease-in-out infinite; }
+.part.has-calc .plus-ring { stroke: #fbbf24; animation: plus-ripple-calc 2s ease-out infinite; }
+.part.has-calc:hover .plus-bg { fill: #fef3c7; animation-play-state: paused; }
 .part:hover .plus-ring { animation-play-state: paused; }
 .part:hover .plus-sym { fill: #1e40af; transform: scale(1.4); }
 .part:hover .comp-label { fill: #e2e8f0; }
