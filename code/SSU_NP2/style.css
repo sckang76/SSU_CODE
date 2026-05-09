@@ -209,7 +209,38 @@ body {
   justify-content: center;
   padding: 20px;
 }
-.modal.hidden { display: none; }
+/* Calculation Formula Section */
+.formula-container {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-left: 4px solid var(--accent);
+    padding: 24px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.formula-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.formula-text {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+}
+
+.hidden { display: none !important; }
 
 .modal-overlay {
   position: absolute;

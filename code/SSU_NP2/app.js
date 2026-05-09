@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let specs = {'항목': '상세 정보 참조'};
         let mechanism = '화재안전기준(NFPC)에 따른 설계 및 작동';
         let components = ['본체', '부속품'];
+        let formula = ''; // 계산식
 
         // 카테고리 판별 로직
         if (/소화기|소화약제|강화액|분말|가스계|소화기구|자동소화/.test(title)) {
@@ -61,14 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
             specs = {'사용압력': '1.0~1.6 MPa', '재질': '닥타일 주철/강재'};
             mechanism = '배관 내 유체의 흐름을 제어하거나 압력을 조절하여 시스템의 안정성을 유지합니다.';
             components = ['밸브 본체', '시트', '핸들/구동부'];
-        } else if (title.includes('소화기')) {
-            specs = {'약제': 'ABC분말/CO2/강화액', '압력방식': '축압식/가압식'};
-            mechanism = '가압된 소화약제를 화점에 방사하여 질식 및 냉각 효과로 진압합니다.';
-            components = ['용기', '레버', '안전핀', '호스'];
-        } else if (title.includes('유도등')) {
-            specs = {'광원': '고휘도 LED', '배터리': '20분 이상 유지'};
-            mechanism = '상시 점등되어 피난 방향을 안내하며 정전 시 비상 전원으로 전환됩니다.';
-            components = ['LED 패널', '유도 패널', '비상 배터리'];
+        } else if (title.includes('스프링클러')) {
+            specs = {'작동온도': '72°C', '방출계수(K)': '80', '방수량': '80 L/min'};
+            mechanism = '감열체 파손 시 배관 내 가압수가 디플렉터에 부딪혀 살수됩니다.';
+            components = ['프레임', '디플렉터', '유리벌브', '캡/시트'];
+            formula = 'Q = K√P (Q: 유량[L/min], K: 상수, P: 방수압[MPa])';
+        } else if (title.includes('펌프')) {
+            specs = {'정격유량': '설계치 참조', '정격양정': '설계치 참조'};
+            mechanism = '임펠러의 회전력을 이용해 유체에 속도 에너지를 부여하고 압력으로 변환합니다.';
+            components = ['임펠러', '케이싱', '주축', '메커니컬 씰'];
+            formula = 'P = (γ·Q·H) / (102·η) (P: 동력[kW], Q: 유량[m³/s], H: 양정[m])';
+        } else if (title.includes('수리계산') || title.includes('마찰손실')) {
+            formula = 'ΔP = 6.05 × 10⁵ × L × Q¹.⁸⁵ / (C¹.⁸⁵ × d⁴.⁸⁷) (Hazen-Williams 공식)';
+        } else if (title.includes('소화전') || title.includes('관창')) {
+            formula = 'Q = 0.653 × D² × √P (D: 노즐구경[mm], P: 방수압[MPa])';
+        } else if (title.includes('가압송수')) {
+            formula = 'H = h₁ + h₂ + h₃ + 17m (옥내소화전 전양정 계산)';
+        } else if (title.includes('이산화탄소') || title.includes('가스계')) {
+            formula = 'W = V / S × [C / (100 - C)] (W: 약제량[kg], V: 방호체적, S: 선적계수, C: 설계농도)';
         }
 
         return {
@@ -78,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs,
             mechanism,
             components,
+            formula,
             summary: desc.substring(0, 50) + '...'
         };
     }
@@ -132,6 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('detail-desc').textContent = item.description;
         document.getElementById('working-principle').textContent = item.mechanism;
         
+        // 공식 박스 처리
+        const formulaBox = document.getElementById('formula-box');
+        if (item.formula) {
+            formulaBox.innerHTML = `
+                <div class="formula-label"><i data-lucide="function-square" style="width:16px; height:16px;"></i> 핵심 계산식</div>
+                <div class="formula-text">${item.formula}</div>
+            `;
+            formulaBox.classList.remove('hidden');
+        } else {
+            formulaBox.classList.add('hidden');
+        }
+
         const specsTable = document.getElementById('specs-table');
         specsTable.innerHTML = '';
         Object.entries(item.specs).forEach(([key, value]) => {
