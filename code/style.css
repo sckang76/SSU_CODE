@@ -135,9 +135,14 @@ h1, h2, h3, .brand, .logo {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    transform: translateY(-20px);
     color: #00d2ff;
     box-shadow: 0 8px 16px rgba(0, 210, 255, 0.15);
+    animation: login-icon-pulse 3s ease-in-out infinite;
+}
+@keyframes login-icon-pulse {
+    0% { transform: translateY(0) scale(1); box-shadow: 0 8px 16px rgba(0, 210, 255, 0.15); border-color: rgba(0, 210, 255, 0.3); }
+    50% { transform: translateY(-3px) scale(1.03); box-shadow: 0 12px 24px rgba(0, 210, 255, 0.4); border-color: rgba(0, 210, 255, 0.6); }
+    100% { transform: translateY(0) scale(1); box-shadow: 0 8px 16px rgba(0, 210, 255, 0.15); border-color: rgba(0, 210, 255, 0.3); }
 }
 .login-icon-wrapper svg {
     width: 28px;
