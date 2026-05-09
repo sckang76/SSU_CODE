@@ -48,6 +48,7 @@
 .nav-np1 i { color: #8b5cf6; }  /* Purple */
 .nav-np2 i { color: #e11d48; }  /* Red */
 .nav-fss i { color: #10b981; }  /* Green */
+.nav-fss3 i { color: #f59e0b; } /* Yellow/Gold */
 
 .nav-item:hover {
     transform: translateY(-10px) scale(1.15);
@@ -113,6 +114,7 @@
 .nav-np1.active::after { color: #8b5cf6; }
 .nav-np2.active::after { color: #e11d48; }
 .nav-fss.active::after { color: #10b981; }
+.nav-fss3.active::after { color: #f59e0b; }
 
 /* Mobile Optimization */
 @media (max-width: 600px) {
