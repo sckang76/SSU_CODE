@@ -228,25 +228,26 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered.forEach(term => {
                 searchResultsList.innerHTML += createTermItemHTML(term);
             });
-        } else {
-            const googleUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-            const geminiUrl = `https://gemini.google.com/app`; 
-            
-            searchResultsList.innerHTML = `
-                <li class="term-item no-result-item">
-                    <div class="term-title" style="color: var(--error-color); margin-bottom: 0.5rem;">검색 결과가 없습니다.</div>
-                    <div class="term-summary" style="margin-bottom: 1rem;">'${query}'에 대한 소방 용어를 찾지 못했습니다. 외부에서 검색해 보시겠어요?</div>
-                    <div class="external-search-links">
-                        <a href="${googleUrl}" target="_blank" class="external-link google-link">
-                            🔍 구글(Google)에서 검색하기
-                        </a>
-                        <a href="${geminiUrl}" target="_blank" class="external-link gemini-link">
-                            ✨ 제미나이(Gemini)에게 물어보기
-                        </a>
-                    </div>
-                </li>
-            `;
         }
+
+        // 항상 구글/제미나이 검색 링크를 하단에 추가 (결과가 있더라도 추가 검색을 위해)
+        const googleUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        const geminiUrl = `https://gemini.google.com/app`; 
+        
+        const externalLinksHTML = `
+            <li class="term-item no-result-item external-search-container" style="border-top: 1px solid var(--glass-border); margin-top: 0.5rem; padding-top: 1rem;">
+                <div class="term-summary" style="margin-bottom: 0.8rem; text-align: center;">내부 데이터 외에 외부에서도 검색해 보시겠어요?</div>
+                <div class="external-search-links">
+                    <a href="${googleUrl}" target="_blank" class="external-link google-link">
+                        🔍 구글(Google)에서 상세 검색
+                    </a>
+                    <a href="${geminiUrl}" target="_blank" class="external-link gemini-link">
+                        ✨ 제미나이(Gemini)에게 물어보기
+                    </a>
+                </div>
+            </li>
+        `;
+        searchResultsList.innerHTML += externalLinksHTML;
 
         searchResultsArea.style.display = 'block';
         attachModalEvents();
