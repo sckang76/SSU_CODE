@@ -161,8 +161,10 @@ h1, h2, h3, .brand, .logo {
 
 .login-desc {
     color: #94a3b8 !important;
-    font-size: 0.9rem !important;
+    font-size: 0.82rem !important;
     margin-bottom: 2rem !important;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
 }
 
 .input-group {
