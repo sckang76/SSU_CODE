@@ -1,105 +1,165 @@
 const equipmentData = [
+    // --- 소화기류 (Extinguishers) ---
     {
-        id: 'alarm-valve',
-        category: 'valve',
-        title: '알람 체크 밸브 (Alarm Check Valve)',
-        image: 'assets/alarm_valve.png',
-        summary: '습식 스프링클러 설비의 유수 검지 장치',
-        desc: '습식 스프링클러 설비의 핵심 구성 요소로, 화재 발생 시 물의 흐름을 검지하고 경보를 발령하는 역할을 합니다. 본 도면은 클래퍼와 시트의 밀착 구조를 보여주는 정밀 단면도입니다.',
-        components: ['클래퍼 (Clapper)', '시트 (Seat)', '압력스위치', '리타딩 챔버', '드레인 밸브', '시험 밸브'],
-        working: '헤드가 열려 2차측 압력이 낮아지면, 1차측 가압수가 클래퍼를 밀어 올리며 유입됩니다. 이때 클래퍼 하단의 구멍을 통해 리타딩 챔버로 물이 들어가 압력스위치를 작동시켜 수신기에 화재 신호를 보냅니다.',
-        specs: {
-            material: 'GC200 (주철) / Bronze',
-            standard: 'KFI 인증 제품',
-            pressure: '1.2 MPa (최대작동압력)',
-            connection: 'Flange Type (KS B 1511)'
-        },
-        hotspots: [
-            { x: 50, y: 45, label: '클래퍼 (Clapper)', detail: '유수 방향에 따라 개폐되어 역류를 방지하고 유수를 검지함' },
-            { x: 75, y: 30, label: '압력스위치', detail: '유수 발생 시 전기적 신호를 수신반으로 송신' },
-            { x: 30, y: 70, label: '드레인 밸브', detail: '시험 및 배수 시 사용되는 수동 밸브' }
-        ]
+        id: 'ext-abc',
+        category: 'ext',
+        title: 'ABC 분말 소화기 (Dry Chemical Extinguisher)',
+        image: 'https://images.unsplash.com/photo-1596753106193-41c304f43427?auto=format&fit=crop&q=80&w=1000',
+        summary: '가장 보편적인 다목적 소화기',
+        desc: 'A급(일반), B급(유류), C급(전기) 화재에 모두 사용 가능한 범용 소화기입니다. KFI 형식승인 제품으로 질소가스를 이용한 축압식 구조입니다.',
+        components: ['소화약제(제1인산암모늄)', '축압가스(N2)', '안전핀', '레버', '압력계', '호스'],
+        working: '안전핀을 뽑고 레버를 누르면 내부 축압가스가 미세 분말 약제를 밀어내어 화재 지점을 산소 차단(질식) 및 냉각 효과로 진압합니다.',
+        specs: { material: 'Steel (KSD 3503)', capacity: '3.3kg / 4.5kg / 6kg', rating: 'A3, B5, C', kfi_no: 'KFI-2024-EXT-01' },
+        hotspots: [{ x: 50, y: 30, label: '레버/손잡이', detail: '약제 방출을 조절하는 트리거' }, { x: 50, y: 70, label: '본체 용기', detail: '고압 가스와 약제가 저장된 강철 용기' }]
     },
     {
-        id: 'fire-pump',
-        category: 'pump',
-        title: '소방 주펌프 (Main Fire Pump)',
-        image: 'assets/fire_pump.png',
-        summary: '소방 시스템의 수압과 유량을 공급하는 심장',
-        desc: '건물 전체 소방 시설에 필요한 압력과 유량을 공급하는 설비입니다. 본 3D 모델은 원심력 발생을 위한 임펠러와 케이싱의 결합 구조를 상세히 나타냅니다.',
-        components: ['임펠러', '케이싱', '전동기 (Motor)', '커플링', '제어반 (MCC)', '체크 밸브', '릴리프 밸브'],
-        working: '기동용 수압개폐장치(압력챔버)의 압력 저하를 감지하여 제어반에서 전동기를 기동시킵니다. 임펠러의 회전력을 이용하여 수원을 가압하고 배관을 통해 말단 설비까지 물을 송수합니다.',
-        specs: {
-            type: 'Single Stage Centrifugal',
-            flow: '600 ~ 2400 LPM',
-            head: '50m ~ 150m',
-            power: '15kW ~ 75kW'
-        },
-        hotspots: [
-            { x: 40, y: 50, label: '임펠러 (Impeller)', detail: '원심력을 발생시켜 물에 압력을 가하는 핵심 회전체' },
-            { x: 70, y: 50, label: '전동기 (Motor)', detail: '펌프를 구동하기 위한 동력원' },
-            { x: 20, y: 45, label: '흡입측 (Suction)', detail: '수원으로부터 물이 유입되는 경로' }
-        ]
+        id: 'ext-co2',
+        category: 'ext',
+        title: '이산화탄소 소화기 (CO2 Extinguisher)',
+        image: 'https://images.unsplash.com/photo-1610492316736-2f6382029583?auto=format&fit=crop&q=80&w=1000',
+        summary: '전기 및 유류 화재 전용 잔여물 없는 소화기',
+        desc: '소화 후 잔여물이 남지 않아 전산실, 통신실 등 정밀 기기 보호가 필요한 장소에 필수적인 소화기입니다.',
+        components: ['고압 용기', '방출 혼(Horn)', '안전 밸브', '액화 이산화탄소'],
+        working: '액체 상태의 CO2가 기체로 방출되면서 극저온의 냉각 효과와 산소 농도 저하를 통해 불을 끕니다.',
+        specs: { capacity: '2.3kg / 4.6kg', material: 'Seamless Steel', kfi_no: 'KFI-2024-CO2-05' },
+        hotspots: [{ x: 80, y: 50, label: '방출 혼', detail: '가스 팽창 시 손상을 방지하고 방향을 유도하는 깔대기형 노즐' }]
     },
+
+    // --- 경보설비 (Alarm) ---
     {
-        id: 'fire-panel',
+        id: 'alarm-panel-r',
         category: 'alarm',
-        title: 'R형 수신기 (Digital Fire Alarm Control Panel)',
+        title: 'R형 수신기 (Digital Receiver)',
         image: 'assets/fire_panel.png',
-        summary: '전체 시스템의 상태를 감시하고 제어하는 두뇌',
-        desc: '디지털 통신 방식을 사용하는 R형 수신기로, 수천 개의 감지기 주소를 개별적으로 식별하고 제어할 수 있는 고성능 중앙 제어 장치입니다.',
-        components: ['CPU/메인보드', '터치 LCD 패널', '상태 표시 LED', '예비전원 배터리', '통신 카드'],
-        working: '각 구역의 중계기로부터 신호를 수신하여 화재 위치를 LCD에 표시하고, 프로그램된 로직에 따라 사이렌, 유도등, 펌프 등을 연동 제어합니다.',
-        specs: {
-            protocol: 'LonWorks / RS-485',
-            capacity: 'Up to 2048 Addresses',
-            backup: 'DC 24V / 4Ah Ni-Cd',
-            display: '7" Full Color Touch Screen'
-        },
-        hotspots: [
-            { x: 50, y: 35, label: '메인 디스플레이', detail: '화재 위치 및 시스템 상태를 실시간 그래픽으로 표시' },
-            { x: 50, y: 65, label: '조작부', detail: '경종 정지, 복구, 시험 등의 기능을 수행하는 인터페이스' }
-        ]
+        summary: '대형 건물용 지능형 화재 감시 시스템',
+        desc: '개별 감지기의 주소를 식별하여 정확한 화재 위치를 파악하고 시스템을 통합 제어하는 디지털 두뇌입니다.',
+        components: ['메인보드', '7인치 터치스크린', 'LOOP 통신카드', '비상 배터리'],
+        working: '중계기와의 통신을 통해 신호를 주고받으며, 화재 발생 시 그래픽 화면에 위치를 표시하고 연동 설비를 가동합니다.',
+        specs: { address: '최대 2048개', display: 'Full Color Touch', protocol: 'R-Type Digital' },
+        hotspots: [{ x: 50, y: 40, label: '상태창', detail: '실시간 시스템 무결성 및 화재 여부 표시' }]
     },
     {
-        id: 'detector',
+        id: 'alarm-detector-smk',
         category: 'alarm',
-        title: '광전식 연기감지기 (Photoelectric Smoke Detector)',
+        title: '광전식 연기감지기 (Smoke Detector)',
         image: 'assets/detector.png',
-        summary: '연기 입자를 감지하여 화재 초기 신호 발생',
-        desc: '빛의 산란 원리를 이용한 연기 감지기입니다. 먼지 등에 의한 오작동을 방지하기 위한 미세 차폐망 구조와 광학 챔버 설계가 특징입니다.',
-        components: ['산란실 (Chamber)', '발광 다이오드', '수광 소자', '차폐망', '작동 표시등 (LED)'],
-        working: '연기가 감지기 내부의 암실로 유입되면, 발광부의 빛이 연기 입자에 부딪혀 산란됩니다. 이 산란된 빛이 수광 소자에 도달하여 화재 신호를 전송합니다.',
-        specs: {
-            voltage: 'DC 24V',
-            current: '45mA (Alarm) / 50uA (Standby)',
-            sensing: 'Infrared Scattering',
-            area: 'Up to 150m² (Height < 4m)'
-        },
-        hotspots: [
-            { x: 50, y: 55, label: '광학 챔버', detail: '연기 입자가 빛을 산란시키는 암실 공간' },
-            { x: 80, y: 45, label: '작동 표시등', detail: '작동 시 적색 LED가 점등되어 위치 확인 가능' }
-        ]
+        summary: '연기 산란을 이용한 조기 화재 탐지기',
+        desc: '화재 초기 발생하는 연기를 포착하여 신속하게 경보를 보냅니다. KFI 형식승인 기준에 따른 감도 시험을 통과한 제품입니다.',
+        components: ['산란 챔버', 'IR 발광부', '수광 소자', 'LED 표시등'],
+        working: '챔버 내로 연기 입자가 들어와 빛을 산란시키면 수광부가 이를 감지하여 전기 신호를 발생시킵니다.',
+        specs: { voltage: 'DC 24V', sensitive: '종별 1종/2종', area: '150m² (4m 이하)' }
     },
     {
-        id: 'sprinkler',
-        category: 'head',
-        title: '스프링클러 헤드 (Sprinkler Head)',
+        id: 'alarm-call',
+        category: 'alarm',
+        title: '화재 발신기 (Manual Call Point)',
+        image: 'assets/call_point.png',
+        summary: '수동 화재 통보용 누름 버튼',
+        desc: '사람이 화재를 발견했을 때 직접 눌러서 수신기에 신호를 보내는 장치입니다.',
+        components: ['누름 스위치', '전화 잭', '응답 램프'],
+        working: '버튼을 누르면 회로가 구성되어 수신기에 화재 신호가 전달되며, 수신기에서 확인 신호가 오면 램프가 켜집니다.'
+    },
+
+    // --- 기계설비 (Mechanical) ---
+    {
+        id: 'mech-valve-alarm',
+        category: 'mech',
+        title: '알람 체크 밸브 (Alarm Valve)',
+        image: 'assets/alarm_valve.png',
+        summary: '습식 스프링클러 설비의 핵심 밸브',
+        desc: '배관 내 유수를 감지하여 화재 경보를 발령하고 송수를 제어하는 유수제어밸브입니다.',
+        components: ['본체', '클래퍼', '압력스위치', '리타딩챔버'],
+        working: '2차측 압력이 낮아지면 1차측 가압수가 클래퍼를 밀어올려 배관에 물을 공급하고 경보를 울립니다.',
+        specs: { size: '65A ~ 150A', pressure: '12 kgf/cm²', type: 'Wet Type' }
+    },
+    {
+        id: 'mech-sprinkler',
+        category: 'mech',
+        title: '표준형 스프링클러 헤드',
         image: 'assets/sprinkler.png',
-        summary: '열을 감지하여 자동으로 살수하는 종단 장치',
-        desc: '68°C 등 특정 온도에서 유리 벌브가 파괴되도록 설계된 표준형 헤드입니다. 물의 분사 패턴을 최적화하는 디플렉터 설계 도면을 기반으로 합니다.',
-        components: ['프레임', '디플렉터 (Deflector)', '감열체 (Glass Bulb)', '오리피스', '캡 (Cap)'],
-        working: '화재 시 열에 의해 유리 벌브 내의 액체가 팽창하여 벌브가 파괴됩니다. 캡이 튕겨져 나가면서 물이 디플렉터에 부딪혀 넓게 분사됩니다.',
-        specs: {
-            kfactor: 'K=80 (LPM/bar^0.5)',
-            temp: '68°C (Standard Red Bulb)',
-            thread: 'PT 1/2"',
-            finish: 'Chrome Plated'
-        },
-        hotspots: [
-            { x: 50, y: 40, label: '글라스 벌브', detail: '열에 반응하여 파괴되는 핵심 감열부' },
-            { x: 50, y: 80, label: '디플렉터', detail: '방출되는 물을 고르게 분산시키는 반사판' }
-        ]
+        summary: '자동 살수를 통한 화재 진압 장치',
+        desc: '설정 온도에서 감열체가 파괴되어 물을 분사하는 종단 설비입니다.',
+        components: ['프레임', '글라스벌브', '디플렉터', '오리피스'],
+        working: '열기에 의해 글라스벌브 속 액체가 팽창/파열되면 캡이 이탈하며 가압수가 방출됩니다.',
+        specs: { k_factor: '80', temp: '68°C / 93°C', type: 'Pendent / Upright' }
+    },
+    {
+        id: 'mech-pump',
+        category: 'mech',
+        title: '소방 주펌프 (Fire Pump)',
+        image: 'assets/fire_pump.png',
+        summary: '송수를 위한 고압 가압 송수 장치',
+        desc: '건물 소화용수를 말단까지 보내기 위한 높은 양정과 유량을 갖춘 가압 펌프입니다.',
+        components: ['원심 펌프', '고효율 전동기', '압력 챔버'],
+        working: '배관 압력이 떨어지면 압력 챔버의 스위치가 감지하여 펌프를 자동으로 기동합니다.'
+    },
+
+    // --- 피난구조설비 (Evacuation) ---
+    {
+        id: 'evac-light',
+        category: 'evac',
+        title: '피난구 유도등 (Exit Sign)',
+        image: 'https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=1000',
+        summary: '비상 탈출구 위치 안내 등기구',
+        desc: '화재 시 전력이 끊겨도 예비전원으로 20분 이상 밝게 켜져 출구를 안내합니다.',
+        components: ['고휘도 LED', '예비전원 배터리', '도광판'],
+        working: '상시 전원으로 충전 및 점등 상태를 유지하다가 정전 시 내장 배터리로 전환됩니다.',
+        specs: { size: '대형/중형/소형', duration: '20min / 60min' }
+    },
+    {
+        id: 'evac-mask',
+        category: 'evac',
+        title: '공기호흡기 (SCBA)',
+        image: 'https://images.unsplash.com/photo-1513224502586-d1e602410265?auto=format&fit=crop&q=80&w=1000',
+        summary: '소방대원 및 피난자용 산소 공급 장치',
+        desc: '연기가 가득한 곳에서도 안전하게 호흡할 수 있도록 압축 공기를 공급하는 장비입니다.',
+        components: ['고압 실린더', '등지게', '면체(Mask)', '압력조절기'],
+        working: '실린더의 고압 공기를 대기압 수준으로 낮추어 면체 내부로 공급합니다.',
+        specs: { volume: '6.8L', duration: '45min / 60min' }
+    },
+
+    // --- 방염류 (Flame Retardant) ---
+    {
+        id: 'flame-spray',
+        category: 'flame',
+        title: '침투성 방염액 (Flame Retardant Chemical)',
+        image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000',
+        summary: '목재 및 섬유 화재 확산 방지제',
+        desc: '가연물 표면에 도포하여 화재 시 연소를 지연시키고 불길이 번지는 것을 막아주는 약제입니다.',
+        components: ['인계 화합물', '침투 촉진제', '수성 용매'],
+        working: '화재 열에 노출되면 탄화막을 형성하여 가연물로의 산소 공급을 차단하고 가연성 가스 발생을 억제합니다.',
+        specs: { type: '수성 / 유성', target: '목재, 합판, 실내장식물' }
+    },
+    {
+        id: 'flame-fabric',
+        category: 'flame',
+        title: '방염 커튼 (Flame Retardant Fabric)',
+        image: 'https://images.unsplash.com/photo-1521405924368-64c5b84bec60?auto=format&fit=crop&q=80&w=1000',
+        summary: 'KFI 인증을 획득한 특수 방염 원단',
+        desc: '화재 발생 시 불이 잘 붙지 않고 유독가스 배출이 적은 특수 처리 원단입니다.',
+        components: ['방염 처리사', '특수 코팅층'],
+        working: '불꽃이 닿아도 불길이 번지지 않고 스스로 꺼지는(자기소화성) 성질을 가집니다.'
+    },
+
+    // --- 추가 장비 (기타) ---
+    {
+        id: 'mech-hydrant',
+        category: 'mech',
+        title: '옥내 소화전함 (Indoor Hydrant Box)',
+        image: 'https://images.unsplash.com/photo-1582531608316-e575796c994f?auto=format&fit=crop&q=80&w=1000',
+        summary: '강력한 수압으로 직접 화재를 진압하는 함',
+        desc: '건물 복도 등에 설치되어 강력한 수압으로 초기 화재를 진압하는 장치입니다.',
+        components: ['앵글 밸브', '소방 호스', '관창(Nozzle)', '방수구'],
+        working: '밸브를 열면 가압 송수 장치에서 물이 공급되며 관창을 조절하여 직사 또는 분무 상태로 방수합니다.'
+    },
+    {
+        id: 'evac-ladder',
+        category: 'evac',
+        title: '피난 사다리 (Escape Ladder)',
+        image: 'https://images.unsplash.com/photo-1590486803833-ffc6f68d88e5?auto=format&fit=crop&q=80&w=1000',
+        summary: '비상 탈출용 접이식 사다리',
+        desc: '화재 시 계단을 이용할 수 없는 상황에서 창문을 통해 아래층으로 대피할 때 사용하는 기구입니다.',
+        specs: { type: '접이식 / 올림식', material: 'Aluminum Alloy' }
     }
 ];
 
@@ -116,18 +176,18 @@ document.addEventListener('DOMContentLoaded', () => {
         filteredData.forEach((item, index) => {
             const card = document.createElement('div');
             card.className = 'equip-card';
-            card.style.animationDelay = `${index * 0.05}s`;
+            card.style.animationDelay = `${index * 0.03}s`;
             card.innerHTML = `
                 <div class="card-visual">
                     <img src="${item.image}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1532187875605-1ef6c237ddc4?auto=format&fit=crop&q=80&w=1000'">
-                    <div class="card-overlay-badge">TECHNICAL</div>
+                    <div class="card-overlay-badge">${item.category.toUpperCase()}</div>
                 </div>
                 <div class="card-body">
-                    <span class="card-tag">${item.category}</span>
+                    <span class="card-tag">KFI Standard</span>
                     <h3 class="card-title">${item.title}</h3>
                     <p class="card-summary">${item.summary}</p>
                     <div class="card-footer">
-                        <span class="view-detail">상세 도면 보기 <i data-lucide="chevron-right"></i></span>
+                        <span class="view-detail">기술 사양 분석 <i data-lucide="activity"></i></span>
                     </div>
                 </div>
             `;
@@ -145,32 +205,33 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('detail-desc').textContent = item.desc;
         document.getElementById('working-principle').textContent = item.working;
         
-        // Component List
         const list = document.getElementById('component-list');
         list.innerHTML = '';
         item.components.forEach(comp => {
             const li = document.createElement('li');
-            li.textContent = comp;
+            li.innerHTML = `<i data-lucide="check-circle-2" style="width:14px; height:14px; color:var(--accent); margin-right:6px; display:inline-block; vertical-align:middle;"></i> ${comp}`;
             list.appendChild(li);
         });
 
-        // Specs List (Add Specs section if it doesn't exist)
-        let specsPanel = document.querySelector('.specs-list');
-        if (!specsPanel) {
-            const section = document.createElement('section');
-            section.className = 'info-block';
-            section.innerHTML = '<h3><i data-lucide="settings"></i> 상세 제원 (Specs)</h3><ul class="specs-list comp-list"></ul>';
-            document.querySelector('.info-content').appendChild(section);
-            specsPanel = section.querySelector('.specs-list');
-        }
-        specsPanel.innerHTML = '';
+        let infoContent = document.querySelector('.info-content');
+        
+        // Remove old dynamic sections
+        const dynamicSections = infoContent.querySelectorAll('.dynamic-section');
+        dynamicSections.forEach(s => s.remove());
+
+        // Specs section
         if (item.specs) {
+            const specSection = document.createElement('section');
+            specSection.className = 'info-block dynamic-section';
+            specSection.innerHTML = '<h3><i data-lucide="settings"></i> KFI 형식승인 기준 (Specs)</h3><ul class="specs-list comp-list"></ul>';
+            const specList = specSection.querySelector('.specs-list');
             Object.entries(item.specs).forEach(([key, value]) => {
                 const li = document.createElement('li');
                 li.style.borderColor = 'var(--primary)';
-                li.innerHTML = `<strong style="color:var(--text-muted)">${key.toUpperCase()}:</strong> ${value}`;
-                specsPanel.appendChild(li);
+                li.innerHTML = `<strong style="color:var(--text-muted); font-size:11px;">${key.toUpperCase()}</strong><br>${value}`;
+                specList.appendChild(li);
             });
+            infoContent.appendChild(specSection);
         }
 
         // Hotspots
@@ -182,13 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 dot.className = 'hotspot';
                 dot.style.left = `${hs.x}%`;
                 dot.style.top = `${hs.y}%`;
-                dot.setAttribute('title', hs.label);
                 
                 const tooltip = document.createElement('div');
                 tooltip.className = 'hotspot-tooltip';
                 tooltip.innerHTML = `<strong>${hs.label}</strong><p>${hs.detail}</p>`;
                 dot.appendChild(tooltip);
-                
                 hotspotContainer.appendChild(dot);
             });
         }
