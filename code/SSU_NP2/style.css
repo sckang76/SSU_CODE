@@ -103,11 +103,14 @@ body {
 }
 
 .step-dot:hover { background: #e2e8f0; color: var(--primary); }
-.step-dot.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
+
+/* Category-specific Active Buttons */
+.step-dot[data-filter="all"].active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.step-dot[data-filter="ext"].active { background: var(--cat-ext); border-color: var(--cat-ext); color: #fff; }
+.step-dot[data-filter="alarm"].active { background: var(--cat-alarm); border-color: var(--cat-alarm); color: #fff; }
+.step-dot[data-filter="mech"].active { background: var(--cat-mech); border-color: var(--cat-mech); color: #fff; }
+.step-dot[data-filter="evac"].active { background: var(--cat-evac); border-color: var(--cat-evac); color: #fff; }
+.step-dot[data-filter="flame"].active { background: var(--cat-flame); border-color: var(--cat-flame); color: #fff; }
 
 .step-dot svg { width: 16px; height: 16px; }
 
