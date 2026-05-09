@@ -344,30 +344,46 @@ body {
 }
 
 .cert-badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 4px;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 0.7rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 900;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    cursor: help;
+    flex-shrink: 0;
 }
 
-.cert-kfi {
-    background: #fff1f2;
-    color: #e11d48;
-    border: 1px solid #fda4af;
+.cert-badge span { margin: 0; }
+
+/* CI/BI Style Badges */
+.ci-kfi {
+    background: #fff;
+    color: #1e3a8a; /* Deep Navy */
+    border: 3px solid #e11d48; /* Red Ring */
 }
 
-.cert-kc {
-    background: #eff6ff;
-    color: #1d4ed8;
-    border: 1px solid #93c5fd;
+.ci-kc {
+    background: #005ba4; /* KC Blue */
+    color: #fff;
+    border: 2px solid #fff;
 }
 
-.cert-badge span { font-weight: 900; margin-right: 4px; }
+.ci-cp {
+    background: #059669; /* Performance Green */
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.ci-flame {
+    background: #ea580c; /* Flame Orange */
+    color: #fff;
+    border: 2px solid #fff;
+}
 
 .search-btn {
     display: flex;

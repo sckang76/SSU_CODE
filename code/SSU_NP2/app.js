@@ -127,18 +127,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const certContainer = document.getElementById('certification-badges');
         certContainer.innerHTML = '';
         
-        // KFI 배지 (대부분의 소방용품)
+        // 1. KFI 형식승인 (기본)
         const kfi = document.createElement('div');
-        kfi.className = 'cert-badge cert-kfi';
-        kfi.innerHTML = '<span>KFI</span> 형식승인';
+        kfi.className = 'cert-badge ci-kfi';
+        kfi.innerHTML = '<span>KFI</span>';
+        kfi.title = 'KFI 형식승인';
         certContainer.appendChild(kfi);
 
-        // KC 배지 (전기/전자 관련)
-        if (item.category === 'alarm' || item.title.includes('전자') || item.title.includes('전기')) {
+        // 2. KC 전파인증 (전자제품)
+        if (item.category === 'alarm' || item.title.includes('전자') || item.title.includes('전기') || item.title.includes('수신기')) {
             const kc = document.createElement('div');
-            kc.className = 'cert-badge cert-kc';
-            kc.innerHTML = '<span>KC</span> 전파인증';
+            kc.className = 'cert-badge ci-kc';
+            kc.innerHTML = '<span>KC</span>';
+            kc.title = 'KC 전파인증';
             certContainer.appendChild(kc);
+        }
+
+        // 3. 성능인증 (CP - 특정 기계/특수 품목)
+        if (item.category === 'mech' && (item.title.includes('밸브') || item.title.includes('헤드') || item.title.includes('버팀대'))) {
+            const cp = document.createElement('div');
+            cp.className = 'cert-badge ci-cp';
+            cp.innerHTML = '<span>CP</span>';
+            cp.title = '성능인증';
+            certContainer.appendChild(cp);
+        }
+
+        // 4. 방염성능검사 (방염물품)
+        if (item.category === 'flame' || item.title.includes('방염')) {
+            const flame = document.createElement('div');
+            flame.className = 'cert-badge ci-flame';
+            flame.innerHTML = '<span>방염</span>';
+            flame.title = '방염성능검사';
+            certContainer.appendChild(flame);
         }
 
         const formulaBox = document.getElementById('formula-box');
