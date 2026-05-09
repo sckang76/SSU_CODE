@@ -354,8 +354,14 @@ body {
     font-weight: 900;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
-    cursor: help;
+    cursor: pointer;
     flex-shrink: 0;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.cert-badge:hover {
+    transform: scale(1.1);
 }
 
 .cert-badge span { margin: 0; }

@@ -128,36 +128,44 @@ document.addEventListener('DOMContentLoaded', () => {
         certContainer.innerHTML = '';
         
         // 1. KFI 형식승인 (기본)
-        const kfi = document.createElement('div');
+        const kfi = document.createElement('a');
         kfi.className = 'cert-badge ci-kfi';
+        kfi.href = `https://www.google.com/search?q=KFI+형식승인+${encodeURIComponent(item.title)}`;
+        kfi.target = '_blank';
         kfi.innerHTML = '<span>KFI</span>';
-        kfi.title = 'KFI 형식승인';
+        kfi.title = 'KFI 형식승인 검색';
         certContainer.appendChild(kfi);
 
         // 2. KC 전파인증 (전자제품)
         if (item.category === 'alarm' || item.title.includes('전자') || item.title.includes('전기') || item.title.includes('수신기')) {
-            const kc = document.createElement('div');
+            const kc = document.createElement('a');
             kc.className = 'cert-badge ci-kc';
+            kc.href = `https://www.google.com/search?q=KC+전파인증+${encodeURIComponent(item.title)}`;
+            kc.target = '_blank';
             kc.innerHTML = '<span>KC</span>';
-            kc.title = 'KC 전파인증';
+            kc.title = 'KC 전파인증 검색';
             certContainer.appendChild(kc);
         }
 
         // 3. 성능인증 (CP - 특정 기계/특수 품목)
         if (item.category === 'mech' && (item.title.includes('밸브') || item.title.includes('헤드') || item.title.includes('버팀대'))) {
-            const cp = document.createElement('div');
+            const cp = document.createElement('a');
             cp.className = 'cert-badge ci-cp';
+            cp.href = `https://www.google.com/search?q=성능인증+${encodeURIComponent(item.title)}`;
+            cp.target = '_blank';
             cp.innerHTML = '<span>CP</span>';
-            cp.title = '성능인증';
+            cp.title = '성능인증 검색';
             certContainer.appendChild(cp);
         }
 
         // 4. 방염성능검사 (방염물품)
         if (item.category === 'flame' || item.title.includes('방염')) {
-            const flame = document.createElement('div');
+            const flame = document.createElement('a');
             flame.className = 'cert-badge ci-flame';
+            flame.href = `https://www.google.com/search?q=방염성능검사+${encodeURIComponent(item.title)}`;
+            flame.target = '_blank';
             flame.innerHTML = '<span>방염</span>';
-            flame.title = '방염성능검사';
+            flame.title = '방염성능검사 검색';
             certContainer.appendChild(flame);
         }
 
