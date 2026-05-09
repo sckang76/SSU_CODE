@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire-kit | Equipment Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <header id="sticky-nav">
+        <div class="header-content">
+            <div class="brand">Fire-<span>kit</span></div>
+            <nav class="main-nav">
+                <a href="../" class="nav-item">CODE</a>
+                <a href="../fss/" class="nav-item">FSS</a>
+                <a href="../SSU_NP/" class="nav-item">SSU_NP</a>
+                <a href="../SSU_NP1/" class="nav-item">P&ID</a>
+                <a href="#" class="nav-item active">EQUIP</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="glitch-text">Equipment <span>Digital Twin</span></h1>
+            <p class="hero-desc">고해상도 3D 모델링과 상세 구조도를 통해 소방 설비의 내부 메커니즘을 시각적으로 학습하십시오.</p>
+        </section>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">전체</button>
+            <button class="filter-btn" data-filter="valve">밸브류</button>
+            <button class="filter-btn" data-filter="pump">펌프류</button>
+            <button class="filter-btn" data-filter="head">헤드/기타</button>
+        </div>
+
+        <div id="equipment-grid" class="grid">
+            <!-- JS will populate this -->
+        </div>
+    </main>
+
+    <!-- 3D View Modal -->
+    <div id="detail-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title">장치 상세 정보</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="view-3d-wrapper">
+                    <img id="detail-image" src="" alt="Equipment Image">
+                    <div id="hotspots-container"></div>
+                    <div class="view-badge">HI-RES 3D VIEW</div>
+                </div>
+                <div class="info-panel">
+                    <div class="info-section">
+                        <h3>개요</h3>
+                        <p id="detail-desc"></p>
+                    </div>
+                    <div class="info-section">
+                        <h3>주요 구성 요소</h3>
+                        <ul id="component-list"></ul>
+                    </div>
+                    <div class="info-section">
+                        <h3>작동 원리</h3>
+                        <p id="working-principle"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btn-group">
+        <a href="../" class="floating-btn btn-fsd" title="Fire-kit (메인)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span class="floating-text">Fire-kit</span>
+        </a>
+        <a href="../fss/" class="floating-btn btn-fss" title="소방시설 자가진단">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            <span class="floating-text">자가진단</span>
+        </a>
+        <a href="../SSU_NP/" class="floating-btn btn-ssu" title="소방용어사전">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span class="floating-text">용어사전</span>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
