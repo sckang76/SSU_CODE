@@ -238,7 +238,12 @@ body {
     color: var(--text-muted);
 }
 
-.meta-code { font-family: monospace; color: var(--accent); }
+.meta-code { 
+    font-family: monospace; 
+    color: rgba(0, 0, 0, 0.15); /* Very subtle gray */
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+}
 
 /* Technical Modal */
 .modal {
