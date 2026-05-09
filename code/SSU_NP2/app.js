@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         filteredData.forEach((item, index) => {
             const card = document.createElement('div');
-            card.className = 'equip-card';
+            card.className = `equip-card cat-${item.category}`;
             card.style.animationDelay = `${index * 0.005}s`;
             
             let icon = 'book';
