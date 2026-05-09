@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장비 도서관 | Fire-kit Equipment Library</title>
+    <title>소방설비 기술 핸드북 | Fire-kit Technical Handbook</title>
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -12,96 +12,78 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="../" class="header-brand">
-        <span class="header-icon"><i data-lucide="book-open"></i></span>
+        <span class="header-icon"><i data-lucide="book-marked"></i></span>
         <div>
-          <h1 class="header-title">소방 장비 도서관</h1>
-          <p class="header-subtitle">Equipment Library · 3D Visual & Technical Specs</p>
+          <h1 class="header-title">소방설비 기술 핸드북</h1>
+          <p class="header-subtitle">KFI STANDARDS & NFPC HANDBOOK</p>
         </div>
       </a>
-      <div class="header-meta">
-        <span class="meta-tag">Digital Twin</span>
-        <span class="meta-tag">Internal Structure</span>
-      </div>
     </div>
   </header>
 
   <nav class="step-nav">
     <div class="step-nav-inner">
-      <div class="step-dot active" data-filter="all">
-        <span class="step-icon"><i data-lucide="layout-grid"></i></span>
-        <span class="step-label">전체</span>
-      </div>
-      <div class="step-dot" data-filter="ext">
-        <span class="step-icon"><i data-lucide="flame"></i></span>
-        <span class="step-label">소화기류</span>
-      </div>
-      <div class="step-dot" data-filter="alarm">
-        <span class="step-icon"><i data-lucide="bell"></i></span>
-        <span class="step-label">경보설비</span>
-      </div>
-      <div class="step-dot" data-filter="mech">
-        <span class="step-icon"><i data-lucide="settings"></i></span>
-        <span class="step-label">기계설비</span>
-      </div>
-      <div class="step-dot" data-filter="evac">
-        <span class="step-icon"><i data-lucide="door-open"></i></span>
-        <span class="step-label">피난구조</span>
-      </div>
-      <div class="step-dot" data-filter="flame">
-        <span class="step-icon"><i data-lucide="shield"></i></span>
-        <span class="step-label">방염류</span>
-      </div>
+      <div class="step-dot active" data-filter="all"><i data-lucide="layout-grid"></i> 전체</div>
+      <div class="step-dot" data-filter="ext"><i data-lucide="flame"></i> 소화기류</div>
+      <div class="step-dot" data-filter="alarm"><i data-lucide="bell"></i> 경보설비</div>
+      <div class="step-dot" data-filter="mech"><i data-lucide="settings"></i> 기계설비</div>
+      <div class="step-dot" data-filter="evac"><i data-lucide="door-open"></i> 피난구조</div>
+      <div class="step-dot" data-filter="flame"><i data-lucide="shield-check"></i> 방염류</div>
     </div>
   </nav>
 
   <main class="main-wrap">
     <div class="section-header">
-      <div class="section-header-icon"><i data-lucide="search"></i></div>
-      <div>
-        <h2 class="section-title">소방 설비 디지털 트윈 뷰어</h2>
-        <p class="section-desc">고해상도 3D 구조도와 상세 제원을 통해 시스템 내부 작동 원리를 확인하십시오.</p>
-      </div>
+      <h2 class="section-title">소방용품 품목별 기술 데이터 시트</h2>
     </div>
 
     <div id="equipment-grid" class="grid-layout">
-        <!-- Cards injected by JS -->
+        <!-- Technical Cards injected by JS -->
     </div>
   </main>
 
-  <!-- 3D View Modal -->
+  <!-- Technical Detail Modal -->
   <div id="detail-modal" class="modal hidden">
     <div class="modal-overlay"></div>
     <div class="modal-container">
       <div class="modal-header">
         <div class="modal-title-wrap">
-            <span class="modal-header-icon"><i data-lucide="info"></i></span>
-            <h2 id="modal-title">장치 상세 정보</h2>
+            <h2 id="modal-title">장치 기술 사양서</h2>
         </div>
         <button class="close-btn"><i data-lucide="x"></i></button>
       </div>
       <div class="modal-body">
-        <div class="view-panel">
-          <div class="view-wrapper">
-            <img id="detail-image" src="" alt="Equipment Image">
-            <div id="hotspots-container"></div>
-            <div class="view-overlay">HI-RES 3D VIEW</div>
-          </div>
-        </div>
-        <div class="info-panel">
-          <div class="info-content">
-            <section class="info-block">
-                <h3><i data-lucide="file-text"></i> 개요</h3>
-                <p id="detail-desc"></p>
+        <div class="doc-container">
+            <section class="doc-section">
+                <h3><i data-lucide="info"></i> 품목 개요 (Overview)</h3>
+                <p id="detail-desc" style="font-size: 1rem; color: var(--text);"></p>
             </section>
-            <section class="info-block">
-                <h3><i data-lucide="layers"></i> 주요 구성 요소</h3>
-                <ul id="component-list" class="comp-list"></ul>
+
+            <section class="doc-section">
+                <h3><i data-lucide="settings"></i> 기술 규격 (Technical Specs)</h3>
+                <table class="tech-table" id="specs-table">
+                    <!-- Table rows injected by JS -->
+                </table>
             </section>
-            <section class="info-block">
-                <h3><i data-lucide="refresh-cw"></i> 작동 원리</h3>
-                <p id="working-principle"></p>
+
+            <section class="doc-section">
+                <h3><i data-lucide="check-square"></i> 주요 구성 요소 (Components)</h3>
+                <ul id="component-list" class="check-list">
+                    <!-- List items injected by JS -->
+                </ul>
             </section>
-          </div>
+
+            <section class="doc-section">
+                <h3><i data-lucide="refresh-cw"></i> 작동 및 메커니즘 (Mechanism)</h3>
+                <p id="working-principle" style="font-size: 0.95rem; color: var(--text); background: var(--surface-2); padding: 20px; border-radius: 8px;"></p>
+            </section>
+
+            <section class="doc-section">
+                <h3><i data-lucide="gavel"></i> 관련 법규 및 기준 (Standards)</h3>
+                <div id="law-content" class="law-box">
+                    <!-- Law info injected by JS -->
+                </div>
+            </section>
         </div>
       </div>
     </div>
@@ -110,20 +92,13 @@
   <!-- Floating Buttons -->
   <div class="floating-btn-group">
     <a href="../" class="floating-btn btn-fsd" title="Fire-kit (메인)">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      <span class="floating-text">Fire-kit</span>
-    </a>
-    <a href="../fss/" class="floating-btn btn-fss" title="소방시설 자가진단">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      <span class="floating-text">자가진단</span>
+      <i data-lucide="home"></i>
     </a>
     <a href="../SSU_NP/" class="floating-btn btn-ssu" title="소방용어사전">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-      <span class="floating-text">용어사전</span>
+      <i data-lucide="book"></i>
     </a>
     <a href="../SSU_NP1/" class="floating-btn btn-np1" title="통합 계통도">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-      <span class="floating-text">계통도</span>
+      <i data-lucide="layout"></i>
     </a>
   </div>
 
