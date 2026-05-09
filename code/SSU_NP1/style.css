@@ -11,7 +11,7 @@
 body { font-family:var(--font); background:var(--bg); color:var(--text); min-height:100vh; display:flex; flex-direction:column; }
 
 .site-header { background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 60%,#1e40af 100%); color:#fff; padding:0; position:sticky; top:0; z-index:100; box-shadow:0 2px 12px rgba(0,0,0,.25); }
-.header-inner { max-width:1280px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.header-inner { max-width:1160px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
 .header-brand { display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit; transition:opacity 0.2s ease; }
 .header-brand:hover { opacity:0.9; }
 .header-icon { display:flex; align-items:center; justify-content:center; width:44px; height:44px; background:rgba(255,255,255,0.1); border-radius:12px; }

@@ -52,24 +52,28 @@ body {
 .header-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   color: inherit;
+  transition: opacity 0.2s ease;
 }
 
+.header-brand:hover { opacity: 0.9; }
+
 .header-icon {
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #60a5fa;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
 }
 
-.header-title { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
-.header-subtitle { font-size: 0.7rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+.header-icon svg { width: 28px; height: 28px; stroke-width: 2.5; }
+
+.header-title { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0; color: #fff; }
+.header-subtitle { font-size: 0.75rem; color: #93c5fd; margin-top: 1px; }
 
 /* Filter Bar */
 .step-nav {
