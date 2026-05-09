@@ -335,8 +335,15 @@ body {
     transition: 0.2s;
 }
 
+.search-btn.highlight {
+    background: #f59e0b; /* Vibrant Amber */
+    color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
 .search-btn:hover {
-    background: #4285f4; /* Google Blue */
+    background: #d97706; /* Darker Amber */
+    transform: translateY(-1px);
 }
 
 .close-btn {
