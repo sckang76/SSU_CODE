@@ -315,6 +315,30 @@ body {
 
 .modal-title-wrap h2 { font-size: 1.2rem; font-weight: 800; }
 
+.modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background: #4285f4; /* Google Blue */
+}
+
 .close-btn {
   background: rgba(255,255,255,0.1);
   border: none;

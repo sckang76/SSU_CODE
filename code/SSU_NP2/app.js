@@ -152,6 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('law-content').innerHTML = `<strong>근거 법령:</strong> ${item.law}`;
 
+        // 구글 검색 버튼 URL 설정
+        const searchBtn = document.getElementById('google-search-btn');
+        searchBtn.href = `https://www.google.com/search?q=소방+${encodeURIComponent(item.title)}`;
+
         modal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
         lucide.createIcons();
