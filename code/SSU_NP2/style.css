@@ -104,13 +104,24 @@ body {
 
 .step-dot:hover { background: #e2e8f0; color: var(--primary); }
 
-/* Category-specific Active Buttons */
-.step-dot[data-filter="all"].active { background: var(--accent); border-color: var(--accent); color: #fff; }
-.step-dot[data-filter="ext"].active { background: var(--cat-ext); border-color: var(--cat-ext); color: #fff; }
-.step-dot[data-filter="alarm"].active { background: var(--cat-alarm); border-color: var(--cat-alarm); color: #fff; }
-.step-dot[data-filter="mech"].active { background: var(--cat-mech); border-color: var(--cat-mech); color: #fff; }
-.step-dot[data-filter="evac"].active { background: var(--cat-evac); border-color: var(--cat-evac); color: #fff; }
-.step-dot[data-filter="flame"].active { background: var(--cat-flame); border-color: var(--cat-flame); color: #fff; }
+/* Permanent Category Colors for Buttons */
+.step-dot[data-filter="all"] { background: #eff6ff; color: var(--accent); border-color: #dbeafe; }
+.step-dot[data-filter="all"].active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.step-dot[data-filter="ext"] { background: #fef2f2; color: var(--cat-ext); border-color: #fee2e2; }
+.step-dot[data-filter="ext"].active { background: var(--cat-ext); color: #fff; border-color: var(--cat-ext); }
+
+.step-dot[data-filter="alarm"] { background: #fffbeb; color: var(--cat-alarm); border-color: #fef3c7; }
+.step-dot[data-filter="alarm"].active { background: var(--cat-alarm); color: #fff; border-color: var(--cat-alarm); }
+
+.step-dot[data-filter="mech"] { background: #eff6ff; color: var(--cat-mech); border-color: #dbeafe; }
+.step-dot[data-filter="mech"].active { background: var(--cat-mech); color: #fff; border-color: var(--cat-mech); }
+
+.step-dot[data-filter="evac"] { background: #ecfdf5; color: var(--cat-evac); border-color: #d1fae5; }
+.step-dot[data-filter="evac"].active { background: var(--cat-evac); color: #fff; border-color: var(--cat-evac); }
+
+.step-dot[data-filter="flame"] { background: #f5f3ff; color: var(--cat-flame); border-color: #ddd6fe; }
+.step-dot[data-filter="flame"].active { background: var(--cat-flame); color: #fff; border-color: var(--cat-flame); }
 
 .step-dot svg { width: 16px; height: 16px; }
 
