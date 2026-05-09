@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             fullData = data.map(item => enrichData(item));
+            // 가나다 순으로 정렬
+            fullData.sort((a, b) => a.title.localeCompare(b.title, 'ko'));
             renderCards();
         })
         .catch(err => console.error('Data load error:', err));

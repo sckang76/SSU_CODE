@@ -143,10 +143,35 @@ body {
 }
 
 .equip-card:hover {
-  border-color: var(--accent);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
+
+/* Colorful Category Card Styles */
+.cat-ext { background: #fef2f2; border-color: #fee2e2; }
+.cat-ext .card-category { background: var(--cat-ext); color: #fff; }
+.cat-ext .card-symbol { background: #fff; color: var(--cat-ext); }
+.cat-ext.equip-card:hover { border-color: var(--cat-ext); }
+
+.cat-alarm { background: #fffbeb; border-color: #fef3c7; }
+.cat-alarm .card-category { background: var(--cat-alarm); color: #fff; }
+.cat-alarm .card-symbol { background: #fff; color: var(--cat-alarm); }
+.cat-alarm.equip-card:hover { border-color: var(--cat-alarm); }
+
+.cat-mech { background: #eff6ff; border-color: #dbeafe; }
+.cat-mech .card-category { background: var(--cat-mech); color: #fff; }
+.cat-mech .card-symbol { background: #fff; color: var(--cat-mech); }
+.cat-mech.equip-card:hover { border-color: var(--cat-mech); }
+
+.cat-evac { background: #ecfdf5; border-color: #d1fae5; }
+.cat-evac .card-category { background: var(--cat-evac); color: #fff; }
+.cat-evac .card-symbol { background: #fff; color: var(--cat-evac); }
+.cat-evac.equip-card:hover { border-color: var(--cat-evac); }
+
+.cat-flame { background: #f5f3ff; border-color: #ddd6fe; }
+.cat-flame .card-category { background: var(--cat-flame); color: #fff; }
+.cat-flame .card-symbol { background: #fff; color: var(--cat-flame); }
+.cat-flame.equip-card:hover { border-color: var(--cat-flame); }
 
 .card-head {
     display: flex;
@@ -161,27 +186,6 @@ body {
     border-radius: 4px;
     text-transform: uppercase;
 }
-
-/* Category Specific Styles */
-.cat-ext .card-category { background: #fef2f2; color: var(--cat-ext); }
-.cat-ext .card-symbol { background: #fef2f2; color: var(--cat-ext); }
-.cat-ext.equip-card:hover { border-color: var(--cat-ext); }
-
-.cat-alarm .card-category { background: #fffbeb; color: var(--cat-alarm); }
-.cat-alarm .card-symbol { background: #fffbeb; color: var(--cat-alarm); }
-.cat-alarm.equip-card:hover { border-color: var(--cat-alarm); }
-
-.cat-mech .card-category { background: #eff6ff; color: var(--cat-mech); }
-.cat-mech .card-symbol { background: #eff6ff; color: var(--cat-mech); }
-.cat-mech.equip-card:hover { border-color: var(--cat-mech); }
-
-.cat-evac .card-category { background: #ecfdf5; color: var(--cat-evac); }
-.cat-evac .card-symbol { background: #ecfdf5; color: var(--cat-evac); }
-.cat-evac.equip-card:hover { border-color: var(--cat-evac); }
-
-.cat-flame .card-category { background: #eef2ff; color: var(--cat-flame); }
-.cat-flame .card-symbol { background: #eef2ff; color: var(--cat-flame); }
-.cat-flame.equip-card:hover { border-color: var(--cat-flame); }
 
 .card-symbol {
     width: 36px;
@@ -232,6 +236,7 @@ body {
   justify-content: center;
   padding: 20px;
 }
+
 /* Calculation Formula Section */
 .formula-container {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
