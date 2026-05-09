@@ -463,28 +463,30 @@ header p {
     transition: var(--transition);
 }
 .google-link {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--glass-border);
 }
 .google-link:hover,
 .google-link.autocomplete-active {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--input-focus);
     transform: translateY(-2px);
-    border-color: #fff;
+    border-color: var(--accent-color);
 }
 .gemini-link {
-    background: rgba(138, 43, 226, 0.15);
+    background: rgba(138, 43, 226, 0.1);
+    color: #9333ea; /* Purple for light theme */
+    border: 1px solid rgba(138, 43, 226, 0.2);
+}
+body.dark-theme .gemini-link {
+    background: rgba(138, 43, 226, 0.2);
     color: #d8b4fe;
-    border: 1px solid rgba(138, 43, 226, 0.3);
+    border: 1px solid rgba(138, 43, 226, 0.4);
 }
 .gemini-link:hover,
 .gemini-link.autocomplete-active {
-    background: rgba(138, 43, 226, 0.25);
-    border-color: rgba(138, 43, 226, 0.6);
-    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
     transform: translateY(-2px);
-    color: #fff;
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
 }
 
 /* Theme Switch - 헤더 우상단에 절대 배치 */
