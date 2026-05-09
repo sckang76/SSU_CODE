@@ -1,0 +1,85 @@
+/* Global Floating Navigation for Fire-kit Ecosystem */
+
+.floating-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.floating-nav * { pointer-events: auto; }
+
+.nav-item {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    border: 1px solid #e2e8f0;
+}
+
+.nav-item:hover {
+    transform: translateX(-8px);
+    background: #0f172a;
+    color: #ffffff;
+}
+
+/* Tooltip labels */
+.nav-item::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 60px;
+    background: #0f172a;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+    right: 56px;
+}
+
+/* Brand Colors */
+.nav-home { color: #2563eb; }
+.nav-np { color: #f97316; }
+.nav-np1 { color: #8b5cf6; }
+.nav-np2 { color: #e11d48; }
+.nav-fss { color: #059669; }
+
+.nav-item.active {
+    background: #0f172a;
+    color: #fff;
+    border-color: #0f172a;
+}
+
+@media (max-width: 768px) {
+    .floating-nav {
+        right: 10px;
+        transform: translateY(0);
+        top: auto;
+        bottom: 20px;
+        flex-direction: row;
+    }
+    .nav-item::before { display: none; }
+}
