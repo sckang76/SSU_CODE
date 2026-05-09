@@ -123,6 +123,24 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('detail-desc').textContent = item.desc;
         document.getElementById('working-principle').textContent = item.mechanism;
         
+        // 인증 배지 처리
+        const certContainer = document.getElementById('certification-badges');
+        certContainer.innerHTML = '';
+        
+        // KFI 배지 (대부분의 소방용품)
+        const kfi = document.createElement('div');
+        kfi.className = 'cert-badge cert-kfi';
+        kfi.innerHTML = '<span>KFI</span> 형식승인';
+        certContainer.appendChild(kfi);
+
+        // KC 배지 (전기/전자 관련)
+        if (item.category === 'alarm' || item.title.includes('전자') || item.title.includes('전기')) {
+            const kc = document.createElement('div');
+            kc.className = 'cert-badge cert-kc';
+            kc.innerHTML = '<span>KC</span> 전파인증';
+            certContainer.appendChild(kc);
+        }
+
         const formulaBox = document.getElementById('formula-box');
         if (item.formula) {
             formulaBox.innerHTML = `
