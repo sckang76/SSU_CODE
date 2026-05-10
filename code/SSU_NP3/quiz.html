@@ -68,8 +68,16 @@
         <div class="result-screen" id="result-screen">
             <div class="score-circle" id="final-score">0%</div>
             <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 10px;">수고하셨습니다!</h2>
-            <p style="color: #64748b; margin-bottom: 30px;">핵심 요약 노트를 다시 한 번 확인해보세요.</p>
-            <button class="btn-start" onclick="location.href='index.html'" style="max-width: 200px; margin: 0 auto;">홈으로 돌아가기</button>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">복습을 통해 부족한 부분을 채워보세요.</p>
+            
+            <div id="wrong-answer-list" style="text-align: left; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <!-- Wrong questions will be injected here -->
+            </div>
+
+            <div style="display: flex; gap: 12px; justify-content: center;">
+                <button class="btn-start" onclick="loadQuiz()" style="max-width: 180px; background: var(--accent);"><i data-lucide="refresh-cw" style="width:16px; vertical-align:middle; margin-right:4px;"></i> 새로운 문제 풀기</button>
+                <button class="btn-start" onclick="location.href='index.html'" style="max-width: 180px; background: var(--primary);">홈으로 돌아가기</button>
+            </div>
         </div>
     </div>
 
