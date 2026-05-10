@@ -40,33 +40,59 @@
     </section>
 
     <main class="container">
-        <!-- Secret Guide Modal -->
+        <!-- Mastery Guide Modal -->
         <div id="guide-modal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content" style="max-width: 600px;">
                 <div class="modal-header">
-                    <h2 style="font-size: 1.25rem; font-weight: 800;"><i data-lucide="zap" style="color: #fbbf24; fill: #fbbf24;"></i> 합격자들만 아는 실전 시크릿</h2>
+                    <h2 style="font-size: 1.25rem; font-weight: 800;"><i data-lucide="book-open-check" style="color: var(--primary);"></i> 전문가 합격 마스터 가이드</h2>
                     <button class="close-modal" onclick="closeModal()">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <div class="secret-item">
-                        <span class="secret-tag">전기분야 (실기)</span>
-                        <p><strong>가닥수 '6가닥'의 법칙:</strong> 벨/표/응/발/전/공(6개). 여기에 7층/2000㎡ 초과시 우선경보방식 적용으로 '경종/표시등 공통선'이 추가되는 로직만 파악하면 가닥수 문제는 100% 맞힙니다. 도면 그릴 때 '종단저항' 표시 누락은 0점 처리되니 주의!</p>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('elec-tab')">전기</button>
+                    <button class="tab-btn" onclick="showTab('mech-tab')">기계</button>
+                    <button class="tab-btn" onclick="showTab('law-tab')">법령/수치</button>
+                    <button class="tab-btn" onclick="showTab('mind-tab')">전략</button>
+                </div>
+                <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                    <!-- 전기 탭 -->
+                    <div id="elec-tab" class="tab-content active">
+                        <div class="secret-item">
+                            <span class="secret-tag">가닥수 마스터</span>
+                            <p>발신기는 6선(벨/표/응/발/전/공)이 기본! 연면적 3,000㎡ 초과 건물의 '우선경보방식' 적용 시 경종선과 표시등 공통선이 추가되는 로직(n+1)을 완벽히 이해해야 합니다.</p>
+                        </div>
+                        <div class="secret-item">
+                            <span class="secret-tag">시퀀스/도면</span>
+                            <p>Y-△ 기동 회로는 펌프의 기동전류를 낮추기 위한 필수 도면입니다. 타이머(T) 접점 위치와 인터록(Interlock) 회로의 결선 누락은 실격 사유이니 주의하세요.</p>
+                        </div>
                     </div>
-                    <div class="secret-item">
-                        <span class="secret-tag">기계분야 (실기)</span>
-                        <p><strong>단위 환산의 함정:</strong> 펌프 동력 계산 시 토출량(Q)은 반드시 m³/sec 또는 m³/min인지 확인하세요. 시험 문제는 주로 ℓ/min으로 주어집니다. 1,000으로 나누는 걸 잊는 순간 10점이 날아갑니다. Hazen-Williams 공식은 조도(C)값 120이 기본입니다.</p>
+                    <!-- 기계 탭 -->
+                    <div id="mech-tab" class="tab-content">
+                        <div class="secret-item">
+                            <span class="secret-tag">수계 소화설비</span>
+                            <p>방수압(0.17~0.7MPa)과 방수량(130ℓ/min)은 옥내소화전의 핵심! 펌프의 양정(H) 계산 시 실양정 + 배관마찰손실 + 방수압(17m)을 더하는 것을 잊지 마세요.</p>
+                        </div>
+                        <div class="secret-item">
+                            <span class="secret-tag">가스계 소화설비</span>
+                            <p>CO2 약제량 산출 시 방호구역의 체적(V)에 따른 보정계수 K1, K2를 외우는 게 승부처입니다. 할로겐화합물(Halon 1301 등)의 분자량과 비체적 공식도 필수!</p>
+                        </div>
                     </div>
-                    <div class="secret-item">
-                        <span class="secret-tag">위험물산업기사</span>
-                        <p><strong>특수인화물 순서:</strong> '에-이-아-이' (에테르, 이황화탄소, 아세트알데히드, 이소프렌). 인화점이 낮은 순서대로 입에 붙여두세요. 반응식은 '화학식'을 먼저 적고 좌우 원자 수를 맞추는 연습만 5번 하면 충분합니다.</p>
+                    <!-- 법령 탭 -->
+                    <div id="law-tab" class="tab-content">
+                        <div class="secret-item highlight">
+                            <p><strong>주요 설치 높이/거리 (NFTC 기준)</strong></p>
+                            <ul style="font-size: 0.85rem; margin-top: 10px; color: var(--text-main);">
+                                <li>0.8m ~ 1.5m: 발신기, 소화기, 수동함</li>
+                                <li>1.5m 이하: 수신기, 유도등(소형/통로)</li>
+                                <li>1.5m 이상: 시각경보장치 (천장에서 0.15m 이내)</li>
+                                <li>수평거리 25m: 발신기, 소화기, 경종</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="secret-item highlight">
-                        <h4 style="font-size: 0.85rem; margin-bottom: 5px; color: var(--primary);"><i data-lucide="info"></i> 시험 종료 10분 전 체크리스트</h4>
-                        <ul style="font-size: 0.8rem; padding-left: 15px; color: var(--text-sub);">
-                            <li>단위 기재 여부 확인 (kg, m, MPa 등 안 적으면 오답 처리)</li>
-                            <li>산출 근거에 소수점 처리 기준(둘째 자리 등) 준수 확인</li>
-                            <li>실기 도면 연필선 완벽하게 지웠는지 확인</li>
-                        </ul>
+                    <!-- 전략 탭 -->
+                    <div id="mind-tab" class="tab-content">
+                        <div class="secret-item">
+                            <p><strong>합격률 2배 높이는 공부법:</strong> 이론 1회독 후 바로 기출로 넘어가세요. 7개년 기출을 3회 반복하면 문제만 봐도 답이 보이는 '패턴 인식' 단계에 도달합니다. 실기는 부분 점수를 노려 모든 문항에 답을 채우는 것이 전략입니다.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,6 +143,14 @@
         lucide.createIcons();
         function openModal() { document.getElementById('guide-modal').classList.add('show'); }
         function closeModal() { document.getElementById('guide-modal').classList.remove('show'); }
+        
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
         window.onclick = function(event) {
             const modal = document.getElementById('guide-modal');
             if (event.target == modal) closeModal();
