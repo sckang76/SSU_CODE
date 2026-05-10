@@ -150,20 +150,20 @@ body {
 
 /* Stats Dashboard */
 .stats-dashboard { 
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px; 
   margin: 20px auto 30px; 
-  max-width: 500px; /* 너무 퍼지지 않게 제한 */
+  max-width: 600px; 
 }
 .stat-card { 
+  flex: 0 1 calc(50% - 12px); /* 2열 배열을 위한 너비 설정 */
+  min-width: 200px;
   display: flex; align-items: center; gap: 12px; background: #fff;
   padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border);
   box-shadow: var(--shadow-sm); transition: 0.3s;
 }
-/* 세 번째 카드는 아래쪽에서 한 줄을 다 쓰거나 적절히 배치 */
-.stat-card:last-child { grid-column: span 2; } 
-
 .stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--primary); }
 .stat-icon { 
   width: 32px; height: 32px; border-radius: 8px; background: var(--bg);
@@ -180,8 +180,8 @@ body {
 .stat-card.active .stat-val { color: #d97706; }
 
 @media (max-width: 768px) {
-  .stats-dashboard { grid-template-columns: 1fr; max-width: 100%; }
-  .stat-card:last-child { grid-column: span 1; }
+  .stats-dashboard { flex-direction: column; align-items: center; }
+  .stat-card { width: 100%; max-width: 320px; }
   .hero h1 { font-size: 1.8rem; }
   .grid { grid-template-columns: 1fr; }
   .study-info { gap: 20px; }
