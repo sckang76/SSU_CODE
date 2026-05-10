@@ -31,8 +31,8 @@
                     <span class="info-val">300+</span>
                     <span class="info-label">도면/계산</span>
                 </div>
-                <div class="info-item">
-                    <span class="info-val">Pass</span>
+                <div onclick="openModal()" class="info-item" style="cursor: pointer; background: var(--primary-soft); border-radius: 8px; padding: 0 10px;">
+                    <span class="info-val">Pass <i data-lucide="chevron-right" style="width:14px; vertical-align: middle;"></i></span>
                     <span class="info-label">합격 가이드</span>
                 </div>
             </div>
@@ -40,6 +40,33 @@
     </section>
 
     <main class="container">
+        <!-- Secret Guide Modal -->
+        <div id="guide-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 style="font-size: 1.25rem; font-weight: 800;"><i data-lucide="zap" style="color: #fbbf24; fill: #fbbf24;"></i> 합격자들만 아는 실전 시크릿</h2>
+                    <button class="close-modal" onclick="closeModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="secret-item">
+                        <span class="secret-tag">전기 실기</span>
+                        <p><strong>가닥수 공식:</strong> '공/응/발/전/표/경' 6가닥 기본! 7층 이상/연면적 3,000㎡ 초과시 경종/표시등 공통선 분리만 기억하세요.</p>
+                    </div>
+                    <div class="secret-item">
+                        <span class="secret-tag">기계 실기</span>
+                        <p><strong>동력 계산:</strong> P = 0.163QH/η(전달계수K). 단위 환산(m³/min)만 실수 안 하면 무조건 8점~12점 확보입니다.</p>
+                    </div>
+                    <div class="secret-item">
+                        <span class="secret-tag">위험물</span>
+                        <p><strong>지정수량:</strong> 1류(5/3/1), 4류(5/2/1/2/4/6) 숫자 리듬으로 외우세요. 품명보다 숫자가 먼저 나와야 합격입니다.</p>
+                    </div>
+                    <div class="secret-item highlight">
+                        <i data-lucide="check-circle" style="width:16px; color: var(--primary);"></i> <strong>핵심 전략:</strong> 이론서 펴지 마세요. 7개년 기출문제를 해설 보며 거꾸로 푸는 게 가장 빠릅니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="grid">
             <!-- 전기 -->
             <div class="category-card">
@@ -81,6 +108,14 @@
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+        function openModal() { document.getElementById('guide-modal').classList.add('show'); }
+        function closeModal() { document.getElementById('guide-modal').classList.remove('show'); }
+        window.onclick = function(event) {
+            const modal = document.getElementById('guide-modal');
+            if (event.target == modal) closeModal();
+        }
+    </script>
 </body>
 </html>
