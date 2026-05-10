@@ -22,20 +22,27 @@
             <h1>소방 자격증 합격을 위한 한 권의 노트</h1>
             <p>시험에 꼭 나오는 핵심 기출 유형을 한 문제씩 완벽하게 정리합니다.</p>
             
-            <div class="study-info">
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <div class="stat-val">130+</div>
-                        <div class="stat-lab">보유 문항 수</div>
-                    </div>
-                    <div class="stat-item" style="border-left: 1px solid var(--border);">
-                        <div class="stat-val" style="color: var(--accent);">Daily</div>
-                        <div class="stat-lab">매일 업데이트 중</div>
+            <div class="stats-dashboard">
+                <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="database"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-val">130+</span>
+                        <span class="stat-lab">기출 문항 확보</span>
                     </div>
                 </div>
-                <div onclick="openModal()" class="info-item" style="cursor: pointer; background: var(--primary-soft); border-radius: 8px; padding: 0 10px;">
-                    <span class="info-val">Pass <i data-lucide="chevron-right" style="width:14px; vertical-align: middle;"></i></span>
-                    <span class="info-label">합격 가이드</span>
+                <div class="stat-card active">
+                    <div class="stat-icon"><i data-lucide="zap"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-val">Live</span>
+                        <span class="stat-lab">매일 기출 업데이트</span>
+                    </div>
+                </div>
+                <div onclick="openModal()" class="stat-card" style="cursor: pointer; background: var(--primary-soft); border-color: var(--primary);">
+                    <div class="stat-icon" style="background: #fff;"><i data-lucide="book-open-check"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-val" style="color: var(--primary);">Pass <i data-lucide="chevron-right" style="width:14px; vertical-align: middle;"></i></span>
+                        <span class="stat-lab">합격 가이드</span>
+                    </div>
                 </div>
             </div>
         </div>
