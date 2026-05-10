@@ -81,8 +81,10 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 정렬 */
+  gap: 32px;
+  max-width: 800px; /* 너무 퍼지지 않게 너비 제한 */
+  margin: 0 auto;
 }
 
 /* Quiz Category Card */
