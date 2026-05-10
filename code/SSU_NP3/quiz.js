@@ -4,9 +4,8 @@ let score = 0;
 
 async function loadQuiz() {
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('cat') || 'elec'; // Default to electrical
+    const category = urlParams.get('cat') || 'elec'; 
     
-    // Set titles based on category
     const titles = {
         'elec': '소방설비기사 (전기분야)',
         'mech': '소방설비기사 (기계분야)',
@@ -18,40 +17,30 @@ async function loadQuiz() {
     document.getElementById('category-title').textContent = titles[category] || '자격증 퀴즈';
     
     try {
-        // In a real app, we'd fetch JSON. For demo, I'll define sample data here if fetch fails.
-        // const response = await fetch(`./data/${category}.json`);
-        // currentQuestions = await response.json();
+        // 실제 데이터 파일 로드
+        const response = await fetch(`./data/${category}.json`);
+        if (!response.ok) throw new Error('Data not found');
+        const data = await response.json();
         
-        // Sample data for demonstration
-        if (category === 'elec') {
-            currentQuestions = [
-                {
-                    question: "자동화재탐지설비의 발신기 설치 높이 기준으로 옳은 것은?",
-                    options: ["바닥으로부터 0.5m 이상 1.0m 이하", "바닥으로부터 0.8m 이상 1.5m 이하", "바닥으로부터 1.5m 이상 2.0m 이하", "높이 제한 없음"],
-                    answer: 1,
-                    explanation: "발신기는 조작하기 쉬운 위치에 설치해야 하며, 규정상 **0.8m 이상 1.5m 이하**입니다. 보통 성인 눈높이보다 약간 아래라고 생각하면 쉬워요!"
-                },
-                {
-                    question: "감지기 회로의 말단에 종단저항을 설치하는 주된 목적은?",
-                    options: ["회로의 전압을 높이기 위해", "감지기의 감도를 조절하기 위해", "회로의 도통시험을 하기 위해", "화재 신호를 증폭하기 위해"],
-                    answer: 2,
-                    explanation: "종단저항은 회로가 끊어지지 않고 잘 연결되어 있는지 확인하는 **'도통시험'**을 위해 설치합니다. 끝에 저항이 있어야 전류가 흘러서 선이 살아있는지 알 수 있거든요."
-                }
-            ];
-        } else {
-            currentQuestions = [
-                {
-                    question: "샘플 문제입니다. (데이터 준비 중)",
-                    options: ["1번", "2번", "3번", "4번"],
-                    answer: 0,
-                    explanation: "각 카테고리별 데이터를 구성 중입니다."
-                }
-            ];
+        // 1. 문제 배열 셔플 (Fisher-Yates Shuffle)
+        for (let i = data.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [data[i], data[j]] = [data[j], data[i]];
         }
+        
+        // 2. 랜덤으로 10문제만 추출 (데이터가 적으면 전체 사용)
+        currentQuestions = data.slice(0, 10);
         
         renderQuestion();
     } catch (e) {
         console.error("Failed to load quiz", e);
+        // 데이터가 없을 경우 에러 메시지
+        document.getElementById('quiz-box').innerHTML = `
+            <div class="question-card active" style="text-align:center;">
+                <p style="margin-bottom:20px;">준비 중인 카테고리입니다. 곧 방대한 문제가 업데이트될 예정입니다!</p>
+                <button class="btn-start" onclick="location.href='index.html'">돌아가기</button>
+            </div>
+        `;
     }
 }
 
