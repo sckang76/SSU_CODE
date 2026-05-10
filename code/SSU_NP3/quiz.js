@@ -48,13 +48,12 @@ function renderQuestion() {
     const quizBox = document.getElementById('quiz-box');
     const q = currentQuestions[currentIndex];
     
-    // Update progress
     const progress = ((currentIndex + 1) / currentQuestions.length) * 100;
     document.getElementById('progress-bar').style.width = `${progress}%`;
     document.getElementById('progress-text').textContent = `Question ${currentIndex + 1} of ${currentQuestions.length}`;
 
     quizBox.innerHTML = `
-        <div class="question-card active">
+        <div class="quiz-main active">
             <div class="q-number">Question ${currentIndex + 1}</div>
             <div class="q-text">${q.question}</div>
             <div class="options-list">
@@ -65,7 +64,7 @@ function renderQuestion() {
             <div class="explanation-box" id="explanation">
                 <div class="exp-title"><i data-lucide="lightbulb"></i> 핵심 콕! 합격 포인트</div>
                 <div class="exp-text">${q.explanation}</div>
-                <button class="btn-nav btn-next" style="margin-top:20px;" onclick="nextQuestion()">다음 문제로 <i data-lucide="arrow-right"></i></button>
+                <button class="btn-nav btn-next" style="margin-top:20px; width:100%;" onclick="nextQuestion()">다음 문제로 넘어가기</button>
             </div>
         </div>
     `;
@@ -77,10 +76,12 @@ function checkAnswer(selectedIdx) {
     const btns = document.querySelectorAll('.option-btn');
     const expBox = document.getElementById('explanation');
     
-    // Disable all buttons after choice
     btns.forEach(btn => btn.onclick = null);
     
-    if (selectedIdx === q.answer) {
+    const isCorrect = (selectedIdx === q.answer);
+    showOX(isCorrect);
+    
+    if (isCorrect) {
         btns[selectedIdx].classList.add('correct');
         score++;
     } else {
@@ -88,8 +89,29 @@ function checkAnswer(selectedIdx) {
         btns[q.answer].classList.add('correct');
     }
     
-    expBox.classList.add('show');
-    lucide.createIcons();
+    setTimeout(() => {
+        expBox.classList.add('show');
+    }, 800);
+}
+
+function showOX(isCorrect) {
+    let overlay = document.getElementById('ox-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'ox-overlay';
+        overlay.className = 'ox-overlay';
+        document.body.appendChild(overlay);
+    }
+    
+    overlay.innerHTML = isCorrect 
+        ? `<svg class="ox-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>`
+        : `<svg class="ox-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+    
+    overlay.classList.add('show');
+    
+    setTimeout(() => {
+        overlay.classList.remove('show');
+    }, 1000);
 }
 
 function nextQuestion() {

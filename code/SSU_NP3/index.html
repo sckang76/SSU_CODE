@@ -3,78 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소방 자격증 합격 허브 | Fire-kit Pass</title>
+    <title>Fire-kit Pass | 소방 자격증 합격의 지름길</title>
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <a href="../" class="header-brand">
-                <span class="header-icon"><i data-lucide="award"></i></span>
-                <div>
-                    <h1 class="header-title">소방 자격증 합격 허브</h1>
-                    <p class="header-subtitle">Fire Safety License Hub · Pass Master</p>
-                </div>
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i data-lucide="award"></i></span>
+                Fire-kit Pass
             </a>
+            <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-sub);">소방방재학과 전용</div>
         </div>
     </header>
 
-    <main class="main-wrap">
-        <div class="section-header">
-            <div class="section-header-icon"><i data-lucide="book-open"></i></div>
-            <div>
-                <h2 class="section-title">핵심 암기 및 계산 마스터</h2>
-                <p class="section-desc">시험에 꼭 나오는 핵심 요약과 인터랙티브 계산기를 제공합니다.</p>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <h1>소방 자격증 합격의 지름길</h1>
+            <p>기출 핵심 유형 1,500제와 함께라면 합격이 보입니다.</p>
         </div>
+    </section>
 
-        <div class="grid-layout">
-            <!-- Exam Category Card -->
-            <div class="exam-card">
-                <div class="exam-header">
-                    <span class="badge">소방설비기사</span>
-                    <h3>전기분야</h3>
-                </div>
-                <ul class="topic-list">
-                    <li><i data-lucide="check-circle"></i> 가닥수 계산 마스터</li>
-                    <li><i data-lucide="check-circle"></i> 시퀀스 도면 해석</li>
-                    <li><i data-lucide="check-circle"></i> 비상방송 배선 원리</li>
-                </ul>
-                <button class="btn-start" onclick="location.href='quiz.html?cat=elec'">시작하기</button>
+    <main class="container">
+        <div class="grid">
+            <!-- 전기 -->
+            <div class="category-card">
+                <div class="cat-icon"><i data-lucide="zap"></i></div>
+                <div class="cat-tag">Mechanical/Electrical</div>
+                <h3 class="cat-title">소방설비기사 (전기)</h3>
+                <p class="cat-desc">가닥수 계산부터 시퀀스 도면까지, 전기 분야 핵심 유형을 완벽 마스터합니다.</p>
+                <a href="quiz.html?cat=elec" class="btn-enter">학습 시작하기</a>
             </div>
 
-            <div class="exam-card">
-                <div class="exam-header">
-                    <span class="badge highlight">소방설비기사</span>
-                    <h3>기계분야</h3>
-                </div>
-                <ul class="topic-list">
-                    <li><i data-lucide="check-circle"></i> 펌프 동력 계산기</li>
-                    <li><i data-lucide="check-circle"></i> 약제량 산출 공식</li>
-                    <li><i data-lucide="check-circle"></i> 유체역학 핵심 요약</li>
-                </ul>
-                <button class="btn-start" onclick="location.href='quiz.html?cat=mech'">시작하기</button>
+            <!-- 기계 -->
+            <div class="category-card">
+                <div class="cat-icon"><i data-lucide="settings"></i></div>
+                <div class="cat-tag">Mechanical/Electrical</div>
+                <h3 class="cat-title">소방설비기사 (기계)</h3>
+                <p class="cat-desc">펌프 동력, 약제량 계산 등 기계 분야의 까다로운 계산 문제를 정복합니다.</p>
+                <a href="quiz.html?cat=mech" class="btn-enter">학습 시작하기</a>
             </div>
 
-            <div class="exam-card">
-                <div class="exam-header">
-                    <span class="badge danger">위험물산업기사</span>
-                    <h3>성상 및 암기</h3>
-                </div>
-                <ul class="topic-list">
-                    <li><i data-lucide="check-circle"></i> 1~6류 위험물 표</li>
-                    <li><i data-lucide="check-circle"></i> 반응식 암기 카드</li>
-                    <li><i data-lucide="check-circle"></i> 지정수량 퀴즈</li>
-                </ul>
-                <button class="btn-start" onclick="location.href='quiz.html?cat=danger'">시작하기</button>
+            <!-- 위험물 -->
+            <div class="category-card">
+                <div class="cat-icon"><i data-lucide="flame"></i></div>
+                <div class="cat-tag">Dangerous Goods</div>
+                <h3 class="cat-title">위험물 산업기사</h3>
+                <p class="cat-desc">1~6류 위험물의 성상과 반응식을 퀴즈로 쉽고 빠르게 암기하세요.</p>
+                <a href="quiz.html?cat=danger" class="btn-enter">학습 시작하기</a>
+            </div>
+
+            <!-- 소방시설관리사 -->
+            <div class="category-card">
+                <div class="cat-icon"><i data-lucide="clipboard-check"></i></div>
+                <div class="cat-tag">Professional</div>
+                <h3 class="cat-title">소방시설관리사</h3>
+                <p class="cat-desc">고난도 점검 항목과 설계 기준을 핵심 문항으로 정리해 드립니다.</p>
+                <a href="quiz.html?cat=manager" class="btn-enter">학습 시작하기</a>
             </div>
         </div>
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; dv sck..</p>
-        <p class="disclaimer">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
+    <footer style="text-align: center; padding: 40px; color: var(--text-sub); font-size: 0.85rem;">
+        <p>&copy; dv sck.. | Fire-kit Pass</p>
+        <p style="margin-top: 8px; opacity: 0.6;">본 사이트는 소방방재학과 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
