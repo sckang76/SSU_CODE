@@ -1,7 +1,7 @@
 let currentQuestions = [];
 let currentIndex = 0;
 let score = 0;
-let wrongQuestions = []; // 틀린 문제 저장
+let wrongQuestions = [];
 
 async function loadQuiz() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -23,13 +23,11 @@ async function loadQuiz() {
         if (!response.ok) throw new Error('Data not found');
         const data = await response.json();
         
-        // 1. 문제 배열 셔플
         for (let i = data.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [data[i], data[j]] = [data[j], data[i]];
         }
         
-        // 2. 랜덤 10문제 추출
         currentQuestions = data.slice(0, 10);
         currentIndex = 0;
         score = 0;
@@ -94,7 +92,6 @@ function checkAnswer(selectedIdx) {
     } else {
         btns[selectedIdx].classList.add('wrong');
         btns[q.answer].classList.add('correct');
-        // 틀린 문제 정보 저장
         wrongQuestions.push({
             ...q,
             selected: q.options[selectedIdx],
@@ -121,10 +118,7 @@ function showOX(isCorrect) {
         : `<svg class="ox-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
     
     overlay.classList.add('show');
-    
-    setTimeout(() => {
-        overlay.classList.remove('show');
-    }, 1000);
+    setTimeout(() => overlay.classList.remove('show'), 1000);
 }
 
 function nextQuestion() {
@@ -142,29 +136,52 @@ function showResults() {
     const resultScreen = document.getElementById('result-screen');
     const finalScore = Math.round((score / currentQuestions.length) * 100);
     
-    document.getElementById('final-score').textContent = `${finalScore}%`;
+    // 점수 영역 업데이트
+    resultScreen.querySelector('.score-circle').textContent = `${finalScore}%`;
+    resultScreen.querySelector('.result-title').textContent = finalScore >= 60 ? "축하합니다! 합격권입니다." : "조금 더 노력이 필요합니다.";
     
-    // 오답 리스트 생성
+    // 오답 리스트 생성 (프리미엄 카드 스타일)
     const wrongList = document.getElementById('wrong-answer-list');
     if (wrongQuestions.length > 0) {
         wrongList.innerHTML = `
-            <h3 style="margin-bottom:15px; font-size:1.1rem; color:var(--error);"><i data-lucide="alert-circle" style="vertical-align:middle; width:20px;"></i> 오답 다시 보기</h3>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px; padding-top:20px; border-top:1px solid var(--border);">
+                <i data-lucide="list-checks" style="color:var(--primary)"></i>
+                <h3 style="font-size:1.1rem; font-weight:800;">오답 정밀 분석 리포트</h3>
+            </div>
             ${wrongQuestions.map((q, i) => `
-                <div class="explanation-box" style="margin-bottom:15px; border-left:4px solid var(--error); background:#fff;">
-                    <p style="font-weight:800; margin-bottom:8px;">${q.question}</p>
-                    <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">❌ 선택: <span style="color:var(--error)">${q.selected}</span></p>
-                    <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">✅ 정답: <span style="color:var(--success)">${q.correct}</span></p>
-                    <div style="font-size:0.9rem; padding:10px; background:var(--bg); border-radius:6px; color:var(--text-main);">
-                        <strong>해설:</strong> ${q.explanation}
+                <div class="review-card">
+                    <div class="review-q">
+                        <span style="color:var(--error)">Q.</span>
+                        <span>${q.question}</span>
+                    </div>
+                    <div class="review-compare">
+                        <div class="compare-box mine">
+                            <div style="font-size:0.7rem; opacity:0.8; margin-bottom:4px;">내가 선택한 답</div>
+                            ${q.selected}
+                        </div>
+                        <div class="compare-box correct">
+                            <div style="font-size:0.7rem; opacity:0.8; margin-bottom:4px;">올바른 정답</div>
+                            ${q.correct}
+                        </div>
+                    </div>
+                    <div class="review-exp">
+                        <strong><i data-lucide="help-circle" style="width:14px; vertical-align:middle;"></i> 해설:</strong> ${q.explanation}
                     </div>
                 </div>
             `).join('')}
         `;
     } else {
-        wrongList.innerHTML = `<div class="explanation-box" style="border-left-color:var(--success);"><p style="font-weight:800; color:var(--success);">모든 문제를 맞히셨습니다! 완벽합니다. 👏</p></div>`;
+        wrongList.innerHTML = `
+            <div class="score-card" style="background:var(--primary-soft); border-color:var(--primary); margin-top:20px;">
+                <i data-lucide="tropy" style="width:48px; height:48px; color:var(--primary); margin-bottom:15px;"></i>
+                <h3 style="color:var(--primary); font-weight:800;">PERFECT!</h3>
+                <p style="color:var(--text-muted); font-size:0.9rem;">모든 문제를 완벽하게 맞히셨습니다.</p>
+            </div>
+        `;
     }
     
     resultScreen.style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     lucide.createIcons();
 }
 
