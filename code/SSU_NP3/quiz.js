@@ -14,7 +14,8 @@ async function loadQuiz() {
         'pe': '소방기술사'
     };
     
-    document.getElementById('category-title').textContent = titles[category] || '자격증 퀴즈';
+    const titleEl = document.getElementById('category-title');
+    if (titleEl) titleEl.textContent = titles[category] || '자격증 퀴즈';
     
     try {
         // 실제 데이터 파일 로드
