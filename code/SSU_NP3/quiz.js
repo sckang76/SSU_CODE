@@ -136,9 +136,12 @@ function showResults() {
     const resultScreen = document.getElementById('result-screen');
     const finalScore = Math.round((score / currentQuestions.length) * 100);
     
-    // 점수 영역 업데이트
-    resultScreen.querySelector('.score-circle').textContent = `${finalScore}%`;
-    resultScreen.querySelector('.result-title').textContent = finalScore >= 60 ? "축하합니다! 합격권입니다." : "조금 더 노력이 필요합니다.";
+    // 점수 영역 업데이트 (안전하게 체크)
+    const scoreCircle = resultScreen.querySelector('.score-circle');
+    if (scoreCircle) scoreCircle.textContent = `${finalScore}%`;
+    
+    const resultTitle = resultScreen.querySelector('.result-title');
+    if (resultTitle) resultTitle.textContent = finalScore >= 60 ? "축하합니다! 합격권입니다." : "조금 더 노력이 필요합니다.";
     
     // 오답 리스트 생성 (프리미엄 카드 스타일)
     const wrongList = document.getElementById('wrong-answer-list');
@@ -173,7 +176,7 @@ function showResults() {
     } else {
         wrongList.innerHTML = `
             <div class="score-card" style="background:var(--primary-soft); border-color:var(--primary); margin-top:20px;">
-                <i data-lucide="tropy" style="width:48px; height:48px; color:var(--primary); margin-bottom:15px;"></i>
+                <i data-lucide="trophy" style="width:48px; height:48px; color:var(--primary); margin-bottom:15px;"></i>
                 <h3 style="color:var(--primary); font-weight:800;">PERFECT!</h3>
                 <p style="color:var(--text-muted); font-size:0.9rem;">모든 문제를 완벽하게 맞히셨습니다.</p>
             </div>
