@@ -31,10 +31,26 @@
     <!-- ─── Quiz Container ─────────────────────────────── -->
     <div class="quiz-container">
 
-        <!-- Progress -->
+        <!-- Overall Mastery Dashboard -->
+        <div id="mastery-dashboard" class="mastery-box" style="display:none;">
+            <div class="mastery-info">
+                <div class="mastery-label">
+                    <i data-lucide="award"></i> 전체 학습 마스터리
+                </div>
+                <div class="mastery-stats">
+                    <span id="mastery-count">0 / 500</span>
+                    <span id="mastery-percent" class="mastery-badge">0%</span>
+                </div>
+            </div>
+            <div class="mastery-track">
+                <div id="mastery-bar" class="mastery-fill"></div>
+            </div>
+        </div>
+
+        <!-- Progress Steps (10 segments) -->
         <div class="quiz-header">
-            <div class="progress-wrap">
-                <div class="progress-bar" id="progress-bar"></div>
+            <div id="progress-steps" class="progress-steps">
+                <!-- 10 steps will be injected here via JS -->
             </div>
             <p id="progress-text">Question 1 / 10</p>
         </div>

@@ -6,7 +6,7 @@ let wrongQuestions = [];
 async function loadQuiz() {
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get('cat') || 'elec';
-    const hardMode = urlParams.get('hard') === '1';
+    const levelParam = urlParams.get('level'); // '1', '2', '3' 또는 'all'
 
     const titles = {
         'elec': '소방설비기사 (전기분야)',
@@ -17,29 +17,67 @@ async function loadQuiz() {
     };
 
     const titleEl = document.getElementById('category-title');
-    if (titleEl) titleEl.textContent = (hardMode ? '⭐⭐⭐ 고난도 집중 ' : '') + (titles[category] || '자격증 퀴즈');
+    let levelTitle = '';
+    if (levelParam === '1') levelTitle = '⭐ 기초 단계 ';
+    else if (levelParam === '2') levelTitle = '⭐⭐ 응용 단계 ';
+    else if (levelParam === '3') levelTitle = '⭐⭐⭐ 심화 단계 ';
+    else levelTitle = '🎲 전체 랜덤 ';
+
+    if (titleEl) titleEl.textContent = levelTitle + (titles[category] || '자격증 퀴즈');
 
     try {
         const response = await fetch(`./data/${category}.json`);
         if (!response.ok) throw new Error('Data not found');
         let data = await response.json();
 
-        // 고난도 필터: difficulty === 3인 문항만 우선, 모자라면 2 이상
-        if (hardMode) {
-            const hardOnly = data.filter(q => q.difficulty === 3);
-            data = hardOnly.length >= 10 ? hardOnly : data.filter(q => (q.difficulty || 1) >= 2);
+        // 난이도 필터링
+        if (levelParam && levelParam !== 'all') {
+            const targetLevel = parseInt(levelParam);
+            const filtered = data.filter(q => (q.difficulty || 1) === targetLevel);
+            // 해당 난이도 문제가 10개 이상이면 필터링 적용, 아니면 전체에서 출제
+            if (filtered.length >= 10) {
+                data = filtered;
+            }
+        }
+
+        // ── 중복 방지: localStorage에서 이미 출제된 문제 키 로드 ──
+        const storageKey = `firekit_seen_${category}_lv${levelParam || 'all'}`;
+        let seenKeys = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+        // 아직 안 나온 문제 필터링
+        let unseenData = data.filter(q => !seenKeys.includes(q.question));
+
+        // 남은 문제가 10개 미만이면 전체 리셋 후 다시 시작
+        let wasReset = false;
+        if (unseenData.length < 10) {
+            seenKeys = [];
+            localStorage.setItem(storageKey, JSON.stringify(seenKeys));
+            unseenData = data;
+            wasReset = true;
         }
 
         // 셔플
-        for (let i = data.length - 1; i > 0; i--) {
+        for (let i = unseenData.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [data[i], data[j]] = [data[j], data[i]];
+            [unseenData[i], unseenData[j]] = [unseenData[j], unseenData[i]];
         }
 
-        currentQuestions = data.slice(0, 10);
+        // 10문제 선택
+        if (unseenData.length === 0) throw new Error('No questions available');
+        currentQuestions = unseenData.slice(0, 10);
         currentIndex = 0;
         score = 0;
         wrongQuestions = [];
+
+        // 출제된 문제를 seen 목록에 추가 & 저장
+        const newSeen = currentQuestions.map(q => q.question);
+        const updatedSeen = [...seenKeys, ...newSeen];
+        localStorage.setItem(storageKey, JSON.stringify(updatedSeen));
+
+        // 진행 상황 대시보드 업데이트
+        const totalSeen = updatedSeen.length;
+        const totalCount = data.length;
+        updateMasteryDashboard(totalSeen, totalCount, wasReset);
 
         document.getElementById('quiz-box').style.display = 'block';
         document.querySelector('.quiz-header').style.display = 'block';
@@ -54,6 +92,36 @@ async function loadQuiz() {
                 <button class="btn-start" onclick="location.href='index.html'">돌아가기</button>
             </div>
         `;
+    }
+}
+
+// ── 진행 상황 상단 대시보드 업데이트 ────────────────────────────
+function updateMasteryDashboard(seen, total, wasReset) {
+    const dashboard = document.getElementById('mastery-dashboard');
+    const bar = document.getElementById('mastery-bar');
+    const countText = document.getElementById('mastery-count');
+    const percentText = document.getElementById('mastery-percent');
+
+    if (!dashboard || !bar || !countText || !percentText) return;
+
+    const pct = Math.round((seen / total) * 100);
+
+    // 대시보드 표시
+    dashboard.style.display = 'block';
+    
+    // 값 주입
+    countText.textContent = `${seen} / ${total} 문항`;
+    percentText.textContent = `${pct}%`;
+    
+    // 바 애니메이션 (약간의 지연 후 실행하여 시각 효과 극대화)
+    setTimeout(() => {
+        bar.style.width = `${pct}%`;
+    }, 100);
+
+    if (wasReset) {
+        percentText.innerHTML = `🔄 초기화됨`;
+        percentText.style.background = `var(--surface-2)`;
+        percentText.style.color = `var(--text-muted)`;
     }
 }
 
@@ -74,8 +142,22 @@ function renderQuestion() {
     const quizBox = document.getElementById('quiz-box');
     const q = currentQuestions[currentIndex];
 
-    const progress = ((currentIndex + 1) / currentQuestions.length) * 100;
-    document.getElementById('progress-bar').style.width = `${progress}%`;
+    const stepsContainer = document.getElementById('progress-steps');
+    if (stepsContainer) {
+        // 처음 한 번만 10개 칸 생성
+        if (stepsContainer.children.length === 0) {
+            for (let i = 0; i < currentQuestions.length; i++) {
+                const step = document.createElement('div');
+                step.className = 'step';
+                stepsContainer.appendChild(step);
+            }
+        }
+        // 현재 단계까지 active 클래스 부여
+        Array.from(stepsContainer.children).forEach((step, i) => {
+            if (i <= currentIndex) step.classList.add('active');
+            else step.classList.remove('active');
+        });
+    }
     document.getElementById('progress-text').textContent = `Question ${currentIndex + 1} / ${currentQuestions.length}`;
 
     quizBox.innerHTML = `

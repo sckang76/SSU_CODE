@@ -21,7 +21,7 @@
     ],
     "answer": 1,
     "explanation": "준비작동식은 헤드가 터지기 전, **화재감지기**가 먼저 신호를 받아 밸브를 열어주는 방식입니다. 동파 우려가 있는 곳에 주로 쓰이죠.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "펌프의 성능시험 시 '체절 운전'이란 무엇을 의미하는가?",
@@ -33,7 +33,7 @@
     ],
     "answer": 1,
     "explanation": "체절 운전은 **토출 밸브를 닫은 상태(유량 0)**에서 펌프가 낼 수 있는 최대 압력을 확인하는 시험입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소화 용수 설비에서 '상수도 소화용수설비'의 호칭 지름 기준은 몇 mm 이상인가?",
@@ -57,7 +57,7 @@
     ],
     "answer": 3,
     "explanation": "CO2는 질식 위험이 매우 커서 **사람이 상주하는 곳**에는 설치를 제한하거나 엄격한 안전 조치가 필요합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "스프링클러 헤드 설치 시, '정방형' 배치의 간격 계산식으로 옳은 것은? (R: 수평거리)",
@@ -69,7 +69,7 @@
     ],
     "answer": 1,
     "explanation": "헤드 간격 S는 **2R cos 45°** 입니다. (약 1.414R)",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "이산화탄소 소화약제의 저장용기 충전비(고압식) 기준은?",
@@ -93,7 +93,7 @@
     ],
     "answer": 2,
     "explanation": "유량은 N에, 양정은 N²에, **동력은 N³**에 비례합니다. 시험에 아주 자주 나오는 단골 공식입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "분말 소화약제 중 '제3종 분말(ABC)'의 주성분은?",
@@ -105,7 +105,7 @@
     ],
     "answer": 2,
     "explanation": "핑크색 약제로 유명한 3종 분말은 **제1인산암모늄**이 주성분입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "할론 1301 소화약제의 분자식은?",
@@ -129,7 +129,7 @@
     ],
     "answer": 0,
     "explanation": "옥외소화전 접결구는 지면으로부터 **0.5m 이상 1.0m 이하**의 높이에 설치합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제연설비에서 배출기 흡입측 풍속 기준은 몇 m/s 이하인가?",
@@ -141,7 +141,7 @@
     ],
     "answer": 1,
     "explanation": "제연설비 배출기 흡입측은 **15 m/s 이하**, 토출측은 **20 m/s 이하**여야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "연결송수관설비의 방수구 설치 높이 기준으로 옳은 것은?",
@@ -165,7 +165,7 @@
     ],
     "answer": 1,
     "explanation": "벤추리 작용과 펌프 가압수의 압력을 동시에 이용하는 것이 **프레셔 프로포셔너**입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "포 수화약제의 혼합 장치 중 '라인 프로포셔너' 방식의 특징은?",
@@ -177,7 +177,7 @@
     ],
     "answer": 2,
     "explanation": "라인 프로포셔너는 관로 중간에 흡입기를 넣는 방식으로 **구조가 간단**해 이동식이나 소규모에 쓰입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "스프링클러 헤드의 가용편(Fusible Link)이 녹는 주된 이유는?",
@@ -201,7 +201,7 @@
     ],
     "answer": 1,
     "explanation": "미분무는 아주 고운 안개를 뿜는 설비로, 입자 크기가 **400 ㎛ 이하**여야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소방시설 중 '소화활동설비'에 해당하지 않는 것은?",
@@ -213,7 +213,7 @@
     ],
     "answer": 2,
     "explanation": "옥내소화전은 초기 소화용인 **소화설비**입니다. 제연, 연결송수관 등은 소방관이 쓰는 **소화활동설비**입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "물분무 소화설비의 소화 효과 중 가장 거리가 먼 것은?",
@@ -237,7 +237,7 @@
     ],
     "answer": 1,
     "explanation": "포 헤드는 수평거리 **2.1m 이하**마다 설치하여 사각지대 없이 방사해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "청정소화약제 중 'IG-541'의 성분 구성으로 옳은 것은?",
@@ -249,7 +249,7 @@
     ],
     "answer": 0,
     "explanation": "IG-541은 **질소(52%), 아르곤(40%), CO2(8%)**로 구성된 혼합 불활성 가스입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 성능 곡선에서 유량이 0일 때의 양정을 무엇이라 하는가?",
@@ -273,7 +273,7 @@
     ],
     "answer": 1,
     "explanation": "가장 많이 설치된 층의 소화전 개수(최대 2개)에 **2.6 m³**를 곱하여 산출합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "스프링클러 헤드 중 '상향형(Upright)' 헤드를 설치해야 하는 주된 이유는?",
@@ -285,7 +285,7 @@
     ],
     "answer": 1,
     "explanation": "상향형은 배관 위쪽에 달려 있어, 물속의 **이물질이나 침전물**이 헤드 구멍을 막는 것을 방지합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소화 배관에 설치하는 '체크 밸브'의 주된 용도는?",
@@ -309,7 +309,7 @@
     ],
     "answer": 1,
     "explanation": "화재 시 조작이 가능해야 하므로 **방호구역 외부**의 안전한 곳에 설치해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "배관의 지지 장치 중 배관의 하중을 위에서 매달아 지지하는 장치는?",
@@ -321,7 +321,7 @@
     ],
     "answer": 1,
     "explanation": "천장 등 위쪽 구조물에 배관을 매다는 장치를 **행거**라고 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "할로겐화합물 소화약제의 소화 효과 중 가장 주된 것은?",
@@ -345,7 +345,7 @@
     ],
     "answer": 1,
     "explanation": "미세한 물방울(입자) 상태로 뿜어지면 전기적으로 연결되지 않아 **비전도성**을 띠게 됩니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "연결송수관설비의 송수구 설치 높이 기준은?",
@@ -357,7 +357,7 @@
     ],
     "answer": 0,
     "explanation": "소방차의 호스를 연결하기 편한 높이인 **0.5m 이상 1.0m 이하**에 설치합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 성능시험 배관에 설치하여 유량을 측정하는 장치는?",
@@ -381,7 +381,7 @@
     ],
     "answer": 2,
     "explanation": "일반적인 온도에서 터지지 않도록 더 높은 온도에서 작동하는 **고온용 헤드**를 사용합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소화 배관에서 '마찰 손실'을 계산할 때 사용되는 공식은?",
@@ -393,7 +393,7 @@
     ],
     "answer": 1,
     "explanation": "소방 실무에서 배관 내 물의 마찰 손실 압력을 구할 때는 **하젠-윌리엄스(Hazen-Williams)** 공식을 주로 사용합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제연설비의 배출 풍량 산정 시, 거실의 바닥면적이 400㎡ 미만인 경우 최소 배출량은?",
@@ -417,7 +417,7 @@
     ],
     "answer": 2,
     "explanation": "옥외소화전은 강력한 수량이 필요하므로 대구경인 **65mm** 접결구를 사용합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "포 소화약제 중 기름 화재 표면에 얇은 수막을 형성하여 소화하는 약제는?",
@@ -429,7 +429,7 @@
     ],
     "answer": 1,
     "explanation": "**수성막포**는 기름 위에 얇은 수막을 띄워 유증기 발생을 막는 효과가 탁월합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제연설비의 풍도(Duct) 내 풍속 기준 중 배출 풍도의 풍속은 몇 m/s 이하인가?",
@@ -453,7 +453,7 @@
     ],
     "answer": 0,
     "explanation": "펌프 성능 기준에 따라 150% 유량 시 압력은 정격의 **65% 이상**을 유지해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "할로겐화합물 및 불활성기체 소화약제 중 'IG-100'의 주성분은?",
@@ -465,7 +465,7 @@
     ],
     "answer": 0,
     "explanation": "IG-100은 순수한 **질소(Nitrogen) 100%**로 구성된 약제입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "옥내소화전설비의 배관 중 주배관의 구경은 몇 mm 이상이어야 하는가?",
@@ -489,7 +489,7 @@
     ],
     "answer": 2,
     "explanation": "제연구역 내 보행거리는 **60m가 아니라 30m** 이내여야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소화 펌프의 흡입측 배관에 설치하여 물속의 이물질을 제거하는 장치는?",
@@ -501,7 +501,7 @@
     ],
     "answer": 1,
     "explanation": "펌프 내부 손상을 막기 위해 이물질을 걸러주는 **스트레이너(Strainer)**를 설치합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "물분무 소화설비의 수조 유효수량 산정 시, 차고 또는 주차장의 바닥면적 1㎡당 방수량 기준은?",
@@ -525,7 +525,7 @@
     ],
     "answer": 2,
     "explanation": "가스 방출 전 사람들을 대피시키기 위해 강력한 **음향경보**를 울려야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "스프링클러 배관 중 헤드가 설치되는 배관을 무엇이라 하는가?",
@@ -537,7 +537,7 @@
     ],
     "answer": 2,
     "explanation": "헤드가 직접 달려 있는 배관은 **가지배관**입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소화 펌프의 성능 시험 시 체절 압력은 정격토출압력의 몇 %를 초과해서는 안 되는가?",
@@ -561,7 +561,7 @@
     ],
     "answer": 2,
     "explanation": "연기가 옆 구역으로 넘어가지 않도록 천장에서 **0.6m 이상** 내려오는 경계벽을 설치합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "옥내소화전설비의 가압송수장치 중 고가수조 방식의 필요한 낙차(H) 계산식은?",
@@ -573,7 +573,7 @@
     ],
     "answer": 1,
     "explanation": "실양정(h1)과 마찰손실(h2)에 규정 방수압인 0.17MPa에 해당하는 **17m**의 낙차를 더해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "포 헤드 소화설비에서 소화약제의 혼합 농도 중 가장 일반적인 수치는?",
@@ -597,7 +597,7 @@
     ],
     "answer": 1,
     "explanation": "균일한 압력 배분을 위해 한 쪽 가지배관에는 최대 **8개**의 헤드만 달 수 있습니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "연결송수관설비의 방수구 중 '단구형'과 '쌍구형'의 설치 기준은?",
@@ -609,7 +609,7 @@
     ],
     "answer": 1,
     "explanation": "화재 진압 난이도가 높은 **11층 이상의 층**에는 두 개의 호스를 꽂을 수 있는 **쌍구형**을 설치해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 흡입측 배관에 설치하여 수압의 변동을 흡수하는 장치는?",
@@ -633,7 +633,7 @@
     ],
     "answer": 1,
     "explanation": "소방차 두 대가 동시에 물을 빨아올릴 수 있도록 **2개 이상**의 흡입구를 설치합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소화 펌프의 성능 시험 배관 설치 위치는?",
@@ -645,7 +645,7 @@
     ],
     "answer": 1,
     "explanation": "펌프 바로 뒤의 성능을 정확히 재기 위해 **토출측 체크밸브와 게이트밸브 사이**에서 분기합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "이산화탄소 소화설비의 배관 중 고압식 배관의 규격은?",
@@ -669,7 +669,7 @@
     ],
     "answer": 1,
     "explanation": "진동 전달을 막고 수리가 용이하도록 주로 **벨트 방식**을 많이 사용합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "옥내소화전설비의 호스함 표면에 표시해야 하는 문구는?",
@@ -681,7 +681,7 @@
     ],
     "answer": 2,
     "explanation": "한글과 영문을 병기하여 **소화전(FIRE HYDRANT)**이라고 표시해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 공회전 방지를 위해 수조의 물이 일정 수준 이하가 되면 경보를 울리는 장치는?",
@@ -705,7 +705,7 @@
     ],
     "answer": 3,
     "explanation": "층고가 높으면 연기와 열이 확산되므로, 초기 진압을 위해 강력한 **ESFR 헤드** 등이 권장됩니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "포 소화설비에서 약제 탱크 내부의 부식 방지를 위해 주로 사용하는 재질은?",
@@ -717,7 +717,7 @@
     ],
     "answer": 1,
     "explanation": "포 약제는 부식성이 있으므로 내식성이 강한 **스테인리스강** 등을 사용합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "옥내소화전설비에서 '감압밸브'를 설치하는 주된 목적은?",
@@ -741,7 +741,7 @@
     ],
     "answer": 0,
     "explanation": "겨울철 동파를 막기 위해 배관에 물 대신 **압축 공기**를 채워두는 에어 컴프레셔가 필수입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소화 펌프의 토출측 배관 구경은 정격토출량에서 유속이 몇 m/s 이하가 되도록 선정하는가?",
@@ -753,7 +753,7 @@
     ],
     "answer": 1,
     "explanation": "마찰 손실과 소음을 줄이기 위해 소방 배관의 유속은 보통 **4 m/s 이하**로 설계합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "할로겐화합물 소화약제 중 '할론 1211'의 화학식은?",
@@ -777,7 +777,7 @@
     ],
     "answer": 0,
     "explanation": "펌프 주변의 압력 차이를 이용하는 **펌프 프로포셔너** 방식에 대한 설명입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제연설비에서 배출 풍도의 두께는 풍도 내부 압력이 500Pa 이하일 때 최소 몇 mm 이상이어야 하는가?",
@@ -789,7 +789,7 @@
     ],
     "answer": 1,
     "explanation": "풍압에 견디기 위해 아연도금강판 두께는 최소 **0.6mm** 이상이어야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "연결송수관설비의 배관 중 지면으로부터 높이가 몇 m 이상인 건축물에는 습식으로 설치해야 하는가?",
@@ -813,7 +813,7 @@
     ],
     "answer": 1,
     "explanation": "펌프의 원래 이름표(명판)에 적힌 대로 **유량 100%, 압력 100%**가 나오는지 확인하는 핵심 시험입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "스프링클러 헤드의 '오리피스' 지름이 커지면 나타나는 현상은?",
@@ -825,7 +825,7 @@
     ],
     "answer": 1,
     "explanation": "구멍(오리피스)이 커지면 당연히 **쏟아지는 물의 양(K-Factor)**이 늘어납니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "물분무 소화설비의 방수 헤드 중 충돌형 헤드의 특징은?",
@@ -849,7 +849,7 @@
     ],
     "answer": 1,
     "explanation": "가스가 누설되었을 때 질식 사고를 막기 위해 바닥 부근의 가스를 뽑아낼 수 있는 **환기 시설**이 필수입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "옥내소화전 방수구의 설치 간격은 특정소방대상물의 각 부분으로부터 수평거리 몇 m 이하인가?",
@@ -861,7 +861,7 @@
     ],
     "answer": 1,
     "explanation": "건물 내 어디서든 호스가 닿을 수 있도록 **25m 이하**마다 방수구를 배치합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 '서징(Surging, 맥동현상)'이 발생하는 주된 조건은?",
@@ -885,7 +885,7 @@
     ],
     "answer": 1,
     "explanation": "물이 흐르기 시작하면 신호를 보내는 **유수검지장치**가 심장 역할을 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "소화 펌프의 성능 시험 배관 중 '유량계'의 설치 위치 기준으로 틀린 것은?",
@@ -897,7 +897,7 @@
     ],
     "answer": 2,
     "explanation": "정확한 측정을 위해 **직관부(방해물 없는 구간)** 중간에 설치해야 하며 펌프 바로 뒤는 와류 때문에 부적절합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "할로겐화합물 소화약제의 방사 시 온도 강하에 의한 효과는?",
@@ -921,7 +921,7 @@
     ],
     "answer": 1,
     "explanation": "불길이 풍도를 타고 옆 구역으로 번지는 것을 막기 위해 **댐퍼**가 차단막 역할을 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "옥외소화전 설비에서 호스의 길이는 몇 m인가?",
@@ -933,7 +933,7 @@
     ],
     "answer": 1,
     "explanation": "옥외소화전용 호스는 표준 **20m** 길이를 사용합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 성능 곡선에서 '동력(L)'이 0인 점이 존재하는가?",
@@ -957,7 +957,7 @@
     ],
     "answer": 1,
     "explanation": "특수 액체가 담긴 **유리알(벌브)**이 열을 받으면 팽창하여 터지는 방식입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "포 소화설비에서 '고발포'와 '저발포'를 나누는 팽창비 기준은?",
@@ -969,7 +969,7 @@
     ],
     "answer": 1,
     "explanation": "팽창비가 **20배 미만이면 저발포, 80~1,000배면 고발포**라고 부릅니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "이산화탄소 소화설비의 기동 방식으로 가장 거리가 먼 것은?",
@@ -981,7 +981,7 @@
     ],
     "answer": 3,
     "explanation": "주로 **가스압력, 전기, 기계적** 트리거를 사용하여 약제 용기를 개방합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "옥내소화전설비의 '물올림장치' 용량은 최소 몇 ℓ 이상이어야 하는가?",
@@ -1005,7 +1005,7 @@
     ],
     "answer": 1,
     "explanation": "물이 흐르지 않는 체절 운전 시 펌프 안의 물이 끓는 것을 막기 위해 **뜨거운 물을 빼주는** 역할을 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제연설비의 수동기동장치(스위치)는 바닥으로부터 몇 m 높이에 설치하는가?",
@@ -1017,7 +1017,7 @@
     ],
     "answer": 1,
     "explanation": "대부분의 수동 조작 장치는 성인 손높이인 **0.8m ~ 1.5m**가 표준입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "포 소화설비에서 '내알코올포'를 사용하는 주된 대상은?",
@@ -1041,7 +1041,7 @@
     ],
     "answer": 2,
     "explanation": "150% 유량 시험을 해야 하므로 눈금은 넉넉히 **175%** 정도까지는 있어야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "스프링클러 헤드의 '유효 살수 반경(R)' 중 내화구조인 일반 사무실의 기준은?",
@@ -1053,7 +1053,7 @@
     ],
     "answer": 2,
     "explanation": "표준형 헤드를 내화구조 건물에 설치할 때 R값은 **2.3m**를 기준으로 설계합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "물분무 소화설비에서 소화 후 물에 의한 피해를 최소화하기 위해 설치하는 배수 설비의 기울기는?",
@@ -1077,7 +1077,7 @@
     ],
     "answer": 1,
     "explanation": "선택밸브가 안 열린 상태에서 가스가 나오면 배관이 터질 수 있으므로 **압력 도피구** 역할을 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "옥내소화전설비의 펌프가 자동으로 기동하기 위해 사용하는 '기동용수압개폐장치'의 다른 이름은?",
@@ -1089,7 +1089,7 @@
     ],
     "answer": 1,
     "explanation": "배관 내 압력 변화를 감지하여 펌프를 켰다 껐다 하는 **압력챔버** 시스템을 말합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "펌프의 성능 시험 시 유량계가 떨려서 읽기 힘든 원인으로 가장 가능성이 높은 것은?",
@@ -1113,7 +1113,7 @@
     ],
     "answer": 0,
     "explanation": "건물 외벽이나 개구부에 수막을 형성하여 연소 확산을 막는 설비가 **드렌처(Drencher)**입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "할로겐화합물 소화약제의 저장용기 배치 장소 온도는 몇 ℃ 이하를 유지해야 하는가?",
@@ -1125,7 +1125,7 @@
     ],
     "answer": 1,
     "explanation": "약제의 변질과 용기 압력 상승을 막기 위해 **40℃ 이하**를 상시 유지해야 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제연설비에서 제연구역의 기압은 인접 구역보다 최소 몇 Pa 이상 높게 유지해야 하는가?",
@@ -1149,7 +1149,7 @@
     ],
     "answer": 1,
     "explanation": "화재 시 즉시 호스를 꺼내 연결할 수 있도록 **5m 이내**에 보관함을 둡니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "펌프의 '유효흡입양정(NPSHa)'을 계산할 때 고려하지 않는 요소는?",
@@ -1161,7 +1161,7 @@
     ],
     "answer": 3,
     "explanation": "NPSHa는 압력, 높이, 손실 등 **유체 역학적** 요소들로만 계산됩니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "스프링클러 설비의 '교차배관' 끝단에 설치하여 배관 청소를 용이하게 하는 것은?",
@@ -1185,7 +1185,7 @@
     ],
     "answer": 0,
     "explanation": "공기를 섞어 거품을 만드는 **에어 인덕션** 구조가 노즐에 있어야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "이산화탄소 소화설비의 방출 지연 장치(Time Delay)의 주된 목적은?",
@@ -1197,7 +1197,7 @@
     ],
     "answer": 1,
     "explanation": "가스 방출 전 경보를 울리고 사람들이 **대피할 20~30초**를 벌어주는 안전장치입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "옥내소화전설비의 '옥상수조' 설치 예외 대상은?",
@@ -1221,7 +1221,7 @@
     ],
     "answer": 2,
     "explanation": "펌프의 한계 능력을 보기 위해 **정격의 150%**까지 물을 뽑아내 봅니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "스프링클러 헤드의 '방수량(Q)' 계산식은?",
@@ -1233,7 +1233,7 @@
     ],
     "answer": 0,
     "explanation": "유량 계수 K와 수압 P의 루트값에 비례하는 **Q = K√P**는 소방 기계의 핵심 공식입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "물분무 소화설비가 유류 화재(B급)에 효과가 있는 이유 중 '유화(Emulsification)' 효과란?",
@@ -1257,7 +1257,7 @@
     ],
     "answer": 1,
     "explanation": "약제 저장 용기가 여러 개일 때 한 곳으로만 흐르도록 **체크밸브**를 각각 설치합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제연설비의 송풍기 입구에 설치하여 풍량을 조절하는 장치는?",
@@ -1269,7 +1269,7 @@
     ],
     "answer": 3,
     "explanation": "송풍기의 효율적인 풍량 조절을 위해 입구 날개 각도를 조절하는 **가이드 베인**을 씁니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "옥외소화전 설비의 수조 유효 수량 산정 시, 소화전 1개당 확보해야 할 수량은?",
@@ -1293,7 +1293,7 @@
     ],
     "answer": 1,
     "explanation": "배관 상단이 수평이 되게 하여 **공기**가 고이지 않도록 하는 필수 시공법입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "스프링클러 설비에서 '상향형 헤드'와 '하향형 헤드'를 거꾸로 설치했을 때의 문제점은?",
@@ -1305,7 +1305,7 @@
     ],
     "answer": 1,
     "explanation": "반사판(데플렉터) 모양이 다르기 때문에 **살수 분포**가 깨져서 불을 못 끕니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "포 소화설비에서 '포 수집기'의 역할은?",
@@ -1329,7 +1329,7 @@
     ],
     "answer": 2,
     "explanation": "호스를 끌고 가서 불이 난 곳에 직접 쏘는 **호스릴** 방식입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "옥내소화전설비의 전원은 전용회로로 하되, 어디에서 공급받아야 하는가?",
@@ -1341,7 +1341,7 @@
     ],
     "answer": 1,
     "explanation": "화재 시 다른 전기 설비가 죽어도 소화전은 살아야 하므로 **독립된 전용 분전반**이 필요합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "difficulty": 2,
@@ -1356,7 +1356,7 @@
     "explanation": "양정은 회전수의 제곱에 비례하고, 직경 변화도 유사하게 적용됩니다. 1.1²≈1.21배가 됩니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "스프링클러 설비의 준비작동식 밸브 1차측과 2차측의 상태는?",
     "options": [
       "1차=건식, 2차=습식",
@@ -1368,7 +1368,7 @@
     "explanation": "준비작동식은 1차측에 물이 채워져 있고, 2차측 배관에는 공기(대기압)만 있는 방식입니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "포 소화설비에서 고정지붕 탱크에 사용하는 포 방출구의 종류는?",
     "options": [
       "포 워터 스프링클러",
@@ -1392,7 +1392,7 @@
     "explanation": "K값이 크면 Q=K√P 공식에 의해 같은 압력에서 더 많은 물이 나옵니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "CO2 소화설비 저압식의 저장 온도 기준은?",
     "options": [
       "-20℃ 이하",
@@ -1404,7 +1404,7 @@
     "explanation": "저압식은 대량 저장에 유리하며, 약제를 액체 상태로 유지하기 위해 -20℃ 이하로 냉각 보관합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "물분무 소화설비의 헤드 방사 압력 기준은?",
     "options": [
       "0.1MPa 이상",
@@ -1428,7 +1428,7 @@
     "explanation": "연기가 경계를 넘어가지 않도록 천장에서 최소 0.6m 이상 내려오는 경계벽이 필요합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "옥내소화전 가압방식 중 가압수조 방식의 필요 압력을 유지하는 원리는?",
     "options": [
       "펌프가 지속 가동",
@@ -1440,7 +1440,7 @@
     "explanation": "가압수조 방식은 탱크 내부에 압축공기 또는 질소를 채워 수압을 유지하는 방식입니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "스프링클러 배관의 연결살수설비 연결구는 몇 mm 이상의 배관에 연결해야 하는가?",
     "options": [
       "25mm",
@@ -1464,7 +1464,7 @@
     "explanation": "할론 2402는 ODP가 가장 높아 현재 생산·사용이 가장 강력히 규제됩니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "습식 스프링클러 배관에서 물이 차 있으므로 반드시 고려해야 하는 것은?",
     "options": [
       "배관 부식",
@@ -1476,7 +1476,7 @@
     "explanation": "물이 상시 채워진 습식 배관은 내부 부식(Corrosion)이 장기적으로 문제가 되므로 부식 방지 조치가 중요합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "제연설비 배출 풍도에 방화댐퍼(FD)를 설치하는 이유는?",
     "options": [
       "풍량 증가",
@@ -1500,7 +1500,7 @@
     "explanation": "비상시 안전한 위치에서 조작할 수 있도록 방호구역 출입구에서 5m 이내에 설치합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "스프링클러 설비의 알람밸브(Alarm Valve)에서 클래퍼(Clapper)의 역할은?",
     "options": [
       "유량 조절",
@@ -1512,7 +1512,7 @@
     "explanation": "클래퍼는 일종의 체크밸브로, 헤드가 개방되어 압력이 떨어지면 열리면서 소화수를 공급합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "포 소화설비의 팽창비 측정 시 사용하는 장비는?",
     "options": [
       "압력계",
@@ -1524,7 +1524,7 @@
     "explanation": "포 수집기로 샘플을 채취한 후 포 부피 대 원액 부피 비율을 계산하여 팽창비를 산출합니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "펌프의 NPSHr(필요 흡입양정)보다 NPSHa(유효 흡입양정)가 작아지면 발생하는 현상은?",
     "options": [
       "유량 증가",
@@ -1548,7 +1548,7 @@
     "explanation": "가지배관이 길어질수록 마찰손실이 누적되어 말단 헤드의 방수압이 기준(0.1MPa)에 미달할 수 있기 때문입니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "ESFR(조기진압빠른반응) 헤드와 표준 헤드의 결정적 차이는?",
     "options": [
       "색상",
@@ -1560,7 +1560,7 @@
     "explanation": "ESFR은 일반 헤드보다 훨씬 큰 K값과 높은 방수량으로 창고 화재를 직접 진압하는 설계입니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "제연설비에서 급기 가압 방식의 차압 유지 목적은?",
     "options": [
       "실내 온도 조절",
@@ -1584,7 +1584,7 @@
     "explanation": "CO2는 질식 소화이므로 가스가 유지되어야 하는데, 공간이 밀폐되지 않으면 가스가 희석되어 소화 실패가 됩니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "펌프 병렬 운전 시, 각 펌프의 유량과 양정의 변화로 옳은 것은?",
     "options": [
       "유량 2배, 양정 2배",
@@ -1596,7 +1596,7 @@
     "explanation": "병렬 운전 시 이론상 유량은 2배이지만, 배관 저항 때문에 실제 양정이 단독 운전 때보다 낮아집니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "연결송수관 설비가 70m 이상 건물에서 반드시 습식으로 설치해야 하는 이유는?",
     "options": [
       "건축법 요구",
@@ -1620,7 +1620,7 @@
     "explanation": "회전수를 급격히 변화시키면 수격이 더 심해집니다. 완만한 속도 변화 및 충격 흡수 장치가 대책입니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "분말 소화약제의 방사 시 소화 효과 중 부촉매 효과의 주역인 라디칼 포집 물질은?",
     "options": [
       "K⁺ 이온 (탄산칼륨계)",
@@ -1632,7 +1632,7 @@
     "explanation": "3종 분말의 K⁺ 이온이 연소 연쇄 반응에서 활성 라디칼(OH·, H·)을 포집하여 불꽃을 꺼뜨립니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "포 소화설비에서 수용성 액체(알코올)에 일반 포를 쓰면 안 되는 이유는?",
     "options": [
       "냄새가 나서",
@@ -1653,7 +1653,7 @@
     ],
     "answer": 0,
     "explanation": "점성계수의 단위는 Pa·s 또는 kg/m·s입니다. m²/s는 동점성계수의 단위입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "베르누이 방정식에서 보존되는 총 에너지의 형태가 아닌 것은?",
@@ -1689,7 +1689,7 @@
     ],
     "answer": 0,
     "explanation": "노즐 선단의 동압을 측정하여 방수량을 계산할 때 피토 게이지를 사용합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "펌프의 흡입측 배관에서 압력이 낮아져 기포가 발생하는 현상은?",
@@ -1725,7 +1725,7 @@
     ],
     "answer": 1,
     "explanation": "표준형 헤드의 유리 벌브 색상 중 빨간색은 68℃ 공칭작동온도를 의미합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "포 소화약제 혼합 방식 중 펌프와 토출관 사이의 바이패스 관에 흡입기를 설치하는 방식은?",
@@ -1737,7 +1737,7 @@
     ],
     "answer": 2,
     "explanation": "펌프의 토출수 일부를 흡입측으로 보내어 약제를 혼합하는 방식은 펌프 프로포셔너입니다.",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "이산화탄소 소화설비의 배관 중 고압식의 경우 내압시험 압력은 최소 몇 MPa인가?",
@@ -1749,7 +1749,7 @@
     ],
     "answer": 2,
     "explanation": "CO2 고압식 배관은 15.0 MPa 이상의 내압시험에 견뎌야 합니다.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "유체의 흐름 중 층류와 난류를 구분하는 무차원 수는?",
@@ -1761,7 +1761,7 @@
     ],
     "answer": 1,
     "explanation": "레이놀즈 수는 관성력과 점성력의 비를 나타내며, 흐름의 특성을 결정합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소방 펌프의 성능 시험 중 정격 토출량의 150%로 운전할 때 양정은 정격 양정의 몇 % 이상이어야 하는가?",
@@ -1773,7 +1773,7 @@
     ],
     "answer": 0,
     "explanation": "펌프 성능 곡선에서 150% 유량일 때 전양정은 65% 이상을 유지해야 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "가스계 소화설비에서 배관 내의 잔류 가스를 외부로 배출하기 위해 설치하는 구멍은?",
@@ -1797,7 +1797,7 @@
     ],
     "answer": 1,
     "explanation": "그리드 방식은 배관을 격자형으로 연결하여 마찰 손실을 줄이고 신뢰성을 높입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소화전 밸브를 열었을 때 배관 내부의 물이 출렁거리며 펌프가 자주 기동하는 현상을 방지하기 위해 설치하는 것은?",
@@ -1833,7 +1833,7 @@
     ],
     "answer": 0,
     "explanation": "대부분의 부차적 손실은 속도수두(v²/2g)에 비례합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "심부화재에 적합한 가스계 소화약제는?",
@@ -1845,7 +1845,7 @@
     ],
     "answer": 0,
     "explanation": "이산화탄소는 고농도 유지가 가능하여 목재, 종이 등의 심부화재 소화에 효과적입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "펌프의 회전수(N)를 2배로 높였을 때, 양정(H)은 몇 배가 되는가?",
@@ -1869,7 +1869,7 @@
     ],
     "answer": 1,
     "explanation": "아르키메데스의 원리에 의해 부력은 배제된 유체의 무게와 같습니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "유체의 흐름에서 단면적이 2배가 되면 유속은 어떻게 변하는가? (유량 일정 시)",
@@ -1893,7 +1893,7 @@
     ],
     "answer": 3,
     "explanation": "표준대기압 1atm은 760mmHg, 101.325kPa, 1.0332kgf/cm² 등과 같습니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "관 속을 흐르는 유체의 마찰 손실을 계산하는 '달시-바이스바흐' 식에서 손실은 관의 길이에?",
@@ -1905,7 +1905,7 @@
     ],
     "answer": 0,
     "explanation": "마찰 손실 수두는 관의 길이에 비례하고 관경에 반비례합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "유체 내 한 점에서의 압력은 모든 방향에서 동일하게 작용한다는 원리는?",
@@ -1929,7 +1929,7 @@
     ],
     "answer": 2,
     "explanation": "식별을 위해 소방용 배관은 적색으로 도장합니다. (단, 지하 매설 등 예외 있음)",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "가압송수장치의 릴리프 밸브가 작동하는 시점은?",
@@ -1941,7 +1941,7 @@
     ],
     "answer": 2,
     "explanation": "릴리프 밸브는 체절운전 시 펌프 내 물의 과열을 막기 위해 과잉 압력을 방출합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "피난구조설비 중 '공기안전매트'를 설치할 수 있는 최대 높이(층수)는?",
@@ -1953,7 +1953,7 @@
     ],
     "answer": 1,
     "explanation": "현행 기준상 공기안전매트는 10층 이하의 소방대상물에 설치합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "스프링클러설비의 상향형 헤드와 천장 사이의 거리는?",
@@ -1965,7 +1965,7 @@
     ],
     "answer": 1,
     "explanation": "살수 방해를 막기 위해 헤드 반사판과 천장 사이는 30cm 이하로 유지해야 합니다.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "포 소화설비에서 '2.5% 포 소화약제'를 사용할 때 물과 약제의 혼합비는?",
@@ -1977,7 +1977,7 @@
     ],
     "answer": 0,
     "explanation": "농도 %는 전체 혼합액 중 약제의 비율을 의미합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소화전 함 표면에 설치하는 '위치표시등'의 색상은?",
@@ -2001,7 +2001,7 @@
     ],
     "answer": 2,
     "explanation": "급격한 압력 강하와 유동 소음을 조절하기 위해 오리피스 등을 사용합니다.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "옥내소화전 설비의 수조 측면에 설치하여 수위를 확인하는 장치는?",
@@ -2013,7 +2013,7 @@
     ],
     "answer": 1,
     "explanation": "수조의 가용 수량을 확인하기 위해 수위계를 설치합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "다음 중 기계식 제연설비의 송풍기로 주로 사용되는 형식은?",
@@ -2025,7 +2025,7 @@
     ],
     "answer": 3,
     "explanation": "풍량과 정압 조건에 따라 다양한 원심 송풍기가 사용됩니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "관로에서 유체의 흐름 방향을 한쪽으로만 유지시키는 밸브는?",
@@ -2037,7 +2037,7 @@
     ],
     "answer": 2,
     "explanation": "체크 밸브는 역류를 방지하고 한 방향 흐름만 허용합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "포 워터 스프링클러 헤드의 표준 방사량은 분당 몇 리터인가?",
@@ -2061,7 +2061,7 @@
     ],
     "answer": 2,
     "explanation": "재발화 방지를 위해 일반적으로 10분 이상의 농도 유지 시간이 필요합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "원심펌프에서 임펠러의 외경을 10% 줄이면 유량(Q)은 어떻게 변하는가?",
@@ -2073,7 +2073,7 @@
     ],
     "answer": 0,
     "explanation": "펌프의 상사법칙에서 유량은 임펠러 직경에 비례합니다.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "소방시설의 내진설계 대상이 아닌 것은?",
@@ -2085,7 +2085,7 @@
     ],
     "answer": 3,
     "explanation": "소화기는 이동식 기구로 내진설계 대상(배관 고정 등)이 아닙니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "배관 도중에 설치하여 관의 신축을 흡수하는 이음쇠는?",
@@ -2121,7 +2121,7 @@
     ],
     "answer": 1,
     "explanation": "조작이 용이하도록 바닥으로부터 0.8m 이상 1.5m 이하에 설치합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "물이 소화 약제로 널리 쓰이는 가장 큰 이유는?",
@@ -2145,7 +2145,7 @@
     ],
     "answer": 1,
     "explanation": "연결송수관 방수구는 3층부터 설치합니다. (단, 층수가 11층 이상인 경우 등 예외 존재)",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "펌프의 효율을 나타내는 수식으로 옳은 것은?",
@@ -2157,7 +2157,7 @@
     ],
     "answer": 0,
     "explanation": "펌프 효율은 실제로 물에 전달된 에너지(수동력)를 펌프 축에 가해진 에너지(축동력)로 나눈 값입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "공동현상(Cavitation)을 방지하기 위한 대책으로 틀린 것은?",
@@ -2169,7 +2169,7 @@
     ],
     "answer": 2,
     "explanation": "회전수를 높이면 유속이 빨라져 압력이 더 낮아지므로 공동현상이 심해집니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "유체의 유동에서 흐름의 가시화를 위해 사용하는 선은?",
@@ -2193,7 +2193,7 @@
     ],
     "answer": 2,
     "explanation": "배출 덕트의 유속은 15 m/s 이하, 흡입측은 10 m/s 이하로 권장합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "관경이 50mm인 배관에 흐르는 유량이 0.01 m³/s 일 때 유속은 약 얼마인가?",
@@ -2205,7 +2205,7 @@
     ],
     "answer": 1,
     "explanation": "V = Q / A = 0.01 / (π * 0.025²) ≈ 5.09 m/s",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "건식 스프링클러설비에서 2차측 배관에 채워진 공기를 신속히 배출하기 위해 설치하는 장치는?",
@@ -2229,7 +2229,7 @@
     ],
     "answer": 0,
     "explanation": "미세한 물방울이 유면을 덮어 불연성 유화층을 형성함으로써 소화합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "포 소화약제 중 식물성/동물성 단백질을 주성분으로 하는 것은?",
@@ -2253,7 +2253,7 @@
     ],
     "answer": 2,
     "explanation": "배관 가격과 펌프 동력비(마찰 손실)의 합계를 고려하여 최적의 관경을 선택합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "압축기의 서징(Surging) 현상을 방지하는 방법이 아닌 것은?",
@@ -2265,7 +2265,7 @@
     ],
     "answer": 3,
     "explanation": "서징은 불안정한 유동 상태이므로 유량을 조절하거나 압력을 방출하여 해결합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "피난사다리를 설치할 때 개구부의 크기는 최소 얼마 이상이어야 하는가?",
@@ -2277,7 +2277,7 @@
     ],
     "answer": 2,
     "explanation": "사람이 통과할 수 있도록 최소 60cm 이상의 사각형 또는 원형 공간이 필요합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "옥내소화전설비 펌프의 토출측 주배관 구경은 유속이 몇 m/s 이하가 되도록 결정하는가?",
@@ -2301,7 +2301,7 @@
     ],
     "answer": 2,
     "explanation": "난류 흐름에서 마찰력(전단응력)은 유속의 제곱에 대략 비례합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "이산화탄소 소화설비 중 '저압식' 저장탱크의 내부 온도는 몇 도로 유지하는가?",
@@ -2313,7 +2313,7 @@
     ],
     "answer": 1,
     "explanation": "저압식 CO2 탱크는 압력을 낮추기 위해 냉동기를 사용하여 약 -20~-18℃로 유지합니다.",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "포 헤드 소화설비에서 소화약제를 혼합하여 거품을 만드는 기구는?",
@@ -2325,7 +2325,7 @@
     ],
     "answer": 0,
     "explanation": "물과 포 원액을 일정 비율로 섞어주는 장치를 프로포셔너라 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 비압축성 유체로 간주할 수 있는 것은?",
@@ -2337,7 +2337,7 @@
     ],
     "answer": 2,
     "explanation": "액체(물 등)는 압력 변화에 따른 부피 변화가 거의 없어 비압축성 유체로 분류합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소화전 노즐의 구경이 13mm일 때, 방수압력이 0.17MPa이면 방수량은 약 얼마인가?",
@@ -2349,7 +2349,7 @@
     ],
     "answer": 0,
     "explanation": "Q = 2.086 * d² * √P ≈ 2.086 * 13² * √0.17 ≈ 130 L/min",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "가스계 소화약제 중 오존층 파괴지수(ODP)가 '0'인 물질은?",
@@ -2373,7 +2373,7 @@
     ],
     "answer": 1,
     "explanation": "엘보(Elbow)는 관의 방향을 꺾을 때 사용합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "유체의 점성이 높을수록 마찰 손실은 어떻게 변하는가?",
@@ -2397,7 +2397,7 @@
     ],
     "answer": 0,
     "explanation": "펌프의 토출 유량을 확인하기 위해 성능 시험 배관에 유량계를 설치합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "유체가 가득 찬 밀폐된 용기에서 압력을 가하면 모든 부분에 동일하게 전달된다는 법칙은?",
@@ -2409,7 +2409,7 @@
     ],
     "answer": 0,
     "explanation": "파스칼의 법칙의 핵심 정의입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "옥외소화전 노즐의 구경은 표준이 몇 mm 인가?",
@@ -2421,7 +2421,7 @@
     ],
     "answer": 1,
     "explanation": "옥외소화전 노즐 구경은 19mm, 옥내소화전은 13mm가 표준입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "베르누이 방정식에서 'z'가 의미하는 수두는?",
@@ -2433,7 +2433,7 @@
     ],
     "answer": 2,
     "explanation": "z는 기준면으로부터의 높이를 나타내는 위치 수두입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "원심펌프 중 임펠러가 하나인 것은?",
@@ -2445,7 +2445,7 @@
     ],
     "answer": 0,
     "explanation": "임펠러의 개수에 따라 단단(1개), 다단(2개 이상)으로 구분합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "수격 현상을 줄이기 위해 펌프의 토출측에 설치하는 완충 장치는?",
@@ -2457,7 +2457,7 @@
     ],
     "answer": 0,
     "explanation": "공기실(에어 챔버)이 압력 충격을 흡수하여 수격을 방지합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "대기압보다 낮은 압력을 측정하기 위해 사용하는 기구는?",
@@ -2469,7 +2469,7 @@
     ],
     "answer": 1,
     "explanation": "연성계는 정압과 부압을 모두 측정할 수 있고, 진공계는 부압만 측정합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "배관 이음 방법 중 나사를 내어 연결하는 방식은?",
@@ -2481,7 +2481,7 @@
     ],
     "answer": 2,
     "explanation": "소구경 배관에서 주로 사용하는 나사 연결 방식입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 208",
@@ -2493,7 +2493,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 209",
@@ -2517,7 +2517,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 211",
@@ -2529,7 +2529,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 212",
@@ -2553,7 +2553,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 214",
@@ -2565,7 +2565,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 215",
@@ -2589,7 +2589,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 217",
@@ -2601,7 +2601,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 218",
@@ -2625,7 +2625,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 220",
@@ -2637,7 +2637,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 221",
@@ -2661,7 +2661,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 223",
@@ -2673,7 +2673,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 224",
@@ -2697,7 +2697,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 226",
@@ -2709,7 +2709,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 227",
@@ -2733,7 +2733,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 229",
@@ -2745,7 +2745,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 230",
@@ -2769,7 +2769,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 232",
@@ -2781,7 +2781,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 233",
@@ -2805,7 +2805,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 235",
@@ -2817,7 +2817,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 236",
@@ -2841,7 +2841,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 238",
@@ -2853,7 +2853,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 239",
@@ -2877,7 +2877,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 241",
@@ -2889,7 +2889,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 242",
@@ -2913,7 +2913,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 244",
@@ -2925,7 +2925,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 245",
@@ -2949,7 +2949,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 247",
@@ -2961,7 +2961,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "소방설비 기계 실무 문제 248",
@@ -2985,7 +2985,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "소방설비 기계 실무 문제 250",
@@ -2997,6 +2997,3006 @@
     ],
     "answer": 0,
     "explanation": "설명",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 노즐에서 방수 시 반동력이 너무 커지지 않도록 제한하는 최대 방수압력은?",
+    "options": [
+      "0.5 MPa",
+      "0.7 MPa",
+      "1.0 MPa",
+      "1.2 MPa"
+    ],
+    "answer": 1,
+    "explanation": "방수압력이 **0.7 MPa**를 초과하면 호스를 잡은 사람이 반동력을 견디기 힘들어 위험합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 설비 중 '습식(Wet Pipe)' 방식의 장점은?",
+    "options": [
+      "동파 우려가 없다",
+      "구조가 복잡하지만 정밀하다",
+      "화재 시 방수가 가장 빠르다",
+      "공압을 상시 감시한다"
+    ],
+    "answer": 2,
+    "explanation": "배관에 항상 물이 차 있는 **습식**은 헤드가 터지자마자 물이 나오므로 **반응 속도가 가장 빠릅니다.**",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 시 유량이 정격의 150%일 때, 압력은 정격의 최소 몇 % 이상이어야 하는가?",
+    "options": [
+      "65%",
+      "80%",
+      "100%",
+      "140%"
+    ],
+    "answer": 0,
+    "explanation": "펌프 성능 기준상, 과부하(150%) 운전 시에도 정격 압력의 **65%** 이상은 유지해야 합격입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥외소화전의 노즐 구경(노즐 팁) 표준 규격은?",
+    "options": [
+      "13mm",
+      "19mm",
+      "25mm",
+      "32mm"
+    ],
+    "answer": 1,
+    "explanation": "옥외소화전은 강력한 수량을 위해 **19mm** 구경의 노즐 팁을 주로 사용합니다. (옥내소화전은 13mm)",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 체절 운전 시 압력이 너무 상승하지 않도록 설치하는 안전 장치는?",
+    "options": [
+      "체크 밸브",
+      "게이트 밸브",
+      "릴리프 밸브",
+      "충격흡수기"
+    ],
+    "answer": 2,
+    "explanation": "체절 압력(140%) 미만에서 압력을 방출하여 배관을 보호하는 장치는 **릴리프 밸브(Relief Valve)**입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "준비작동식 스프링클러 설비에서 '슈퍼비조리 판넬'의 역할은?",
+    "options": [
+      "물을 직접 뿜는다",
+      "수조 수위를 감시한다",
+      "수동 기동 및 회로 감시",
+      "소방차를 호출한다"
+    ],
+    "answer": 2,
+    "explanation": "**SVP(Supervisory Panel)**는 밸브 근처에 설치되어 수동 조작 및 회로의 정상 여부를 감시하는 장치입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비의 '저압식' 저장용기 내부 온도를 유지하기 위한 장치는?",
+    "options": [
+      "가열 장치",
+      "냉각 장치",
+      "가습 장치",
+      "교반 장치"
+    ],
+    "answer": 1,
+    "explanation": "저압식은 액체 상태 유지를 위해 항상 **냉각기**를 돌려 영하 18~20도 사이를 유지해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비에서 물과 포 소화약제를 일정 비율로 혼합해주는 장치는?",
+    "options": [
+      "인젝터",
+      "프로포셔너",
+      "이젝터",
+      "컴프레셔"
+    ],
+    "answer": 1,
+    "explanation": "물과 약제의 혼합 장치를 **프로포셔너(Proportioner)**라고 부릅니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 가압송수장치(펌프)를 설치해야 하는 건축물의 높이 기준은?",
+    "options": [
+      "31m 이상",
+      "50m 이상",
+      "70m 이상",
+      "100m 이상"
+    ],
+    "answer": 2,
+    "explanation": "건물이 너무 높으면(**70m 이상**) 소방차 힘만으로 부족하므로 건물 내부에 자체 펌프를 두어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드 중 상향형과 하향형을 모두 쓸 수 있는 장소에 설치하는 헤드는?",
+    "options": [
+      "측벽형",
+      "조기반응형",
+      "반매입형",
+      "상하양용형(Pendent/Upright)"
+    ],
+    "answer": 3,
+    "explanation": "설치 방향에 제약이 적은 **상하양용** 타입에 대한 설명입니다. (단, 대개는 전용 제품을 권장합니다)",
+    "difficulty": 2
+  },
+  {
+    "question": "소방용 배관 지지 장치 중 배관의 신축(늘어남/줄어듦)을 흡수하기 위한 것은?",
+    "options": [
+      "서포트",
+      "행거",
+      "신축 이음(Expansion Joint)",
+      "앵커"
+    ],
+    "answer": 2,
+    "explanation": "온도 변화에 따른 배관 변형을 방지하기 위해 **신축 이음**을 설치합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "물분무 소화설비가 유류 화재에 효과적인 이유 중 '유화 효과(Emulsification)'란?",
+    "options": [
+      "기름을 태워 없앤다",
+      "기름 표면에 불연성 막을 만든다",
+      "기름을 굳게 한다",
+      "기름을 섞이게 한다"
+    ],
+    "answer": 1,
+    "explanation": "강력한 물분무가 기름 표면에 **비눗물 같은 얇은 막(유제)**을 만들어 산소를 차단하는 효과입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "할론 1301 소화약제의 특징으로 틀린 것은?",
+    "options": [
+      "비전도성이다",
+      "금속 부식성이 적다",
+      "질식 위험이 전혀 없다",
+      "소화 후 잔여물이 없다"
+    ],
+    "answer": 2,
+    "explanation": "할론은 독성이 낮지만, 고농도 방출 시 **질식이나 중독 위험**이 있으므로 주의가 필요합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "연결살수설비의 헤드 설치 간격 중 '개방형' 헤드일 때 기준은?",
+    "options": [
+      "1.7m 이하",
+      "2.1m 이하",
+      "3.7m 이하",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "개방형 연결살수 헤드는 수평거리 **3.7m 이하**마다 설치합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "상수도 소화용수설비의 소화전은 건축물 외벽으로부터 몇 m 이내에 설치하는가?",
+    "options": [
+      "2m",
+      "5m",
+      "10m",
+      "40m"
+    ],
+    "answer": 0,
+    "explanation": "상수도 소화전은 소방차가 접근하기 쉽도록 건물 외벽으로부터 **2m 이내**에 설치합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 배관에 설치하는 밸브 중 유량을 조절하는 밸브는?",
+    "options": [
+      "개폐 밸브",
+      "유량 조절 밸브 (글로브 밸브 등)",
+      "릴리프 밸브",
+      "체크 밸브"
+    ],
+    "answer": 1,
+    "explanation": "성능 시험 시 유량을 미세하게 조절하기 위해 **유량 조절 밸브**를 성능시험 배관 끝단에 설치합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전 호스 중 보관과 사용이 간편하여 1인 조작이 가능한 것은?",
+    "options": [
+      "아마사 호스",
+      "고무 라이닝 호스",
+      "호스릴(Hose Reel) 소화전",
+      "나일론 호스"
+    ],
+    "answer": 2,
+    "explanation": "**호스릴 소화전**은 꼬임이 적고 가벼워 혼자서도 쉽게 조작할 수 있는 장점이 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소방용 수조의 '물올림 장치' 용량 기준은 최소 몇 리터(ℓ) 이상인가?",
+    "options": [
+      "50ℓ",
+      "100ℓ",
+      "200ℓ",
+      "500ℓ"
+    ],
+    "answer": 1,
+    "explanation": "펌프보다 수조가 아래에 있을 때 쓰는 물올림 탱크는 최소 **100ℓ 이상**이어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가스계 소화설비 방출 전 '지연 시간(Time Delay)'을 두는 주된 목적은?",
+    "options": [
+      "가스 압력을 높이기 위해",
+      "사람들이 대피할 시간을 주기 위해",
+      "불이 더 커지길 기다리기 위해",
+      "전기를 차단하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "질식 위험이 있는 가스가 나오기 전, 내부 인원이 안전하게 **대피할 시간**을 벌기 위함입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "미분무 소화설비의 소화 원리가 아닌 것은?",
+    "options": [
+      "냉각",
+      "질식",
+      "희석",
+      "부촉매"
+    ],
+    "answer": 3,
+    "explanation": "미분무는 물을 사용하므로 화학적 억제인 **부촉매 효과**는 기대하기 어렵습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 배출기 흡입측 풍도에 설치하여 화재 시 연기를 차단하는 장치는?",
+    "options": [
+      "댐퍼 (Damper)",
+      "스프링클러",
+      "셔터",
+      "필터"
+    ],
+    "answer": 0,
+    "explanation": "바람의 흐름을 조절하고 화재 전파를 막는 날개 모양의 장치를 **댐퍼**라고 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화설비에서 거품을 만들어내는 끝단 장치는?",
+    "options": [
+      "스프링클러 헤드",
+      "포 방사구 (Foam Maker/Head)",
+      "노즐",
+      "드라이 펜던트"
+    ],
+    "answer": 1,
+    "explanation": "포 수용액을 공기와 섞어 거품으로 만드는 장치를 **포 방사구** 또는 **포 헤드**라고 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "배관의 나사 연결 부위에서 물이 새지 않도록 감는 것은?",
+    "options": [
+      "청면자포",
+      "테프론 테이프",
+      "절연 테이프",
+      "마스킹 테이프"
+    ],
+    "answer": 1,
+    "explanation": "금속 나사산 사이의 틈을 메워주는 하얀색 **테프론 테이프**를 사용합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 수조 설치 기준 중 '동결 방지 조치'가 필요한 곳은?",
+    "options": [
+      "옥상 수조",
+      "지하 수조",
+      "기계실 내부 수조",
+      "모든 수조"
+    ],
+    "answer": 0,
+    "explanation": "겨울철에 얼 수 있는 **옥상**이나 **실외** 수조는 반드시 보온 또는 가열 장치를 해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 토출측 압력이 너무 높을 때 이를 자동으로 조절해주는 밸브는?",
+    "options": [
+      "감압 밸브",
+      "체크 밸브",
+      "후드 밸브",
+      "글로브 밸브"
+    ],
+    "answer": 0,
+    "explanation": "높은 압력을 사용자가 쓰기 편한 낮은 압력으로 낮춰주는 것이 **감압 밸브**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "건식 스프링클러 설비에서 '엑셀러레이터(Accelerator)'의 역할은?",
+    "options": [
+      "펌프를 가속시킨다",
+      "화재를 빨리 찾는다",
+      "건식 밸브의 개방을 가속시킨다",
+      "배관을 빨리 청소한다"
+    ],
+    "answer": 2,
+    "explanation": "건식은 공기가 빠져야 물이 나오므로, 공기를 빨리 빼서 **밸브 작동을 앞당기는** 보조 장치입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화 펌프의 흡입측 배관에 '버터플라이 밸브'를 설치할 수 없는 이유는?",
+    "options": [
+      "압력이 너무 높아서",
+      "유체 저항이 크고 와류가 발생하여 공동현상(Cavitation) 위험이 있어서",
+      "가격이 비싸서",
+      "설치가 어려워서"
+    ],
+    "answer": 1,
+    "explanation": "버터플라이 밸브는 중앙의 원판 때문에 **물 흐름에 방해(와류)**를 주어 펌프 흡입에 지장을 줄 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비 방출 시 방호구역 내의 개구부(창문 등)는 어떻게 되어야 하는가?",
+    "options": [
+      "열려 있어야 한다",
+      "반드시 자동으로 폐쇄되어야 한다",
+      "반만 닫히면 된다",
+      "상관없다"
+    ],
+    "answer": 1,
+    "explanation": "가스 농도가 유지되어야 소화가 되므로, **자동폐쇄장치**를 통해 창문 등이 닫혀야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '감열체' 종류 중 유리 전구 안에 액체가 든 방식은?",
+    "options": [
+      "가용편 방식",
+      "글라스 벌브(Glass Bulb) 방식",
+      "바이메탈 방식",
+      "필름 방식"
+    ],
+    "answer": 1,
+    "explanation": "열을 받으면 내부 액체가 팽창하여 유리가 터지는 **글라스 벌브** 방식입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 토출측에 설치하여 물의 망치질 현상(Water Hammer)을 방지하는 장치는?",
+    "options": [
+      "체크 밸브",
+      "수격 방지기 (Cushion)",
+      "게이트 밸브",
+      "여과기"
+    ],
+    "answer": 1,
+    "explanation": "갑작스러운 압력 변화를 흡수하는 **수격 방지기(Water Hammer Cushion)**를 설치합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 배출기 풍량 측정 시 사용하는 장비는?",
+    "options": [
+      "전압계",
+      "열선 풍속계",
+      "온도계",
+      "소음계"
+    ],
+    "answer": 1,
+    "explanation": "바람의 속도를 재서 풍량을 계산하기 위해 **풍속계**를 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전 호스 중 소방호스의 '호칭 지름' 표준 규격은?",
+    "options": [
+      "25mm 또는 40mm",
+      "40mm 또는 65mm",
+      "65mm 또는 100mm",
+      "100mm 또는 150mm"
+    ],
+    "answer": 1,
+    "explanation": "일반적인 옥내소화전은 **40mm**, 옥외나 연결송수관용은 **65mm** 호스를 씁니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "청정소화약제(할로겐화합물 및 불활성기체)의 특징이 아닌 것은?",
+    "options": [
+      "비전도성이다",
+      "오존층 파괴 지수가 매우 높다",
+      "방출 후 잔여물이 없다",
+      "금속 부식성이 거의 없다"
+    ],
+    "answer": 1,
+    "explanation": "**청정 소화약제**는 환경 보호를 위해 **오존층 파괴 지수(ODP)가 0 또는 매우 낮은** 제품들입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프가 물을 빨아올리지 못하는 '공동현상(Cavitation)'의 원인은?",
+    "options": [
+      "수조가 펌프보다 높을 때",
+      "흡입 배관에 공기가 찼을 때",
+      "흡입 수두가 너무 높거나 저항이 클 때",
+      "펌프 회전수가 너무 낮을 때"
+    ],
+    "answer": 2,
+    "explanation": "물을 너무 높은 곳에서 빨아올리려 하거나 흡입구가 막혀 **압력이 너무 낮아지면** 기포가 생겨 펌프 성능이 떨어집니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '디플렉터(Deflector)'의 역할은?",
+    "options": [
+      "열을 감지한다",
+      "물을 막는다",
+      "방사되는 물을 세분화시키고 분산시킨다",
+      "배관을 고정한다"
+    ],
+    "answer": 2,
+    "explanation": "헤드 끝의 톱니 모양판인 **디플렉터**는 물줄기를 사방으로 골고루 뿌려주는 역할을 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 저장용기 설치 장소 기준으로 틀린 것은?",
+    "options": [
+      "방호구역 내부",
+      "방호구역 외부",
+      "온도가 40도 이하인 곳",
+      "직사광선이 닿지 않는 곳"
+    ],
+    "answer": 0,
+    "explanation": "용기 자체가 화재 위험에 노출되면 안 되므로 반드시 **방호구역 외부**의 안전한 곳(용기실)에 두어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화설비의 포 워터 스프링클러 헤드는 1㎡당 몇 ℓ/min의 수량을 방사해야 하는가?",
+    "options": [
+      "3.5 ℓ/min",
+      "5 ℓ/min",
+      "6.5 ℓ/min",
+      "10 ℓ/min"
+    ],
+    "answer": 2,
+    "explanation": "포 워터 헤드는 바닥면적 1㎡당 최소 **6.5 ℓ/min** 이상의 양을 뿌려야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "배관의 도색 기준 중 '소화 배관'은 어떤 색으로 칠하는 것이 원칙인가?",
+    "options": [
+      "청색",
+      "황색",
+      "적색",
+      "백색"
+    ],
+    "answer": 2,
+    "explanation": "누구나 소방 배관임을 알 수 있도록 **적색**으로 칠하거나 적색 띠를 둘러야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 전동기 권선이 타버리는 '과부하'를 막기 위해 설치하는 장치는?",
+    "options": [
+      "전자접촉기",
+      "열동과부하계전기 (THR)",
+      "차단기",
+      "타이머"
+    ],
+    "answer": 1,
+    "explanation": "과전류에 의한 열을 감지하여 모터를 보호하는 **THR**이 필수적입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 배관 구경 산정 기준은?",
+    "options": [
+      "주배관과 동일하게",
+      "정격토출량의 150%를 흘릴 수 있는 크기",
+      "무조건 100mm",
+      "40mm로 고정"
+    ],
+    "answer": 1,
+    "explanation": "최대 부하 시험을 해야 하므로 **정격의 150% 유량**을 감당할 수 있는 배관 크기가 필요합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드 중 '조기반응형(Quick Response)'을 반드시 설치해야 하는 장소는?",
+    "options": [
+      "주차장",
+      "공장",
+      "공동주택(아파트) 거실",
+      "창고"
+    ],
+    "answer": 2,
+    "explanation": "인명 피해를 줄이기 위해 **아파트, 숙박시설, 노유자시설** 등에는 빨리 터지는 조기반응형을 씁니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화약제 중 '내알코올포'를 사용하는 화재 대상은?",
+    "options": [
+      "휘발유 화재",
+      "수용성 가연물 (알코올, 아세톤 등) 화재",
+      "금속 화재",
+      "전기 화재"
+    ],
+    "answer": 1,
+    "explanation": "알코올류는 일반 포 거품을 깨뜨리기 때문에, 이에 견디는 **내알코올포**가 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소화용 물탱크의 '후드 밸브'가 설치되는 위치는?",
+    "options": [
+      "펌프 바로 위",
+      "흡입 배관의 가장 끝부분 (수조 내부)",
+      "옥상 수조 위",
+      "소화전 내부"
+    ],
+    "answer": 1,
+    "explanation": "수조 바닥에서 물을 빨아올리는 **흡입 배관 끝**에 달려 이물질을 막고 물이 빠지지 않게(체크 기능) 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "연결송수관설비의 방수구 규격은?",
+    "options": [
+      "40mm",
+      "50mm",
+      "65mm",
+      "100mm"
+    ],
+    "answer": 2,
+    "explanation": "소방관들이 대구경 호스를 쓰므로 반드시 **65mm**여야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "가압송수장치의 펌프 대수는?",
+    "options": [
+      "주펌프 1대면 족함",
+      "주펌프와 충압펌프(부스터) 각 1대 이상",
+      "무조건 3대 이상",
+      "전기펌프만 가능"
+    ],
+    "answer": 1,
+    "explanation": "평소 압력을 유지하는 **충압펌프**와 실제 화재 시 도는 **주펌프**가 세트로 구성됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '일제살수식(Deluge)' 밸브의 특징은?",
+    "options": [
+      "헤드가 닫혀 있다",
+      "헤드가 모두 열려 있다 (개방형)",
+      "배관에 공기가 가득하다",
+      "가장 늦게 터진다"
+    ],
+    "answer": 1,
+    "explanation": "한 구역의 모든 헤드가 열려 있어 밸브만 열리면 **전 구역에 동시에 물이 쏟아지는** 방식입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화 배관의 지지물 중 '앵커(Anchor)'의 주된 목적은?",
+    "options": [
+      "배관을 매단다",
+      "배관의 한 지점을 완전히 고정한다",
+      "배관을 받친다",
+      "배관을 청소한다"
+    ],
+    "answer": 1,
+    "explanation": "특정 지점에서 배관이 움직이지 못하도록 **강력하게 고정**하는 장치입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "물분무 헤드의 설치 제외 장소는?",
+    "options": [
+      "주차장",
+      "변전실",
+      "물과 격렬하게 반응하는 물질이 있는 곳",
+      "위험물 저장소"
+    ],
+    "answer": 2,
+    "explanation": "금수성 물질(나트륨 등)이 있는 곳에 물을 뿌리면 폭발할 수 있으므로 설치하면 안 됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비의 기동용 가스용기 내부에 충전하는 가스는?",
+    "options": [
+      "산소",
+      "수소",
+      "질소 또는 이산화탄소",
+      "헬륨"
+    ],
+    "answer": 2,
+    "explanation": "주 저장용기 밸브를 열어주기 위한 기동용 가스로는 주로 **질소(N2)**를 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제연설비의 배출기 토출측 풍속은 몇 m/s 이하인가?",
+    "options": [
+      "10 m/s",
+      "15 m/s",
+      "20 m/s",
+      "30 m/s"
+    ],
+    "answer": 2,
+    "explanation": "나가는 바람인 토출측은 **20 m/s 이하**, 빨아들이는 흡입측은 **15 m/s 이하**여야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 노즐에서 0.17 MPa의 압력으로 방수할 때의 최소 방수량은?",
+    "options": [
+      "80 ℓ/min",
+      "130 ℓ/min",
+      "150 ℓ/min",
+      "200 ℓ/min"
+    ],
+    "answer": 1,
+    "explanation": "옥내소화전은 0.17 MPa 기준 분당 최소 **130리터** 이상의 물이 쏟아져야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비의 배관 중 '교차배관'의 끝에 설치하여 찌꺼기를 빼내는 장치는?",
+    "options": [
+      "게이트 밸브",
+      "체크 밸브",
+      "청소구 (Clean-out)",
+      "릴리프 밸브"
+    ],
+    "answer": 2,
+    "explanation": "배관 안의 녹이나 찌꺼기를 배출할 수 있도록 교차배관 끝에 **청소구**를 설치합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화 펌프의 성능시험 시 펌프의 토출압력이 정격의 140%를 넘을 때 작동하는 밸브는?",
+    "options": [
+      "후드 밸브",
+      "릴리프 밸브",
+      "알람 밸브",
+      "델류지 밸브"
+    ],
+    "answer": 1,
+    "explanation": "과압 방지를 위해 순환배관에 설치된 **릴리프 밸브**가 열리며 물을 빼줍니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화설비에서 '포 수용액'이란 무엇인가?",
+    "options": [
+      "순수한 거품",
+      "물과 포 소화약제가 혼합된 액체",
+      "기름과 섞인 물",
+      "공기가 가득한 물"
+    ],
+    "answer": 1,
+    "explanation": "물과 약제가 섞인 상태를 **포 수용액**이라 하며, 여기에 공기가 섞여야 거품이 됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비의 저장용기 충전비 중 '저압식'의 기준은?",
+    "options": [
+      "1.1 이상 1.4 이하",
+      "1.5 이상 1.9 이하",
+      "0.7 이상 1.1 이하",
+      "2.0 이상 2.5 이하"
+    ],
+    "answer": 0,
+    "explanation": "저압식은 **1.1~1.4**, 고압식은 **1.5~1.9**의 충전비를 갖습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "준비작동식 스프링클러 설비의 감지기 회로 배선 방식은?",
+    "options": [
+      "단선 방식",
+      "송배전 방식 (교차회로 방식 적용)",
+      "직렬 방식",
+      "병렬 방식"
+    ],
+    "answer": 1,
+    "explanation": "오작동 방지를 위해 두 개의 회로(A, B)가 모두 작동해야 밸브가 열리는 **교차회로 방식**을 씁니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구는 지면으로부터 높이가 몇 m 이상일 때 설치하는가?",
+    "options": [
+      "1층부터 무조건",
+      "3층 이상부터",
+      "11층 이상부터",
+      "지하층만"
+    ],
+    "answer": 1,
+    "explanation": "소방대원이 호스를 들고 올라가기 힘든 **3층 이상**의 층(지하 포함)에 방수구를 설치합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 배관에 설치하는 '개폐밸브'의 종류로 가장 적합한 것은?",
+    "options": [
+      "버터플라이 밸브",
+      "게이트 밸브 (OS&Y 등 개폐 확인 가능형)",
+      "체크 밸브",
+      "후드 밸브"
+    ],
+    "answer": 1,
+    "explanation": "밸브가 열렸는지 닫혔는지 눈으로 확인 가능한 **개폐표시형 밸브**를 사용해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 수조의 '유효 수량'이란?",
+    "options": [
+      "수조의 전체 부피",
+      "소방 펌프가 실제로 빨아들여 사용할 수 있는 물의 양",
+      "증발량을 뺀 나머지",
+      "겨울에 얼지 않는 물의 양"
+    ],
+    "answer": 1,
+    "explanation": "흡입구보다 위쪽에 있어 **펌프가 실제로 쓸 수 있는 양**을 유효 수량이라 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "할로겐화합물 소화설비의 '분무 헤드' 설치 높이 제한은?",
+    "options": [
+      "바닥에서 0.5m",
+      "바닥에서 1.0m",
+      "방호대상물의 높이에 따라 상이함 (대개 0.2~3.7m 등)",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "약제의 방사 특성과 화재 진압 효율을 위해 **대상물과의 적정 거리**를 지켜야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '배출기' 용량 산정 시 고려하지 않는 사항은?",
+    "options": [
+      "실의 바닥 면적",
+      "창문의 개수",
+      "제연구역의 장소 (거실, 복도 등)",
+      "배출 방식"
+    ],
+    "answer": 1,
+    "explanation": "창문 개수보다는 **면적과 제연 구역의 특성**이 배출량 결정의 핵심입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 설비 중 '일제살수식' 밸브를 기동하는 장치가 아닌 것은?",
+    "options": [
+      "화재감지기",
+      "폐쇄형 스프링클러 헤드 (감용액 방식)",
+      "수동 기동 밸브",
+      "물 흐름 검지기"
+    ],
+    "answer": 3,
+    "explanation": "**물 흐름 검지기(알람스위치)**는 물이 흐른 후 신호를 주는 장치이지, 밸브를 여는 기동 장치가 아닙니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화설비의 '고정포방출구' 중 탱크 상부에서 포를 뿌리는 방식은?",
+    "options": [
+      "제1종 또는 제2종 방출구",
+      "표면하 주입식",
+      "반표면하 주입식",
+      "이동식"
+    ],
+    "answer": 0,
+    "explanation": "탱크 옆면 상단에 고정되어 위에서 아래로 포를 쏟는 것은 **제1종/제2종 방출구**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 공동현상(Cavitation)을 방지하기 위한 대책으로 틀린 것은?",
+    "options": [
+      "펌프의 설치 위치를 낮춘다",
+      "흡입 배관의 구경을 크게 한다",
+      "흡입 배관의 길이를 길게 한다",
+      "흡입 배관의 굴곡을 줄인다"
+    ],
+    "answer": 2,
+    "explanation": "배관이 길어지면 저항이 커져서 오히려 **공동현상이 발생하기 쉽습니다.**",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드 설치 시 보(Beam) 하단에 설치하는 이유는?",
+    "options": [
+      "디자인상",
+      "보가 살수를 방해하지 않도록 하기 위해",
+      "배관을 고정하려고",
+      "높이를 맞추려고"
+    ],
+    "answer": 1,
+    "explanation": "보보다 위쪽에 헤드가 있으면 물이 보에 막혀 **사각지대**가 생기기 때문입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 배관 중 수직배관의 구경은 최소 몇 mm 이상이어야 하는가?",
+    "options": [
+      "32mm",
+      "40mm",
+      "50mm",
+      "100mm"
+    ],
+    "answer": 2,
+    "explanation": "수직주배관은 충분한 유량 확보를 위해 최소 **50mm** 이상이어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비 방출 시 발생하는 '안개 현상'의 원인은?",
+    "options": [
+      "가스가 타서",
+      "단열 팽창에 의한 온도 저하로 공기 중 수분이 응축되어",
+      "먼지가 날려서",
+      "약제가 액체로 변해서"
+    ],
+    "answer": 1,
+    "explanation": "고압 가스가 방출되며 급격히 팽창(온도 저하)하여 주변 수증기를 **안개**로 만듭니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 소화설비의 배수 설비 설치 목적은?",
+    "options": [
+      "수조 보충용",
+      "방수된 물과 섞인 위험물을 안전하게 배출하기 위해",
+      "청소용",
+      "상수도 연결"
+    ],
+    "answer": 1,
+    "explanation": "기름과 섞인 소화 용수가 넘쳐 화재가 번지는 것을 막기 위해 **배수구와 유분리기**를 설치합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 설비의 '말단 시험 밸브' 설치 목적은?",
+    "options": [
+      "배관 청소",
+      "가장 먼 헤드의 방수 압력 및 유량 확인",
+      "펌프 기동 정지",
+      "압력 빼기"
+    ],
+    "answer": 1,
+    "explanation": "가장 취약한 끝부분에서도 **규정 압력**이 나오는지 점검하기 위한 장치입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 펌프 주변에 설치하는 '플렉시블 조인트'의 역할은?",
+    "options": [
+      "압력을 높임",
+      "펌프의 진동이 배관으로 전달되는 것을 방지",
+      "배관을 길게 함",
+      "유량 조절"
+    ],
+    "answer": 1,
+    "explanation": "펌프 기동 시의 **진동과 소음**이 건물 배관 전체로 퍼지는 것을 막아주는 완충 부품입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제연설비의 '배출구' 설치 위치 기준으로 옳은 것은?",
+    "options": [
+      "바닥면",
+      "벽의 하단",
+      "천장 또는 벽의 상부 (바닥에서 2m 이상)",
+      "창문 바로 옆"
+    ],
+    "answer": 2,
+    "explanation": "연기는 천장 쪽으로 모이므로 배출구는 반드시 **높은 곳**에 위치해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화설비의 '압축공기포(CAFS)' 방식의 장점은?",
+    "options": [
+      "물이 많이 든다",
+      "수량이 적어도 소화 효과가 탁월하고 사거리가 길다",
+      "장비가 아주 싸다",
+      "공기가 필요 없다"
+    ],
+    "answer": 1,
+    "explanation": "소량의 물에 압축 공기를 섞어 거품을 극대화하므로 **수손 피해가 적고** 효율적입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "배관의 나사 체결 시 '파이프 렌치'를 사용하는 주된 이유는?",
+    "options": [
+      "가벼워서",
+      "둥근 파이프를 강력하게 쥐어 회전시키기 위해",
+      "망치 대신 쓰려고",
+      "측정용"
+    ],
+    "answer": 1,
+    "explanation": "파이프를 꽉 물어주는 이빨이 있어 **나사를 단단히 죌 때** 필수적인 공구입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 가압송수장치 중 '압력수조' 방식이란?",
+    "options": [
+      "펌프로 밀어주는 방식",
+      "탱크 내의 압축 공기로 물을 밀어내는 방식",
+      "높은 곳에 두는 방식",
+      "수도 직결 방식"
+    ],
+    "answer": 1,
+    "explanation": "별도의 펌프 없이 **공기압**으로 소화 용수를 뿜어내는 방식입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 '정격 토출 상태' 시험 시 확인해야 할 사항은?",
+    "options": [
+      "정격 유량에서 정격 압력이 나오는지 여부",
+      "최대 압력",
+      "물 부족 여부",
+      "모터 온도"
+    ],
+    "answer": 0,
+    "explanation": "설계된 대로 **100% 성능**이 발휘되는지 확인하는 가장 기본적인 성능 시험입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드의 '유효 살수 반경'은 보통 몇 m인가? (R)",
+    "options": [
+      "1.5m",
+      "2.1m ~ 2.3m",
+      "5.0m",
+      "10m"
+    ],
+    "answer": 1,
+    "explanation": "장소에 따라 다르지만 일반적인 내화 구조 거실은 **2.3m**, 랙크식 창고 등은 **2.5m** 등을 적용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "할로겐화합물 소화약제 중 '오존층 파괴 지수(ODP)'가 0인 것은?",
+    "options": [
+      "할론 1301",
+      "할론 1211",
+      "HFC-23 (청정약제류)",
+      "할론 2402"
+    ],
+    "answer": 2,
+    "explanation": "HFC 계열 등 **청정 소화약제**는 환경 파괴가 없는 친환경 제품들입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프 흡입측의 '연성계' 또는 '진공계' 설치 목적은?",
+    "options": [
+      "유량 측정",
+      "펌프의 흡입 압력(진공도)을 확인하기 위해",
+      "토출 압력 확인",
+      "수위 확인"
+    ],
+    "answer": 1,
+    "explanation": "펌프가 물을 얼마나 잘 빨아들이고 있는지 **흡입 상태**를 모니터링하기 위함입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드 중 '측벽형' 헤드를 설치하는 장소는?",
+    "options": [
+      "거실 중앙",
+      "복도나 좁은 방의 벽면 상단",
+      "지하 주차장",
+      "엘리베이터실"
+    ],
+    "answer": 1,
+    "explanation": "천장에 배관을 하기 어려운 **복도나 좁은 실**의 벽 옆에 설치하여 사방으로 뿌립니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 '충압펌프' 기동 압력 설정은?",
+    "options": [
+      "주펌프보다 높게 설정",
+      "주펌프보다 낮게 설정",
+      "주펌프와 동일하게",
+      "설정 안 함"
+    ],
+    "answer": 0,
+    "explanation": "배관 압력이 조금만 떨어져도 **충압펌프가 먼저** 돌아 주펌프의 잦은 기동을 막아야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '송풍기' 종류 중 소음이 적어 주로 사용되는 것은?",
+    "options": [
+      "원심식 송풍기 (시로코 팬 등)",
+      "축류식 송풍기",
+      "횡류 송풍기",
+      "선풍기"
+    ],
+    "answer": 0,
+    "explanation": "비교적 소음이 적고 정압이 높은 **원심식(Sirocco)** 송풍기를 많이 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전 호스함의 문짝(Door) 열림 각도 기준은?",
+    "options": [
+      "45도 이상",
+      "90도 이상",
+      "120도 이상",
+      "160도 이상"
+    ],
+    "answer": 3,
+    "explanation": "사용 시 방해되지 않도록 **160도 이상** 활짝 열리는 구조여야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 배관 중 '저압식' 배관의 재질은?",
+    "options": [
+      "스케줄 80 강관",
+      "배관용 탄소강관 (Sch 40 이상) 또는 동관",
+      "플라스틱관",
+      "연관"
+    ],
+    "answer": 1,
+    "explanation": "저압식은 상대적으로 압력이 낮아 **스케줄 40** 정도의 강관이나 동관을 쓸 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 토출측에 설치하는 '게이트 밸브'의 용도는?",
+    "options": [
+      "역류 방지",
+      "배관의 완전 폐쇄 및 유량 흐름 제어",
+      "자동 기동",
+      "압력 측정"
+    ],
+    "answer": 1,
+    "explanation": "점검 시나 배관 수리 시 물 흐름을 **완전히 차단**하는 용도로 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '화재조기진압용(ESFR)' 헤드의 방수 압력은?",
+    "options": [
+      "0.1 MPa 이상",
+      "0.17 MPa 이상",
+      "일반 헤드보다 훨씬 높은 고압",
+      "상관없음"
+    ],
+    "answer": 2,
+    "explanation": "ESFR 헤드는 창고 등에서 대형 화재를 초기에 잡아야 하므로 **강력한 고압**으로 방사합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화약제 중 '단백포'의 단점은?",
+    "options": [
+      "비싸다",
+      "유동성이 나쁘고 변질되기 쉽다",
+      "거품이 잘 안 난다",
+      "전기 전도성이 높다"
+    ],
+    "answer": 1,
+    "explanation": "동물성 단백질이 주원료라 **부패하기 쉽고** 끈적거려 잘 흐르지 않는 단점이 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화용 수조의 '자동 급수 장치'로 주로 쓰이는 것은?",
+    "options": [
+      "모터",
+      "볼탭 (Ball Tap)",
+      "수동 밸브",
+      "바가지"
+    ],
+    "answer": 1,
+    "explanation": "변기 수조처럼 물이 빠지면 자동으로 채워주는 **볼탭**을 사용합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 송수구 부근에 반드시 설치해야 하는 밸브 순서는? (밖에서 안으로)",
+    "options": [
+      "체크밸브 - 게이트밸브",
+      "자동배수밸브 - 체크밸브",
+      "게이트밸브 - 알람밸브",
+      "없음"
+    ],
+    "answer": 1,
+    "explanation": "겨울철 물 고임 방지를 위한 **자동배수밸브**와 물의 역류를 막는 **체크밸브**가 순서대로 있어야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 펌프 임펠러(Impeller)의 역할은?",
+    "options": [
+      "전기를 만듦",
+      "회전력을 이용해 물에 원심력과 압력을 줌",
+      "물을 거름",
+      "소음을 줄임"
+    ],
+    "answer": 1,
+    "explanation": "펌프 내부의 회전날개인 **임펠러**가 물을 세게 돌려 밖으로 밀어냅니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '오리피스' 규격 중 표준 규격의 지름은?",
+    "options": [
+      "5mm",
+      "11.2mm (또는 1/2인치)",
+      "20mm",
+      "50mm"
+    ],
+    "answer": 1,
+    "explanation": "일반적인 스프링클러 헤드 구멍(오리피스) 지름은 약 **11.2mm**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소화 배관의 지지 장치 중 배관을 아래에서 받쳐 지지하는 장치는?",
+    "options": [
+      "행거",
+      "서포트 (Support)",
+      "롤러",
+      "앵커"
+    ],
+    "answer": 1,
+    "explanation": "바닥이나 지지대 위에서 배관을 받쳐주는 것을 **서포트**라 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 헤드의 종류 중 '충돌형' 헤드란?",
+    "options": [
+      "벽에 부딪히는 것",
+      "두 개의 물줄기를 서로 충돌시켜 미세한 입자로 만드는 것",
+      "바닥을 치는 것",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "물줄기를 마주 보게 쏴서 **충돌 에너지를 이용**해 물안개를 만드는 방식입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 '선택 밸브'가 필요한 장소는?",
+    "options": [
+      "방호 구역이 1개인 곳",
+      "하나의 저장 용기 세트로 2개 이상의 방호 구역을 담당하는 곳",
+      "모든 곳",
+      "필요 없음"
+    ],
+    "answer": 1,
+    "explanation": "불이 난 구역으로만 가스를 보내주기 위한 **길목 역할**을 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '댐퍼' 중 평소엔 닫혀 있다가 화재 시 열리는 것은?",
+    "options": [
+      "배기 댐퍼",
+      "방화 댐퍼",
+      "조절 댐퍼",
+      "환기 댐퍼"
+    ],
+    "answer": 0,
+    "explanation": "연기를 빼내기 위한 **배기 댐퍼**는 화재 신호를 받으면 열립니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 '수조' 설치 장소 조명 기준은?",
+    "options": [
+      "항상 어둡게",
+      "점검에 지장이 없도록 충분한 조도를 확보해야 함",
+      "촛불 정도면 됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "안전한 관리와 점검을 위해 **조명 설비**가 되어 있어야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 '체절 압력' 측정 시 펌프가 과열되는 것을 막는 방법은?",
+    "options": [
+      "물을 뿌림",
+      "순환 배관을 통해 소량의 물을 방출함",
+      "펌프를 빨리 끔",
+      "얼음을 넣음"
+    ],
+    "answer": 1,
+    "explanation": "물 흐름이 없으면 수온이 급상승하므로 **순환 배관**으로 열을 식혀야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비의 '교차배관' 설치 간격 기준은?",
+    "options": [
+      "1.5m",
+      "3.7m",
+      "4.5m 이내마다",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "가지배관에 물을 공급하는 교차배관은 보통 **4.5m 이내** 간격으로 설치합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비의 '포 워터' 방식과 '포 헤드' 방식의 차이는?",
+    "options": [
+      "없음",
+      "포 워터는 물 위주, 포 헤드는 포 거품 위주로 설계됨",
+      "색깔 차이",
+      "전선 차이"
+    ],
+    "answer": 1,
+    "explanation": "**포 워터**는 물 스프링클러에 가깝고, **포 헤드**는 전문적인 포 방사 기능을 갖습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화용 펌프의 '베어링' 부분에서 열이 많이 날 때의 원인은?",
+    "options": [
+      "윤활유 부족 또는 정렬(Alignment) 불량",
+      "전압이 높아서",
+      "물이 차가워서",
+      "회전수가 낮아서"
+    ],
+    "answer": 0,
+    "explanation": "기계적 마찰이 심하거나 축이 비뚤어지면(**정렬 불량**) 과열이 발생합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 방수구에 설치하는 '캡'의 용도는?",
+    "options": [
+      "디자인",
+      "이물질 침입 방지 및 나사산 보호",
+      "압력 조절",
+      "물 빼기"
+    ],
+    "answer": 1,
+    "explanation": "평소에 먼지나 쓰레기가 들어가지 않게 막아주는 **뚜껑**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 '압력챔버' 내부 공기 교체 주기는?",
+    "options": [
+      "매일",
+      "주 1회",
+      "공기가 물에 흡수되어 펌프가 잦게 기동할 때 수시로",
+      "필요 없음"
+    ],
+    "answer": 2,
+    "explanation": "챔버 안의 공기가 사라지면 완충 작용이 안 되어 **펌프가 덜덜거리며 자주 돕니다.**",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '표준반응형' 감열 시간 기준(RTI)은?",
+    "options": [
+      "50 이하",
+      "80 이상 350 이하",
+      "1000 이상",
+      "없음"
+    ],
+    "answer": 1,
+    "explanation": "**RTI 80~350** 정도를 표준반응형으로 보며, 50 이하는 조기반응형입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "배관 연결 방법 중 '그루브 조인트(Grooved Joint)'의 장점은?",
+    "options": [
+      "무거움",
+      "용접 없이 볼트 체결로 빠르고 간편하게 시공 가능",
+      "전기가 흐름",
+      "가격이 비쌈"
+    ],
+    "answer": 1,
+    "explanation": "배관 끝에 홈을 파서 끼우는 방식으로 **시공성**이 매우 뛰어나 소방에서 애용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 소화설비의 '헤드' 간격 결정 시 고려하는 사항은?",
+    "options": [
+      "바닥 면적",
+      "방호 대상물의 형상과 살수 반경",
+      "전등 위치",
+      "천장 높이"
+    ],
+    "answer": 1,
+    "explanation": "대상물을 빈틈없이 감싸야 하므로 **모양과 헤드의 각도**가 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 '방출 표시등' 설치 위치는?",
+    "options": [
+      "방호구역 내부",
+      "방호구역 출입구 상단 외부",
+      "관리실",
+      "수조 내부"
+    ],
+    "answer": 1,
+    "explanation": "안에 가스가 차 있으니 **들어가지 말라**는 뜻으로 문 밖에 답니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '방화 댐퍼'가 작동하는 온도는 보통 몇 도인가?",
+    "options": [
+      "50도",
+      "72도",
+      "100도",
+      "280도"
+    ],
+    "answer": 1,
+    "explanation": "화재 열기가 덕트를 타고 번지지 않게 **72도** 부근에서 녹아 닫힙니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 '비상전원' 용량은 최소 몇 분인가?",
+    "options": [
+      "10분",
+      "20분",
+      "30분",
+      "60분"
+    ],
+    "answer": 1,
+    "explanation": "표준적인 비상전원은 **20분** 이상 펌프를 돌릴 수 있어야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 '가변 저항' 역할을 하여 유량을 조절하는 밸브는?",
+    "options": [
+      "성능시험배관 말단의 개폐밸브",
+      "체크밸브",
+      "후드밸브",
+      "안전밸브"
+    ],
+    "answer": 0,
+    "explanation": "밸브를 조금씩 열고 닫으며 **유량계의 수치**를 맞춥니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '부압식' 방식의 특징은?",
+    "options": [
+      "압력이 아주 높음",
+      "배관 내를 진공(마이너스 압력)으로 유지하여 누수 시 물이 새지 않게 함",
+      "공기가 가득함",
+      "소리가 큼"
+    ],
+    "answer": 1,
+    "explanation": "귀중품이 있는 곳에서 배관이 깨져도 물이 쏟아지지 않게 **빨아들이는 압력**을 거는 방식입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화약제 중 '합성계면활성제포'의 특징은?",
+    "options": [
+      "냄새가 고약함",
+      "내열성이 약하지만 유동성이 좋고 보관이 쉬움",
+      "색깔이 까맣다",
+      "얼지 않는다"
+    ],
+    "answer": 1,
+    "explanation": "비누 성분과 비슷하여 **잘 흐르고** 변질이 적지만 열에는 다소 약합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화용 펌프의 '커플링' 부분 안전 덮개 설치 이유는?",
+    "options": [
+      "멋있게 보이려고",
+      "회전 부위에 옷이나 손이 끼는 사고를 방지하기 위해",
+      "기름이 튀지 않게",
+      "소음을 막으려고"
+    ],
+    "answer": 1,
+    "explanation": "고속 회전하는 축은 매우 위험하므로 반드시 **안전망/덮개**가 있어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 배관 중 지상에 노출된 구간은 어떤 배관을 써야 하는가?",
+    "options": [
+      "플라스틱관",
+      "부식 방지 처리가 된 강관",
+      "구리관",
+      "고무 호스"
+    ],
+    "answer": 1,
+    "explanation": "외부 환경에 견디고 강한 수압을 버티는 **아연도금강판** 등을 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 '릴리프 밸브'에서 물이 계속 샌다면?",
+    "options": [
+      "정상임",
+      "밸브 시트 불량 또는 설정 압력이 너무 낮음",
+      "수조가 꽉 참",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "평소엔 닫혀 있어야 합니다. 새는 것은 **고장**이거나 설정 오류입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '퓨즈'가 녹는 원리는?",
+    "options": [
+      "수압",
+      "열에 의한 금속 합금의 용해",
+      "연기",
+      "전기"
+    ],
+    "answer": 1,
+    "explanation": "특정 온도에서 녹도록 설계된 **낮은 융점의 금속**이 녹으면서 물을 터뜨립니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "배관 시공 시 '수평'을 맞추는 가장 정확한 장비는?",
+    "options": [
+      "줄자",
+      "레이저 수평기 또는 수평대 (Level)",
+      "눈대중",
+      "실"
+    ],
+    "answer": 1,
+    "explanation": "배관의 구배(기울기)나 수평을 잡기 위해 **수평기**를 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 소화설비의 '송수구' 설치 위치는?",
+    "options": [
+      "건물 옥상",
+      "소방차가 쉽게 접근할 수 있는 건물 외벽",
+      "기계실 안",
+      "지하 주차장 구석"
+    ],
+    "answer": 1,
+    "explanation": "소방차에서 물을 공급해주기 위해 **밖에서 잘 보이는 곳**에 설치합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 '약제 방출구' 모양이 나팔꽃처럼 넓은 이유는?",
+    "options": [
+      "예쁘라고",
+      "가스 유속을 줄여 약제가 멀리 고르게 퍼지게 하려고",
+      "소리를 크게 내려고",
+      "막히지 않게"
+    ],
+    "answer": 1,
+    "explanation": "강한 압력의 가스를 **부드럽게 확산**시키기 위해 나팔 모양(Horn)을 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '배출기' 풍량이 부족할 때 가장 먼저 확인해야 할 전기적 사항은?",
+    "options": [
+      "전등 전압",
+      "모터의 회전 방향 (역회전 여부)",
+      "전화선",
+      "인터넷"
+    ],
+    "answer": 1,
+    "explanation": "팬이 반대로 돌면 바람이 거의 안 나옵니다. **회전 방향** 확인이 1순위입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 '호스' 보관 방법으로 옳은 것은?",
+    "options": [
+      "물에 적셔 둔다",
+      "물기를 완전히 제거하고 통풍이 잘 되게 꼬이지 않게 접어 보관한다",
+      "바닥에 널어 둔다",
+      "매듭을 지어 둔다"
+    ],
+    "answer": 1,
+    "explanation": "습기가 있으면 곰팡이가 피거나 고무가 붙어버릴 수 있어 **건조**가 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 유량계의 바늘이 심하게 떨릴 때 원인은?",
+    "options": [
+      "물이 깨끗해서",
+      "배관 내 공기가 찼거나 와류가 심함",
+      "유량계가 너무 커서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "불안정한 물 흐름이나 **공기** 때문에 정확한 측정이 어려울 때 나타나는 현상입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '방수구'가 항상 열려 있는 방식은?",
+    "options": [
+      "습식",
+      "건식",
+      "일제살수식 (개방형)",
+      "준비작동식"
+    ],
+    "answer": 2,
+    "explanation": "**일제살수식**은 헤드 뚜껑이 없는 개방형을 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비의 '포 워터' 스프링클러 헤드 한 개가 담당하는 면적은?",
+    "options": [
+      "5㎡",
+      "9.3㎡ 이내",
+      "20㎡",
+      "50㎡"
+    ],
+    "answer": 1,
+    "explanation": "조밀하게 뿌려야 하므로 대개 **9.3㎡** 이하로 제한합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화용 펌프의 '그랜드 패킹' 부분에서 물이 한 방울씩 떨어지는 것은?",
+    "options": [
+      "정상 (윤활 및 냉각을 위해 필요)",
+      "심각한 고장",
+      "물 낭비",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "열 발생을 막기 위해 **약간의 물(분당 수십 방울)**은 새어 나와야 정상입니다. (메커니컬 씰은 예외)",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 방수구에 호스를 미리 연결해 두어도 되는가?",
+    "options": [
+      "예",
+      "아니오 (비상시 전용 호스를 연결해 써야 하므로 평소엔 비워둠)",
+      "상관없음",
+      "관리자 마음"
+    ],
+    "answer": 1,
+    "explanation": "소방대원이 자기 호스를 가져와 꽂는 것이 원칙이므로 **비워두는 것**이 일반적입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 '체크 밸브' 위쪽 배관에서 물을 빼면 펌프가 도는 이유는?",
+    "options": [
+      "귀신이 곡할 노릇",
+      "배관 압력이 떨어져 압력스위치가 기동 신호를 보냈기 때문",
+      "배터리 부족",
+      "소음 때문"
+    ],
+    "answer": 1,
+    "explanation": "소방 시스템은 **배관 압력 저하**를 화재(소화전 사용)로 인식하여 펌프를 돌립니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '가용편' 재질은 주로 어떤 금속인가?",
+    "options": [
+      "철",
+      "알루미늄",
+      "우드 합금 (납, 주석 등의 혼합물)",
+      "구리"
+    ],
+    "answer": 2,
+    "explanation": "낮은 온도에서 녹는 **납 합금(Wood's Metal)** 등을 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "배관의 도색 중 '펌프 흡입측'은 보통 어떤 색으로 구분하는가?",
+    "options": [
+      "적색",
+      "백색 또는 청색 띠",
+      "황색",
+      "녹색"
+    ],
+    "answer": 1,
+    "explanation": "상대적으로 낮은 압력임을 알리기 위해 **백색** 등으로 차별화하기도 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 소화설비의 '일제개방밸브' 수동 개방 방법은?",
+    "options": [
+      "밸브를 발로 참",
+      "수동 개방 밸브(볼 밸브 등)를 연다",
+      "전선을 자른다",
+      "수조를 비움"
+    ],
+    "answer": 1,
+    "explanation": "비상시 손으로 직접 돌려 열 수 있는 **수동 밸브**가 달려 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 '안전 밸브'가 터졌을 때 조치는?",
+    "options": [
+      "테이프를 붙임",
+      "과압 원인 분석 후 밸브 교체 및 가스 보충",
+      "무시",
+      "물을 부음"
+    ],
+    "answer": 1,
+    "explanation": "탱크 내부 압력이 위험 수위를 넘었다는 뜻이므로 **정밀 점검**이 필요합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '풍도' 내부에 연기가 쌓이지 않게 하려면?",
+    "options": [
+      "풍속을 일정 이상 유지하고 정기적으로 청소한다",
+      "필터를 꽉 채운다",
+      "배관을 좁힌다",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "기름 찌꺼기 등이 쌓이면 화재 시 위험하므로 **정기 관리**가 필요합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 '앵글 밸브'란?",
+    "options": [
+      "90도로 꺾인 형태의 소화전 밸브",
+      "일직선 밸브",
+      "둥근 밸브",
+      "수도꼭지"
+    ],
+    "answer": 0,
+    "explanation": "소화전함 내부에 호스를 연결하기 좋게 **90도**로 꺾여 있는 밸브입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 유량계의 '플로트(Float)'가 가리키는 지점 읽는 법은?",
+    "options": [
+      "가장 밑부분",
+      "가장 넓은 상단 부분",
+      "중간",
+      "아무 데나"
+    ],
+    "answer": 1,
+    "explanation": "일반적인 유량계는 뜨개(플로트)의 **가장 윗면** 수평선을 읽습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '격층 설치'란?",
+    "options": [
+      "한 층 걸러 설치함",
+      "위아래 층 헤드 위치를 엇갈리게 배치하여 살수 밀도를 높임",
+      "천장에만 설치",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "사각지대를 줄이기 위해 **지그재그**로 배치하는 기법입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비의 '포 워터' 스프링클러 헤드에 녹이 슬면?",
+    "options": [
+      "방사 패턴이 찌그러지거나 구멍이 막혀 소화 실패 원인이 됨",
+      "빈티지함",
+      "더 단단해짐",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "정밀한 살수 분포가 생명이므로 **청결 상태**가 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "소화용 펌프의 '커플링 볼트'가 풀리면?",
+    "options": [
+      "소리가 커지고 진동이 심해지며 동력 전달이 안 됨",
+      "속도가 빨라짐",
+      "전기가 많이 나옴",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "모터의 힘이 펌프로 안 전달되어 **물이 안 나옵니다.**",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 방수구 '위치 표시등' 색상은?",
+    "options": [
+      "적색",
+      "녹색",
+      "황색",
+      "백색"
+    ],
+    "answer": 0,
+    "explanation": "다른 소방 시설과 마찬가지로 **적색 전등**을 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가압송수장치의 '압력스위치' 범위(Range)와 편차(Diff) 설정의 의미는?",
+    "options": [
+      "무게 조절",
+      "펌프가 멈추는 압력(Range)과 다시 도는 압력 차이(Diff) 설정",
+      "전기료 조절",
+      "물 온도 조절"
+    ],
+    "answer": 1,
+    "explanation": "**Range**는 정지점, **Diff**는 기동점과의 차이를 말합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드 설치 시 천장에서 너무 멀리(30cm 이상) 떨어지면?",
+    "options": [
+      "좋음",
+      "연기와 열기가 헤드를 지나쳐 천장에 고여 작동이 늦어짐",
+      "물이 더 잘 퍼짐",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "뜨거운 공기는 천장에 붙어 흐르므로 헤드가 너무 낮으면 **감지 지연**이 발생합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "배관의 '구배(기울기)'를 주어야 하는 주된 이유는?",
+    "options": [
+      "디자인",
+      "배관 내의 물을 완전히 배수하기 위해",
+      "수압을 높이려고",
+      "공사하기 편해서"
+    ],
+    "answer": 1,
+    "explanation": "수리나 동파 예방을 위해 물을 뺄 때 **자연스럽게 흘러나오도록** 경사를 줍니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "물분무 소화설비의 '헤드' 세척 방법은?",
+    "options": [
+      "산성 용액에 담금",
+      "부드러운 솔로 이물질을 제거하고 물로 헹굼",
+      "불로 태움",
+      "망치로 침"
+    ],
+    "answer": 1,
+    "explanation": "구멍이 작아 막히기 쉬우므로 **조심스럽게 이물질만** 털어냅니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 '기동용 가스용기' 압력이 낮으면?",
+    "options": [
+      "가스가 천천히 나옴",
+      "주 밸브를 열어주지 못해 가스 방출이 안 됨",
+      "상관없음",
+      "전기가 안 통함"
+    ],
+    "answer": 1,
+    "explanation": "주 용기를 때려줄 **힘(압력)**이 부족하여 시스템 전체가 먹통이 됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제연설비의 '송풍기' 벨트가 헐거우면?",
+    "options": [
+      "소리가 안 남",
+      "회전력이 전달 안 되어 풍량이 급격히 줄어듦",
+      "전기료가 절약됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "헛돌게 되어 **풍량 부족**의 원인이 됩니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 방수구 설치 제외 장소가 아닌 것은?",
+    "options": [
+      "냉장창고의 냉동실",
+      "고온의 노가 설치된 장소",
+      "야외 주차장",
+      "식물원"
+    ],
+    "answer": 3,
+    "explanation": "물에 의해 피해를 입거나 얼 수 있는 곳, 너무 뜨거운 곳은 제외되지만 **식물원**은 설치 대상입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 유량이 정격의 150%일 때, 유량계의 바늘이 가리키는 지점은?",
+    "options": [
+      "중간",
+      "상단 최대치 부근",
+      "가장 아래",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "최대 부하 시험이므로 유량계의 **최대 측정 범위** 근처까지 물이 흘러야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드의 '글라스 벌브' 안에 들어있는 액체의 색상이 '빨간색'이라면 표시 온도는?",
+    "options": [
+      "57도",
+      "68도",
+      "79도",
+      "93도"
+    ],
+    "answer": 1,
+    "explanation": "가장 일반적인 **68도** 작동 헤드는 유리의 액체 색상이 **빨간색**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비의 '펌프 프로포셔너' 방식에서 농도를 조절하는 부품은?",
+    "options": [
+      "조절 밸브 (Metering Valve)",
+      "체크 밸브",
+      "릴리프 밸브",
+      "게이트 밸브"
+    ],
+    "answer": 0,
+    "explanation": "약제의 흡입량을 미세하게 조절하는 **미터링 밸브**를 통해 농도를 맞춥니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이산화탄소 소화설비의 저장 용기실에 설치해야 하는 환기 시설 기준은?",
+    "options": [
+      "없음",
+      "바닥 부근의 가스를 외부로 배출할 수 있는 하부 환기 시설",
+      "천장 선풍기",
+      "에어컨"
+    ],
+    "answer": 1,
+    "explanation": "CO2는 공기보다 무거워 바닥에 깔리므로 **하부 환기**가 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "연결송수관설비의 수평배관에 설치하는 밸브 중 '체크밸브'의 설치 목적은?",
+    "options": [
+      "유량 확인",
+      "펌프로부터 송수된 물이 송수구 쪽으로 역류하는 것을 방지",
+      "압력 낮춤",
+      "물 빼기"
+    ],
+    "answer": 1,
+    "explanation": "건물 내 펌프 압력이 밖(송수구)으로 빠져나가지 않게 **역류를 막는** 역할입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 설비 중 '개방형 헤드'를 사용하는 방식은?",
+    "options": [
+      "습식",
+      "건식",
+      "일제살수식",
+      "준비작동식"
+    ],
+    "answer": 2,
+    "explanation": "전 구역에 동시에 물을 뿌려야 하는 **일제살수식**은 뚜껑이 없는 개방형 헤드를 씁니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 배관에 설치되는 '유량계' 전후단의 직선 배관 길이를 확보하는 이유는?",
+    "options": [
+      "공간 확보",
+      "와류를 방지하여 유량 측정의 정확도를 높이기 위해",
+      "전선 보호",
+      "심미적 이유"
+    ],
+    "answer": 1,
+    "explanation": "물 흐름이 안정되어야 유량계가 정확하게 작동합니다. (보통 전단 5D, 후단 3D 등)",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 노즐 지름이 13mm일 때, 방수량(Q) 계산식에 포함되는 상수는?",
+    "options": [
+      "0.653",
+      "2.086",
+      "0.99",
+      "3.14"
+    ],
+    "answer": 1,
+    "explanation": "노즐 방수량 공식 Q = **2.086** × d² × √P 에서 2.086이 상수로 쓰입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드 중 '디플렉터'가 고정되어 있지 않고 수압에 의해 내려오는 방식은?",
+    "options": [
+      "상향형",
+      "플러쉬(Flush)형 또는 은폐형",
+      "측벽형",
+      "표준형"
+    ],
+    "answer": 1,
+    "explanation": "천장면에 매립되어 있다가 화재 시에만 튀어나오는 **은폐형** 헤드에 대한 설명입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화설비의 '혼합 장치' 중 벤추리 관의 원리를 이용하는 것은?",
+    "options": [
+      "라인 프로포셔너",
+      "펌프 프로포셔너",
+      "압축공기포",
+      "물올림 장치"
+    ],
+    "answer": 0,
+    "explanation": "좁은 관을 지날 때 압력이 낮아져 약제를 빨아올리는 **벤추리 원리**를 쓰는 것은 **라인 프로포셔너**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 중 '가압송수장치'의 정격토출량이 1,000 ℓ/min이라면 성능시험배관의 최소 구경은?",
+    "options": [
+      "40mm",
+      "65mm",
+      "80mm",
+      "100mm"
+    ],
+    "answer": 2,
+    "explanation": "유량에 따른 표준 규격상 1,000 ℓ/min 급은 보통 **80mm** 이상의 시험 배관을 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '기동용 가스용기' 외부에 표시해야 하는 사항은?",
+    "options": [
+      "사용자 이름",
+      "충전 가스의 명칭 및 중량",
+      "가전제품 표시",
+      "제조업체 전화번호만"
+    ],
+    "answer": 1,
+    "explanation": "가스 종류와 양을 명확히 표시하여 오혼용을 방지합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '배출기'와 배관 연결 시 사용하는 천 재질의 연결부는?",
+    "options": [
+      "캔버스 (Canvas) 이음",
+      "플렉시블",
+      "고무 패킹",
+      "실리콘"
+    ],
+    "answer": 0,
+    "explanation": "송풍기의 진동이 덕트로 전달되지 않게 불연성 **캔버스** 천으로 연결합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '함' 설치 위치로 틀린 것은?",
+    "options": [
+      "피난에 장애가 없는 곳",
+      "발신기 높이와 맞춘 곳",
+      "천장 안쪽 깊숙한 곳",
+      "잘 보이는 복도"
+    ],
+    "answer": 2,
+    "explanation": "누구나 즉시 사용해야 하므로 **천장 안**에 숨기면 안 됩니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 '릴리프 밸브'가 규정 압력보다 너무 일찍 터진다면?",
+    "options": [
+      "좋음",
+      "정격 압력에 도달하지 못하므로 조정이 필요함",
+      "수조 물이 넘침",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "압력이 필요한 만큼 안 올라가므로 스프링을 조여 **압력 설정**을 다시 해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '표시 온도'가 121도라면 액체 구슬(Bulb)의 색상은?",
+    "options": [
+      "오렌지색",
+      "적색",
+      "황색",
+      "녹색"
+    ],
+    "answer": 2,
+    "explanation": "79도는 노란색, 93도는 녹색, **121도** 부근은 **보라색이나 베이지색** 계열을 씁니다. (색상표 확인 필요)",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화설비의 '수동 기동 장치' 설치 높이 기준은?",
+    "options": [
+      "0.5m 이하",
+      "0.8m 이상 1.5m 이하",
+      "2.0m 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "사람이 조작하는 장치는 표준적으로 **0.8m ~ 1.5m** 사이입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 펌프의 '흡입측 여과기(Strainer)'를 정기적으로 청소해야 하는 이유는?",
+    "options": [
+      "멋있게 보이려고",
+      "막히면 펌프의 흡입력이 떨어져 공동현상이나 성능 저하를 유발하므로",
+      "색깔을 내기 위해",
+      "배관 수명을 위해"
+    ],
+    "answer": 1,
+    "explanation": "이물질이 막히면 물이 안 올라와 **펌프가 타버릴 수 있습니다.**",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구 '위치 표시등'이 꺼져 있다면?",
+    "options": [
+      "화재 상황이 아님",
+      "야간이나 연기 속에서 소방관이 방수구를 찾기 어려워짐",
+      "전기가 절약됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "생명선과 같은 소방관의 활동을 방해하므로 **즉시 수리**해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 '주펌프' 정지점 설정 시 주의사항은?",
+    "options": [
+      "체절 압력보다 높게 설정 (정지하지 않도록 권장되기도 함)",
+      "최대한 낮게",
+      "0으로 설정",
+      "배터리 전압에 맞춤"
+    ],
+    "answer": 0,
+    "explanation": "최신 기준은 화재 진압 도중 펌프가 꺼지는 것을 막기 위해 **자동 정지를 하지 않도록** 설정하는 경우가 많습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드 설치 시 '반사판'의 방향은?",
+    "options": [
+      "위로 향함",
+      "아래로 향함 (하향형인 경우 바닥 쪽)",
+      "상관없음",
+      "옆으로 향함"
+    ],
+    "answer": 1,
+    "explanation": "물을 분산시켜야 하므로 **뿌려지는 방향**을 향해 있어야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "배관 연결 부속 중 '엘보(Elbow)'의 역할은?",
+    "options": [
+      "배관을 길게 잇는다",
+      "배관의 방향을 90도 또는 45도 꺾는다",
+      "배관 구경을 줄인다",
+      "물을 뺀다"
+    ],
+    "answer": 1,
+    "explanation": "배관의 **방향 전환**에 쓰이는 'ㄱ'자 모양 부속입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "물분무 소화설비의 '헤드' 배치가 조밀할수록 좋은 점은?",
+    "options": [
+      "비용 절감",
+      "방호 대상물 전체에 균일한 수막을 형성하여 사각지대 제거",
+      "물 사용량 감소",
+      "소음 감소"
+    ],
+    "answer": 1,
+    "explanation": "빈틈없이 젖게 하여 **확실한 냉각과 질식** 효과를 냅니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '기동용 배관'에 동관을 사용하는 이유는?",
+    "options": [
+      "비싸서",
+      "가압 가스의 높은 압력에 잘 견디고 시공(구부림)이 쉽기 때문",
+      "가볍기 때문",
+      "녹이 잘 슬기 때문"
+    ],
+    "answer": 1,
+    "explanation": "기동용 신호 라인은 가늘고 압력이 높으므로 **내압성이 좋은 동관**을 선호합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '송풍기' 회전수가 너무 빠르면 발생하는 문제는?",
+    "options": [
+      "공기가 맑아짐",
+      "소음과 진동이 심해지고 모터에 과부하가 걸림",
+      "전기료가 줄어듦",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "적정 회전수를 유지해야 기기에 무리가 가지 않고 **원하는 풍량**을 얻을 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '방수 압력'이 1.0 MPa로 너무 높다면?",
+    "options": [
+      "매우 좋은 것임",
+      "호스가 터지거나 사람이 다칠 수 있으므로 감압 장치 필요",
+      "물탱크 청소용",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "적정 압력(0.17~0.7)을 넘어서면 **위험**합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 '압력계'의 바늘이 0에서 안 움직인다면?",
+    "options": [
+      "압력이 없음",
+      "압력계 콕(Cock) 밸브가 닫혀 있거나 압력계 고장",
+      "펌프가 너무 좋음",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "측정 준비 과정에서 **콕 밸브**를 열었는지 확인해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 설비 중 '화재 신호'를 받고 밸브가 열려 배관에 물을 채워두는 방식은?",
+    "options": [
+      "습식",
+      "건식",
+      "준비작동식",
+      "부압식"
+    ],
+    "answer": 2,
+    "explanation": "헤드가 터지기 전 미리 물을 채워 대기하는 **준비작동식**에 대한 설명입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화약제 중 '수성막포'의 보관 수명은 다른 약제에 비해?",
+    "options": [
+      "매우 짧음",
+      "긴 편임 (약 10년 내외)",
+      "1개월",
+      "무제한"
+    ],
+    "answer": 1,
+    "explanation": "**수성막포**는 화학적 안정성이 뛰어나 상대적으로 **장기 보관**이 가능합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 펌프의 '축봉장치(Packing)'를 너무 꽉 조이면?",
+    "options": [
+      "물도 안 새고 좋음",
+      "마찰열로 축이 손상되거나 모터가 타버릴 수 있음",
+      "펌프 수명이 길어짐",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "약간의 물이 새어 나와 **윤활과 냉각**을 해줘야 축이 건강합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구 '설치 개수' 기준은?",
+    "options": [
+      "층마다 1개",
+      "층마다 2개 이상 (수평거리 50m 이내마다)",
+      "건물 전체 1개",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "소방대원이 이동하기 편하게 **수평거리 50m**마다 하나씩 배치합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 '압력스위치' 상단 뚜껑을 열었을 때 보이는 나사의 용도는?",
+    "options": [
+      "조립용",
+      "기동 및 정지 압력 조절용",
+      "장식용",
+      "전압 조절용"
+    ],
+    "answer": 1,
+    "explanation": "스프링의 탄성을 조절하여 **펌프 작동 시점**을 셋팅합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '살수 분포' 시험 목적은?",
+    "options": [
+      "물이 예쁘게 나오는지 보려고",
+      "바닥에 물이 골고루 뿌려져 사각지대가 없는지 확인하기 위해",
+      "물 사용량 측정",
+      "배수 용량 측정"
+    ],
+    "answer": 1,
+    "explanation": "특정 지점에만 물이 쏠리지 않고 **균일하게 적시는지**가 화재 진압의 핵심입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "배관의 연결 방법 중 '용접'의 장점은?",
+    "options": [
+      "누설 위험이 가장 적고 일체감이 뛰어남",
+      "시공이 가장 빠름",
+      "아무나 할 수 있음",
+      "해체가 쉬움"
+    ],
+    "answer": 0,
+    "explanation": "가장 **견고하고 영구적인** 연결 방식입니다. (단, 화재 위험 주의)",
+    "difficulty": 1
+  },
+  {
+    "question": "물분무 소화설비의 '수원'은 무엇을 사용하는 것이 원칙인가?",
+    "options": [
+      "깨끗한 물 (상수도 등)",
+      "바닷물",
+      "흙탕물",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "헤드 구멍이 작아 이물질이 있으면 바로 막히므로 **깨끗한 물**이 필수입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '약제 방량' 계산 시 고려하는 '개구부 가산량'이란?",
+    "options": [
+      "덤으로 주는 양",
+      "창문 등 열린 공간으로 빠져나가는 가스량을 보충하기 위한 추가량",
+      "청소용",
+      "예비용"
+    ],
+    "answer": 1,
+    "explanation": "새어 나가는 양까지 계산해서 넣어야 **목표 농도**를 맞출 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '방화 구획'을 관통하는 덕트에 설치해야 하는 필수 장치는?",
+    "options": [
+      "에어컨",
+      "화재 시 자동으로 닫히는 방화 댐퍼",
+      "강화 유리",
+      "필터"
+    ],
+    "answer": 1,
+    "explanation": "불길이 덕트를 타고 **다른 구역으로 번지는 것**을 막아야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '상치 수조'란?",
+    "options": [
+      "펌프보다 높은 곳에 설치된 수조",
+      "펌프보다 낮은 곳에 설치된 수조",
+      "화장실 수조",
+      "상시 사용 수조"
+    ],
+    "answer": 0,
+    "explanation": "펌프 위쪽에 있어 물이 중력으로 내려와 **펌프에 항상 물이 차 있게** 하는 수조입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 '유량계'의 측정 단위로 가장 많이 쓰이는 것은?",
+    "options": [
+      "kg/cm²",
+      "ℓ/min (LPM)",
+      "m/s",
+      "Volt"
+    ],
+    "answer": 1,
+    "explanation": "분당 리터 수인 **ℓ/min**를 표준으로 사용합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '표준형' 살수 형태는?",
+    "options": [
+      "우산 모양",
+      "반구 모양 (사방으로 골고루)",
+      "일직선",
+      "안개 모양"
+    ],
+    "answer": 1,
+    "explanation": "바닥과 벽면을 골고루 적시도록 **반구형**으로 퍼져 나갑니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화약제 중 '단백포'를 썼을 때 유류 화재 표면에 생기는 현상은?",
+    "options": [
+      "물이 생김",
+      "단단한 거품층이 형성되어 산소 차단",
+      "기름이 끓음",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**내열성**이 좋은 단백포 거품이 열기를 버티며 불을 끕니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 펌프의 '기동 표시등' 색상은?",
+    "options": [
+      "녹색",
+      "적색",
+      "백색",
+      "황색"
+    ],
+    "answer": 1,
+    "explanation": "시스템이 돌아가고 있다는 긴급 표시이므로 **적색**을 주로 씁니다. (정지 시 녹색)",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구 '핸들'은 어느 방향으로 돌려야 열리는가?",
+    "options": [
+      "시계 방향",
+      "반시계 방향",
+      "상관없음",
+      "당기면 열림"
+    ],
+    "answer": 1,
+    "explanation": "모든 밸브는 표준적으로 **반시계 방향**으로 돌려야 열립니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 '압력챔버'에 설치된 안전밸브의 작동 압력은?",
+    "options": [
+      "정격 압력",
+      "체절 압력 직전",
+      "0.1 MPa",
+      "무제한"
+    ],
+    "answer": 1,
+    "explanation": "챔버 파손을 막기 위해 **체절 압력** 부근에서 작동하도록 셋팅합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '감열체'가 파손되었을 때의 대처법은?",
+    "options": [
+      "테이프를 붙임",
+      "즉시 새 헤드로 교체 (물 방출 주의)",
+      "본드로 붙임",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "언제 터질지 모르는 시한폭탄과 같습니다. **즉시 교체**가 답입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "배관의 '수압 시험' 시 가하는 압력 기준은?",
+    "options": [
+      "상용 압력과 동일",
+      "상용 압력의 1.5배 이상으로 일정 시간 유지",
+      "무조건 100 MPa",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "누수가 없는지 확인하기 위해 **더 높은 압력**으로 버티는지 테스트합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "물분무 소화설비의 '헤드' 구멍이 막혔는지 확인하는 가장 좋은 방법은?",
+    "options": [
+      "눈으로 봄",
+      "실제 방수 시험 실시",
+      "바늘로 찔러봄",
+      "공기만 불어넣음"
+    ],
+    "answer": 1,
+    "explanation": "**실제 물을 쏴보는 것**이 살수 패턴과 막힘 여부를 아는 가장 확실한 길입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '방출구' 위치 선정 시 주의사항은?",
+    "options": [
+      "바닥만 향함",
+      "실 전체에 약제가 균일한 농도로 퍼질 수 있도록 배치",
+      "구석에 몰아넣음",
+      "천장 안쪽에 숨김"
+    ],
+    "answer": 1,
+    "explanation": "**농도의 균일성**이 소화의 성패를 가릅니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '배출 풍도' 내부에 습기가 찼을 때 조치는?",
+    "options": [
+      "배수구를 통해 물을 빼고 건조시킨다",
+      "무시한다",
+      "팬을 더 세게 돌린다",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "습기는 부식과 **덕트 손상**의 원인이 되므로 관리해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '방수구' 주위에 물건을 쌓아두면 안 되는 법적 이유는?",
+    "options": [
+      "공간 낭비",
+      "화재 시 즉각적인 소화 활동을 방해하여 피해를 키우기 때문",
+      "벌금이 무서워서",
+      "먼지 쌓임"
+    ],
+    "answer": 1,
+    "explanation": "1분 1초가 급한 상황에서 **접근성**은 생명입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 '가압송수장치'의 소음이 평소보다 크다면?",
+    "options": [
+      "성능이 좋아짐",
+      "기계적 결함이나 공동현상 의심",
+      "전기가 많이 들어옴",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "이상 소음은 **베어링 마모나 내부 파손**의 전조 증상일 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '은폐형' 헤드 점검 시 주의사항은?",
+    "options": [
+      "커버가 잘 달려 있는지, 도색되어 고착되지 않았는지 확인",
+      "커버를 떼어냄",
+      "물을 부어봄",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "인테리어용 커버가 **페인트 등으로 붙어버리면** 화재 시 안 떨어져서 물이 안 나옵니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화약제 중 '수성막포'의 소화 원리는?",
+    "options": [
+      "기름을 얼림",
+      "유면 위에 얇은 수막을 형성하여 가연성 증기 차단",
+      "기름과 섞임",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "거품뿐만 아니라 **얇은 물막**이 기름 위를 덮어 산소를 확실히 차단합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 펌프의 '기동 방식' 중 수동 기동 장치를 설치해야 하는 곳은?",
+    "options": [
+      "모든 장소",
+      "상시 근무자가 없는 곳",
+      "학교",
+      "공원"
+    ],
+    "answer": 0,
+    "explanation": "자동 기동이 실패할 경우를 대비해 **모든 소화 펌프**에는 수동 조작 기능이 있어야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구는 '바닥'으로부터 몇 m 높이에 설치하는가?",
+    "options": [
+      "0.5m ~ 1.0m",
+      "0.8m ~ 1.5m",
+      "2m 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "소방대원이 허리를 굽히지 않고 호스를 꽂기 편한 **0.8m ~ 1.5m**가 표준입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 '체크 밸브' 중 스윙(Swing) 타입의 특징은?",
+    "options": [
+      "물 흐름 저항이 적음",
+      "수직 설치만 가능",
+      "매우 비쌈",
+      "소리가 안 남"
+    ],
+    "answer": 0,
+    "explanation": "밸브 판이 문처럼 열리는 방식으로 **압력 손실**이 적은 장점이 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '표시 온도' 선정 시 기준은?",
+    "options": [
+      "무조건 높은 것",
+      "설치 장소의 최고 주위 온도보다 충분히 높은 것",
+      "기상청 온도",
+      "사용자 마음"
+    ],
+    "answer": 1,
+    "explanation": "한여름 천장 온도에도 터지지 않도록 **평소 온도보다 높게** 설정합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "배관의 '신축 이음' 중 벨로우즈(Bellows)형의 특징은?",
+    "options": [
+      "공간을 적게 차지하며 축 방향 신축 흡수력이 좋음",
+      "매우 크다",
+      "잘 터진다",
+      "설치가 불가능하다"
+    ],
+    "answer": 0,
+    "explanation": "주름관 모양으로 **배관의 늘어남**을 깔끔하게 받아주는 부속입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "물분무 소화설비의 '방호 구역' 설정 기준은?",
+    "options": [
+      "100㎡ 이내",
+      "대상물의 크기와 위험도를 고려하여 구획",
+      "무조건 1,000㎡",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "한꺼번에 너무 많은 곳을 끄려면 수량이 부족해지므로 적절히 **구획**해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '수동 기동' 시 순서는?",
+    "options": [
+      "가스를 먼저 틀고 도망침",
+      "방호구역 내 인원 대피 확인 후 기동 스위치 작동",
+      "전기 차단",
+      "물 붓기"
+    ],
+    "answer": 1,
+    "explanation": "인명 안전을 위해 **대피 확인**이 무조건 1순위입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '송풍기' 가동 시 역풍이 발생하는 원인은?",
+    "options": [
+      "모터 회전 방향 반대 또는 댐퍼 오작동",
+      "바람이 너무 세서",
+      "덕트가 둥글어서",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "팬이 거꾸로 돌거나 나가는 길이 막히면(**댐퍼 폐쇄**) 공기가 튀어 나옵니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '경종' 소리가 너무 작을 때 확인사항은?",
+    "options": [
+      "배관 내 수압",
+      "전원 전압 및 선로 단선 여부",
+      "물 색깔",
+      "날씨"
+    ],
+    "answer": 1,
+    "explanation": "경종은 전기 장치이므로 **전력 상태**가 중요합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 '가압송수장치'의 유량이 평소보다 줄었다면?",
+    "options": [
+      "펌프 수명이 다함",
+      "임펠러 마모나 여과기 막힘 의심",
+      "전기가 아까워서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "물을 밀어주는 **회전날개**가 닳았거나 입구가 막혔을 가능성이 큽니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '설치 간격'이 너무 넓으면?",
+    "options": [
+      "비용 절감",
+      "살수 분포가 겹치지 않는 사각지대가 생겨 화재 진압 실패",
+      "더 시원함",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "불이 난 곳에 물이 안 닿으면 **대형 사고**로 이어집니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화약제 중 '수성막포'를 사용하는 소화기(이동식)의 특징은?",
+    "options": [
+      "사용법이 아주 어려움",
+      "유류 화재 초기에 매우 효과적이며 재발화 억제력이 좋음",
+      "전기 화재 전용",
+      "가스 화재 전용"
+    ],
+    "answer": 1,
+    "explanation": "수막 형성 능력이 좋아 **기름 불**을 끄는 데 아주 탁월합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소화용 펌프의 '기동 압력'이 너무 낮게 설정되어 있다면?",
+    "options": [
+      "펌프가 안 돔",
+      "화재 시 물을 써도 펌프가 늦게 돌아 수압이 부족해짐",
+      "전기가 절약됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "적정 압력을 유지하도록 **빠른 기동** 설정이 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 방수구 중 '쌍구형'을 설치하는 주된 목적은?",
+    "options": [
+      "멋있게 보이려고",
+      "대량의 물을 동시에 공급하여 강력한 화재 진압력을 얻기 위해",
+      "예비용",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "호스 두 개를 동시에 연결해 **방수량을 극대화**합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 '압력챔버' 내부 물을 완전히 빼는 '소기' 작업 주기는?",
+    "options": [
+      "매일",
+      "펌프 기동이 불안정할 때 수시로",
+      "10년마다",
+      "안 해도 됨"
+    ],
+    "answer": 1,
+    "explanation": "챔버에 물이 꽉 차면 **쿠션 역할**을 못 하므로 물을 빼고 공기를 채워야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '작동 후' 대처법은?",
+    "options": [
+      "그냥 둠",
+      "화재 진압 후 즉시 주 밸브 폐쇄 및 새 헤드로 교체 후 정상 복구",
+      "본드로 붙임",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "물이 계속 나오면 **수손 피해**가 커지므로 상황 종료 후 즉시 복구해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "배관의 '지지 대' 설치 시 간격 규정은?",
+    "options": [
+      "아무 데나",
+      "배관 지름과 재질에 따라 법에서 정한 거리 이내 (보통 2~5m)",
+      "10m마다",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "배관이 처지거나 흔들리지 않게 **적정 간격**을 지켜야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "물분무 소화설비의 '펌프' 기동 방식은?",
+    "options": [
+      "수동만 가능",
+      "화재감지기 연동 또는 압력 저하 시 자동 기동",
+      "상시 가동",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**자동 시스템**에 의해 즉시 작동해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 '방출구'에서 가스가 나올 때 발생하는 소음의 크기는?",
+    "options": [
+      "매우 조용함",
+      "매우 크며 귀를 찌를 정도 (청력 보호 주의)",
+      "음악 소리 같음",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "고압 가스 방출음은 **엄청난 소음**을 동반하므로 주변 인원 대피가 우선입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 '송풍기' 고정 볼트가 풀리면?",
+    "options": [
+      "시원함",
+      "심한 진동과 소음이 발생하며 기기가 파손될 수 있음",
+      "전기료가 절약됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "기계적 안정성을 위해 **볼트 체결 상태**를 수시로 봐야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "옥내소화전설비의 '방수구' 설치 제외 장소가 아닌 것은?",
+    "options": [
+      "냉장창고의 냉동실",
+      "고온의 노가 설치된 장소",
+      "야외 주차장",
+      "식물원"
+    ],
+    "answer": 3,
+    "explanation": "물에 의해 피해를 입거나 얼 수 있는 곳, 너무 뜨거운 곳은 제외되지만 **식물원**은 설치 대상입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 중 유량이 정격의 150%일 때, 유량계의 바늘이 가리키는 지점은?",
+    "options": [
+      "중간",
+      "상단 최대치 부근",
+      "가장 아래",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "최대 부하 시험이므로 유량계의 **최대 측정 범위** 근처까지 물이 흘러야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "스프링클러 헤드의 '글라스 벌브' 안에 들어있는 액체의 색상이 '빨간색'이라면 표시 온도는?",
+    "options": [
+      "57도",
+      "68도",
+      "79도",
+      "93도"
+    ],
+    "answer": 1,
+    "explanation": "가장 일반적인 **68도** 작동 헤드는 유리의 액체 색상이 **빨간색**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "포 소화설비의 '펌프 프로포셔너' 방식에서 농도를 조절하는 부품은?",
+    "options": [
+      "조절 밸브 (Metering Valve)",
+      "체크 밸브",
+      "릴리프 밸브",
+      "게이트 밸브"
+    ],
+    "answer": 0,
+    "explanation": "약제의 흡입량을 미세하게 조절하는 **미터링 밸브**를 통해 농도를 맞춥니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 저장 용기실에 설치해야 하는 환기 시설 기준은?",
+    "options": [
+      "없음",
+      "바닥 부근의 가스를 외부로 배출할 수 있는 하부 환기 시설",
+      "천장 선풍기",
+      "에어컨"
+    ],
+    "answer": 1,
+    "explanation": "CO2는 공기보다 무거워 바닥에 깔리므로 **하부 환기**가 필수입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "연결송수관설비의 수평배관에 설치하는 밸브 중 '체크밸브'의 설치 목적은?",
+    "options": [
+      "유량 확인",
+      "펌프로부터 송수된 물이 송수구 쪽으로 역류하는 것을 방지",
+      "압력 낮춤",
+      "물 빼기"
+    ],
+    "answer": 1,
+    "explanation": "건물 내 펌프 압력이 밖(송수구)으로 빠져나가지 않게 **역류를 막는** 역할입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 설비 중 '개방형 헤드'를 사용하는 방식은?",
+    "options": [
+      "습식",
+      "건식",
+      "일제살수식",
+      "준비작동식"
+    ],
+    "answer": 2,
+    "explanation": "전 구역에 동시에 물을 뿌려야 하는 **일제살수식**은 뚜껑이 없는 개방형 헤드를 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "펌프의 성능시험 배관에 설치되는 '유량계' 전후단의 직선 배관 길이를 확보하는 이유는?",
+    "options": [
+      "공간 확보",
+      "와류를 방지하여 유량 측정의 정확도를 높이기 위해",
+      "전선 보호",
+      "심미적 이유"
+    ],
+    "answer": 1,
+    "explanation": "물 흐름이 안정되어야 유량계가 정확하게 작동합니다. (보통 전단 5D, 후단 3D 등)",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 노즐 지름이 13mm일 때, 방수량(Q) 계산식에 포함되는 상수는?",
+    "options": [
+      "0.653",
+      "2.086",
+      "0.99",
+      "3.14"
+    ],
+    "answer": 1,
+    "explanation": "노즐 방수량 공식 Q = **2.086** × d² × √P 에서 2.086이 상수로 쓰입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드 중 '디플렉터'가 고정되어 있지 않고 수압에 의해 내려오는 방식은?",
+    "options": [
+      "상향형",
+      "플러쉬(Flush)형 또는 은폐형",
+      "측벽형",
+      "표준형"
+    ],
+    "answer": 1,
+    "explanation": "천장면에 매립되어 있다가 화재 시에만 튀어나오는 **은폐형** 헤드에 대한 설명입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "포 소화설비의 '혼합 장치' 중 벤추리 관의 원리를 이용하는 것은?",
+    "options": [
+      "라인 프로포셔너",
+      "펌프 프로포셔너",
+      "압축공기포",
+      "물올림 장치"
+    ],
+    "answer": 0,
+    "explanation": "좁은 관을 지날 때 압력이 낮아져 약제를 빨아올리는 **벤추리 원리**를 쓰는 것은 **라인 프로포셔너**입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "펌프의 성능시험 중 '가압송수장치'의 정격토출량이 1,000 ℓ/min이라면 성능시험배관의 최소 구경은?",
+    "options": [
+      "40mm",
+      "65mm",
+      "80mm",
+      "100mm"
+    ],
+    "answer": 2,
+    "explanation": "유량에 따른 표준 규격상 1,000 ℓ/min 급은 보통 **80mm** 이상의 시험 배관을 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비의 '기동용 가스용기' 외부에 표시해야 하는 사항은?",
+    "options": [
+      "사용자 이름",
+      "충전 가스의 명칭 및 중량",
+      "가전제품 표시",
+      "제조업체 전화번호만"
+    ],
+    "answer": 1,
+    "explanation": "가스 종류와 양을 명확히 표시하여 오혼용을 방지합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제연설비의 '배출기'와 배관 연결 시 사용하는 천 재질의 연결부는?",
+    "options": [
+      "캔버스 (Canvas) 이음",
+      "플렉시블",
+      "고무 패킹",
+      "실리콘"
+    ],
+    "answer": 0,
+    "explanation": "송풍기의 진동이 덕트로 전달되지 않게 불연성 **캔버스** 천으로 연결합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 '함' 설치 위치로 틀린 것은?",
+    "options": [
+      "피난에 장애가 없는 곳",
+      "발신기 높이와 맞춘 곳",
+      "천장 안쪽 깊숙한 곳",
+      "잘 보이는 복도"
+    ],
+    "answer": 2,
+    "explanation": "누구나 즉시 사용해야 하므로 **천장 안**에 숨기면 안 됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 중 '릴리프 밸브'가 규정 압력보다 너무 일찍 터진다면?",
+    "options": [
+      "좋음",
+      "정격 압력에 도달하지 못하므로 조정이 필요함",
+      "수조 물이 넘침",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "압력이 필요한 만큼 안 올라가므로 스프링을 조여 **압력 설정**을 다시 해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 헤드의 '표시 온도'가 121도라면 액체 구슬(Bulb)의 색상은?",
+    "options": [
+      "오렌지색",
+      "적색",
+      "황색",
+      "녹색"
+    ],
+    "answer": 2,
+    "explanation": "79도는 노란색, 93도는 녹색, **121도** 부근은 **보라색이나 베이지색** 계열을 씁니다. (색상표 확인 필요)",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화설비의 '수동 기동 장치' 설치 높이 기준은?",
+    "options": [
+      "0.5m 이하",
+      "0.8m 이상 1.5m 이하",
+      "2.0m 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "사람이 조작하는 장치는 표준적으로 **0.8m ~ 1.5m** 사이입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소화용 펌프의 '흡입측 여과기(Strainer)'를 정기적으로 청소해야 하는 이유는?",
+    "options": [
+      "멋있게 보이려고",
+      "막히면 펌프의 흡입력이 떨어져 공동현상이나 성능 저하를 유발하므로",
+      "색깔을 내기 위해",
+      "배관 수명을 위해"
+    ],
+    "answer": 1,
+    "explanation": "이물질이 막히면 물이 안 올라와 **펌프가 타버릴 수 있습니다.**",
+    "difficulty": 2
+  },
+  {
+    "question": "연결송수관설비의 방수구 '위치 표시등'이 꺼져 있다면?",
+    "options": [
+      "화재 상황이 아님",
+      "야간이나 연기 속에서 소방관이 방수구를 찾기 어려워짐",
+      "전기가 절약됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "생명선과 같은 소방관의 활동을 방해하므로 **즉시 수리**해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "가압송수장치의 '주펌프' 정지점 설정 시 주의사항은?",
+    "options": [
+      "체절 압력보다 높게 설정 (정지하지 않도록 권장되기도 함)",
+      "최대한 낮게",
+      "0으로 설정",
+      "배터리 전압에 맞춤"
+    ],
+    "answer": 0,
+    "explanation": "최신 기준은 화재 진압 도중 펌프가 꺼지는 것을 막기 위해 **자동 정지를 하지 않도록** 설정하는 경우가 많습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드 설치 시 '반사판'의 방향은?",
+    "options": [
+      "위로 향함",
+      "아래로 향함 (하향형인 경우 바닥 쪽)",
+      "상관없음",
+      "옆으로 향함"
+    ],
+    "answer": 1,
+    "explanation": "물을 분산시켜야 하므로 **뿌려지는 방향**을 향해 있어야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "배관 연결 부속 중 '엘보(Elbow)'의 역할은?",
+    "options": [
+      "배관을 길게 잇는다",
+      "배관의 방향을 90도 또는 45도 꺾는다",
+      "배관 구경을 줄인다",
+      "물을 뺀다"
+    ],
+    "answer": 1,
+    "explanation": "배관의 **방향 전환**에 쓰이는 'ㄱ'자 모양 부속입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "물분무 소화설비의 '헤드' 배치가 조밀할수록 좋은 점은?",
+    "options": [
+      "비용 절감",
+      "방호 대상물 전체에 균일한 수막을 형성하여 사각지대 제거",
+      "물 사용량 감소",
+      "소음 감소"
+    ],
+    "answer": 1,
+    "explanation": "빈틈없이 젖게 하여 **확실한 냉각과 질식** 효과를 냅니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이산화탄소 소화설비의 '기동용 배관'에 동관을 사용하는 이유는?",
+    "options": [
+      "비싸서",
+      "가압 가스의 높은 압력에 잘 견디고 시공(구부림)이 쉽기 때문",
+      "가볍기 때문",
+      "녹이 잘 슬기 때문"
+    ],
+    "answer": 1,
+    "explanation": "기동용 신호 라인은 가늘고 압력이 높으므로 **내압성이 좋은 동관**을 선호합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제연설비의 '송풍기' 회전수가 너무 빠르면 발생하는 문제는?",
+    "options": [
+      "공기가 맑아짐",
+      "소음과 진동이 심해지고 모터에 과부하가 걸림",
+      "전기료가 줄어듦",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "적정 회전수를 유지해야 기기에 무리가 가지 않고 **원하는 풍량**을 얻을 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥내소화전설비의 '방수 압력'이 1.0 MPa로 너무 높다면?",
+    "options": [
+      "매우 좋은 것임",
+      "호스가 터지거나 사람이 다칠 수 있으므로 감압 장치 필요",
+      "물탱크 청소용",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "적정 압력(0.17~0.7)을 넘어서면 **위험**합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "펌프의 성능시험 중 '압력계'의 바늘이 0에서 안 움직인다면?",
+    "options": [
+      "압력이 없음",
+      "압력계 콕(Cock) 밸브가 닫혀 있거나 압력계 고장",
+      "펌프가 너무 좋음",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "측정 준비 과정에서 **콕 밸브**를 열었는지 확인해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러 설비 중 '화재 신호'를 받고 밸브가 열려 배관에 물을 채워두는 방식은?",
+    "options": [
+      "습식",
+      "건식",
+      "준비작동식",
+      "부압식"
+    ],
+    "answer": 2,
+    "explanation": "헤드가 터지기 전 미리 물을 채워 대기하는 **준비작동식**에 대한 설명입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "포 소화약제 중 '수성막포'의 보관 수명은 다른 약제에 비해?",
+    "options": [
+      "매우 짧음",
+      "긴 편임 (약 10년 내외)",
+      "1개월",
+      "무제한"
+    ],
+    "answer": 1,
+    "explanation": "**수성막포**는 화학적 안정성이 뛰어나 상대적으로 **장기 보관**이 가능합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소화용 펌프의 '축봉장치(Packing)'를 너무 꽉 조이면?",
+    "options": [
+      "물도 안 새고 좋음",
+      "마찰열로 축이 손상되거나 모터가 타버릴 수 있음",
+      "펌프 수명이 길어짐",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "약간의 물이 새어 나와 **윤활과 냉각**을 해줘야 축이 건강합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "연결송수관설비의 방수구 '설치 개수' 기준은?",
+    "options": [
+      "층마다 1개",
+      "층마다 2개 이상 (수평거리 50m 이내마다)",
+      "건물 전체 1개",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "소방대원이 이동하기 편하게 **수평거리 50m**마다 하나씩 배치합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "가압송수장치의 '압력스위치' 상단 뚜껑을 열었을 때 보이는 나사의 용도는?",
+    "options": [
+      "조립용",
+      "기동 및 정지 압력 조절용",
+      "장식용",
+      "전압 조절용"
+    ],
+    "answer": 1,
+    "explanation": "스프링의 탄성을 조절하여 **펌프 작동 시점**을 셋팅합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러 헤드의 '살수 분포' 시험 목적은?",
+    "options": [
+      "물이 예쁘게 나오는지 보려고",
+      "바닥에 물이 골고루 뿌려져 사각지대가 없는지 확인하기 위해",
+      "물 사용량 측정",
+      "배수 용량 측정"
+    ],
+    "answer": 1,
+    "explanation": "특정 지점에만 물이 쏠리지 않고 **균일하게 적시는지**가 화재 진압의 핵심입니다.",
     "difficulty": 2
   }
 ]

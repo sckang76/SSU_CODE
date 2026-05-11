@@ -21,7 +21,7 @@
     ],
     "answer": 0,
     "explanation": "특수인화물(에테르 등)의 지정수량은 **50리터**입니다. 제1석유류 비수용성은 200리터입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제3류 위험물 중 금수성 물질에 화재가 발생했을 때 절대 사용해서는 안 되는 소화제는?",
@@ -33,7 +33,7 @@
     ],
     "answer": 3,
     "explanation": "금수성 물질은 **물과 만나면 가연성 가스(수소 등)와 열**을 내뿜어 폭발할 수 있습니다. 물은 절대 금지!",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "인화점이 0℃ 미만으로 매우 낮으며, 정전기 발생을 주의해야 하는 위험물 품명은?",
@@ -57,7 +57,7 @@
     ],
     "answer": 1,
     "explanation": "제5류는 물질 자체에 산소를 포함하고 있어 질식 소화가 효과가 없습니다. **다량의 물로 냉각**하는 것이 최선입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "황린(제3류)의 저장 방법으로 옳은 것은?",
@@ -69,7 +69,7 @@
     ],
     "answer": 1,
     "explanation": "황린은 발화점이 약 34℃로 매우 낮아 공기 중 자동 발화합니다. 이를 막기 위해 **물속(pH 9 정도)**에 보관합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 제조소의 표지판 색상 규정으로 옳은 것은?",
@@ -93,7 +93,7 @@
     ],
     "answer": 3,
     "explanation": "마그네슘은 산성 물질과 반응하면 수소 가스를 발생시키므로 **산과의 접촉을 엄격히 금지**합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제6류 위험물인 질산의 성질로 옳은 것은?",
@@ -105,7 +105,7 @@
     ],
     "answer": 2,
     "explanation": "질산은 강산이며 산화성 액체입니다. 빛에 분해되어 이산화질소를 생성하며 **갈색**으로 변할 수 있습니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "특수인화물 중 '디에틸에테르'의 인화점은 약 몇 ℃인가?",
@@ -129,7 +129,7 @@
     ],
     "answer": 0,
     "explanation": "인화성 증기는 공기보다 무거워 바닥에 깔립니다. 이를 효과적으로 뽑아내기 위해 **강제 배출설비**를 설치합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제1류 위험물 중 '과산화나트륨'에 화재가 났을 때 적절한 소화제는?",
@@ -141,7 +141,7 @@
     ],
     "answer": 2,
     "explanation": "무기과산화물(제1류 중 금수성)은 물과 만나면 산소와 열을 내며 격렬히 반응합니다. **마른 모래나 금수성용 분말**을 써야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 운송 시 '혼재'가 가능한 조합은?",
@@ -165,7 +165,7 @@
     ],
     "answer": 1,
     "explanation": "알코올 같은 수용성 액체는 일반 포 소화약제를 녹여버립니다. 따라서 **내알코올포**를 써야 하므로 구분이 필수입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물 탱크 안전성능검사의 종류가 아닌 것은?",
@@ -177,7 +177,7 @@
     ],
     "answer": 3,
     "explanation": "탱크의 구조적 안전을 위해 기초, 지반, 수압, 용접부 비파괴검사 등을 실시하지만 **냄새**는 검사 항목이 아닙니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제2류 위험물인 '적린'의 발화점은 약 몇 ℃인가?",
@@ -201,7 +201,7 @@
     ],
     "answer": 2,
     "explanation": "**휘발유(가솔린)**가 대표적인 제1석유류입니다. 등유와 경유는 제2석유류입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물 성질 중 '조해성'이란 무엇을 의미하는가?",
@@ -213,7 +213,7 @@
     ],
     "answer": 0,
     "explanation": "제1류 위험물 중 일부는 습기를 먹고 **스스로 녹아버리는 조해성**을 가지고 있어 밀봉 보관이 중요합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제5류 위험물인 '니트로글리세린'의 성상으로 옳은 것은?",
@@ -237,7 +237,7 @@
     ],
     "answer": 2,
     "explanation": "불을 절대 가까이하면 안 되는 '화기엄금'은 **적색 바탕에 백색 문자**로 강력하게 경고합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제1류 위험물의 공통적인 소화 방법으로 가장 효과적인 것은?",
@@ -249,7 +249,7 @@
     ],
     "answer": 1,
     "explanation": "제1류는 가연물에 산소를 공급하므로 산소를 차단하는 질식보다는 **다량의 물로 냉각**하여 반응을 억제하는 것이 기본입니다. (금수성 제외)",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 품명 중 '동식물유류'의 인화점 기준은?",
@@ -273,7 +273,7 @@
     ],
     "answer": 2,
     "explanation": "칼륨, 나트륨 등 알칼리 금속은 물과 격렬히 반응하여 폭발성인 **수소 가스**를 생성합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제4류 위험물 중 '제2석유류'인 등유와 경유의 지정수량(비수용성)은?",
@@ -285,7 +285,7 @@
     ],
     "answer": 2,
     "explanation": "제2석유류 비수용성(등유, 경유 등)의 지정수량은 **1,000리터**입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제6류 위험물인 '과산화수소'의 저장 농도 기준은?",
@@ -309,7 +309,7 @@
     ],
     "answer": 0,
     "explanation": "입자가 아주 고와서 불이 붙기 쉬운 **미세 가루 상태**만 위험물로 정의합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물 제조소 외부에 설치하는 '물기엄금' 주의사항 표지의 색상은?",
@@ -321,7 +321,7 @@
     ],
     "answer": 2,
     "explanation": "물과 반응하면 안 되는 물질은 시원한 **청색 바탕에 백색 문자**로 '물기엄금'을 표시합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제4류 위험물 중 '벤젠'의 증기 비중은 약 얼마인가? (공기=1)",
@@ -345,7 +345,7 @@
     ],
     "answer": 0,
     "explanation": "염소산염류는 열을 받으면 강력한 조연성 가스인 **산소**를 방출합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제4류 위험물 저장탱크의 공간용적 기준은 탱크 용적의 몇 %인가?",
@@ -357,7 +357,7 @@
     ],
     "answer": 1,
     "explanation": "온도 변화에 따른 액체의 팽창을 고려하여 보통 **5~10%**의 비어있는 공간(공간용적)을 둡니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물 중 '알킬알루미늄' 화재 시 가장 적절한 소화제는?",
@@ -381,7 +381,7 @@
     ],
     "answer": 3,
     "explanation": "국가 기술 자격증 소지자나 특정 경력을 갖춘 **전문 인력**만 안전관리자가 될 수 있습니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제5류 위험물 중 '아조화합물'의 지정수량은?",
@@ -393,7 +393,7 @@
     ],
     "answer": 2,
     "explanation": "아조화합물, 디아조화합물의 지정수량은 **200kg**입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제4류 위험물 중 '알코올류'의 정의로 옳은 것은?",
@@ -417,7 +417,7 @@
     ],
     "answer": 1,
     "explanation": "폭발 시 비산을 막기 위해 **망입유리**를 쓰고 안전한 위치에 설치해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '황화린'이 물과 반응할 때 발생하는 유독 가스는?",
@@ -429,7 +429,7 @@
     ],
     "answer": 1,
     "explanation": "황화린은 물이나 습기와 만나면 계란 썩는 냄새가 나는 독성 가스인 **황화수소**를 만듭니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제1석유류인 '아세톤'의 소화 시 일반 포 소화약제가 효과가 없는 이유는?",
@@ -453,7 +453,7 @@
     ],
     "answer": 3,
     "explanation": "**마그네슘**은 물과 반응하므로 비를 맞을 수 있는 옥외저장소에는 절대 보관할 수 없습니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제1류 위험물인 '과망간산칼륨'의 색상은?",
@@ -465,7 +465,7 @@
     ],
     "answer": 2,
     "explanation": "과망간산칼륨은 물에 녹이면 보라색이 되는 **진한 자색(보라색)** 결정입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 탱크 주변에 설치하는 '방유제'의 목적은?",
@@ -489,7 +489,7 @@
     ],
     "answer": 1,
     "explanation": "증기 비중은 공기와 비교하므로 **공기의 평균 분자량인 29**로 나누어 계산합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제3류 위험물 중 '금속의 인화물'인 인화칼슘이 물과 반응하여 만드는 가스는?",
@@ -501,7 +501,7 @@
     ],
     "answer": 2,
     "explanation": "인화칼슘은 물과 만나면 강력한 독성과 가연성을 가진 **포스핀(PH3)** 가스를 발생시킵니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 안전관리법상 '위험물'의 정의로 옳은 것은?",
@@ -525,7 +525,7 @@
     ],
     "answer": 3,
     "explanation": "대부분의 유기 용제는 **전기 전도성이 낮아(부도체)** 정전기가 매우 잘 발생하며, 이 정전기가 폭발의 원인이 됩니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '유황'의 지정수량은?",
@@ -537,7 +537,7 @@
     ],
     "answer": 0,
     "explanation": "유황의 지정수량은 **100kg**입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제5류 위험물 저장 시 가장 주의해야 할 외부 요인은?",
@@ -561,7 +561,7 @@
     ],
     "answer": 2,
     "explanation": "강산인 과염소산은 금속을 부식시키므로 **철제 용기**는 피해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제4류 위험물 중 '제1석유류'의 인화점 범위는?",
@@ -573,7 +573,7 @@
     ],
     "answer": 1,
     "explanation": "제1석유류는 상온에서도 불이 붙을 수 있는 **21℃ 미만**의 인화점을 가집니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 중 '질산염류'인 질산칼륨을 이용해 만드는 것은?",
@@ -597,7 +597,7 @@
     ],
     "answer": 1,
     "explanation": "열팽창으로 인한 **탱크 파손이나 유출**을 막기 위한 안전 여유 공간입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '가연성 고체'의 특징은?",
@@ -609,7 +609,7 @@
     ],
     "answer": 1,
     "explanation": "황, 적린 등 **불이 붙기 쉬운 고체**들을 말합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물 중 '나트륨' 화재 시 소화 방법으로 틀린 것은?",
@@ -633,7 +633,7 @@
     ],
     "answer": 2,
     "explanation": "가장 끈적하고 불이 잘 안 붙는 제4석유류의 지정수량은 **6,000리터**입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제5류 위험물인 '유기과산화물'의 저장 온도 관리 방법은?",
@@ -645,7 +645,7 @@
     ],
     "answer": 2,
     "explanation": "스스로 분해되는 성질이 강하므로 온도가 낮은 **냉암소** 보관이 필수입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제6류 위험물인 '오불화브롬'의 성상은?",
@@ -669,7 +669,7 @@
     ],
     "answer": 2,
     "explanation": "출렁임과 팽창을 고려하여 최대 **98% 이하**만 채워야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제4류 위험물 중 '특수인화물'에 해당하는 물질은?",
@@ -681,7 +681,7 @@
     ],
     "answer": 2,
     "explanation": "**이황화탄소(CS2)**와 디에틸에테르가 대표적인 특수인화물입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 중 '질산암모늄'의 열분해 시 생성되는 폭발성 물질은?",
@@ -705,7 +705,7 @@
     ],
     "answer": 2,
     "explanation": "어떤 위험물을 얼마나 싣고 있는지 증명하는 **완공검사증 및 관련 서류**가 필수입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '철분, 금속분, 마그네슘'의 공통적인 금지 사항은?",
@@ -717,7 +717,7 @@
     ],
     "answer": 0,
     "explanation": "불꽃에 잘 타고 물과 만나면 수소를 발생시키므로 **불과 물**을 모두 멀리해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물 중 '칼슘 또는 알루미늄의 탄화물'인 탄화칼슘이 물과 만나 만드는 가스는?",
@@ -741,7 +741,7 @@
     ],
     "answer": 1,
     "explanation": "제3석유류 비수용성의 지정수량은 **2,000리터**입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물 탱크의 외면에 도색하는 주된 이유는?",
@@ -753,7 +753,7 @@
     ],
     "answer": 1,
     "explanation": "주로 흰색이나 은색으로 칠해 **태양열을 반사**시켜 내부 온도가 올라가는 것을 막습니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제5류 위험물인 '니트로화합물' 중 TNT의 정식 명칭은?",
@@ -777,7 +777,7 @@
     ],
     "answer": 2,
     "explanation": "제6류 위험물(산화성 액체)의 지정수량은 모두 **300kg**입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물 안전관리법상 '지정수량'의 의미는?",
@@ -789,7 +789,7 @@
     ],
     "answer": 2,
     "explanation": "이 수량 이상을 저장하려면 반드시 **법적 허가**를 받고 안전 시설을 갖추어야 한다는 '안전 가이드라인'입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 중 '브롬산염류'의 지정수량은?",
@@ -813,7 +813,7 @@
     ],
     "answer": 0,
     "explanation": "탄소수가 많아지면 분자량이 커지므로 **증기 비중(분자량/29)**이 당연히 커집니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제3류 위험물 중 '금속의 수화물'인 수화나트륨이 물과 반응하여 만드는 가스는?",
@@ -825,7 +825,7 @@
     ],
     "answer": 2,
     "explanation": "금속 수화물은 물과 만나면 격렬히 반응하며 **수소 가스**를 방출합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 옥내저장소의 바닥면적 기준 중 제1류 위험물(산화성 고체)은 몇 ㎡ 이하인가?",
@@ -849,7 +849,7 @@
     ],
     "answer": 1,
     "explanation": "피리딘은 제1석유류 중 **수용성** 액체이며, 특유의 고약한 냄새가 납니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '인화성 고체'의 정의 중 인화점 기준은?",
@@ -861,7 +861,7 @@
     ],
     "answer": 1,
     "explanation": "고체이지만 인화점이 **40℃ 미만**으로 낮아 불이 붙기 쉬운 물질을 말합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 운반 시 '차광성' 있는 피복을 씌워야 하는 위험물이 아닌 것은?",
@@ -885,7 +885,7 @@
     ],
     "answer": 1,
     "explanation": "건조하면 폭발 위험이 매우 커지므로 **알코올 등으로 적셔서(습윤)** 안정화시켜 보관합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제3류 위험물 중 '탄화알루미늄'이 물과 반응하여 만드는 가스는?",
@@ -897,7 +897,7 @@
     ],
     "answer": 2,
     "explanation": "탄화칼슘은 아세틸렌을 만들지만, **탄화알루미늄은 메탄(CH4)** 가스를 만듭니다. 헷갈리기 쉬운 단골 문제입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 이동탱크저장소의 주차 장소(상치장소) 기준으로 옳은 것은?",
@@ -921,7 +921,7 @@
     ],
     "answer": 0,
     "explanation": "의산에틸은 제1석유류 **비수용성**이며 지정수량은 **200리터**입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제1류 위험물 중 '무기과산화물'의 소화 약제로 마른 모래 외에 사용 가능한 것은?",
@@ -933,7 +933,7 @@
     ],
     "answer": 2,
     "explanation": "무기과산화물은 금수성이므로 물 성분이 없는 **분말(K, Na계)**을 써야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 안전관리자가 여행 등으로 일시적으로 직무를 수행할 수 없을 때 지정하는 사람은?",
@@ -957,7 +957,7 @@
     ],
     "answer": 0,
     "explanation": "글리세린은 물에 매우 잘 녹으며 인화점이 높아 **제3석유류(수용성)**로 분류됩니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제2류 위험물 중 '인화성 고체'에 해당하는 대표적인 물질은?",
@@ -969,7 +969,7 @@
     ],
     "answer": 1,
     "explanation": "캠핑용 등으로 쓰이는 **고형알코올**이 대표적인 인화성 고체입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제6류 위험물인 '질산'의 비중은 약 얼마인가?",
@@ -981,7 +981,7 @@
     ],
     "answer": 2,
     "explanation": "질산은 물보다 훨씬 무거우며 비중은 **약 1.5** 정도입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 제조소등의 정기점검 대상이 아닌 것은?",
@@ -1005,7 +1005,7 @@
     ],
     "answer": 1,
     "explanation": "이황화탄소는 인화점이 매우 낮고 증기가 독성이 강해 **물로 눌러서(액봉)** 증기 발생을 막습니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 중 '과염소산염류'의 지정수량은?",
@@ -1017,7 +1017,7 @@
     ],
     "answer": 0,
     "explanation": "과염소산나트륨, 과염소산칼륨 등 과염소산염류의 지정수량은 **50kg**입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제3류 위험물 중 '알킬리튬'의 화재 시 금기 사항은?",
@@ -1041,7 +1041,7 @@
     ],
     "answer": 0,
     "explanation": "최후의 안전핀 역할을 하는 **파열판**은 압력 방출용 장치입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제4류 위험물 중 '아닐린'의 색상과 석유류 구분은?",
@@ -1053,7 +1053,7 @@
     ],
     "answer": 1,
     "explanation": "아닐린은 독특한 아민 냄새가 나며 **제3석유류**로 분류됩니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제2류 위험물 중 '철분'이 산과 반응할 때 발생하는 가스는?",
@@ -1077,7 +1077,7 @@
     ],
     "answer": 1,
     "explanation": "과거 영화 필름 등에 쓰였던 셀룰로이드는 **자기연소성**이 매우 강해 한 번 불붙으면 끄기 힘듭니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제6류 위험물인 '과염소산'이 가연물과 혼합되었을 때의 위험성은?",
@@ -1089,7 +1089,7 @@
     ],
     "answer": 1,
     "explanation": "산화성 액체이므로 가연물과 섞이면 **강력한 폭발물**이 될 수 있습니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 옥외탱크저장소의 방유제 내부에 설치하는 '배수구'의 평상시 상태는?",
@@ -1113,7 +1113,7 @@
     ],
     "answer": 1,
     "explanation": "에틸렌글리콜은 **부동액**의 주성분이며 인화점이 111℃인 제3석유류입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 중 '질산바륨'의 불꽃 반응 색상은?",
@@ -1125,7 +1125,7 @@
     ],
     "answer": 2,
     "explanation": "바륨(Ba) 성분 때문에 연소 시 **황록색** 불꽃을 냅니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 이동탱크저장소의 배출밸브는 이동 시 어떤 상태여야 하는가?",
@@ -1149,7 +1149,7 @@
     ],
     "answer": 2,
     "explanation": "반응성이 낮은 **구리나 니켈 가루** 등은 위험물법상의 '금속분'에서 제외됩니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물 중 '탄화칼슘'의 다른 이름은?",
@@ -1161,7 +1161,7 @@
     ],
     "answer": 1,
     "explanation": "공업적으로 **카바이트**라고 불리며 아세틸렌 원료로 널리 쓰입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제4류 위험물 중 '기어유'의 지정수량은?",
@@ -1185,7 +1185,7 @@
     ],
     "answer": 1,
     "explanation": "불길이 안으로 들어가는 것을 막기 위해 열전도율이 좋은 **금속 망**을 촘촘히 겹쳐 설치합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제5류 위험물 중 '히드라진 유도체'의 지정수량은?",
@@ -1197,7 +1197,7 @@
     ],
     "answer": 2,
     "explanation": "히드라진 유도체의 지정수량은 **200kg**입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제6류 위험물인 '삼불화안티몬'의 용도는?",
@@ -1221,7 +1221,7 @@
     ],
     "answer": 1,
     "explanation": "물과 만나면 폭발하는 **금수성 물질**들은 비에 젖지 않게 방수 커버가 필수입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제4류 위험물 중 '초산'의 인화점과 석유류 구분은?",
@@ -1233,7 +1233,7 @@
     ],
     "answer": 0,
     "explanation": "식초의 주성분인 초산(빙초산)은 **인화점이 39℃인 제2석유류(수용성)**입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제1류 위험물 중 '과산화칼륨'이 물과 반응하여 만드는 가스는?",
@@ -1257,7 +1257,7 @@
     ],
     "answer": 1,
     "explanation": "점검을 실시한 날부터 **3년간** 기록을 보관해야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제2류 위험물 중 '알루미늄분'이 물과 반응하여 만드는 가스는?",
@@ -1269,7 +1269,7 @@
     ],
     "answer": 2,
     "explanation": "금속분인 알루미늄 가루는 물과 만나면 **수소 가스**를 발생시킵니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제3류 위험물 중 '트리에틸알루미늄'의 공기 중 연소 시 발생하는 유독 가스는?",
@@ -1293,7 +1293,7 @@
     ],
     "answer": 1,
     "explanation": "탱크 바닥의 물이 갑자기 끓어 기름을 밀어 올리는 **슬롭오버** 폭발을 주의해야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 탱크 외부에 표기하는 '게이지'의 용도는?",
@@ -1305,7 +1305,7 @@
     ],
     "answer": 1,
     "explanation": "탱크 안에 얼마나 들어있는지 육안으로 확인하는 **액면계(Gauge)**입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제5류 위험물 중 '질산에스테르류'인 니트로글리콜의 성상은?",
@@ -1329,7 +1329,7 @@
     ],
     "answer": 1,
     "explanation": "산에 녹지 않는 **내산용 보호구**가 필수입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 운송 중 전복 사고 시 조치 순서로 옳은 것은?",
@@ -1341,7 +1341,7 @@
     ],
     "answer": 1,
     "explanation": "가장 먼저 엔진을 꺼서 **점화원을 제거**하고 2차 피해를 막아야 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제4류 위험물 중 '피마자유'의 석유류 구분은?",
@@ -1365,7 +1365,7 @@
     ],
     "answer": 1,
     "explanation": "제1류는 무조건 **산화성 고체**입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 탱크 안전관리자 선임 후 며칠 이내에 신고해야 하는가?",
@@ -1377,7 +1377,7 @@
     ],
     "answer": 1,
     "explanation": "선임은 30일 이내, 신고는 선임한 날부터 **14일 이내**입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "difficulty": 2,
@@ -1392,7 +1392,7 @@
     "explanation": "밀폐식은 증기가 외부로 누출되지 않아 제1석유류 등 인화점이 낮은 물질 측정에 사용됩니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "위험물 제조소에서 위험물을 취급하는 건축물의 지붕 재질 기준은?",
     "options": [
       "콘크리트",
@@ -1404,7 +1404,7 @@
     "explanation": "폭발 시 압력을 위쪽으로 분산시키기 위해 지붕은 가벼운 불연재료를 사용합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "제3류 위험물 중 자연발화성 물질과 금수성 물질을 동시에 가지는 것은?",
     "options": [
       "황린",
@@ -1428,7 +1428,7 @@
     "explanation": "이동 중 하중 분산을 위해 간막이 1구획당 최대 4,000L로 제한합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "제4류 위험물 옥내저장소에서 용기 적재 높이 기준은?",
     "options": [
       "1m 이하",
@@ -1440,7 +1440,7 @@
     "explanation": "용기가 넘어지거나 압력으로 파손되지 않도록 적재 높이는 3m 이하로 제한합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "제1류 위험물 저장소와 제4류 위험물 저장소 사이에 설치해야 하는 안전 거리는?",
     "options": [
       "없음",
@@ -1464,7 +1464,7 @@
     "explanation": "불꽃이 탱크 내부로 역화되지 않도록 눈이 아주 촘촘한(0.5mm 이하) 금속망을 사용합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 3,
     "question": "제6류 위험물인 과산화수소 저장 시 빛 차단이 필요한 이유는?",
     "options": [
       "색이 변해서",
@@ -1476,7 +1476,7 @@
     "explanation": "H₂O₂는 자외선에 의해 분해 반응이 촉진되므로 차광 용기에 보관해야 합니다."
   },
   {
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "위험물 제조소의 보유공지 너비 기준 중 지정수량의 10배 초과 20배 이하인 경우는?",
     "options": [
       "1m 이상",
@@ -1512,7 +1512,7 @@
     "explanation": "장기간 화재로 바닥 수분이 가열되면 순식간에 기화하며 대량의 기름이 탱크 밖으로 쏟아지는 Boil-Over가 발생합니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "위험물 취급 시 정전기 제거를 위한 접지(Grounding)가 가장 중요한 작업은?",
     "options": [
       "위험물 가열",
@@ -1524,7 +1524,7 @@
     "explanation": "액체를 이송하거나 충전할 때 마찰로 인한 정전기 축적이 가장 심하므로 반드시 접지가 필요합니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "제5류 위험물의 화재 시 질식 소화가 효과 없는 근본적 이유는?",
     "options": [
       "물에 녹아서",
@@ -1548,7 +1548,7 @@
     "explanation": "유기 용제 증기는 대부분 공기보다 무거워 바닥에 체류하므로, 바닥 근처에서 강제로 흡출 배기해야 합니다."
   },
   {
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "제1류 위험물인 과산화나트륨(Na₂O₂)과 물의 반응식으로 옳은 것은?",
     "options": [
       "Na₂O₂ + H₂O → NaOH + H₂",
@@ -1569,7 +1569,7 @@
     ],
     "answer": 3,
     "explanation": "제4류 위험물은 대부분 비전도체로 유동 시 정전기가 발생하기 쉬워 폭발 위험이 큽니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물안전관리법상 '지정수량'의 정의로 옳은 것은?",
@@ -1581,7 +1581,7 @@
     ],
     "answer": 1,
     "explanation": "지정수량은 위험물 시설의 허가 기준이 되는 최소 수량으로 법령에 정해져 있습니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "다음 중 물과 반응하여 가연성 가스인 '아세틸렌'을 발생하는 물질은?",
@@ -1593,7 +1593,7 @@
     ],
     "answer": 2,
     "explanation": "탄화칼슘(카바이드)은 물과 반응하여 아세틸렌 가스를 발생시킵니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제2류 위험물인 '유황'의 연소 시 발생하는 유독 가스는?",
@@ -1605,7 +1605,7 @@
     ],
     "answer": 1,
     "explanation": "유황이 연소하면 푸른 불꽃을 내며 이산화황(아황산가스)이 발생합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제1류 위험물 중 '무기과산화물'의 화재 시 적절한 소화 방법은?",
@@ -1617,7 +1617,7 @@
     ],
     "answer": 1,
     "explanation": "무기과산화물은 금수성 물질로 물과 반응하여 산소를 방출하므로 마른 모래나 팽창 질석으로 소화해야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 제조소의 표지판 규격으로 옳은 것은?",
@@ -1629,7 +1629,7 @@
     ],
     "answer": 1,
     "explanation": "위험물 시설의 표지는 가로 0.6m 이상, 세로 0.3m 이상의 직사각형이어야 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "다음 중 인화점이 가장 낮은 물질은?",
@@ -1653,7 +1653,7 @@
     ],
     "answer": 3,
     "explanation": "질산은 비중이 약 1.5로 물보다 무겁습니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "다음 중 자기반응성 물질(제5류)에 해당하는 것은?",
@@ -1677,7 +1677,7 @@
     ],
     "answer": 1,
     "explanation": "방유제는 탱크 파손 시 위험물이 외부로 흘러나가는 것을 막기 위한 둑입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 정전기를 방지하는 방법으로 옳지 않은 것은?",
@@ -1689,7 +1689,7 @@
     ],
     "answer": 3,
     "explanation": "유속이 빠르면 마찰 정전기가 더 많이 발생하므로 유속을 제한해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물인 '황린'을 물속에 저장하는 주된 이유는?",
@@ -1701,7 +1701,7 @@
     ],
     "answer": 0,
     "explanation": "황린은 공기 중에서 자연발화(발화점 약 34℃)하므로 공기를 차단하기 위해 물속에 보관합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물을 운반할 때 차광성이 있는 피복으로 덮어야 하는 위험물은?",
@@ -1737,7 +1737,7 @@
     ],
     "answer": 1,
     "explanation": "칼륨, 나트륨은 10kg, 황린은 20kg, 유황은 100kg, 철분은 500kg입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제4류 위험물 중 '제1석유류'의 인화점 범위는?",
@@ -1749,7 +1749,7 @@
     ],
     "answer": 0,
     "explanation": "제1석유류는 인화점이 21℃ 미만인 액체를 말합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 인화성 고체에 해당하는 위험물은?",
@@ -1761,7 +1761,7 @@
     ],
     "answer": 1,
     "explanation": "고형알코올은 제2류 위험물 중 인화성 고체로 분류됩니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 탱크 안전성능검사의 종류가 아닌 것은?",
@@ -1773,7 +1773,7 @@
     ],
     "answer": 3,
     "explanation": "기밀, 충수/수압, 비파괴, 기초/지반 검사 등이 주요 안전성능검사입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "벤젠(C6H6)의 성질로 옳지 않은 것은?",
@@ -1785,7 +1785,7 @@
     ],
     "answer": 2,
     "explanation": "벤젠은 대표적인 비수용성(물에 녹지 않는) 물질입니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "위험물안전관리법상 제조소등의 관계인이 받아야 하는 '정기점검'의 주기는?",
@@ -1797,7 +1797,7 @@
     ],
     "answer": 1,
     "explanation": "대통령령으로 정하는 제조소등의 관계인은 연 1회 이상 정기점검을 실시해야 합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "다음 중 소화력이 가장 좋은 할론 소화약제는?",
@@ -1833,7 +1833,7 @@
     ],
     "answer": 2,
     "explanation": "아세틸렌의 연소 범위는 약 2.5~81%로 매우 넓고 위험합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 안전관리자로 선임될 수 있는 자격이 없는 자는?",
@@ -1869,7 +1869,7 @@
     ],
     "answer": 2,
     "explanation": "제6류 위험물인 과산화수소는 산소를 다량 함유한 강산화제로 산소 공급원 역할을 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물을 수납한 용기가 파손되지 않도록 적재하는 방법으로 옳지 않은 것은?",
@@ -1905,7 +1905,7 @@
     ],
     "answer": 0,
     "explanation": "위험물안전관리법상 위험물은 인화성/발화성 성질을 가진 대통령령 정 정하는 물품입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물 제조소의 '보유공지'를 두는 주된 목적은?",
@@ -1917,7 +1917,7 @@
     ],
     "answer": 1,
     "explanation": "보유공지는 건축물 주변에 비워두는 땅으로, 화재 확산 방지와 소방 활동을 위해 필수적입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "아세톤의 인화점은 약 몇 도인가?",
@@ -1929,7 +1929,7 @@
     ],
     "answer": 0,
     "explanation": "아세톤의 인화점은 약 -18~-20℃로 매우 낮아 상온에서 쉽게 인화됩니다.",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "question": "다음 중 물보다 무거운(비중 > 1) 위험물은?",
@@ -1941,7 +1941,7 @@
     ],
     "answer": 2,
     "explanation": "이황화탄소(CS2)는 비중이 약 1.26으로 제4류 위험물 중 드물게 물보다 무거운 물질입니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제3류 위험물 중 금수성 물질의 보호액으로 주로 사용되는 것은?",
@@ -1953,7 +1953,7 @@
     ],
     "answer": 2,
     "explanation": "칼륨, 나트륨 등은 물과 반응하므로 수분 접촉을 막기 위해 기름(등유 등) 속에 저장합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 운반 차량에 부착해야 하는 표지의 색상은?",
@@ -1965,7 +1965,7 @@
     ],
     "answer": 1,
     "explanation": "위험물 운반 차량의 '위험물' 표지는 검은색 바탕에 노란색 글씨로 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 '자기연소'를 하는 물질은?",
@@ -1977,7 +1977,7 @@
     ],
     "answer": 2,
     "explanation": "제5류 위험물인 니트로글리세린은 자체적으로 산소를 포함하여 외부 산소 없이도 연소(자기연소)합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "이황화탄소를 물속에 저장할 때 물의 역할은?",
@@ -1989,7 +1989,7 @@
     ],
     "answer": 1,
     "explanation": "이황화탄소는 휘발성이 매우 강하므로 물로 눌러서 증기가 나오지 못하게 합니다.",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "다음 중 제4류 위험물의 품명별 수량 기준이 틀린 것은?",
@@ -2013,7 +2013,7 @@
     ],
     "answer": 0,
     "explanation": "안전관리자의 부재 시 30일 이내의 기간 동안 대리자를 지정해야 합니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제6류 위험물의 공통 성질로 옳은 것은?",
@@ -2049,7 +2049,7 @@
     ],
     "answer": 1,
     "explanation": "환기는 자연 환기 방식으로, 가벼운 가스를 내보내기 위해 높은 곳(천장 근처)에 설치합니다. (배출 설비와 구분 필요)",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "다음 중 '증기비중'을 구하는 공식으로 옳은 것은?",
@@ -2061,7 +2061,7 @@
     ],
     "answer": 0,
     "explanation": "증기비중은 공기의 평균 분자량인 29를 기준으로 해당 물질의 분자량을 나눈 값입니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "휘발유의 색상은 식별을 위해 어떤 색으로 착색하는가?",
@@ -2073,7 +2073,7 @@
     ],
     "answer": 2,
     "explanation": "자동차용 휘발유는 다른 유종과 구별하기 위해 오렌지색으로 착색합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 제2류 위험물인 금속분과 물이 반응했을 때 위험한 이유는?",
@@ -2085,7 +2085,7 @@
     ],
     "answer": 1,
     "explanation": "마그네슘, 철분 등 금속분은 물과 반응하여 폭발성이 강한 수소 가스를 발생시킵니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물안전관리법상 '제조소'란?",
@@ -2145,7 +2145,7 @@
     ],
     "answer": 2,
     "explanation": "밝은색(은색, 흰색)은 복사열을 반사하여 탱크 내부 온도가 상승하는 것을 막아줍니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "제4류 위험물의 일반적인 소화 약제로 적절하지 않은 것은?",
@@ -2157,7 +2157,7 @@
     ],
     "answer": 3,
     "explanation": "기름 화재에 물을 세게 뿌리면(봉상 주수) 기름이 튀어 화재가 확산될 위험이 큽니다. (무상 주수는 가능)",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "다음 중 발화점이 가장 낮은 물질은?",
@@ -2169,7 +2169,7 @@
     ],
     "answer": 2,
     "explanation": "이황화탄소의 발화점은 약 100~150℃로 매우 낮아 가열된 파이프 접촉만으로도 발화할 수 있습니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제2류 위험물인 '적린'과 '황린'의 관계는?",
@@ -2193,7 +2193,7 @@
     ],
     "answer": 3,
     "explanation": "탱크로리에 채우는 장소는 보통 일반취급소(충전시설)로 분류됩니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "다음 중 연소의 형태가 '증발연소'인 것은?",
@@ -2205,7 +2205,7 @@
     ],
     "answer": 2,
     "explanation": "양초, 황, 나프탈렌 등은 열에 의해 녹아 증발하며 타는 증발연소를 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제4류 위험물의 용기 외부에 반드시 표시해야 할 사항이 아닌 것은?",
@@ -2217,7 +2217,7 @@
     ],
     "answer": 2,
     "explanation": "품명, 수량, 위험등급, 주의사항 등은 필수이나 화학식까지 적을 의무는 없습니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 연소 속도에 영향을 주는 요인이 아닌 것은?",
@@ -2229,7 +2229,7 @@
     ],
     "answer": 3,
     "explanation": "연소는 화학 반응이므로 농도, 온도, 압력 등이 중요하며 용기 색상은 직접적 요인이 아닙니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "제1류 위험물 화재 시 '수용성'인 물질에 가장 효과적인 소화 방법은?",
@@ -2241,7 +2241,7 @@
     ],
     "answer": 1,
     "explanation": "1류 위험물은 산화제이므로 물로 식히고 농도를 낮추는 것이 가장 빠릅니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물안전관리법상 '위험등급 I'에 해당하는 물질은?",
@@ -2253,7 +2253,7 @@
     ],
     "answer": 2,
     "explanation": "특수인화물은 4류 위험물 중 가장 위험한 등급 I에 해당합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 비수용성 액체 위험물 화재에 부적합한 소화기는?",
@@ -2265,7 +2265,7 @@
     ],
     "answer": 2,
     "explanation": "강화액 소화기 중 봉상(물줄기 형태)은 유류 화재 시 비산 위험이 있습니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "제2류 위험물 중 '철분'의 정의로 옳은 것은?",
@@ -2277,7 +2277,7 @@
     ],
     "answer": 2,
     "explanation": "입경이 미세해야 위험물로 간주하며, 53μm 체 통과분 50% 이상 기준입니다.",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "위험물 탱크의 '통기장치' 설치 목적은?",
@@ -2301,7 +2301,7 @@
     ],
     "answer": 1,
     "explanation": "나트륨의 불꽃 반응색은 노란색입니다.",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "question": "위험물안전관리자가 사임한 경우 며칠 이내에 다시 선임해야 하는가?",
@@ -2313,7 +2313,7 @@
     ],
     "answer": 1,
     "explanation": "안전관리자 해임/사임 시 30일 이내에 재선임해야 합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제4류 위험물의 수납 용기에 표시해야 할 주의사항은?",
@@ -2325,7 +2325,7 @@
     ],
     "answer": 1,
     "explanation": "인화성 액체인 4류는 가장 강력한 경고인 '화기엄금'을 표시해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 '인화성'이 없는 물질은?",
@@ -2337,7 +2337,7 @@
     ],
     "answer": 3,
     "explanation": "사염화탄소(CCl4)는 불연성 물질로 과거 소화 약제로도 쓰였습니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 제조소의 '배출설비'는 어떤 방식으로 설치해야 하는가?",
@@ -2349,7 +2349,7 @@
     ],
     "answer": 1,
     "explanation": "증기를 강제로 뽑아내기 위해 배출 설비는 국소 방식의 전동기 구동 배풍기를 사용합니다.",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "제2류 위험물인 '마그네슘'의 저장 시 주의사항은?",
@@ -2361,7 +2361,7 @@
     ],
     "answer": 0,
     "explanation": "마그네슘은 물이나 산과 반응하여 수소 가스를 발생시키므로 건조한 곳에 보관해야 합니다.",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "question": "다음 중 비점이 가장 낮은 물질은?",
@@ -2373,7 +2373,7 @@
     ],
     "answer": 3,
     "explanation": "디에틸에테르의 비점은 약 34.6℃로 매우 낮아 쉽게 증발합니다.",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 운반 시 '혼재'가 가능한 조합은?",
@@ -2385,7 +2385,7 @@
     ],
     "answer": 3,
     "explanation": "법령상 혼재 가능 기준에 따라 1류와 6류는 함께 운반할 수 있습니다. (4,5,2,3 등 암기법 존재)",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "question": "제5류 위험물인 '유기과산화물'의 지정수량은?",
@@ -2409,7 +2409,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 202",
@@ -2421,7 +2421,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 203",
@@ -2445,7 +2445,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 205",
@@ -2457,7 +2457,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 206",
@@ -2481,7 +2481,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 208",
@@ -2493,7 +2493,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 209",
@@ -2517,7 +2517,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 211",
@@ -2529,7 +2529,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 212",
@@ -2553,7 +2553,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 214",
@@ -2565,7 +2565,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 215",
@@ -2589,7 +2589,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 217",
@@ -2601,7 +2601,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 218",
@@ -2625,7 +2625,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 220",
@@ -2637,7 +2637,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 221",
@@ -2661,7 +2661,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 223",
@@ -2673,7 +2673,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 224",
@@ -2697,7 +2697,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 226",
@@ -2709,7 +2709,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 227",
@@ -2733,7 +2733,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 229",
@@ -2745,7 +2745,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 230",
@@ -2769,7 +2769,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 232",
@@ -2781,7 +2781,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 233",
@@ -2805,7 +2805,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 235",
@@ -2817,7 +2817,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 236",
@@ -2841,7 +2841,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 238",
@@ -2853,7 +2853,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 239",
@@ -2877,7 +2877,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 241",
@@ -2889,7 +2889,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 242",
@@ -2913,7 +2913,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 244",
@@ -2925,7 +2925,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 245",
@@ -2949,7 +2949,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 247",
@@ -2961,7 +2961,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 1
   },
   {
     "question": "위험물 산업기사 실무 문제 248",
@@ -2985,7 +2985,7 @@
     ],
     "answer": 0,
     "explanation": "설명",
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "question": "위험물 산업기사 실무 문제 250",
@@ -2997,6 +2997,3006 @@
     ],
     "answer": 0,
     "explanation": "설명",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제1류인 '산화성 고성'의 일반적인 특징은?",
+    "options": [
+      "그 자체로 가연성이다",
+      "자신은 타지 않지만 연소를 돕는다 (강산화제)",
+      "물과 반응하여 가스를 낸다",
+      "상온에서 액체이다"
+    ],
+    "answer": 1,
+    "explanation": "제1류 위험물은 **산화성 고체**로, 산소를 많이 함유하고 있어 남의 연소를 강력하게 돕는 **불연성 물질**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "금수성 물질(제3류)인 '나트륨(Na)' 화재 시 절대 사용하면 안 되는 소화약제는?",
+    "options": [
+      "팽창 질석",
+      "마른 모래",
+      "물 또는 포 소화약제",
+      "탄산수소염류 분말"
+    ],
+    "answer": 2,
+    "explanation": "나트륨은 **물과 격렬히 반응**하여 수소 가스를 내며 폭발하므로, 물 계통 소화는 절대 금물입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 품명 중 '특수인화물'에 해당하는 것은?",
+    "options": [
+      "휘발유",
+      "등유",
+      "이황화탄소 (CS2)",
+      "경유"
+    ],
+    "answer": 2,
+    "explanation": "**이황화탄소**나 디에틸에테르 등은 인화점이 매우 낮아 **특수인화물**로 분류됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 안전관리법상 '지정수량'의 의미는?",
+    "options": [
+      "무조건 다 신고해야 하는 양",
+      "위험물의 위험성을 고려하여 법에서 정한 기준 양",
+      "최대로 저장할 수 있는 양",
+      "운반 용기 하나에 담는 양"
+    ],
+    "answer": 1,
+    "explanation": "법적 규제와 허가의 기준이 되는 최소 단위의 양을 **지정수량**이라고 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물인 '적린'의 소화 방법으로 가장 적절한 것은?",
+    "options": [
+      "대량의 물로 냉각 소화",
+      "마른 모래로 질식 소화",
+      "할론 소화기 사용",
+      "CO2 소화기 사용"
+    ],
+    "answer": 0,
+    "explanation": "적린은 **물에 의한 냉각 소화**가 가능하며, 재연소 방지를 위해 대량의 물을 사용합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 운반 시 '차광성이 있는 피복'으로 덮어야 하는 위험물은?",
+    "options": [
+      "철분",
+      "유기과산화물 (제5류)",
+      "유황",
+      "등유"
+    ],
+    "answer": 1,
+    "explanation": "열이나 빛에 의해 분해되어 폭발할 위험이 큰 **제5류(자기반응성)** 등은 **차광막**이 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "휘발유(제1석유류)의 일반적인 색깔은?",
+    "options": [
+      "무색 투명",
+      "적색",
+      "노란색",
+      "청색"
+    ],
+    "answer": 1,
+    "explanation": "휘발유는 원래 무색이지만, 구분을 위해 유통 시 주로 **적색(노란색은 등유)** 계열의 색소를 넣습니다. (시험상 대개 '적색'으로 출제)",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제6류인 '산화성 액체'에 해당하지 않는 것은?",
+    "options": [
+      "질산",
+      "과염소산",
+      "과산화수소",
+      "아세톤"
+    ],
+    "answer": 3,
+    "explanation": "아세톤은 제4류 위험물(제1석유류)입니다. 1~3번은 모두 **제6류** 강산성 물질입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 화재 급수(Class)는?",
+    "options": [
+      "A급",
+      "B급",
+      "C급",
+      "D급"
+    ],
+    "answer": 1,
+    "explanation": "유류 화재는 **B급 화재**로 분류됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물을 저장하는 '옥외탱크저장소' 주위에 설치하는 담 모양의 안전 시설은?",
+    "options": [
+      "포 방사구",
+      "방유제",
+      "방사장",
+      "간이 칸막이"
+    ],
+    "answer": 1,
+    "explanation": "탱크 파손 시 위험물이 밖으로 흘러나가는 것을 막는 벽을 **방유제**라고 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물인 '자기반응성 물질'의 소화가 어려운 주된 이유는?",
+    "options": [
+      "온도가 너무 낮아서",
+      "물과 반응해서",
+      "분자 내에 산소를 포함하고 있어 질식 소화가 안 되기 때문에",
+      "전기가 흐르기 때문에"
+    ],
+    "answer": 2,
+    "explanation": "물질 내부에 **자체 산소**가 있어 공기를 차단(질식)해도 계속 탑니다. 오직 **대량의 냉각 소화**만이 답입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "아세톤과 휘발유 화재 시 '일반 포'를 사용하면 안 되는 이유는?",
+    "options": [
+      "기름이 너무 뜨거워서",
+      "포의 수분을 흡수하여 거품이 사라지기 때문에 (소포 현상)",
+      "가스가 발생해서",
+      "색깔이 변해서"
+    ],
+    "answer": 1,
+    "explanation": "알코올이나 아세톤 같은 수용성 액체는 포의 물을 뺏어 거품을 깨뜨립니다. 그래서 **내알코올포**가 필요합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 운반 용기 외부에 반드시 표시해야 할 사항이 아닌 것은?",
+    "options": [
+      "위험물의 품명",
+      "지정수량의 배수",
+      "화기엄금 등의 주의사항",
+      "제조업자의 주소"
+    ],
+    "answer": 3,
+    "explanation": "품명, 수량, 주의사항은 필수이지만 **제조업자 주소**는 표시 의무 사항이 아닙니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제1류 위험물 중 '알칼리금속의 과산화물' 화재 시 적절한 소화제는?",
+    "options": [
+      "물",
+      "포 소화기",
+      "탄산수소염류 분말 또는 마른 모래",
+      "이산화탄소"
+    ],
+    "answer": 2,
+    "explanation": "알칼리금속 과산화물은 물과 만나면 산소를 내며 폭발하므로 **금수성**에 준해 **건조사나 분말**로 소화합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "경유(제2석유류)의 인화점 범위로 옳은 것은?",
+    "options": [
+      "21℃ 미만",
+      "21℃ 이상 70℃ 미만",
+      "70℃ 이상 200℃ 미만",
+      "200℃ 이상"
+    ],
+    "answer": 1,
+    "explanation": "경유나 등유는 **21℃ ~ 70℃** 사이의 인화점을 갖는 **제2석유류**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제3류인 '자연발화성 및 금수성 물질' 중 물속에 보관하는 것은?",
+    "options": [
+      "나트륨",
+      "칼륨",
+      "황린",
+      "알킬알루미늄"
+    ],
+    "answer": 2,
+    "explanation": "**황린(P4)**은 공기 중에서 자연 발화하므로 **물속**에 보관합니다. (나머지는 등유나 경유 속에 보관)",
+    "difficulty": 2
+  },
+  {
+    "question": "메탄올(CH3OH)의 연소 범위와 비교했을 때 위험성이 큰 이유는?",
+    "options": [
+      "연소 하한값이 매우 높아서",
+      "인화점이 영하로 매우 낮아서",
+      "물에 녹지 않아서",
+      "독성이 없어서"
+    ],
+    "answer": 1,
+    "explanation": "메탄올은 인화점이 **약 11℃** 정도로 낮아 상온에서 불이 붙기 매우 쉽습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물인 '철분, 금속분, 마그네슘'의 공통적인 주의사항은?",
+    "options": [
+      "화기주의",
+      "물기엄금",
+      "충격주의",
+      "가변주의"
+    ],
+    "answer": 1,
+    "explanation": "이들은 물과 반응하여 가연성 가스인 **수소**를 발생시키므로 **물기엄금**이 핵심입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 저장 탱크의 '통기장치'에 반드시 설치해야 하는 것은?",
+    "options": [
+      "여과기",
+      "화염방지기 (Flame Arrester)",
+      "유량계",
+      "체크밸브"
+    ],
+    "answer": 1,
+    "explanation": "외부 불꽃이 탱크 안으로 빨려 들어가는 것을 막는 **화염방지기** 설치가 필수입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "다음 중 비중(물과의 무게 비)이 1보다 커서 물 아래로 가라앉는 위험물은?",
+    "options": [
+      "휘발유",
+      "등유",
+      "이황화탄소",
+      "벤젠"
+    ],
+    "answer": 2,
+    "explanation": "대부분의 제4류는 물보다 가볍지만, **이황화탄소(CS2)**는 물보다 무거워 물속에 가라앉혀 보관하기도 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 인화점이 낮을수록 나타나는 현상은?",
+    "options": [
+      "위험성이 작아진다",
+      "발화점이 높아진다",
+      "휘발성이 강해져 화재 위험이 커진다",
+      "증기압이 낮아진다"
+    ],
+    "answer": 2,
+    "explanation": "인화점이 낮다는 것은 낮은 온도에서도 불붙기 쉬운 **증기가 잘 나온다**는 뜻이므로 훨씬 위험합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 판정 시험 중 '연소점'이란?",
+    "options": [
+      "불이 붙기 시작하는 온도",
+      "점화원을 제거해도 5초 이상 연소가 지속되는 온도",
+      "스스로 불이 붙는 온도",
+      "가장 높은 온도"
+    ],
+    "answer": 1,
+    "explanation": "인화점보다 약 5~10도 높은 온도로, **지속적인 연공**이 가능한 온도를 말합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 칼륨, 나트륨의 보호액으로 적절한 것은?",
+    "options": [
+      "물",
+      "에탄올",
+      "파라핀, 경유, 등유 등의 석유류",
+      "글리세린"
+    ],
+    "answer": 2,
+    "explanation": "물이나 공기와의 접촉을 완벽히 차단하기 위해 **기름(석유류)** 속에 담가 보관합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "정전기에 의한 화재를 예방하는 방법으로 틀린 것은?",
+    "options": [
+      "접지를 한다",
+      "실내 습도를 70% 이상으로 높인다",
+      "공기를 이온화한다",
+      "공기를 건조하게 유지한다"
+    ],
+    "answer": 3,
+    "explanation": "공기가 **건조하면 정전기가 잘 발생**하므로 습도를 높여야 예방할 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 일반적인 소화 약제로 가장 적절하지 않은 것은?",
+    "options": [
+      "포 소화약제",
+      "분말 소화약제",
+      "봉상 물 소화전 (직사 주수)",
+      "이산화탄소"
+    ],
+    "answer": 2,
+    "explanation": "기름 화재에 물을 세게(봉상) 뿌리면 **기름이 튀어 화재가 확산(연소면 확대)**되므로 매우 위험합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제1류인 아염소산염류의 지정수량은?",
+    "options": [
+      "50kg",
+      "300kg",
+      "1,000kg",
+      "5,000kg"
+    ],
+    "answer": 0,
+    "explanation": "제1류 중 위험도가 높은 아염소산염류, 염소산염류 등은 **50kg**이 지정수량입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "가솔린(휘발유) 증기의 비중은 공기와 비교했을 때 어떠한가?",
+    "options": [
+      "가볍다",
+      "무겁다 (약 3~4배)",
+      "비슷하다",
+      "비중이 없다"
+    ],
+    "answer": 1,
+    "explanation": "유류 증기는 공기보다 **무거워서** 바닥이나 낮은 곳에 고이는 성질이 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물인 질산의 비중 기준은?",
+    "options": [
+      "1.0 이상",
+      "1.49 이상",
+      "2.0 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "위험물 안전관리법상 비중이 **1.49 이상**인 것만 위험물로 간주합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "니트로글리세린(제5류)의 특징으로 옳은 것은?",
+    "options": [
+      "상온에서 고체이다",
+      "무색 투명의 액체이며 충격에 매우 민감하다",
+      "물과 반응한다",
+      "전혀 타지 않는다"
+    ],
+    "answer": 1,
+    "explanation": "다이너마이트의 원료로 쓰이며 **약간의 충격**에도 쉽게 폭발하는 위험한 액체입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "주유취급소에서 '주유 중 엔진 정지'를 알리는 게시판의 색상은?",
+    "options": [
+      "백색 바탕에 적색 문자",
+      "황색 바탕에 흑색 문자",
+      "백색 바탕에 청색 문자",
+      "청색 바탕에 백색 문자"
+    ],
+    "answer": 1,
+    "explanation": "주의를 요하는 게시판은 **황색 바탕에 흑색 문자**를 사용합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 안전관리법상 '제조소등'에 해당하지 않는 것은?",
+    "options": [
+      "제조소",
+      "저장소",
+      "취급소",
+      "사용소"
+    ],
+    "answer": 3,
+    "explanation": "법에서는 **제조소, 저장소, 취급소** 세 가지만을 '제조소등'으로 묶어 규정합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물인 '유황'의 지정수량은?",
+    "options": [
+      "100kg",
+      "500kg",
+      "1,000kg",
+      "없음"
+    ],
+    "answer": 0,
+    "explanation": "제2류 중 가연성 고체인 유황은 **100kg**이 기준입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "다음 중 수용성 위험물이 아닌 것은?",
+    "options": [
+      "메탄올",
+      "아세톤",
+      "에틸렌글리콜",
+      "톨루엔"
+    ],
+    "answer": 3,
+    "explanation": "벤젠, **톨루엔**, 자일렌 등은 물에 녹지 않는 비수용성 액체입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 운반 시 '적재 방법' 중 틀린 것은?",
+    "options": [
+      "용기가 파손되지 않게 고정한다",
+      "고체 위험물은 운반 용기 용적의 95% 이하로 채운다",
+      "액체 위험물은 55℃에서도 새지 않게 98% 이하로 채운다",
+      "다른 위험물과 무조건 같이 싣는다"
+    ],
+    "answer": 3,
+    "explanation": "유류와 산화제 등 서로 반응할 수 있는 위험물은 **혼재(함께 싣는 것)**가 금지되어 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "화재 발생 시 연소의 3요소에 해당하지 않는 것은?",
+    "options": [
+      "가연물",
+      "산소공급원",
+      "점화원",
+      "연쇄반응"
+    ],
+    "answer": 3,
+    "explanation": "연소의 3요소는 가연물, 산소, 점화원입니다. **연쇄반응**까지 포함하면 '연소의 4요소'가 됩니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 소화 시 '질식 소화'의 원리는?",
+    "options": [
+      "온도를 낮춘다",
+      "공기 중의 산소 농도를 15% 이하로 낮춘다",
+      "가연물을 제거한다",
+      "바람을 세게 분다"
+    ],
+    "answer": 1,
+    "explanation": "산소 공급을 차단하여 농도를 **15% 이하**로 떨어뜨리면 불이 꺼집니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제1류 중 '무기과산화물'의 금지 사항은?",
+    "options": [
+      "화기주의",
+      "물기엄금",
+      "충격주의",
+      "가변주의"
+    ],
+    "answer": 1,
+    "explanation": "제1류 무기과산화물은 물과 반응하여 산소를 발생시키므로 **물기엄금**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "인화점이 0℃보다 낮은 물질은?",
+    "options": [
+      "에틸알코올",
+      "디에틸에테르",
+      "등유",
+      "식용유"
+    ],
+    "answer": 1,
+    "explanation": "특수인화물인 **디에틸에테르**는 인화점이 약 **-45℃**로 매우 낮아 극히 위험합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 탱크에서 발생하는 유증기를 회수하는 장치를 무엇이라 하는가?",
+    "options": [
+      "Vapor Recovery System (유증기 회수 장치)",
+      "Separator",
+      "Filter",
+      "Pump"
+    ],
+    "answer": 0,
+    "explanation": "대기 오염 방지와 화재 예방을 위해 증기를 다시 액체로 모으는 장치입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 운반 용기 중 '플라스틱 용기'의 최대 용량 제한은?",
+    "options": [
+      "10리터",
+      "20리터",
+      "60리터",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "파손 위험 때문에 플라스틱 용기는 대개 **60리터** 이하로 제한되는 경우가 많습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "벤젠(C6H6)의 독성 중 가장 주의해야 할 것은?",
+    "options": [
+      "발암성 (백혈병 등 유발)",
+      "피부 부식",
+      "소화 불량",
+      "시력 저하"
+    ],
+    "answer": 0,
+    "explanation": "벤젠은 강력한 **1급 발암물질**로 취급 시 호흡기 보호가 매우 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물의 저장 및 취급 시 주의사항으로 틀린 것은?",
+    "options": [
+      "산화제와의 접촉을 피한다",
+      "화기를 엄금한다",
+      "철분은 습기가 많은 곳에 둔다",
+      "충격을 주지 않는다"
+    ],
+    "answer": 2,
+    "explanation": "철분은 습기에 의해 산화되거나 열을 낼 수 있으므로 **건조하게** 보관해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 안전관리법상 '완공검사'를 받아야 하는 시점은?",
+    "options": [
+      "공사 시작 전",
+      "공사가 끝난 후 사용하기 전",
+      "사용 시작 1년 후",
+      "아무 때나"
+    ],
+    "answer": 1,
+    "explanation": "시설이 법에 맞게 지어졌는지 확인하는 **완공검사 후**에야 실제 사용이 가능합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 물에 녹는 '수용성' 물질의 지정수량은 비수용성의 몇 배인가?",
+    "options": [
+      "0.5배",
+      "1배",
+      "2배",
+      "5배"
+    ],
+    "answer": 2,
+    "explanation": "수용성은 물에 희석될 수 있어 위험도가 약간 낮다고 보아 지정수량을 보통 **2배**로 정해줍니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제3류인 '알킬알루미늄' 화재 시 소화제로 부적절한 것은?",
+    "options": [
+      "팽창 질석",
+      "팽창 진주암",
+      "건조사 (마른 모래)",
+      "이산화탄소 또는 포 소화약제"
+    ],
+    "answer": 3,
+    "explanation": "알킬알루미늄은 극히 위험한 금수성 물질로, 가스계나 수계 소화약제는 효과가 없거나 위험합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 표지판 중 '가변성 고체'를 나타내는 색상은?",
+    "options": [
+      "적색 바탕",
+      "백색 바탕",
+      "황색 바탕",
+      "청색 바탕"
+    ],
+    "answer": 0,
+    "explanation": "화기엄금을 뜻하는 **적색 바탕**의 표지를 주로 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "자기연소(Self-combustion)를 하는 위험물은?",
+    "options": [
+      "제1류",
+      "제2류",
+      "제5류",
+      "제6류"
+    ],
+    "answer": 2,
+    "explanation": "스스로 산소를 가지고 있어 폭발적으로 타는 **제5류(자기반응성)** 물질이 자기연소를 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 이동탱크저장소(탱크로리)의 '방파판' 설치 목적은?",
+    "options": [
+      "탱크가 예뻐 보이게",
+      "액체의 출렁거림을 방지하여 주행 안정을 꾀하기 위해",
+      "탱크의 온도를 높이기 위해",
+      "소음을 줄이기 위해"
+    ],
+    "answer": 1,
+    "explanation": "차량이 멈추거나 회전할 때 액체의 **출렁거림(Slight)**에 의한 전복 위험을 막아주는 판입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물인 등유의 지정수량은?",
+    "options": [
+      "200리터",
+      "400리터",
+      "1,000리터",
+      "2,000리터"
+    ],
+    "answer": 2,
+    "explanation": "제2석유류인 등유와 경유의 지정수량은 **1,000리터**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 안전관리자의 선임 신고 기간은 선임한 날로부터 며칠 이내인가?",
+    "options": [
+      "7일",
+      "14일",
+      "30일",
+      "60일"
+    ],
+    "answer": 1,
+    "explanation": "관리자를 선임하면 **14일 이내**에 소방서장 등에게 신고해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물인 '아염소산염류'의 일반적인 성질은?",
+    "options": [
+      "강한 산화성 고체",
+      "가연성 액체",
+      "자기 반응성 물질",
+      "금수성 물질"
+    ],
+    "answer": 0,
+    "explanation": "제1류 위험물은 모두 **산화성 고체**로, 자신은 타지 않지만 연소를 돕습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물 중 '철분'의 정의로 옳은 것은?",
+    "options": [
+      "철의 가루로서 53μm 표준체를 통과하는 것이 50wt% 이상인 것",
+      "모든 철 제품",
+      "녹슨 철",
+      "액체 상태의 철"
+    ],
+    "answer": 0,
+    "explanation": "입자 크기와 함량에 따라 위험물 여부를 판단하며, **53μm 체 통과량**이 기준입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '황린'의 저장 방법으로 옳은 것은?",
+    "options": [
+      "물속에 저장",
+      "석유 속에 저장",
+      "공기 중에 노출 저장",
+      "알코올 속에 저장"
+    ],
+    "answer": 0,
+    "explanation": "황린은 자연 발화성이 강해 공기와의 접촉을 막기 위해 **물속**에 보관합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '제1석유류'의 인화점 범위는?",
+    "options": [
+      "21℃ 미만",
+      "21℃ 이상 70℃ 미만",
+      "70℃ 이상 200℃ 미만",
+      "200℃ 이상"
+    ],
+    "answer": 0,
+    "explanation": "휘발유 등이 속하는 제1석유류는 인화점이 **21℃ 미만**으로 매우 낮아 위험합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물인 '유기과산화물'의 화재 시 소화 방법은?",
+    "options": [
+      "질식 소화",
+      "다량의 물에 의한 냉각 소화",
+      "모래 덮기",
+      "가스 소화"
+    ],
+    "answer": 1,
+    "explanation": "제5류는 물질 내부에 산소를 포함하고 있어 질식 소화가 효과가 없으므로 **물로 냉각**해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '질산'의 비중 기준은?",
+    "options": [
+      "1.0 이상",
+      "1.49 이상",
+      "2.0 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "질산은 비중이 **1.49 이상**인 것만 위험물 안전관리법상 위험물로 분류됩니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소 등의 '보보거리' 중 문화재와 유지해야 하는 최소 거리는?",
+    "options": [
+      "10m",
+      "20m",
+      "30m",
+      "50m"
+    ],
+    "answer": 3,
+    "explanation": "중요 문화재와는 최소 **50m 이상**의 안전거리를 두어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이동탱크저장소(탱크로리)의 '칸막이' 설치 목적은?",
+    "options": [
+      "기름을 나누기 위해",
+      "운행 중 액체의 출렁임(서징)을 방지하여 안전을 확보하기 위해",
+      "탱크를 튼튼하게 하려고",
+      "디자인"
+    ],
+    "answer": 1,
+    "explanation": "액체의 **무게 중심 이동**을 막아 전복 사고를 예방하는 중요한 구조물입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 표지 중 '화기엄금' 게시판의 색상은?",
+    "options": [
+      "백색 바탕에 적색 문자",
+      "적색 바탕에 백색 문자",
+      "청색 바탕에 백색 문자",
+      "황색 바탕에 흑색 문자"
+    ],
+    "answer": 1,
+    "explanation": "화기 주의가 필요한 곳은 **적색 바탕에 백색** 문자를 사용합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 공통적인 성질이 아닌 것은?",
+    "options": [
+      "인화하기 쉽다",
+      "증기는 공기보다 무겁다",
+      "대부분 물에 잘 녹는다",
+      "액체 상태이다"
+    ],
+    "answer": 2,
+    "explanation": "제4류(기름류)는 대부분 **물에 녹지 않고 물보다 가볍습니다.** (알코올류 등 예외 있음)",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '무기과산화물'과 물이 반응하면 발생하는 가스는?",
+    "options": [
+      "수소",
+      "산소",
+      "이산화탄소",
+      "질소"
+    ],
+    "answer": 1,
+    "explanation": "무기과산화물은 물과 만나면 격렬히 반응하며 **산소**를 방출하여 화재를 키웁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물인 '마그네슘' 화재 시 절대 사용하면 안 되는 소화약제는?",
+    "options": [
+      "마른 모래",
+      "금속 화재용 분말",
+      "물 또는 포 소화약제",
+      "팽창 질석"
+    ],
+    "answer": 2,
+    "explanation": "마그네슘은 물과 만나면 **수소 가스**를 발생시키며 폭발할 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '알킬알루미늄'의 화재 소화에 가장 적당한 것은?",
+    "options": [
+      "물",
+      "이산화탄소",
+      "팽창질석 또는 마른 모래",
+      "할로겐 화합물"
+    ],
+    "answer": 2,
+    "explanation": "금수성 물질이므로 물은 절대 안 되며, **마른 모래나 팽창질석**으로 덮어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 운송 시 '혼재'가 가능한 조합은?",
+    "options": [
+      "제1류와 제4류",
+      "제2류와 제3류",
+      "제4류와 제5류",
+      "제1류와 제6류"
+    ],
+    "answer": 2,
+    "explanation": "법적으로 **4류와 5류**는 일정 조건 하에 함께 실을 수 있습니다. (1류-6류도 가능)",
+    "difficulty": 2
+  },
+  {
+    "question": "옥외탱크저장소의 '방유제' 설치 목적은?",
+    "options": [
+      "탱크 보호",
+      "탱크 파손 시 위험물이 외부로 흘러나가는 것을 막기 위해",
+      "도난 방지",
+      "청소용"
+    ],
+    "answer": 1,
+    "explanation": "유출 사고 시 피해 확산을 방지하는 **2차 방벽** 역할입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '특수인화물'에 해당하는 것은?",
+    "options": [
+      "휘발유",
+      "등유",
+      "이황화탄소 (CS2)",
+      "벤젠"
+    ],
+    "answer": 2,
+    "explanation": "**이황화탄소, 디에틸에테르** 등은 인화점이 매우 낮아 특수인화물로 분류됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 성상 중 '연소범위(연소한계)'가 넓다는 의미는?",
+    "options": [
+      "불이 천천히 붙는다",
+      "공기와 섞였을 때 폭발할 수 있는 농도 범위가 넓어 화재 위험이 크다",
+      "냄새가 많이 난다",
+      "색깔이 진하다"
+    ],
+    "answer": 1,
+    "explanation": "농도가 조금만 맞아도 바로 터질 수 있으므로 **범위가 넓을수록 위험**합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물의 공통 성질로 옳은 것은?",
+    "options": [
+      "불에 잘 타는 액체",
+      "불에 타지 않는 산화성 액체",
+      "가연성 고체",
+      "폭발성 고체"
+    ],
+    "answer": 1,
+    "explanation": "제6류는 **산화성 액체**로, 강력한 산화력을 가졌지만 그 자체는 타지 않습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 저장창고의 '바닥' 구조 기준으로 틀린 것은?",
+    "options": [
+      "액체가 침투하지 못하는 구조",
+      "적당한 경사를 둘 것",
+      "배수구와 집유설비를 설치할 것",
+      "바닥을 흙으로 할 것"
+    ],
+    "answer": 3,
+    "explanation": "누출 시 땅으로 스며들면 안 되므로 **불침투성 재료(콘크리트 등)**를 써야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물인 '니트로글리세린'의 성질은?",
+    "options": [
+      "무색 투명한 액체로 충격에 매우 민감함",
+      "노란색 고체",
+      "물과 반응함",
+      "불꽃을 튀김"
+    ],
+    "answer": 0,
+    "explanation": "다이너마이트의 원료이며 **충격과 마찰**에 극도로 위험한 액체 폭발물입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 안전관리자로 선임될 수 있는 자격은?",
+    "options": [
+      "일반 시민",
+      "위험물 산업기사 이상의 국가기술자격 소지자",
+      "운전면허 소지자",
+      "소방서장"
+    ],
+    "answer": 1,
+    "explanation": "전문 지식이 필요하므로 **위험물 자격증** 소지자만 선임될 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소의 '환기설비'는 어떤 방식이어야 하는가?",
+    "options": [
+      "강제 배기 방식",
+      "자연 환기 방식",
+      "에어컨 방식",
+      "환풍기 방식"
+    ],
+    "answer": 1,
+    "explanation": "법적으로 위험물 시설의 기본 환기는 **자연 환기** 방식을 원칙으로 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '금수성 물질'의 게시판 문구와 색상은?",
+    "options": [
+      "화기주의 - 적색",
+      "물기엄금 - 청색 바탕에 백색 문자",
+      "충격주의 - 황색",
+      "접근금지 - 흑색"
+    ],
+    "answer": 1,
+    "explanation": "물과 닿으면 안 되는 물질은 **청색 바탕에 백색**으로 '물기엄금'을 표시합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물의 증기가 공기보다 무거운 이유는?",
+    "options": [
+      "액체라서",
+      "분자량이 공기의 평균 분자량(약 29)보다 크기 때문",
+      "기압이 낮아서",
+      "온도가 낮아서"
+    ],
+    "answer": 1,
+    "explanation": "기름 증기는 분자가 무거워 대개 **바닥에 깔리는** 성질이 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 이동탱크저장소의 '안전장치(숨구멍)' 작동 압력은?",
+    "options": [
+      "0.1 MPa",
+      "20 kPa 이상 24 kPa 이하",
+      "1 MPa",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "탱크 내부 압력 조절을 위해 아주 미세한 압력에서 작동하도록 설계됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '과망간산염류'의 색깔은 대개 어떤가?",
+    "options": [
+      "무색",
+      "흑자색 (진한 보라색)",
+      "흰색",
+      "노란색"
+    ],
+    "answer": 1,
+    "explanation": "과망간산칼륨 등은 아주 진한 **보라색/검보라색** 결정체입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물인 '유황'의 위험물 기준 함량은?",
+    "options": [
+      "50% 이상",
+      "60% 이상",
+      "99% 이상",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "유황은 순도가 **60wt% 이상**인 것만 위험물로 취급합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "정전기에 의한 화재를 방지하는 방법이 아닌 것은?",
+    "options": [
+      "접지를 한다",
+      "습도를 70% 이상으로 높인다",
+      "공기를 이온화한다",
+      "공기를 건조하게 유지한다"
+    ],
+    "answer": 3,
+    "explanation": "**건조한 환경**은 정전기가 발생하기 가장 좋은 조건이므로 피해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 저장탱크의 '배관' 재질로 부적절한 것은?",
+    "options": [
+      "강관",
+      "구리관",
+      "합성수지관 (특수 목적 외)",
+      "스테인리스관"
+    ],
+    "answer": 2,
+    "explanation": "화재 시 녹아내릴 수 있는 **플라스틱(합성수지) 배관**은 원칙적으로 금지됩니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 운반 용기 외부에 표시하지 않아도 되는 것은?",
+    "options": [
+      "위험물의 품명",
+      "위험등급",
+      "화재 시 응급조치 요령",
+      "제조업체 사장님 성함"
+    ],
+    "answer": 3,
+    "explanation": "사장님 이름보다는 **위험성 정보**가 훨씬 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물인 '과염소산염류'와 혼합하면 폭발 위험이 큰 것은?",
+    "options": [
+      "물",
+      "유기물이나 가연성 물질의 가루",
+      "질소 가스",
+      "모래"
+    ],
+    "answer": 1,
+    "explanation": "강력한 산화제이므로 **가연물**과 섞이면 아주 작은 충격에도 폭발합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물의 일반적인 소화 방법은?",
+    "options": [
+      "가스 소화",
+      "다량의 물에 의한 냉각 소화 (금속분 제외)",
+      "질식 소화",
+      "방치"
+    ],
+    "answer": 1,
+    "explanation": "기본적으로 가연성 고체이므로 **물로 열을 식히는 것**이 효과적입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '칼륨'이 물과 반응할 때 생기는 위험은?",
+    "options": [
+      "얼어버림",
+      "수소 가스 발생 및 격렬한 발열로 인한 폭발",
+      "산소 방출",
+      "이산화탄소 발생"
+    ],
+    "answer": 1,
+    "explanation": "칼륨은 물과 만나면 즉시 **수소**를 만들며 불이 붙습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 '지정수량' 중 휘발유의 양은?",
+    "options": [
+      "50리터",
+      "200리터",
+      "400리터",
+      "1000리터"
+    ],
+    "answer": 1,
+    "explanation": "제1석유류(비수용성)인 휘발유의 지정수량은 **200리터**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물의 특징 중 '자기연소'란?",
+    "options": [
+      "스스로 타는 것",
+      "외부 산소 공급 없이 물질 내부의 산소로 연기 없이 타는 현상",
+      "폭발하는 것",
+      "연기가 많이 나는 것"
+    ],
+    "answer": 1,
+    "explanation": "산소를 품고 있어 공기가 없어도 **스스로 계속 탈 수 있음**을 의미합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소'의 위험물 기준 농도는?",
+    "options": [
+      "10% 이상",
+      "36% 이상",
+      "60% 이상",
+      "90% 이상"
+    ],
+    "answer": 1,
+    "explanation": "과산화수소는 중량 퍼센트 **36% 이상**인 것만 위험물입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소 건물의 '지붕' 재질 기준으로 옳은 것은?",
+    "options": [
+      "기와",
+      "가벼운 불연재료 (폭발 시 압력 방출을 위해)",
+      "철근 콘크리트 (두껍게)",
+      "나무"
+    ],
+    "answer": 1,
+    "explanation": "폭발 사고 시 상부로 압력을 빼내어 벽체가 무너지는 것을 막기 위해 **가벼운 재질**을 씁니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "이동탱크저장소의 주유 호스 끝에 설치하는 장치는?",
+    "options": [
+      "밸브",
+      "수동 개폐 장치 (노즐)",
+      "필터",
+      "모터"
+    ],
+    "answer": 1,
+    "explanation": "기름을 넣을 때만 열리는 **주유 노즐**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 시설의 '배수구'에 설치하는 '유분리기'의 기능은?",
+    "options": [
+      "물을 깨끗하게 함",
+      "물과 섞인 기름을 분리하여 기름만 따로 모으는 기능",
+      "기름을 증발시킴",
+      "수압 조절"
+    ],
+    "answer": 1,
+    "explanation": "환경 오염과 화재 확산을 막기 위해 **기름을 걸러내는** 장치입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '디에틸에테르'의 보관 시 주의사항은?",
+    "options": [
+      "햇빛에 노출",
+      "통풍이 잘되는 서늘한 곳에 보관하고 일광 차단",
+      "고온 보관",
+      "개방된 용기 보관"
+    ],
+    "answer": 1,
+    "explanation": "인화점이 매우 낮고 과산화물을 생성할 수 있어 **차갑고 어두운 곳**이 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 안전관리법상 '지정수량'의 의미는?",
+    "options": [
+      "최대 저장량",
+      "위험성을 고려하여 법에서 정한 최하위 기준 수량",
+      "공장 면적",
+      "운반 횟수"
+    ],
+    "answer": 1,
+    "explanation": "이 수량 이상을 다루면 반드시 **법적 규제**를 받아야 하는 기준점입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제1류 위험물 중 '질산염류'의 화재 시 특징은?",
+    "options": [
+      "산소를 방출하여 연기를 없앰",
+      "강력한 산소 공급원으로 작용하여 폭발적 연조 유도",
+      "불을 끔",
+      "수증기 발생"
+    ],
+    "answer": 1,
+    "explanation": "산소를 많이 가진 물질이라 화재를 **매우 격렬하게** 만듭니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물인 '알루미늄분'이 산이나 알칼리와 반응하면?",
+    "options": [
+      "산소가 나옴",
+      "수소 가스가 발생함",
+      "액체가 됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "금속 가루는 화학 반응 시 **수소**를 만들어 폭발 위험을 높입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '금속의 인화물'이 물과 만나면 발생하는 가스는?",
+    "options": [
+      "인화수소 (포스핀)",
+      "수소",
+      "산소",
+      "염소"
+    ],
+    "answer": 0,
+    "explanation": "맹독성 가스인 **포스핀**이 발생하여 질식 및 중독 위험이 큽니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물의 '연소' 형태는?",
+    "options": [
+      "표면 연소",
+      "증발 연소",
+      "분해 연소",
+      "자기 연소"
+    ],
+    "answer": 1,
+    "explanation": "액체 표면에서 나온 **증기**가 타는 증발 연소 방식입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제5류 위험물인 '니트로화합물'의 대표적인 예는?",
+    "options": [
+      "TNT (트리니트로톨루엔)",
+      "소금",
+      "설탕",
+      "가솔린"
+    ],
+    "answer": 0,
+    "explanation": "**TNT**는 대표적인 제5류 위험물이자 폭약입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물인 '과염소산'의 성질은?",
+    "options": [
+      "강력한 산화제이며 물과 만나면 격렬히 발열함",
+      "달콤한 냄새가 남",
+      "고체 상태임",
+      "불에 잘 탐"
+    ],
+    "answer": 0,
+    "explanation": "매우 불안정하고 강력한 **산화성 액체**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소 등의 '안전거리' 산정 기준물 중 '고압가스 시설'과의 거리는?",
+    "options": [
+      "10m",
+      "20m 이상",
+      "50m",
+      "100m"
+    ],
+    "answer": 1,
+    "explanation": "상호 위험성을 고려하여 최소 **20m**의 거리를 둡니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 보관 용기의 '적재' 방법으로 틀린 것은?",
+    "options": [
+      "높이 3m 이하로 쌓을 것 (기계 제외)",
+      "입구가 위를 향하게 할 것",
+      "용기를 마구 던져서 쌓을 것",
+      "파손된 용기는 제외할 것"
+    ],
+    "answer": 2,
+    "explanation": "충격에 의해 누출되거나 폭발할 수 있으므로 **조심스럽게** 다뤄야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '인화점' 테스트에 주로 사용되는 장비는?",
+    "options": [
+      "태그 밀폐식 또는 클리브랜드 개폐식 시험기",
+      "온도계",
+      "현미경",
+      "저울"
+    ],
+    "answer": 0,
+    "explanation": "정해진 규격의 **인화점 측정기**를 사용하여 등급을 분류합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 유출 사고 시 '중화제'를 사용하는 목적은?",
+    "options": [
+      "기름을 닦으려고",
+      "강산 또는 강알칼리 위험물을 중성으로 만들어 독성을 낮추기 위해",
+      "불을 끄려고",
+      "냄새 제거"
+    ],
+    "answer": 1,
+    "explanation": "화학적 반응을 통해 **위험성을 중화**시키는 과정입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1석유류 중 '아세톤'의 특징은?",
+    "options": [
+      "물에 안 녹음",
+      "물에 아주 잘 녹는 수용성 액체",
+      "고체임",
+      "푸른색임"
+    ],
+    "answer": 1,
+    "explanation": "아세톤은 대표적인 **수용성** 제1석유류로, 수용성일 경우 지정수량이 2배(400리터)가 됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물 중 '금속분'의 정의에 포함되지 않는 금속은?",
+    "options": [
+      "알루미늄",
+      "아연",
+      "구리나 니켈 (일정 크기 미만)",
+      "철"
+    ],
+    "answer": 2,
+    "explanation": "구리, 니켈 등은 위험물 안전관리법상 **위험물 범위에서 제외**됩니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '리튬'의 저장액으로 적당한 것은?",
+    "options": [
+      "물",
+      "유동파라핀 (또는 등유/경유)",
+      "식초",
+      "알코올"
+    ],
+    "answer": 1,
+    "explanation": "반응성이 크므로 공기와 물을 차단하는 **기름 속**에 보관합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 화재 시 '포 소화약제'가 효과적인 이유는?",
+    "options": [
+      "물을 뿌리는 것과 같아서",
+      "유면을 덮어 산소 공급을 차단(질식)하고 유증기 발생을 막기 때문",
+      "기름을 굳게 해서",
+      "색깔이 하얘서"
+    ],
+    "answer": 1,
+    "explanation": "기름 화재에는 물보다 **거품(포)**이 훨씬 안전하고 확실한 소화법입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물의 '위험등급' 중 I등급에 해당하는 것은?",
+    "options": [
+      "질산에스테르류",
+      "니트로화합물",
+      "아조화합물",
+      "히드라진 유도체"
+    ],
+    "answer": 0,
+    "explanation": "**질산에스테르류, 유기과산화물**은 가장 위험한 I등급입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 표지 중 '물기엄금' 게시판의 문자 색상은?",
+    "options": [
+      "흑색",
+      "백색",
+      "적색",
+      "황색"
+    ],
+    "answer": 1,
+    "explanation": "청색 바탕에 **백색** 문자를 씁니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥외탱크저장소의 '통기설비' 중 화염 방지 장치를 설치해야 하는 탱크는?",
+    "options": [
+      "물탱크",
+      "인화점 38℃ 미만의 위험물을 저장하는 탱크",
+      "식용유 탱크",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "외부 불꽃이 탱크 안으로 빨려 들어가는 것을 막기 위한 **화염방지기(Flame Arrester)**가 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 이동탱크저장소의 운전자가 반드시 휴대해야 하는 서류는?",
+    "options": [
+      "신문",
+      "국가기술자격증(위험물) 또는 교육수료증, 국가기술자격수첩",
+      "가족사진",
+      "지도"
+    ],
+    "answer": 1,
+    "explanation": "자격이 있음을 증명하는 **자격증** 소지가 의무입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '제3석유류'인 중유의 인화점 기준은?",
+    "options": [
+      "21℃ 미만",
+      "70℃ 이상 200℃ 미만",
+      "200℃ 이상",
+      "0℃ 미만"
+    ],
+    "answer": 1,
+    "explanation": "제3석유류는 인화점이 **70℃에서 200℃** 사이인 기름들입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물의 저장 및 취급 방법으로 틀린 것은?",
+    "options": [
+      "가연물과의 접촉을 피한다",
+      "습기에 주의하고 용기를 밀폐한다",
+      "직사광선을 피한다",
+      "가루 상태로 마구 흩뿌려 보관한다"
+    ],
+    "answer": 3,
+    "explanation": "가루가 날리면 정전기나 마찰에 의해 **폭발적 연소**가 일어날 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물인 '철분, 마그네슘' 화재 시 '이산화탄소' 소화기가 부적절한 이유는?",
+    "options": [
+      "가스가 비싸서",
+      "금속과 반응하여 고온을 발생시키거나 반응을 돕기 때문",
+      "소리가 커서",
+      "가스가 안 보여서"
+    ],
+    "answer": 1,
+    "explanation": "고온의 금속은 CO2를 분해하여 산소를 뽑아내며 더 격렬히 탈 수 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '금속칼슘'이 물과 반응하면?",
+    "options": [
+      "수소 가스 발생",
+      "염소 가스 발생",
+      "반응 없음",
+      "얼음이 됨"
+    ],
+    "answer": 0,
+    "explanation": "거의 모든 제3류 금수성 물질은 물과 만나면 **수소**를 냅니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 '액표면 온도'가 인화점 이하일 때 불을 붙이면?",
+    "options": [
+      "폭발한다",
+      "불이 붙지 않는다",
+      "서서히 녹는다",
+      "연기만 난다"
+    ],
+    "answer": 1,
+    "explanation": "**인화점**이란 불이 붙기 위한 최소한의 온도로, 그보다 낮으면 불이 붙지 않습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물의 '운반 용기' 외부 표시 사항 중 틀린 것은?",
+    "options": [
+      "화기엄금",
+      "충격주의",
+      "물기엄금",
+      "가연물접촉주의"
+    ],
+    "answer": 2,
+    "explanation": "제5류는 물과 반응하는 물질이 아니므로 **물기엄금**은 표시하지 않습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '질산'이 피부에 닿았을 때의 응급 처치는?",
+    "options": [
+      "그냥 둔다",
+      "즉시 흐르는 물로 충분히 씻어낸다",
+      "기름을 바른다",
+      "수건으로 닦기만 한다"
+    ],
+    "answer": 1,
+    "explanation": "강력한 부식성 산이므로 **물로 희석 및 세척**하는 것이 가장 빠르고 중요합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소 등의 '방화담' 설치 높이는?",
+    "options": [
+      "1m",
+      "2m 이상",
+      "5m",
+      "10m"
+    ],
+    "answer": 1,
+    "explanation": "화재 확산을 막기 위해 최소 **2m 이상**의 높이를 권장합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 탱크의 '내용적' 계산 시 고려하지 않는 부분은?",
+    "options": [
+      "탱크 전체 부피",
+      "공간용적 (5~10%)",
+      "탱크의 색깔",
+      "탱크의 지름"
+    ],
+    "answer": 2,
+    "explanation": "실제 저장 가능한 양을 잴 때 **색깔**은 무관합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 이동탱크저장소 전면에 부착하는 '위험물' 표지의 바탕 색상은?",
+    "options": [
+      "백색",
+      "흑색",
+      "적색",
+      "황색"
+    ],
+    "answer": 1,
+    "explanation": "**흑색 바탕에 황색** 문자로 '위험물'이라고 표시합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '동식물유류'의 위험성 판단 기준은?",
+    "options": [
+      "인화점",
+      "요오드값 (건성유, 반건성유, 불건성유)",
+      "맛",
+      "냄새"
+    ],
+    "answer": 1,
+    "explanation": "공기 중 산소와 결합하여 열을 내는 정도인 **요오드값**에 따라 분류합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '염소산염류'의 소화 방법으로 틀린 것은?",
+    "options": [
+      "물로 냉각 소화",
+      "포 소화약제 사용",
+      "이산화탄소 소화기만 단독 사용",
+      "대량의 모래로 질식"
+    ],
+    "answer": 2,
+    "explanation": "산화제 화재에서 가스 소화기는 보조적일 뿐, **냉각**이 동반되지 않으면 불이 안 꺼집니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물 중 '인화성 고체'의 정의는?",
+    "options": [
+      "녹는 고체",
+      "고체로서 인화점이 40℃ 미만인 것",
+      "폭발하는 것",
+      "연기가 안 나는 것"
+    ],
+    "answer": 1,
+    "explanation": "고체이지만 휘발유처럼 불이 잘 붙는 **인화점 40℃ 미만** 물질을 말합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '나트륨' 화재 시 '포(거품) 소화약제'를 쓰면 안 되는 이유는?",
+    "options": [
+      "거품이 꺼져서",
+      "포 소화약제의 수분과 나트륨이 반응하여 폭발할 수 있기 때문",
+      "비싸서",
+      "소리가 커서"
+    ],
+    "answer": 1,
+    "explanation": "거품은 대부분 물이므로 **금수성 물질**에는 절대 금물입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 중 '수용성' 물질과 '비수용성' 물질의 차이점은?",
+    "options": [
+      "색깔",
+      "물에 녹는지 여부 및 소화 방법(내알코올포 사용 등)",
+      "무게",
+      "냄새"
+    ],
+    "answer": 1,
+    "explanation": "수용성 액체 화재에는 일반 거품이 녹아버리므로 **내알코올포**라는 특수 거품을 써야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물 저장 시 '온도' 관리의 중요성은?",
+    "options": [
+      "시원해야 맛있음",
+      "분해 온도가 낮아 열에 의해 스스로 폭발할 수 있기 때문",
+      "어는 것을 막기 위해",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "제5류는 **열에 매우 민감**하여 냉소 저장이 원칙입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제6류 위험물인 '오불화브롬'의 위험성은?",
+    "options": [
+      "강력한 산화성 및 부식성",
+      "폭발성",
+      "가연성",
+      "없음"
+    ],
+    "answer": 0,
+    "explanation": "제6류에 속하는 강력한 **부식성 산화제**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제조소 등의 '채광' 설비 기준은?",
+    "options": [
+      "전등만 켤 것",
+      "직사광선이 닿지 않도록 할 것",
+      "유리를 다 뺄 것",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "햇빛에 의해 온도가 올라가는 것을 막기 위해 **채광은 간접적으로** 되게 해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 탱크의 '시험 압력' 유지 시간은?",
+    "options": [
+      "1초",
+      "10분 이상",
+      "1시간",
+      "하루 종일"
+    ],
+    "answer": 1,
+    "explanation": "누설 여부를 확실히 보려면 일정 시간(**10분 이상**) 압력을 유지하며 지켜봐야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 운반 차량의 '소화기' 비치 기준은?",
+    "options": [
+      "없어도 됨",
+      "위험물의 종류와 양에 적합한 소화기를 비치해야 함",
+      "장식용",
+      "물통이면 됨"
+    ],
+    "answer": 1,
+    "explanation": "이동 중 화재에 대비해 **규격에 맞는 소화기**가 항상 실려 있어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 중 '벤젠'의 특징은?",
+    "options": [
+      "독성이 강하고 인화하기 쉬우며 물에 녹지 않음",
+      "향기가 좋음",
+      "식용 가능",
+      "푸른색 액체"
+    ],
+    "answer": 0,
+    "explanation": "**벤젠**은 대표적인 비수용성 제1석유류이며 발암물질이기도 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제1류 위험물 중 '무기과산화물'의 적재 시 주의사항은?",
+    "options": [
+      "충격 주의",
+      "가연물 접촉 금지 및 물기 엄금",
+      "높게 쌓기",
+      "햇빛 노출"
+    ],
+    "answer": 1,
+    "explanation": "산화제이면서 물과 반응하므로 **두 가지 모두** 주의해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물 중 '가연성 고체'에 해당하지 않는 것은?",
+    "options": [
+      "황화린",
+      "적린",
+      "황린",
+      "유황"
+    ],
+    "answer": 2,
+    "explanation": "**황린**은 자연발화성 물질로 제3류 위험물에 속합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '금속칼슘'의 보관 용기 재질로 적당한 것은?",
+    "options": [
+      "유리",
+      "금속제 용기 (밀폐형)",
+      "종이",
+      "나무"
+    ],
+    "answer": 1,
+    "explanation": "습기를 차단할 수 있는 **튼튼한 밀폐 용기**가 필요합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물의 '인화점'과 '착화점' 중 대개 더 낮은 것은?",
+    "options": [
+      "인화점",
+      "착화점",
+      "동일함",
+      "비교 불가"
+    ],
+    "answer": 0,
+    "explanation": "**인화점**(외부 불꽃에 의한 발화)이 대개 **착화점**(스스로 발화)보다 훨씬 낮습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제5류 위험물 중 '아조화합물'의 화재 시 특징은?",
+    "options": [
+      "냉각하면 즉시 꺼짐",
+      "열분해 시 유독 가스와 열을 내며 급격히 연소",
+      "반응 없음",
+      "색깔이 변함"
+    ],
+    "answer": 1,
+    "explanation": "**자기 반응성**이 있어 화재 대응이 매우 어렵고 위험합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물의 공통적인 소화 방법은?",
+    "options": [
+      "질식 소화",
+      "물에 의한 희석 및 냉각 소화",
+      "방치",
+      "가스 소화"
+    ],
+    "answer": 1,
+    "explanation": "산소를 포함하고 있으므로 질식보다는 **물로 씻어내거나 냉각**하는 것이 우선입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 시설의 '피뢰침' 설치 기준은?",
+    "options": [
+      "지정수량 10배 이상의 시설",
+      "모든 시설",
+      "나무 근처",
+      "설치 금지"
+    ],
+    "answer": 0,
+    "explanation": "대량의 위험물을 취급하는 곳은 낙뢰 방지를 위해 **지정수량 10배** 이상 시 피뢰침이 의무입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 탱크 '두께' 기준은 최소 얼마 이상인가?",
+    "options": [
+      "1.0mm",
+      "3.2mm 이상",
+      "10mm",
+      "100mm"
+    ],
+    "answer": 1,
+    "explanation": "안전성을 위해 철판 두께는 최소 **3.2mm** 이상이어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 표지 중 '화기주의'와 '화기엄금'의 차이는?",
+    "options": [
+      "없음",
+      "위험 정도에 따라 구분 (주의 < 엄금)",
+      "색깔이 다름",
+      "글자 수 차이"
+    ],
+    "answer": 1,
+    "explanation": "**엄금**이 훨씬 더 엄격한 관리를 요구하는 등급입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '제4석유류'인 윤활유의 인화점 기준은?",
+    "options": [
+      "200℃ 이상 250℃ 미만",
+      "250℃ 이상",
+      "0℃",
+      "100℃"
+    ],
+    "answer": 0,
+    "explanation": "제4석유류는 인화점이 **200도에서 250도** 미만인 무거운 기름들입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물 중 '염소산칼륨'의 결정 색깔은?",
+    "options": [
+      "흑색",
+      "무색 또는 백색",
+      "적색",
+      "청색"
+    ],
+    "answer": 1,
+    "explanation": "염소산칼륨은 대개 **투명하거나 하얀** 소금 같은 결정입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물 중 '철분' 화재 시 사용 가능한 소화기는?",
+    "options": [
+      "물",
+      "포",
+      "이산화탄소",
+      "금속 화재용 건조사(마른 모래)"
+    ],
+    "answer": 3,
+    "explanation": "금속 화재에는 오직 **마른 모래나 특수 분말**만 효과가 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '알킬리튬'의 반응성은?",
+    "options": [
+      "매우 낮음",
+      "공기 및 물과 격렬히 반응하며 발화함",
+      "반응 없음",
+      "냄새가 좋음"
+    ],
+    "answer": 1,
+    "explanation": "**알킬리튬/알킬알루미늄**은 3류 중에서도 최악의 반응성을 자랑합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4석유류 화재 시 '냉각'보다 '질식' 소화가 주된 이유는?",
+    "options": [
+      "기름이 너무 많아서",
+      "인화점이 높아 불을 끄기보다는 산소를 차단하는 것이 더 빠르고 안전하기 때문",
+      "물이 부족해서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "온도가 워낙 높아 물을 뿌리면 튀기 쉬워 **거품으로 덮는 것**이 유리합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물인 '셀룰로이드' 제품의 보관 시 주의사항은?",
+    "options": [
+      "열기에 의한 자연 분해 및 발화를 막기 위해 냉소 보관",
+      "햇빛 노출",
+      "물속에 넣음",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "**셀룰로이드**는 오래되면 스스로 열을 내며 불이 붙을 수 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '질산'의 부식 작용이 큰 대상은?",
+    "options": [
+      "대부분의 금속 및 유기물",
+      "돌",
+      "유리 (일부 제외)",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "금속을 녹이고 단백질(피부)을 파괴하는 **강력한 부식성**을 가집니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 시설 '게시판'의 크기 규격은?",
+    "options": [
+      "아무렇게나",
+      "한 변의 길이 0.3m 이상, 다른 한 변 0.6m 이상의 직사각형",
+      "정사각형 1m",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "멀리서도 잘 보이도록 **법적 규격(30cm x 60cm)**을 지켜야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 탱크의 '비파괴 검사'란?",
+    "options": [
+      "탱크를 부수는 시험",
+      "탱크를 훼손하지 않고 방사선이나 초음파로 결함을 찾는 것",
+      "눈으로만 보는 것",
+      "물을 채우는 것"
+    ],
+    "answer": 1,
+    "explanation": "내구성을 깎지 않고 속을 들여다보는 **첨단 검사** 방식입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 '운송'과 '운반'의 차이는?",
+    "options": [
+      "없음",
+      "차량(탱크로리)에 실어 옮기는 것 vs 용기에 담아 옮기는 것",
+      "속도 차이",
+      "거리 차이"
+    ],
+    "answer": 1,
+    "explanation": "**운송**은 탱크로리 등 전용 차량, **운반**은 개별 용기에 담아 옮기는 행위입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 저장 시 '정전기' 방지 대책으로 부적합한 것은?",
+    "options": [
+      "접지 설비",
+      "가습",
+      "절연 장갑 착용",
+      "이온화 장치"
+    ],
+    "answer": 2,
+    "explanation": "절연 장갑은 오히려 **전하 축적**을 도와 정전기 사고를 유발할 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물의 공통적인 소화 방법으로 틀린 것은?",
+    "options": [
+      "물에 의한 냉각 소화",
+      "강한 산화제이므로 질식 소화는 효과가 없음",
+      "모래로 덮기",
+      "소량일 때는 이산화탄소 소화기 사용"
+    ],
+    "answer": 1,
+    "explanation": "제1류는 산소를 직접 포함하지는 않지만 타 물질의 연소를 돕는 **산화제**입니다. (자체 산소 포함 여부는 5류와 혼동 주의)",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물 중 '철분'과 '아연'이 산과 반응하면 발생하는 공통 가스는?",
+    "options": [
+      "산소",
+      "수소",
+      "염소",
+      "암모니아"
+    ],
+    "answer": 1,
+    "explanation": "대부분의 금속은 산과 만나면 폭발성 가스인 **수소**를 발생시킵니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '황린'의 저장 용기 재질로 부적절한 것은?",
+    "options": [
+      "유리",
+      "강철",
+      "플라스틱 (장기 보관 시)",
+      "구리"
+    ],
+    "answer": 3,
+    "explanation": "**구리**는 일부 위험물과 반응하여 불안정한 화합물을 만들 수 있어 주의해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '연소 범위' 하한계가 낮을수록 위험한 이유는?",
+    "options": [
+      "불이 천천히 붙어서",
+      "아주 적은 양의 유증기만 있어도 폭발할 수 있기 때문에",
+      "냄새가 안 나서",
+      "온도가 낮아서"
+    ],
+    "answer": 1,
+    "explanation": "**하한계**가 낮다는 것은 공기 중에 기름기가 아주 조금만 있어도 터질 수 있다는 뜻입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물인 '니트로셀룰로오스'의 보관 상태로 옳은 것은?",
+    "options": [
+      "건조 상태",
+      "알코올 또는 물을 함유한 젖은 상태",
+      "햇빛 노출 상태",
+      "고온 보관"
+    ],
+    "answer": 1,
+    "explanation": "건조되면 폭발 위험이 매우 커지므로 **윤습제(알코올 등)**를 섞어 보관합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제6류 위험물인 '오불화브롬'의 위험 등급은?",
+    "options": [
+      "I 등급",
+      "II 등급",
+      "III 등급",
+      "IV 등급"
+    ],
+    "answer": 0,
+    "explanation": "제6류는 모두 위험도가 높은 **I 등급**으로 분류됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제조소의 '환기구' 위치는?",
+    "options": [
+      "천장 중앙",
+      "바닥에서 2m 이상 높은 곳",
+      "바닥 부근 (증기가 무거우므로)",
+      "상관없음"
+    ],
+    "answer": 2,
+    "explanation": "위험물 증기는 대개 공기보다 무거워 바닥에 깔리므로 **낮은 곳**에 환기구를 둡니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이동탱크저장소에 비치해야 하는 '방재 도구' 중 '흡착포'의 용도는?",
+    "options": [
+      "닦는 수건",
+      "누출된 기름을 흡수하여 확산을 방지하는 도구",
+      "불 끄는 포",
+      "기름 거르는 필터"
+    ],
+    "answer": 1,
+    "explanation": "기름을 빨아들이는 특수 천으로 **유출 사고** 시 필수입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 시설의 '경고 표시' 중 '주의'와 '엄금'의 바탕 색상 차이는?",
+    "options": [
+      "주의는 황색, 엄금은 적색",
+      "둘 다 백색",
+      "주의는 청색",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "경고 강도에 따라 **황색(주의)**과 **적색(엄금)**으로 바탕색을 구분합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '정전기' 방지를 위해 배관 내 유속을 어떻게 조절해야 하는가?",
+    "options": [
+      "빠르게 한다",
+      "느리게 한다 (2~3 m/s 이하 권장)",
+      "최대한 빠르게",
+      "조절 필요 없음"
+    ],
+    "answer": 1,
+    "explanation": "기름 흐름이 너무 빠르면 마찰 정전기가 많이 생기므로 **유속을 제한**해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제1류 위험물 중 '과산화칼륨' 화재 시 절대 쓰면 안 되는 것은?",
+    "options": [
+      "물",
+      "마른 모래",
+      "금속 화재용 분말",
+      "질소 가스"
+    ],
+    "answer": 0,
+    "explanation": "**무기과산화물**인 과산화칼륨은 물과 만나면 산소와 열을 내며 폭발합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물인 '유황'을 분쇄할 때 주의해야 할 사고는?",
+    "options": [
+      "중독 사고",
+      "분진 폭발",
+      "질식 사고",
+      "동파"
+    ],
+    "answer": 1,
+    "explanation": "가연성 고체의 미세 가루는 공기 중에서 **분진 폭발**을 일으킬 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '알킬알루미늄'이 든 용기를 개봉할 때 주의점은?",
+    "options": [
+      "물에 담그고 연다",
+      "불활성 가스(질소 등)가 채워진 상태에서 안전하게 취급",
+      "공기 중에서 연다",
+      "흔들어서 연다"
+    ],
+    "answer": 1,
+    "explanation": "공기 중의 산소와 즉시 반응하여 불이 붙으므로 **질소 치환**이 필수입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물의 '지정수량' 중 '제2석유류(비수용성)'인 경유의 양은?",
+    "options": [
+      "200리터",
+      "400리터",
+      "1000리터",
+      "2000리터"
+    ],
+    "answer": 2,
+    "explanation": "경유, 등유 등이 속하는 비수용성 제2석유류는 **1000리터**입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제5류 위험물 저장 창고에 '냉방 설비'가 필수인 이유는?",
+    "options": [
+      "쾌적함을 위해",
+      "자기 분해 온도가 낮아 상온에서도 발화할 위험이 있기 때문",
+      "어는 것을 막기 위해",
+      "벌레 방지"
+    ],
+    "answer": 1,
+    "explanation": "온도가 올라가면 **폭발 위험**이 급격히 커지는 물질들입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물인 '질산'이 목재(나무)와 섞이면?",
+    "options": [
+      "나무가 더 단단해짐",
+      "질화되어 폭발성 물질이 되거나 발화할 수 있음",
+      "반응 없음",
+      "나무 색깔이 변함"
+    ],
+    "answer": 1,
+    "explanation": "강력한 산화제라 유기물인 나무와 만나면 **화재나 폭발**을 일으킵니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소 건물의 '벽' 기준으로 옳은 것은?",
+    "options": [
+      "벽돌로만 쌓기",
+      "내화 구조 (불에 견디는 튼튼한 구조)",
+      "나무판자",
+      "유리벽"
+    ],
+    "answer": 1,
+    "explanation": "인접 건물로의 연소 방지를 위해 **내화 구조**의 벽이 필수입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이동탱크저장소의 '정전기 제거 장치(접지)' 사용 시점은?",
+    "options": [
+      "운행 중",
+      "기름을 싣거나 내리기(하역) 전",
+      "세차할 때",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "액체가 흐를 때 정전기가 가장 많이 생기므로 **작업 전**에 접지해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 유출 시 '모래'를 주변에 쌓는 목적은?",
+    "options": [
+      "미끄럼 방지",
+      "위험물이 더 넓은 곳으로 퍼지지 않게 가두는 둑(방유제) 역할",
+      "불을 끄려고",
+      "청소용"
+    ],
+    "answer": 1,
+    "explanation": "액체 위험물의 **확산 방지**를 위한 가장 기본적인 응급 조치입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '가솔린(휘발유)'의 인화점은 대략?",
+    "options": [
+      "약 -40℃",
+      "약 21℃",
+      "약 70℃",
+      "약 200℃"
+    ],
+    "answer": 0,
+    "explanation": "휘발유는 영하 **40도**에서도 불이 붙을 만큼 유증기가 잘 나옵니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 안전관리법상 '위험물'의 정의로 옳은 것은?",
+    "options": [
+      "모든 화학물질",
+      "인화성 또는 발화성 등의 성질을 가지는 것으로서 대통령령이 정하는 물품",
+      "독성 물질",
+      "방사성 물질"
+    ],
+    "answer": 1,
+    "explanation": "법에서 정한 **화재 및 폭발 위험성**이 있는 물질들만 해당합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '과염소산'류를 가열하면?",
+    "options": [
+      "얼음이 됨",
+      "격렬히 분해되어 산소를 방출하며 폭발 위험 증대",
+      "증발하여 사라짐",
+      "냄새가 좋아짐"
+    ],
+    "answer": 1,
+    "explanation": "열에 의한 **분해 반응**이 매우 빠른 위험물입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물 중 '마그네슘'의 지정 수량은?",
+    "options": [
+      "100kg",
+      "500kg",
+      "1000kg",
+      "100kg 미만"
+    ],
+    "answer": 1,
+    "explanation": "철분, 금속분, 마그네슘의 지정수량은 **500kg**입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '금속의 수소화물'이 물과 만나면 발생하는 가스는?",
+    "options": [
+      "산소",
+      "수소",
+      "염소",
+      "암모니아"
+    ],
+    "answer": 1,
+    "explanation": "수소를 품고 있는 금속 화합물이라 물과 만나면 **수소**가 튀어나옵니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '연소' 속도에 영향을 주는 요인이 아닌 것은?",
+    "options": [
+      "액체의 온도",
+      "주변 산소 농도",
+      "용기의 색깔",
+      "유표면적 (기름 표면 넓이)"
+    ],
+    "answer": 2,
+    "explanation": "물리적/화학적 조건이 중요하며 **색깔**은 직접적 영향이 적습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물인 '니트로소화합물'의 위험 등급은?",
+    "options": [
+      "I 등급",
+      "II 등급",
+      "III 등급",
+      "IV 등급"
+    ],
+    "answer": 1,
+    "explanation": "니트로소화합물 등은 **II 등급**에 해당합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소' 보관 용기에 구멍이 있는 마개를 사용하는 이유는?",
+    "options": [
+      "가스가 잘 들어가라고",
+      "분해 시 발생하는 가스를 배출하여 압력 상승 및 폭발을 막기 위해",
+      "냄새 확인용",
+      "디자인"
+    ],
+    "answer": 1,
+    "explanation": "조금씩 분해되며 산소가 나오므로 **압력 배출용 구멍**이 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제조소 건물의 '바닥' 재질로 콘크리트를 주로 쓰는 이유는?",
+    "options": [
+      "싸서",
+      "불에 타지 않고 액체가 잘 스며들지 않게 마감할 수 있어서",
+      "무거워서",
+      "전기가 잘 통하게 하려고"
+    ],
+    "answer": 1,
+    "explanation": "소방 안전과 환경 보호를 위한 **불연성/불침투성** 기준 때문입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이동탱크저장소 하부에 설치된 '비상레버(긴급차단장치)'의 용도는?",
+    "options": [
+      "브레이크",
+      "사고나 화재 시 탱크 하부 밸브를 즉시 닫아 기름 유출을 막는 장치",
+      "엔진 끄기",
+      "경적"
+    ],
+    "answer": 1,
+    "explanation": "비상시에 기름 공급을 **원격으로 즉시 차단**하는 안전 장치입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 표지 중 '물기엄금'의 바탕 색상은?",
+    "options": [
+      "적색",
+      "백색",
+      "청색",
+      "황색"
+    ],
+    "answer": 2,
+    "explanation": "물(H2O)을 상징하는 **청색** 바탕을 사용합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 중 '제4석유류'에 해당하는 대표적인 물품은?",
+    "options": [
+      "휘발유",
+      "등유",
+      "실린더유, 기어유 (윤활유류)",
+      "아세톤"
+    ],
+    "answer": 2,
+    "explanation": "인화점이 매우 높은 무거운 **기계유, 윤활유** 등이 제4석유류입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제1류 위험물 중 '브롬산염류'의 지정 수량은?",
+    "options": [
+      "50kg",
+      "300kg",
+      "1000kg",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "브롬산염류, 요오드산염류, 질산염류의 지정수량은 **300kg**입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물 중 '철분'이 습한 공기 중에 방치되면?",
+    "options": [
+      "더 반짝거림",
+      "산화 반응에 의한 발열로 자연 발화할 위험이 있음",
+      "액체가 됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "녹스는 과정에서 **열이 발생**하여 축적되면 불이 날 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '칼륨'의 지정 수량은?",
+    "options": [
+      "1kg",
+      "10kg",
+      "50kg",
+      "100kg"
+    ],
+    "answer": 1,
+    "explanation": "칼륨, 나트륨, 알킬알루미늄의 지정수량은 매우 적은 **10kg**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물의 '증기압'이 높다는 것은 무엇을 의미하는가?",
+    "options": [
+      "무겁다",
+      "기체로 변하려는 힘이 강해 증기가 잘 발생하며 화재 위험이 크다",
+      "냄새가 없다",
+      "끓는점이 높다"
+    ],
+    "answer": 1,
+    "explanation": "**증기압**이 높을수록 휘발성이 강해 폭발성 혼합기체를 만들기 쉽습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제5류 위험물 중 '유기과산화물'의 화재 시 특징은?",
+    "options": [
+      "아주 느리게 탐",
+      "연소 속도가 매우 빠르고 폭발적으로 반응함",
+      "연기만 남",
+      "반응 없음"
+    ],
+    "answer": 1,
+    "explanation": "연소 시 **분해 열**이 가속되어 순식간에 끝나는 특징이 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소'가 은(Ag) 가루와 만나면?",
+    "options": [
+      "보석이 됨",
+      "촉매 작용에 의해 격렬히 분해되어 폭발함",
+      "반응 없음",
+      "색깔이 변함"
+    ],
+    "answer": 1,
+    "explanation": "은, 백금 등은 과산화수소의 분해를 돕는 강력한 **촉매** 역할을 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소 건물에 '창문'을 가급적 적게 설치하는 이유는?",
+    "options": [
+      "도둑 방지",
+      "화재 시 연소 확산을 막고 외부 열기 유입을 차단하기 위해",
+      "유리값이 비싸서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "창문은 **방화의 약점**이 될 수 있으므로 최소화하는 것이 원칙입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이동탱크저장소의 '맨홀' 뚜껑 두께 기준은 최소 얼마 이상인가?",
+    "options": [
+      "1.0mm",
+      "3.2mm 이상",
+      "10mm",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "탱크 본체와 마찬가지로 최소 **3.2mm**의 두께를 요구합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 표지 중 '가연물접촉주의' 게시판의 문자 색상은?",
+    "options": [
+      "적색",
+      "청색",
+      "백색",
+      "흑색"
+    ],
+    "answer": 2,
+    "explanation": "청색 바탕에 **백색** 문자를 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '제1석유류(비수용성)'의 지정 수량 합산 시 주의점은?",
+    "options": [
+      "무조건 더함",
+      "수용성 여부에 따라 수량이 달라지므로 확인 필요",
+      "상관없음",
+      "빼기 함"
+    ],
+    "answer": 1,
+    "explanation": "수용성(400L)과 비수용성(200L)의 **기준 수량**이 다르므로 반드시 구분해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물 중 '과망간산염류'의 지정 수량은?",
+    "options": [
+      "50kg",
+      "300kg",
+      "1000kg",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "과망간산염류, 중크롬산염류의 지정수량은 **1000kg**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물 중 '인화성 고체'에 해당하지 않는 것은?",
+    "options": [
+      "고형 알코올",
+      "황화린",
+      "고체 연료",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**황화린**은 가연성 고체(지정수량 100kg)이지 인화성 고체는 아닙니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '칼륨, 나트륨'의 화재 시 물을 뿌리면?",
+    "options": [
+      "물이 증발함",
+      "격렬한 폭발과 함께 가연성 수소 가스 발생",
+      "반응 없음",
+      "얼음이 됨"
+    ],
+    "answer": 1,
+    "explanation": "**금수성**의 대표적인 사례로, 절대 물을 쓰면 안 됩니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 '액체 온도'가 높을수록 화재 위험이 커지는 이유는?",
+    "options": [
+      "기름이 끓어서",
+      "유증기 발생량이 많아져 인화점에 도달하기 쉽기 때문",
+      "기름이 가벼워짐",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "온도가 올라가면 **휘발**이 더 잘 되기 때문입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물인 '아조화합물'의 연소 시 발생할 수 있는 가스는?",
+    "options": [
+      "산소",
+      "질소 및 유독성 질소산화물",
+      "수소",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "질소를 포함한 화합물이므로 **질소 가스나 유독성 가스**가 다량 발생합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소' 보관 시 피해야 할 금속은?",
+    "options": [
+      "플라스틱",
+      "철, 구리, 망간 등의 금속분 (분해 촉매제)",
+      "스테인리스",
+      "금"
+    ],
+    "answer": 1,
+    "explanation": "금속 가루가 들어가면 **급격한 분해**로 탱크가 터질 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소 건물의 '출입문'은 어떤 형태여야 하는가?",
+    "options": [
+      "유리문",
+      "갑종 방화문 또는 을종 방화문 (자동 폐쇄형 권장)",
+      "커튼",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "화재 확산 차단을 위해 **방화 성능**을 갖춘 문이 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 탱크의 '침하' 여부를 정기적으로 확인하는 이유는?",
+    "options": [
+      "탱크가 예뻐 보이려고",
+      "지반 침하로 탱크가 기울면 배관 파손이나 누설 원인이 되기 때문",
+      "수평 조절용",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "거대 하중을 견디는 탱크의 **구조적 안전성** 확인을 위함입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 '운반' 용기의 최대 용적 제한은? (고체 위험물 기준)",
+    "options": [
+      "제한 없음",
+      "보통 250리터 또는 500리터 이하 (재질에 따라 상이)",
+      "1000리터",
+      "10리터"
+    ],
+    "answer": 1,
+    "explanation": "안전한 취급을 위해 용기당 **최대 크기**가 법으로 정해져 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '알코올류'의 정의는?",
+    "options": [
+      "모든 술",
+      "1분자를 구성하는 탄소 원자 수가 1개부터 3개까지인 포화 1가 알코올",
+      "공업용 세제",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**메틸알코올, 에틸알코올, 프로필알코올** 등이 법적 알코올류에 해당합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '질산염류'의 지정 수량은?",
+    "options": [
+      "50kg",
+      "300kg",
+      "1000kg",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "브롬산염류, 요오드산염류, 질산염류의 지정수량은 **300kg**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물 중 '철분'이 습한 공기 중에 방치되면?",
+    "options": [
+      "더 반짝거림",
+      "산화 반응에 의한 발열로 자연 발화할 위험이 있음",
+      "액체가 됨",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "녹스는 과정에서 **열이 발생**하여 축적되면 불이 날 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '칼륨'의 지정 수량은?",
+    "options": [
+      "1kg",
+      "10kg",
+      "50kg",
+      "100kg"
+    ],
+    "answer": 1,
+    "explanation": "칼륨, 나트륨, 알킬알루미늄의 지정수량은 매우 적은 **10kg**입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '증기압'이 높다는 것은 무엇을 의미하는가?",
+    "options": [
+      "무겁다",
+      "기체로 변하려는 힘이 강해 증기가 잘 발생하며 화재 위험이 크다",
+      "냄새가 없다",
+      "끓는점이 높다"
+    ],
+    "answer": 1,
+    "explanation": "**증기압**이 높을수록 휘발성이 강해 폭발성 혼합기체를 만들기 쉽습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물 중 '유기과산화물'의 화재 시 특징은?",
+    "options": [
+      "아주 느리게 탐",
+      "연소 속도가 매우 빠르고 폭발적으로 반응함",
+      "연기만 남",
+      "반응 없음"
+    ],
+    "answer": 1,
+    "explanation": "연소 시 **분해 열**이 가속되어 순식간에 끝나는 특징이 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소'가 은(Ag) 가루와 만나면?",
+    "options": [
+      "보석이 됨",
+      "촉매 작용에 의해 격렬히 분해되어 폭발함",
+      "반응 없음",
+      "색깔이 변함"
+    ],
+    "answer": 1,
+    "explanation": "은, 백금 등은 과산화수소의 분해를 돕는 강력한 **촉매** 역할을 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 제조소 건물에 '창문'을 가급적 적게 설치하는 이유는?",
+    "options": [
+      "도둑 방지",
+      "화재 시 연소 확산을 막고 외부 열기 유입을 차단하기 위해",
+      "유리값이 비싸서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "창문은 **방화의 약점**이 될 수 있으므로 최소화하는 것이 원칙입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이동탱크저장소의 '맨홀' 뚜껑 두께 기준은 최소 얼마 이상인가?",
+    "options": [
+      "1.0mm",
+      "3.2mm 이상",
+      "10mm",
+      "제한 없음"
+    ],
+    "answer": 1,
+    "explanation": "탱크 본체와 마찬가지로 최소 **3.2mm**의 두께를 요구합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 표지 중 '가연물접촉주의' 게시판의 문자 색상은?",
+    "options": [
+      "적색",
+      "청색",
+      "백색",
+      "흑색"
+    ],
+    "answer": 2,
+    "explanation": "청색 바탕에 **백색** 문자를 사용합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 중 '제1석유류(비수용성)'의 지정 수량 합산 시 주의점은?",
+    "options": [
+      "무조건 더함",
+      "수용성 여부에 따라 수량이 달라지므로 확인 필요",
+      "상관없음",
+      "빼기 함"
+    ],
+    "answer": 1,
+    "explanation": "수용성(400L)과 비수용성(200L)의 **기준 수량**이 다르므로 반드시 구분해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 안전관리법상 '위험물'의 성격에 따른 분류는 몇 가지 류(Class)인가?",
+    "options": [
+      "3가지",
+      "6가지",
+      "9가지",
+      "12가지"
+    ],
+    "answer": 1,
+    "explanation": "위험물은 성질에 따라 **제1류부터 제6류**까지 분류됩니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 시설의 '공간용적'을 두는 주된 이유는?",
+    "options": [
+      "청소하려고",
+      "온도 상승 시 액체 팽창에 의한 탱크 파손 방지",
+      "공기 순환",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "액체가 가득 차면 팽창할 때 탱크가 터질 수 있어 **5~10%의 여유 공간**을 둡니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '무기과산화물'의 소화 약제로 적당한 것은?",
+    "options": [
+      "물",
+      "마른 모래 또는 금속화재용 분말",
+      "이산화탄소",
+      "포 소화약제"
+    ],
+    "answer": 1,
+    "explanation": "금수성 물질과 성질이 비슷하므로 **마른 모래** 등이 안전합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '제2석유류'인 등유의 특징은?",
+    "options": [
+      "휘발유보다 인화점이 낮음",
+      "휘발유보다 인화점이 높으며 무색 또는 미황색임",
+      "물에 녹음",
+      "고체임"
+    ],
+    "answer": 1,
+    "explanation": "**등유**는 휘발유(제1석유류)보다 안전하지만 여전히 인화 위험이 큽니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 보관 용기를 쌓을 때 '높이' 제한 기준으로 기계에 의해 하역하는 경우는?",
+    "options": [
+      "3m",
+      "6m",
+      "10m",
+      "무제한"
+    ],
+    "answer": 1,
+    "explanation": "기계(지게차 등)를 이용할 때는 안전상 **6m**까지 높게 쌓을 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물의 '분해' 반응을 억제하기 위해 넣는 물질은?",
+    "options": [
+      "기폭제",
+      "안정제 (Stabilizer)",
+      "촉매",
+      "산소"
+    ],
+    "answer": 1,
+    "explanation": "물질을 안정적으로 유지하기 위해 **안정제**를 첨가하여 유통합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소 건물의 '바닥'에 고인 물을 배출하는 곳은?",
+    "options": [
+      "하수구 직결",
+      "유분리기가 있는 집유 설비",
+      "강물",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "기름을 걸러내는 **유분리기**를 거쳐야 환경 오염을 막을 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이동탱크저장소 운전 중 '사고' 발생 시 신고 기관은?",
+    "options": [
+      "소방서, 경찰서 및 관련 기관",
+      "보험사만",
+      "가족",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "위험물 사고는 대형 참사로 이어지므로 **즉시 공공기관**에 신고해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물 중 '특수인화물'인 디에틸에테르의 인화점은?",
+    "options": [
+      "-45℃",
+      "0℃",
+      "21℃",
+      "70℃"
+    ],
+    "answer": 0,
+    "explanation": "디에틸에테르는 인화점이 **영하 45도**로 전 위험물 중 가장 낮은 축에 속합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 안전관리법상 '제조소'란?",
+    "options": [
+      "판매하는 곳",
+      "위험물을 제조할 목적으로 지정수량 이상의 위험물을 취급하는 장소",
+      "보관만 하는 곳",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**제조** 공정이 포함된 시설을 말합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제2류 위험물인 '적린'의 색깔은?",
+    "options": [
+      "백색",
+      "적갈색",
+      "흑색",
+      "투명"
+    ],
+    "answer": 1,
+    "explanation": "이름 그대로 **붉은색(적갈색)**을 띠는 가루 형태입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제3류 위험물 중 '금속의 탄화물'이 물과 반응하면?",
+    "options": [
+      "수소 가스",
+      "가연성 가스(아세틸렌, 메탄 등) 발생",
+      "산소 발생",
+      "반응 없음"
+    ],
+    "answer": 1,
+    "explanation": "탄화칼슘 등은 물과 만나면 강력한 가연성 가스인 **아세틸렌**을 냅니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '제1석유류'의 정의로 옳은 것은?",
+    "options": [
+      "인화점 21℃ 미만",
+      "인화점 21℃ 이상 70℃ 미만",
+      "200℃ 이상",
+      "제한 없음"
+    ],
+    "answer": 0,
+    "explanation": "**21도 미만**인 액체 가연물을 제1석유류라 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 저장 시설의 '환기설비' 급기구 위치는?",
+    "options": [
+      "천장",
+      "낮은 곳 (바닥 근처)",
+      "창문 옆",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "신선한 공기를 아래에서 넣어 위로 빼내기 위해 **낮은 곳**에 급기구를 둡니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제6류 위험물인 '오불화요오드'의 성질은?",
+    "options": [
+      "산화성 액체",
+      "가연성 액체",
+      "고체",
+      "자기반응성"
+    ],
+    "answer": 0,
+    "explanation": "제6류에 속하는 강력한 **산화제**입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소 등의 '건축물' 외벽 기준으로 옳은 것은?",
+    "options": [
+      "유리창을 크게 낼 것",
+      "개구부가 없는 내화 구조의 벽으로 할 것 (연소 우려 시)",
+      "나무 재질",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "불길이 옮겨붙지 않게 **막힌 내화 벽**이 가장 안전합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 탱크 '비우기' 작업 시 잔류 가스를 제거하는 방법은?",
+    "options": [
+      "빨대로 뺌",
+      "불활성 가스 치환 또는 환기 설비 가동",
+      "물을 붓고 그냥 둠",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**질소** 등으로 가스를 밀어내어 폭발 위험을 없애야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 표지 중 '화기엄금'의 글자 색상은?",
+    "options": [
+      "백색",
+      "흑색",
+      "적색",
+      "황색"
+    ],
+    "answer": 0,
+    "explanation": "적색 바탕에 **백색** 문자를 씁니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제4류 위험물 중 '동식물유류'의 지정 수량은?",
+    "options": [
+      "1000리터",
+      "2000리터",
+      "4000리터",
+      "10000리터"
+    ],
+    "answer": 3,
+    "explanation": "가장 위험도가 낮은 동식물유류는 **10,000리터**가 지정수량입니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제1류 위험물 중 '염소산염류'와 산이 만나면 발생하는 위험은?",
+    "options": [
+      "추워짐",
+      "이산화염소 등 유독성 가스 발생 및 폭발 위험",
+      "산소만 나옴",
+      "반응 없음"
+    ],
+    "answer": 1,
+    "explanation": "산과의 반응성이 매우 좋아 **위험한 가스**를 냅니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제2류 위험물 중 '마그네슘'을 저장할 때 피해야 할 장소는?",
+    "options": [
+      "서늘한 곳",
+      "습기가 많거나 물이 닿는 곳",
+      "환기가 잘 되는 곳",
+      "그늘진 곳"
+    ],
+    "answer": 1,
+    "explanation": "물과 만나면 **수소**를 내며 폭발하므로 습기를 피해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제3류 위험물 중 '알루미늄 탄화물'이 물과 만나면?",
+    "options": [
+      "메탄 가스 발생",
+      "아세틸렌 발생",
+      "산소 발생",
+      "반응 없음"
+    ],
+    "answer": 0,
+    "explanation": "탄화알루미늄은 물과 반응하여 **메탄**을 생성합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물의 '발화점'이 낮다는 의미는?",
+    "options": [
+      "불이 잘 안 붙음",
+      "외부 불꽃 없이도 스스로 불이 붙기 쉬움",
+      "냄새가 강함",
+      "색깔이 진함"
+    ],
+    "answer": 1,
+    "explanation": "**발화점**이 낮으면 주변 열기만으로도 화재가 날 수 있어 매우 위험합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제5류 위험물인 '아조화합물'의 연소 시 발생할 수 있는 가스는?",
+    "options": [
+      "산소",
+      "질소 및 유독성 질소산화물",
+      "수소",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "질소를 포함한 화합물이므로 **질소 가스나 유독성 가스**가 다량 발생합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제6류 위험물인 '과산화수소' 보관 시 피해야 할 금속은?",
+    "options": [
+      "플라스틱",
+      "철, 구리, 망간 등의 금속분 (분해 촉매제)",
+      "스테인리스",
+      "금"
+    ],
+    "answer": 1,
+    "explanation": "금속 가루가 들어가면 **급격한 분해**로 탱크가 터질 수 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "위험물 제조소 건물의 '출입문'은 어떤 형태여야 하는가?",
+    "options": [
+      "유리문",
+      "갑종 방화문 또는 을종 방화문 (자동 폐쇄형 권장)",
+      "커튼",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "화재 확산 차단을 위해 **방화 성능**을 갖춘 문이 필수입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 탱크의 '침하' 여부를 정기적으로 확인하는 이유는?",
+    "options": [
+      "탱크가 예뻐 보이려고",
+      "지반 침하로 탱크가 기울면 배관 파손이나 누설 원인이 되기 때문",
+      "수평 조절용",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "거대 하중을 견디는 탱크의 **구조적 안전성** 확인을 위함입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 '운반' 용기의 최대 용적 제한은? (고체 위험물 기준)",
+    "options": [
+      "제한 없음",
+      "보통 250리터 또는 500리터 이하 (재질에 따라 상이)",
+      "1000리터",
+      "10리터"
+    ],
+    "answer": 1,
+    "explanation": "안전한 취급을 위해 용기당 **최대 크기**가 법으로 정해져 있습니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제4류 위험물 중 '알코올류'의 정의는?",
+    "options": [
+      "모든 술",
+      "1분자를 구성하는 탄소 원자 수가 1개부터 3개까지인 포화 1가 알코올",
+      "공업용 세제",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "**메틸알코올, 에틸알코올, 프로필알코올** 등이 법적 알코올류에 해당합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제1류 위험물 중 '염소산염류'의 소화 약제로 가장 부적절한 것은?",
+    "options": [
+      "물",
+      "포 소화약제",
+      "할로겐화합물 소화약제",
+      "마른 모래"
+    ],
+    "answer": 2,
+    "explanation": "강력한 산화제 화재에서는 산소 공급을 못 막는 **가스계 소화기**가 효과가 적습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제2류 위험물 중 '가연성 고체'의 일반적인 보관 온도는?",
+    "options": [
+      "고온",
+      "상온 또는 저온 (시원한 곳)",
+      "상관없음",
+      "가열 보관"
+    ],
+    "answer": 1,
+    "explanation": "열에 의한 자연 발화를 막기 위해 **시원한 곳**에 두어야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제3류 위험물 중 '나트륨'의 화재 시 '이산화탄소' 소화기를 쓰면 안 되는 이유는?",
+    "options": [
+      "가스가 안 보여서",
+      "나트륨과 CO2가 반응하여 연소를 도울 수 있기 때문",
+      "소리가 커서",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "고온 금속은 CO2를 분해하여 **산소**를 만들어 낼 수 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '점성(끈적임)'이 높을수록 발생하는 현상은?",
+    "options": [
+      "불이 더 잘 붙음",
+      "유동성이 떨어져 유출 시 확산 속도가 느려짐",
+      "냄새가 안 남",
+      "상관없음"
+    ],
+    "answer": 1,
+    "explanation": "끈적한 기름은 잘 안 퍼지므로 **사고 시 수습**은 상대적으로 수월할 수 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "제5류 위험물인 '니트로셀룰로오스'가 오래되어 산성도가 높아지면?",
+    "options": [
+      "더 안전해짐",
+      "자연 발화 및 폭발 위험이 급격히 커짐",
+      "상관없음",
+      "색깔이 맑아짐"
+    ],
+    "answer": 1,
+    "explanation": "분해되어 산성이 강해지면 **안정성이 파괴**됩니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제6류 위험물의 '용기' 재질로 부적절한 것은?",
+    "options": [
+      "유리",
+      "일반 철제 용기 (부식 위험)",
+      "스테인리스",
+      "특수 플라스틱"
+    ],
+    "answer": 1,
+    "explanation": "강산이므로 **철을 부식**시켜 구멍을 내므로 주의해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "위험물 표지 중 '화기주의' 게시판의 문자 색상은?",
+    "options": [
+      "백색",
+      "흑색",
+      "적색",
+      "청색"
+    ],
+    "answer": 0,
+    "explanation": "적색 바탕에 **백색** 문자를 사용합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "위험물 제조소의 '환기설비'는 어디로 배출해야 하는가?",
+    "options": [
+      "지붕 위 (지상 2m 이상)",
+      "지하로",
+      "방 안으로",
+      "상관없음"
+    ],
+    "answer": 0,
+    "explanation": "유증기가 주변에 고이지 않게 **높은 곳**으로 빼내야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "이동탱크저장소의 '정기점검' 주기는?",
+    "options": [
+      "매일",
+      "연 1회 이상",
+      "10년마다",
+      "필요할 때만"
+    ],
+    "answer": 1,
+    "explanation": "최소 **연 1회** 이상은 전문적인 점검을 받아야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "제4류 위험물의 '비중'이 1보다 크다는 의미는?",
+    "options": [
+      "물보다 무거워 물 아래로 가라앉음",
+      "물에 뜸",
+      "상관없음",
+      "공기보다 가벼움"
+    ],
+    "answer": 0,
+    "explanation": "이황화탄소 같은 물질은 **물보다 무거워** 화재 시 물을 덮어 질식 소화가 가능하기도 합니다.",
     "difficulty": 2
   }
 ]
