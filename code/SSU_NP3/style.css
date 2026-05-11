@@ -166,13 +166,10 @@ body {
 
 /* ─── Section Label ──────────────────────────── */
 .section-label {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 0.75rem; font-weight: 800; color: var(--text-muted);
-  letter-spacing: 0.08em; text-transform: uppercase;
-  margin-bottom: 12px; margin-top: 10px; /* Reduced margin */
-}
-.section-label::after {
-  content: ''; flex: 1; height: 1px; background: var(--border);
+  text-align: center;
+  font-size: 1.5rem; font-weight: 800; color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 24px; margin-top: 20px; 
 }
 
 /* ─── Container ──────────────────────────────── */
