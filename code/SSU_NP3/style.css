@@ -3,7 +3,7 @@
   --primary-soft: #eff6ff;
   --success: #059669;
   --error: #dc2626;
-  --bg: #fcfcfd; /* 종이 느낌의 아주 연한 미색 */
+  --bg: #fcfcfd;
   --card: #ffffff;
   --text-main: #1e293b;
   --text-muted: #64748b;
@@ -11,6 +11,10 @@
   --radius: 12px;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+  /* 난이도 색상 */
+  --diff-easy: #059669;   /* 초록: 기본 */
+  --diff-mid:  #d97706;   /* 주황: 응용 */
+  --diff-hard: #dc2626;   /* 빨강: 심화 */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -185,4 +189,43 @@ body {
   .hero h1 { font-size: 1.8rem; }
   .grid { grid-template-columns: 1fr; }
   .study-info { gap: 20px; }
+}
+
+/* ─── 난이도 별표 배지 ─────────────────────────────────── */
+.q-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 10px 3px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1.5px solid currentColor;
+  letter-spacing: 0.03em;
+}
+.difficulty-badge.diff-easy { color: var(--diff-easy); background: #f0fdf4; }
+.difficulty-badge.diff-mid  { color: var(--diff-mid);  background: #fffbeb; }
+.difficulty-badge.diff-hard { color: var(--diff-hard); background: #fff1f2; }
+
+.difficulty-badge .star { font-size: 0.9rem; transition: opacity 0.2s; }
+.difficulty-badge .star.on  { opacity: 1; }
+.difficulty-badge .star.off { opacity: 0.2; }
+
+.difficulty-badge .diff-label {
+  margin-left: 4px;
+  font-size: 0.7rem;
+}
+
+/* 오답 리뷰 카드 상단 별표 */
+.review-q-meta {
+  margin-bottom: 8px;
 }

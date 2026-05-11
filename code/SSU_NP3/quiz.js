@@ -5,8 +5,9 @@ let wrongQuestions = [];
 
 async function loadQuiz() {
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('cat') || 'elec'; 
-    
+    const category = urlParams.get('cat') || 'elec';
+    const hardMode = urlParams.get('hard') === '1';
+
     const titles = {
         'elec': '소방설비기사 (전기분야)',
         'mech': '소방설비기사 (기계분야)',
@@ -14,29 +15,36 @@ async function loadQuiz() {
         'manager': '소방시설관리사',
         'pe': '소방기술사'
     };
-    
+
     const titleEl = document.getElementById('category-title');
-    if (titleEl) titleEl.textContent = titles[category] || '자격증 퀴즈';
-    
+    if (titleEl) titleEl.textContent = (hardMode ? '⭐⭐⭐ 고난도 집중 ' : '') + (titles[category] || '자격증 퀴즈');
+
     try {
         const response = await fetch(`./data/${category}.json`);
         if (!response.ok) throw new Error('Data not found');
-        const data = await response.json();
-        
+        let data = await response.json();
+
+        // 고난도 필터: difficulty === 3인 문항만 우선, 모자라면 2 이상
+        if (hardMode) {
+            const hardOnly = data.filter(q => q.difficulty === 3);
+            data = hardOnly.length >= 10 ? hardOnly : data.filter(q => (q.difficulty || 1) >= 2);
+        }
+
+        // 셔플
         for (let i = data.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [data[i], data[j]] = [data[j], data[i]];
         }
-        
+
         currentQuestions = data.slice(0, 10);
         currentIndex = 0;
         score = 0;
         wrongQuestions = [];
-        
+
         document.getElementById('quiz-box').style.display = 'block';
         document.querySelector('.quiz-header').style.display = 'block';
         document.getElementById('result-screen').style.display = 'none';
-        
+
         renderQuestion();
     } catch (e) {
         console.error("Failed to load quiz", e);
@@ -49,17 +57,33 @@ async function loadQuiz() {
     }
 }
 
+// ─── 난이도 별 렌더링 헬퍼 ───────────────────────────────────
+function renderStars(difficulty) {
+    const level = difficulty || 1;
+    const labels = { 1: '기본', 2: '응용', 3: '심화' };
+    const colorClass = { 1: 'diff-easy', 2: 'diff-mid', 3: 'diff-hard' };
+    const stars = Array(3).fill(0).map((_, i) =>
+        `<span class="star ${i < level ? 'on' : 'off'}">★</span>`
+    ).join('');
+    return `<span class="difficulty-badge ${colorClass[level]}">
+        ${stars}<span class="diff-label">${labels[level]}</span>
+    </span>`;
+}
+
 function renderQuestion() {
     const quizBox = document.getElementById('quiz-box');
     const q = currentQuestions[currentIndex];
-    
+
     const progress = ((currentIndex + 1) / currentQuestions.length) * 100;
     document.getElementById('progress-bar').style.width = `${progress}%`;
     document.getElementById('progress-text').textContent = `Question ${currentIndex + 1} / ${currentQuestions.length}`;
 
     quizBox.innerHTML = `
         <div class="quiz-main active">
-            <div class="q-number">Question ${currentIndex + 1}</div>
+            <div class="q-meta">
+                <div class="q-number">Question ${currentIndex + 1}</div>
+                ${renderStars(q.difficulty)}
+            </div>
             <div class="q-text">${q.question}</div>
             <div class="options-list">
                 ${q.options.map((opt, i) => `
@@ -80,12 +104,12 @@ function checkAnswer(selectedIdx) {
     const q = currentQuestions[currentIndex];
     const btns = document.querySelectorAll('.option-btn');
     const expBox = document.getElementById('explanation');
-    
+
     btns.forEach(btn => btn.onclick = null);
-    
+
     const isCorrect = (selectedIdx === q.answer);
     showOX(isCorrect);
-    
+
     if (isCorrect) {
         btns[selectedIdx].classList.add('correct');
         score++;
@@ -98,7 +122,7 @@ function checkAnswer(selectedIdx) {
             correct: q.options[q.answer]
         });
     }
-    
+
     setTimeout(() => {
         expBox.classList.add('show');
     }, 800);
@@ -112,11 +136,11 @@ function showOX(isCorrect) {
         overlay.className = 'ox-overlay';
         document.body.appendChild(overlay);
     }
-    
-    overlay.innerHTML = isCorrect 
+
+    overlay.innerHTML = isCorrect
         ? `<svg class="ox-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>`
         : `<svg class="ox-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
-    
+
     overlay.classList.add('show');
     setTimeout(() => overlay.classList.remove('show'), 1000);
 }
@@ -135,15 +159,13 @@ function showResults() {
     document.querySelector('.quiz-header').style.display = 'none';
     const resultScreen = document.getElementById('result-screen');
     const finalScore = Math.round((score / currentQuestions.length) * 100);
-    
-    // 점수 영역 업데이트 (안전하게 체크)
+
     const scoreCircle = resultScreen.querySelector('.score-circle');
     if (scoreCircle) scoreCircle.textContent = `${finalScore}%`;
-    
+
     const resultTitle = resultScreen.querySelector('.result-title');
     if (resultTitle) resultTitle.textContent = finalScore >= 60 ? "축하합니다! 합격권입니다." : "조금 더 노력이 필요합니다.";
-    
-    // 오답 리스트 생성 (프리미엄 카드 스타일)
+
     const wrongList = document.getElementById('wrong-answer-list');
     if (wrongQuestions.length > 0) {
         wrongList.innerHTML = `
@@ -151,8 +173,11 @@ function showResults() {
                 <i data-lucide="list-checks" style="color:var(--primary)"></i>
                 <h3 style="font-size:1.1rem; font-weight:800;">오답 정밀 분석 리포트</h3>
             </div>
-            ${wrongQuestions.map((q, i) => `
+            ${wrongQuestions.map((q) => `
                 <div class="review-card">
+                    <div class="review-q-meta">
+                        ${renderStars(q.difficulty)}
+                    </div>
                     <div class="review-q">
                         <span style="color:var(--error)">Q.</span>
                         <span>${q.question}</span>
@@ -182,7 +207,7 @@ function showResults() {
             </div>
         `;
     }
-    
+
     resultScreen.style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
     lucide.createIcons();
