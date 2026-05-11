@@ -321,9 +321,14 @@ body {
 .option-btn.wrong { background: var(--error-soft); border-color: var(--error); color: var(--error); }
 
 .explanation-box {
+  display: none;
   margin-top: 24px; padding: 20px;
   background: var(--surface-2);
   border-radius: 12px;
+}
+.explanation-box.show {
+  display: block;
+  animation: slideIn 0.4s ease;
 }
 .exp-title {
   font-weight: 700; font-size: 0.88rem; color: var(--text-main);
