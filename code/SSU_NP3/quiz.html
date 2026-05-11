@@ -3,85 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 마스터 | Fire-kit Pass</title>
+    <title>퀴즈 | Fire-kit Pass</title>
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .quiz-container { max-width: 800px; margin: 40px auto; padding: 20px; }
-        .quiz-header { margin-bottom: 30px; text-align: center; }
-        .progress-wrap { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; margin-bottom: 20px; }
-        .progress-bar { height: 100%; background: var(--accent); transition: width 0.3s ease; width: 0%; }
-        
-        .question-card { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; display: none; }
-        .question-card.active { display: block; animation: slideIn 0.4s ease; }
-        
-        .q-number { font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 10px; text-transform: uppercase; }
-        .q-text { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 30px; line-height: 1.5; }
-        
-        .options-list { display: flex; flex-direction: column; gap: 12px; }
-        .option-btn { padding: 18px 24px; border: 2px solid #f1f5f9; border-radius: 12px; background: #f8fafc; text-align: left; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; color: var(--text-muted); }
-        .option-btn:hover { border-color: var(--accent); background: #eff6ff; color: var(--primary); }
-        .option-btn.selected { border-color: var(--primary); background: var(--primary); color: #fff; }
-        .option-btn.correct { border-color: #10b981; background: #f0fdf4; color: #059669; }
-        .option-btn.wrong { border-color: #ef4444; background: #fef2f2; color: #b91c1c; }
-
-        .explanation-box { margin-top: 30px; padding: 24px; background: #f0f9ff; border-radius: 12px; border-left: 4px solid var(--accent); display: none; }
-        .explanation-box.show { display: block; animation: fadeIn 0.5s ease; }
-        .exp-title { font-weight: 800; font-size: 1rem; color: var(--primary); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
-        .exp-text { font-size: 0.95rem; color: #334155; line-height: 1.6; }
-
-        .nav-btns { margin-top: 30px; display: flex; justify-content: space-between; }
-        .btn-nav { padding: 12px 28px; border-radius: 10px; font-weight: 700; border: none; cursor: pointer; transition: 0.2s; }
-        .btn-next { background: var(--primary); color: #fff; }
-        .btn-next:disabled { background: #cbd5e1; cursor: not-allowed; }
-
-        @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-        .result-screen { text-align: center; display: none; }
-        .score-circle { width: 120px; height: 120px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; margin: 0 auto 20px; }
-    </style>
 </head>
 <body>
+
+    <!-- ─── Header ─────────────────────────────────────── -->
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="logo">
-                <i data-lucide="award"></i> FIRE-KIT PASS
+                <div class="logo-icon"><i data-lucide="flame"></i></div>
+                FIRE-KIT PASS
             </a>
-            <div style="text-align: right;">
-                <div id="category-title" style="font-size: 0.9rem; font-weight: 800; color: var(--primary);">자격증 퀴즈</div>
-                <div style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted);">자격증 합격 모드</div>
+            <div style="text-align:right;">
+                <div id="category-title" style="font-size:0.88rem; font-weight:800; color:var(--fire); line-height:1.2;">자격증 퀴즈</div>
+                <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; margin-top:2px;">합격 집중 모드</div>
             </div>
         </div>
     </header>
 
+    <!-- ─── Quiz Container ─────────────────────────────── -->
     <div class="quiz-container">
+
+        <!-- Progress -->
         <div class="quiz-header">
-            <div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div>
-            <p id="progress-text" style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700;">Question 1 / 10</p>
+            <div class="progress-wrap">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="progress-text">Question 1 / 10</p>
         </div>
 
-        <div id="quiz-box">
-            <!-- Questions will be injected here -->
-        </div>
+        <!-- Question Box (injected by JS) -->
+        <div id="quiz-box"></div>
 
-        <!-- Premium Result Screen -->
+        <!-- ─── Result Screen ─────────────────────────── -->
         <div class="result-screen" id="result-screen">
             <div class="score-card">
                 <div class="score-circle" id="final-score">0%</div>
-                <h2 class="result-title">수고하셨습니다!</h2>
-                <p class="result-msg">복습을 통해 부족한 부분을 채워보세요.</p>
-            </div>
-            
-            <div id="wrong-answer-list" style="max-width: 600px; margin: 0 auto;">
-                <!-- Review cards will be injected here -->
+                <h2 class="result-title">수고하셨습니다! 🔥</h2>
+                <p class="result-msg">오답 분석을 확인하고 약점을 보완하세요.</p>
             </div>
 
-            <div style="display: flex; gap: 16px; justify-content: center; margin-top: 40px; padding-bottom: 60px;">
-                <button class="btn-start" onclick="loadQuiz()" style="min-width: 180px;"><i data-lucide="refresh-cw" style="width:18px;"></i> 다시 도전하기</button>
-                <button class="btn-start btn-secondary" onclick="location.href='index.html'" style="min-width: 180px;"><i data-lucide="home" style="width:18px;"></i> 메인으로</button>
+            <div id="wrong-answer-list" style="max-width:680px; margin:0 auto;"></div>
+
+            <div style="display:flex; gap:14px; justify-content:center; margin-top:36px; padding-bottom:60px; flex-wrap:wrap;">
+                <button class="btn-start" onclick="loadQuiz()" style="min-width:170px;">
+                    <i data-lucide="refresh-cw"></i> 다시 도전하기
+                </button>
+                <button class="btn-start btn-secondary" onclick="location.href='index.html'" style="min-width:170px;">
+                    <i data-lucide="home"></i> 메인으로
+                </button>
             </div>
         </div>
+
     </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
