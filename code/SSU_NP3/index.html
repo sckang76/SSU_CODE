@@ -284,9 +284,10 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 observer.observe(document.querySelector('.stats-grid'));
 
-// ── 파티클 캔버스 ──
-(function() {
-    const canvas = document.getElementById('particle-canvas');
+</script>
+</body>
+</html>
+t canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
     function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
