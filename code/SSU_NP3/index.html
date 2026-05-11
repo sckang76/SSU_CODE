@@ -257,6 +257,7 @@
             sessionStorage.setItem('firekit_unlocked', 'true');
             overlay.classList.add('unlocked');
             app.classList.remove('blurred');
+            initCounters(); // 잠금 해제 시 애니메이션 시작
             setTimeout(() => { overlay.style.display = 'none'; }, 500);
         } else {
             error.style.display = 'block';
@@ -291,6 +292,7 @@
         if (sessionStorage.getItem('firekit_unlocked') === 'true') {
             document.getElementById('gatekeeper-overlay').style.display = 'none';
             document.getElementById('main-app-content').classList.remove('blurred');
+            initCounters(); // 이미 해제된 상태면 바로 실행
         }
     });
 
@@ -304,36 +306,42 @@
 
     // ── Modal Logic ──
     const modal = document.getElementById('guide-modal');
-    function openModal() { modal.classList.add('show'); }
-    function closeModal() { modal.classList.remove('show'); }
-    function showTab(tabId, btn) {
+    window.openModal = function() { modal.classList.add('show'); }
+    window.closeModal = function() { modal.classList.remove('show'); }
+    window.showTab = function(tabId, btn) {
         document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
         btn.classList.add('active');
     }
 
-    // Counter Animation
-    const counters = document.querySelectorAll('.counter');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
-                let count = 0;
-                const updateCount = () => {
-                    count += target / 50;
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count).toLocaleString();
-                        setTimeout(updateCount, 20);
-                    } else { counter.innerText = target.toLocaleString(); }
-                };
-                updateCount();
-                observer.unobserve(counter);
-            }
+    // ── 카운터 애니메이션 ──
+    function initCounters() {
+        const counters = document.querySelectorAll('.counter, .stat-num');
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            if (isNaN(target)) return;
+            
+            // 중복 실행 방지
+            if (counter.dataset.animated === 'true') return;
+            counter.dataset.animated = 'true';
+
+            const duration = 1500;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const update = () => {
+                current += step;
+                if (current < target) {
+                    counter.textContent = Math.floor(current).toLocaleString();
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent = target.toLocaleString();
+                }
+            };
+            update();
         });
-    });
-    counters.forEach(c => observer.observe(c));
+    }
 </script>
 </body>
 </html>
