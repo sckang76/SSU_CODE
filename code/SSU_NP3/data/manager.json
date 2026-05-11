@@ -1222,5 +1222,1781 @@
     ],
     "answer": 2,
     "explanation": "소화기 미비치는 경미한 결함이며, 중대 결함은 소방시설 전체 기능이 마비되는 수준의 불량을 말합니다."
+  },
+  {
+    "question": "소방시설공사법상 소방시설업의 종류가 아닌 것은?",
+    "options": [
+      "소방시설설계업",
+      "소방시설공사업",
+      "소방시설정비업",
+      "소방공사감리업"
+    ],
+    "answer": 2,
+    "explanation": "소방시설업의 종류는 설계업, 공사업, 감리업, 방염처리업입니다. 정비업은 법정 분류에 해당하지 않습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "다음 중 성능위주설계를 해야 하는 특정소방대상물의 범위로 옳은 것은?",
+    "options": [
+      "연면적 10만㎡ 이상인 특정소방대상물(아파트 제외)",
+      "연면적 20만㎡ 이상인 아파트",
+      "층수가 20층 이상인 특정소방대상물",
+      "높이가 50m 이상인 특정소방대상물"
+    ],
+    "answer": 0,
+    "explanation": "연면적 20만㎡ 이상인 특정소방대상물(아파트는 제외) 등이 성능위주설계 대상입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사의 자격 취소 사유 중 반드시 취소해야 하는 '필요적 취소' 사유가 아닌 것은?",
+    "options": [
+      "거짓이나 그 밖의 부정한 방법으로 자격을 취득한 경우",
+      "자격증을 다른 사람에게 빌려준 경우",
+      "동시에 둘 이상의 업체에 취업한 경우",
+      "자격정지 처분 기간에 소방시설관리업무를 수행한 경우"
+    ],
+    "answer": 2,
+    "explanation": "이중 취업은 행정처분 대상이나 즉시 필히 취소 사유는 아닙니다. 부정한 방법 취득, 대여, 정지 중 업무 수행 등은 즉시 취소 사유입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "화재안전조사의 결과에 따른 조치명령으로 손실을 입은 자에 대한 손실보상 의무자는?",
+    "options": [
+      "소방청장 또는 시·도지사",
+      "소방본부장 또는 소방서장",
+      "국가 또는 지방자치단체",
+      "해당 특정소방대상물의 관계인"
+    ],
+    "answer": 0,
+    "explanation": "조치명령으로 인한 손실보상은 소방청장 또는 시·도지사가 지급 의무를 가집니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소방청장이 화재예방을 위하여 화재발생 위험도가 높다고 인정되는 지역을 지정하는 곳은?",
+    "options": [
+      "화재예방구역",
+      "화재특별관리구역",
+      "화재경계지구",
+      "소방특별조사구역"
+    ],
+    "answer": 1,
+    "explanation": "공항, 철도, 항만 등 국가적 관리가 필요한 곳을 화재특별관리구역으로 지정합니다. (과거 화재경계지구는 화재예방강화지구로 명칭 변경됨)",
+    "difficulty": 2
+  },
+  {
+    "question": "종합점검 대상인 특정소방대상물의 점검 횟수 및 시기로 옳은 것은?",
+    "options": [
+      "연 1회 이상, 건축물 사용승인일이 속하는 달의 말일까지",
+      "연 2회 이상, 6개월마다",
+      "연 1회 이상, 사용승인일 6개월 이내",
+      "분기 1회 이상"
+    ],
+    "answer": 0,
+    "explanation": "일반적인 종합점검 대상은 연 1회 이상 실시하며, 시기는 사용승인일이 속하는 달에 실시합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리업자가 점검 능력을 평가받기 위해 제출해야 하는 서류 중 '점검 실적'의 인정 기간은?",
+    "options": [
+      "최근 1년",
+      "최근 3년",
+      "최근 5년",
+      "창업 이후 전체"
+    ],
+    "answer": 0,
+    "explanation": "점검능력 평가를 위해 매년 전년도의 점검 실적을 제출하여 평가받습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소방청장이 고시하는 화재안전기준의 종류 2가지는?",
+    "options": [
+      "성능기준, 기술기준",
+      "설계기준, 시공기준",
+      "설치기준, 유지기준",
+      "관리기준, 점검기준"
+    ],
+    "answer": 0,
+    "explanation": "국가화재안전기준은 화재안전성능기준(NFPC)과 화재안전기술기준(NFTC)으로 이원화되어 운영됩니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "스프링클러설비의 폐쇄형 헤드를 사용하는 경우, 하나의 방수구역 면적은 몇 ㎡ 이하인가?",
+    "options": [
+      "1,000㎡",
+      "1,500㎡",
+      "3,000㎡",
+      "면적 제한 없음"
+    ],
+    "answer": 2,
+    "explanation": "스프링클러설비의 하나의 방수구역은 3,000㎡ 이하로 해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설법상 방염성능기준 이상의 실내장식물 등을 설치해야 하는 대상이 아닌 것은?",
+    "options": [
+      "의료시설 중 정신의료기관",
+      "방송통신시설 중 방송국",
+      "건축물의 내부 노출된 모든 부분",
+      "숙박시설"
+    ],
+    "answer": 2,
+    "explanation": "방염 대상은 특정 용도의 건물에 한정되며, 모든 건물의 내부를 의미하지는 않습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "피난구유도등의 설치 높이 기준은?",
+    "options": [
+      "바닥으로부터 1.0m 이하",
+      "바닥으로부터 1.5m 이상",
+      "바닥으로부터 0.8m~1.5m",
+      "천장으로부터 0.5m 이내"
+    ],
+    "answer": 1,
+    "explanation": "피난구유도등은 출입구 상단에 위치해야 하므로 바닥으로부터 1.5m 이상의 높이에 설치합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "특정소방대상물의 관계인이 소방안전관리자를 선임한 경우, 선임한 날부터 며칠 이내에 신고해야 하는가?",
+    "options": [
+      "7일",
+      "14일",
+      "15일",
+      "30일"
+    ],
+    "answer": 1,
+    "explanation": "선임한 날부터 14일 이내에 소방본부장 또는 소방서장에게 신고해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방안전관리자를 해임한 경우, 관계인은 해임한 날부터 며칠 이내에 새로운 안전관리자를 선임해야 하는가?",
+    "options": [
+      "14일",
+      "30일",
+      "60일",
+      "즉시"
+    ],
+    "answer": 1,
+    "explanation": "해임하거나 퇴직한 날부터 30일 이내에 재선임해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리업의 등록권자는?",
+    "options": [
+      "소방청장",
+      "시·도지사",
+      "소방본부장",
+      "소방서장"
+    ],
+    "answer": 1,
+    "explanation": "소방시설관리업의 등록은 시·도지사에게 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "작동점검 결과 보고서를 작성한 경우 관계인은 며칠 이내에 소방서에 제출해야 하는가?",
+    "options": [
+      "7일",
+      "10일",
+      "15일",
+      "30일"
+    ],
+    "answer": 2,
+    "explanation": "점검을 마친 날부터 15일 이내에 점검결과 보고서를 제출해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "다음 중 무창층의 요건에 해당하지 않는 것은?",
+    "options": [
+      "개구부의 크기가 지름 50cm 이상의 원이 통과할 수 있을 것",
+      "해당 층의 바닥면으로부터 개구부 밑부분까지의 높이가 1.2m 이내일 것",
+      "개구부가 도로 또는 차량이 진입할 수 있는 빈터에 면할 것",
+      "유리창의 경우 두께가 10mm 이하일 것"
+    ],
+    "answer": 3,
+    "explanation": "유리창 두께에 대한 명시적 기준보다는 '쉽게 파괴할 수 있을 것'이 기준입니다. (보통 6mm 이내 일반유리 권장)",
+    "difficulty": 3
+  },
+  {
+    "question": "연소의 3요소 중 가연물이 될 수 없는 물질은?",
+    "options": [
+      "일산화탄소",
+      "암모니아",
+      "이산화탄소",
+      "마그네슘"
+    ],
+    "answer": 2,
+    "explanation": "이산화탄소는 산소와 더 이상 반응하지 않는 완전 산화물로 가연물이 될 수 없습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "할론 1301 소화약제의 화학식으로 옳은 것은?",
+    "options": [
+      "CF3Br",
+      "CF2ClBr",
+      "C2F4Br2",
+      "CH3Br"
+    ],
+    "answer": 0,
+    "explanation": "할론 번호 1301은 탄소(1), 불소(3), 염소(0), 브롬(1)의 개수를 의미하므로 CF3Br입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "다음 중 자연발화의 원인과 거리가 먼 것은?",
+    "options": [
+      "산화열",
+      "분해열",
+      "흡착열",
+      "기화열"
+    ],
+    "answer": 3,
+    "explanation": "기화열은 주위의 열을 흡수하므로 발열 과정인 자연발화와는 관계가 없습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 장점으로 옳지 않은 것은?",
+    "options": [
+      "전기 절연성이 우수하다.",
+      "소화 후 잔여물이 남지 않는다.",
+      "인체에 전혀 무해하다.",
+      "심부화재에도 효과적이다."
+    ],
+    "answer": 2,
+    "explanation": "이산화탄소는 고농도 시 질식 위험이 있어 인체에 유해합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소방시설관리사가 1년에 한 번 받아야 하는 보수교육의 주기는?",
+    "options": [
+      "매년",
+      "2년마다 1회",
+      "3년마다 1회",
+      "5년마다 1회"
+    ],
+    "answer": 1,
+    "explanation": "소방시설관리사는 자격 취득 후 2년마다 실무 교육을 이수해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "피난약자시설에 설치하는 구조대의 종류가 아닌 것은?",
+    "options": [
+      "경사강하식",
+      "수직강하식",
+      "나선식",
+      "완강기식"
+    ],
+    "answer": 3,
+    "explanation": "구조대는 경사형과 수직형이 있으며 나선식도 포함됩니다. 완강기는 별도의 피난기구 분류입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "연결송수관설비의 가압송수장치를 설치해야 하는 건물의 높이 기준은?",
+    "options": [
+      "31m 이상",
+      "50m 이상",
+      "70m 이상",
+      "100m 이상"
+    ],
+    "answer": 2,
+    "explanation": "지표면으로부터 높이가 70m 이상인 건축물에는 연결송수관설비에 가압송수장치를 설치해야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "제연설비의 화재안전기준상 제연구역의 구획 기준 중 옳은 것은?",
+    "options": [
+      "보·벽 또는 제연경계벽으로 구획할 것",
+      "하나의 제연구역 면적은 600㎡ 이내로 할 것",
+      "거실과 통로는 상호 제연구획하지 않아도 됨",
+      "제연구역의 직경은 100m 이내일 것"
+    ],
+    "answer": 0,
+    "explanation": "제연구역은 보, 벽, 제연경계벽으로 구획하며, 면적은 1,000㎡ 이내, 직경은 60m 이내여야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "비상콘센트설비의 전원회로 설치기준으로 옳은 것은?",
+    "options": [
+      "전원회로는 3상 380V로 할 것",
+      "전원회로는 각 층에 2개 이상 설치할 것",
+      "콘센트마다 전용 차단기를 설치할 것",
+      "풀박스는 0.5mm 이상의 강판을 사용할 것"
+    ],
+    "answer": 2,
+    "explanation": "비상콘센트마다 배선용 차단기(분기과전류차단기)를 설치해야 하며, 노출된 위치에 설치합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "스프링클러설비의 교차배관 말단에 설치하여 배관 내 이물질을 제거하는 장치는?",
+    "options": [
+      "개폐밸브",
+      "청소구",
+      "릴리프밸브",
+      "체크밸브"
+    ],
+    "answer": 1,
+    "explanation": "교차배관 끝에는 청소구(Flush connection)를 설치하여 배관 내부를 세척할 수 있도록 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "옥내소화전설비의 펌프 명판에 기재된 '체절압력'의 의미는?",
+    "options": [
+      "정격 토출량에서의 압력",
+      "펌프의 토출측 밸브를 닫은 상태에서의 압력",
+      "펌프가 파손될 때의 압력",
+      "배관 마찰 손실 압력"
+    ],
+    "answer": 1,
+    "explanation": "체절운전(토출량 0) 시 펌프가 낼 수 있는 최대 압력을 체절압력이라 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "다음 중 스프링클러설비의 가압송수장치로 사용되지 않는 방식은?",
+    "options": [
+      "고가수조 방식",
+      "압력수조 방식",
+      "수도직결 방식",
+      "진공펌프 방식"
+    ],
+    "answer": 3,
+    "explanation": "소방 펌프는 물을 밀어내야 하므로 가압 방식(펌프, 수조 등)을 사용하며, 공기를 빼는 진공펌프 방식은 쓰지 않습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "상수도직결형 간이스프링클러설비의 수원 기준으로 옳은 것은?",
+    "options": [
+      "2개의 헤드에서 10분간 방수할 수 있는 양",
+      "2개의 헤드에서 20분간 방수할 수 있는 양",
+      "5개의 헤드에서 10분간 방수할 수 있는 양",
+      "설치 제외"
+    ],
+    "answer": 0,
+    "explanation": "간이스프링클러는 보통 2개의 헤드, 10분(근린생활시설 등은 20분) 기준입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "가스계 소화설비에서 소화약제를 방출하기 전 전원을 차단하고 환기장치를 정지시키는 기능은?",
+    "options": [
+      "도어클로저",
+      "자동폐쇄장치",
+      "댐퍼",
+      "인터록"
+    ],
+    "answer": 1,
+    "explanation": "약제 농도 유지를 위해 환기구 등을 닫는 자동폐쇄장치와 연동되어야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설의 작동점검 시 수신기의 '도통시험' 버튼을 누르고 회로를 선택했을 때 정상 전압은?",
+    "options": [
+      "0V",
+      "4~8V",
+      "12V",
+      "24V"
+    ],
+    "answer": 1,
+    "explanation": "도통시험 시 종단저항에 의한 전압강하로 인해 4~8V 정도가 측정되면 정상(회로 연결됨)입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "준비작동식 스프링클러설비에서 감지기 A와 B가 모두 작동해야 밸브가 열리는 방식은?",
+    "options": [
+      "병렬회로 방식",
+      "직렬회로 방식",
+      "교차회로 방식",
+      "단일회로 방식"
+    ],
+    "answer": 2,
+    "explanation": "오작동 방지를 위해 두 개의 감지기 회로가 모두 작동해야 설비가 구동되는 교차회로방식을 사용합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "다음 중 소방대상물의 '관계인'에 포함되지 않는 사람은?",
+    "options": [
+      "소유자",
+      "관리자",
+      "점유자",
+      "설계자"
+    ],
+    "answer": 3,
+    "explanation": "관계인은 소유자, 관리자, 점유자를 말합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "소방시설관리업자가 점검 능력을 평가받기 위해 서류를 제출하는 기관은?",
+    "options": [
+      "소방청",
+      "소방본부",
+      "한국소방시설관리협회",
+      "한국소방산업기술원"
+    ],
+    "answer": 2,
+    "explanation": "관리업자의 점검능력 평가 및 공시는 소방청장이 지정한 단체(관리협회)에 위탁되어 있습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설법상 점검기록표를 게시해야 하는 장소는?",
+    "options": [
+      "정문 앞",
+      "수신기 인근 등 관계인이 쉽게 볼 수 있는 곳",
+      "지하 주차장",
+      "관리사무소 내부"
+    ],
+    "answer": 1,
+    "explanation": "점검 후 점검기록표를 수신기 인근 등 잘 보이는 곳에 부착해야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "화재안전조사위원회의 위원으로 임명될 수 없는 사람은?",
+    "options": [
+      "소방공무원",
+      "소방 관련 학과 교수",
+      "변호사",
+      "해당 건물의 관리인"
+    ],
+    "answer": 3,
+    "explanation": "이해관계인은 조사위원에서 제외됩니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설법상 '소방용품'이 아닌 것은?",
+    "options": [
+      "소화기",
+      "감지기",
+      "완강기",
+      "방화문"
+    ],
+    "answer": 3,
+    "explanation": "방화문은 건축법에 따른 건축자재이며, 소방용품에 해당하지 않습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "다음 중 소방안전관리보조자를 반드시 선임해야 하는 대상은?",
+    "options": [
+      "연면적 15,000㎡ 이상인 특정소방대상물",
+      "300세대 이상의 아파트",
+      "숙박시설",
+      "모든 건축물"
+    ],
+    "answer": 1,
+    "explanation": "300세대 이상 아파트, 1만5천㎡ 이상 대형건물, 의료시설, 노유자시설 등은 보조자를 선임해야 합니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사의 자격시험 실시권자는?",
+    "options": [
+      "소방청장",
+      "행정안전부장관",
+      "교육부장관",
+      "한국산업인력공단"
+    ],
+    "answer": 0,
+    "explanation": "시험은 소방청장이 실시하며, 실제 업무는 산업인력공단에 위탁되어 있습니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "화재 발생 시 연기를 신속히 배출하고 피난 통로를 확보하는 설비는?",
+    "options": [
+      "연결살수설비",
+      "연결송수관설비",
+      "제연설비",
+      "연소방지설비"
+    ],
+    "answer": 2,
+    "explanation": "제연설비는 연기를 제어하여 피난 및 소화활동을 돕는 설비입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "가압송수장치의 체절압력은 정격토출압력의 몇 %를 초과해서는 안 되는가?",
+    "options": [
+      "110%",
+      "130%",
+      "140%",
+      "150%"
+    ],
+    "answer": 2,
+    "explanation": "체절압력은 정격토출압력의 140%를 초과하지 않아야 합니다.",
+    "difficulty": 3
+  },
+  {
+    "question": "옥외소화전설비의 노즐 선단에서의 방수량은 분당 몇 리터 이상인가?",
+    "options": [
+      "130L",
+      "260L",
+      "350L",
+      "450L"
+    ],
+    "answer": 2,
+    "explanation": "옥외소화전은 350L/min 이상, 옥내소화전은 130L/min 이상입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "이산화탄소 소화설비의 수동기동장치 부근에 부착해야 하는 장치는?",
+    "options": [
+      "확성기",
+      "방출표시등",
+      "음향경보장치",
+      "비상연락전화"
+    ],
+    "answer": 1,
+    "explanation": "실제로 약제가 방출되고 있음을 알리는 방출표시등이 출입구 상단 등에 설치되어야 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "자동화재탐지설비의 경계구역 기준 중 하나의 경계구역 면적은 몇 ㎡ 이하인가?",
+    "options": [
+      "400㎡",
+      "600㎡",
+      "1,000㎡",
+      "2,000㎡"
+    ],
+    "answer": 1,
+    "explanation": "하나의 경계구역은 600㎡ 이하, 한 변의 길이는 50m 이하로 합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "피난 통로에 설치하여 피난 방향을 가리키는 유도등은?",
+    "options": [
+      "피난구유도등",
+      "통로유도등",
+      "객석유도등",
+      "비상조명등"
+    ],
+    "answer": 1,
+    "explanation": "복도, 거실, 계단 등에 설치하는 것은 통로유도등입니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "다음 중 스프링클러설비의 화재안전기준상 '습식' 설비의 특징은?",
+    "options": [
+      "배관 내에 압축공기가 들어있다.",
+      "헤드가 개방형이다.",
+      "배관 내에 항상 가압수가 차 있다.",
+      "동절기 동파 우려가 전혀 없다."
+    ],
+    "answer": 2,
+    "explanation": "습식은 1, 2차측 배관에 모두 물이 차 있어 반응이 가장 빠릅니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "연소의 3요소 중 하나인 산소공급원이 될 수 없는 것은?",
+    "options": [
+      "공기",
+      "산화제",
+      "자기반응성 물질",
+      "환원제"
+    ],
+    "answer": 3,
+    "explanation": "환원제는 가연물에 해당하며, 산소를 빼앗으려는 성질이 있어 공급원이 될 수 없습니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "화재 시 발생하는 가스 중 '혈색소(Hb)와의 결합력이 강해 질식을 일으키는 독성 가스는?",
+    "options": [
+      "이산화탄소",
+      "일산화탄소",
+      "황화수소",
+      "염화수소"
+    ],
+    "answer": 1,
+    "explanation": "일산화탄소(CO)는 산소보다 헤모글로빈과 결합력이 200배 이상 강해 산소 운반을 차단합니다.",
+    "difficulty": 1
+  },
+  {
+    "question": "분말 소화약제 중 '제3종 분말'의 주성분은?",
+    "options": [
+      "탄산수소나트륨",
+      "탄산수소칼륨",
+      "제1인산암모늄",
+      "요소"
+    ],
+    "answer": 2,
+    "explanation": "3종 분말(ABC 소화기)은 제1인산암모늄이 주성분이며 분홍색입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "지하층의 바닥면적 합계가 몇 ㎡ 이상일 때 자동화재탐지설비를 설치해야 하는가?",
+    "options": [
+      "400㎡",
+      "600㎡",
+      "1,000㎡",
+      "모든 지하층"
+    ],
+    "answer": 1,
+    "explanation": "지하층 또는 무창층으로서 바닥면적이 600㎡ 이상인 경우 자탐 설치 대상입니다.",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 153",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 154",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 155",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 156",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 157",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 158",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 159",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 160",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 161",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 162",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 163",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 164",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 165",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 166",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 167",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 168",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 169",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 170",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 171",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 172",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 173",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 174",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 175",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 176",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 177",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 178",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 179",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 180",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 181",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 182",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 183",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 184",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 185",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 186",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 187",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 188",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 189",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 190",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 191",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 192",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 193",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 194",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 195",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 196",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 197",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 198",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 199",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 200",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 201",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 202",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 203",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 204",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 205",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 206",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 207",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 208",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 209",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 210",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 211",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 212",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 213",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 214",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 215",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 216",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 217",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 218",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 219",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 220",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 221",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 222",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 223",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 224",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 225",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 226",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 227",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 228",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 229",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 230",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 231",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 232",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 233",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 234",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 235",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 236",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 237",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 238",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 239",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 240",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 241",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 242",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 243",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 244",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 245",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 246",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 247",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 248",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 249",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
+  },
+  {
+    "question": "소방시설관리사 실무 문제 250",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "설명",
+    "difficulty": 2
   }
 ]
