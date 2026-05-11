@@ -157,7 +157,7 @@ body {
   0%   { transform: translate(0,0) scale(1); }
   100% { transform: translate(40px,50px) scale(1.08); }
 }
-.hero-content { position: relative; z-index: 2; width: 100%; max-width: 700px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.hero-content { position: relative; z-index: 2; width: 100%; max-width: 700px; margin: 0 auto; text-align: center; }
 .badge-dot {
   width: 7px; height: 7px; border-radius: 50%;
   background: var(--fire); display: inline-block;
@@ -180,12 +180,12 @@ body {
   font-size: clamp(2.4rem, 5.5vw, 4rem);
   font-weight: 900; letter-spacing: -2.5px;
   line-height: 1.12; margin-bottom: 20px;
-  color: var(--text-main); text-align: center; width: 100%;
+  color: var(--text-main); text-align: center;
   animation: slideUpFade 0.7s 0.1s cubic-bezier(0.2,0.8,0.2,1) both;
 }
 [data-theme="dark"] .hero-title { color: #f1f5f9; }
 .hero-fire-text {
-  display: inline-block; width: 100%; text-align: center;
+  display: inline-block;
   background: linear-gradient(135deg, #fb923c 0%, #ef4444 60%, #f59e0b 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   font-style: italic; letter-spacing: -1px;
