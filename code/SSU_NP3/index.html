@@ -17,7 +17,12 @@
                 <div class="logo-icon"><i data-lucide="flame"></i></div>
                 FIRE-KIT PASS
             </a>
-            <span class="header-badge">소방방재학과 전용</span>
+            <div style="display:flex; align-items:center; gap:12px;">
+                <span class="header-badge">소방방재학과 전용</span>
+                <button id="theme-toggle-btn" style="background:none; border:none; color:var(--text-main); cursor:pointer; display:flex; align-items:center; justify-content:center; padding:4px;">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -243,6 +248,30 @@
             const modal = document.getElementById('guide-modal');
             if (e.target === modal) closeModal();
         }
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        const themeIcon = document.getElementById('theme-icon');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        });
     </script>
 </body>
 </html>

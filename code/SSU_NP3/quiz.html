@@ -16,9 +16,14 @@
                 <div class="logo-icon"><i data-lucide="flame"></i></div>
                 FIRE-KIT PASS
             </a>
-            <div style="text-align:right;">
-                <div id="category-title" style="font-size:0.88rem; font-weight:800; color:var(--fire); line-height:1.2;">자격증 퀴즈</div>
-                <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; margin-top:2px;">합격 집중 모드</div>
+            <div style="text-align:right; display:flex; align-items:center; gap:12px;">
+                <div>
+                    <div id="category-title" style="font-size:0.88rem; font-weight:800; color:var(--fire); line-height:1.2;">자격증 퀴즈</div>
+                    <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; margin-top:2px;">합격 집중 모드</div>
+                </div>
+                <button id="theme-toggle-btn" style="background:none; border:none; color:var(--text-main); cursor:pointer; display:flex; align-items:center; justify-content:center; padding:4px;">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -61,6 +66,32 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="quiz.js"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+        
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        const themeIcon = document.getElementById('theme-icon');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        });
+    </script>
 </body>
 </html>
