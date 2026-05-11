@@ -3,6 +3,58 @@
    ═══════════════════════════════════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* ─── Gatekeeper (Access Control) ──────────────── */
+
+.gatekeeper-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gatekeeper-overlay.unlocked { opacity: 0; pointer-events: none; transform: scale(1.1); }
+.gatekeeper-content {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 40px; border-radius: 28px; width: 100%; max-width: 400px;
+  text-align: center; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+.gate-icon {
+  width: 64px; height: 64px; background: var(--fire-glow); color: var(--fire);
+  border-radius: 20px; display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; font-size: 24px;
+}
+.gate-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.02em; }
+.gate-desc { color: var(--text-sub); font-size: 0.95rem; line-height: 1.6; margin-bottom: 32px; }
+.gate-input-group { display: flex; flex-direction: column; gap: 12px; }
+.gate-input-group input {
+  padding: 16px 48px 16px 16px; /* 우측에 아이콘 공간 확보 */
+  border-radius: 14px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text-main); font-size: 1rem;
+  text-align: center; font-weight: 700; transition: all 0.2s;
+  width: 100%; display: block;
+}
+.gate-input-group input:focus { border-color: var(--fire); outline: none; box-shadow: 0 0 0 4px var(--fire-glow); }
+.pw-toggle-icon {
+  position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+  color: var(--text-sub); cursor: pointer; transition: color 0.2s;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 10;
+}
+.gate-btn {
+  background: var(--text-main); color: #fff; padding: 16px; border-radius: 14px;
+  font-weight: 700; cursor: pointer; transition: all 0.2s; border: none;
+}
+.gate-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.gate-error { color: var(--error); font-size: 0.85rem; font-weight: 600; margin-top: 16px; display: none; }
+.blurred { filter: blur(40px); transition: filter 0.8s ease; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
+
 :root {
   /* Brand Colors */
   --fire: #ea580c;
@@ -83,6 +135,15 @@ body {
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
 
 /* ─── Header ─────────────────────────────────── */
+.header-logout-btn {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border);
+  color: var(--text-sub); font-size: 0.65rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  transition: all 0.2s; letter-spacing: 0.05em;
+}
+.header-logout-btn:hover { background: var(--error-glow); color: var(--error); border-color: var(--error); }
+[data-theme="dark"] .header-logout-btn { background: rgba(255,255,255,0.03); }
+
 .site-header {
   position: sticky; top: 0; z-index: 200;
   background: rgba(248,250,252,0.85);
@@ -231,10 +292,15 @@ body {
   box-shadow: 0 8px 30px rgba(0,0,0,0.05);
   animation: slideUpFade 0.7s 0.3s cubic-bezier(0.2,0.8,0.2,1) both;
 }
+.stats-notice {
+  margin-top: 12px; font-size: 0.75rem; color: var(--error);
+  font-weight: 700; opacity: 0.9;
+  animation: slideUpFade 0.7s 0.4s cubic-bezier(0.2,0.8,0.2,1) both;
+}
 .stat-box { text-align: center; padding: 0 22px; cursor: default; }
 .stat-box-cta { cursor: pointer; }
 .stat-box-cta:hover .stat-num { color: var(--fire); }
-.stat-num {
+.stat-num, .stat-value {
   font-size: 1.7rem; font-weight: 900; color: var(--text-main);
   line-height: 1; transition: color 0.2s;
 }

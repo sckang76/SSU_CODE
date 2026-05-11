@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire-kit Pass | 소방 자격증 합격 허브</title>
-    <meta name="description" content="소방방재학과 전용 자격증 합격 플랫폼. 2,000개 기출 문제 데이터베이스로 스마트하게 공부하세요.">
+    <meta name="description" content="소방방재학과 전용 자격증 합격 플랫폼. 2,200개 기출 문제 데이터베이스로 스마트하게 공부하세요.">
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=4.3">
+    <link rel="stylesheet" href="style.css?v=4.4">
     <link rel="icon" href="data:,">
 </head>
 <body>
+
+<!-- ── Gatekeeper: Access Control ── -->
+<div id="gatekeeper-overlay" class="gatekeeper-overlay">
+    <div class="gatekeeper-content">
+        <div class="gate-icon"><i data-lucide="lock"></i></div>
+        <h2 class="gate-title">소방자격증 한번에 합격!!</h2>
+        <p class="gate-desc">이 사이트는 승인된 인원만 이용 가능합니다.<br>비밀번호를 입력해 주세요.</p>
+        <div class="gate-input-group">
+            <div style="position:relative; width:100%;">
+                <input type="password" id="access-code" placeholder="비밀번호" onkeyup="if(event.key==='Enter') verifyAccess()">
+                <div class="pw-toggle-icon" 
+                     onmousedown="showPassword()" onmouseup="hidePassword()" onmouseleave="hidePassword()"
+                     ontouchstart="showPassword()" ontouchend="hidePassword()">
+                    <i data-lucide="eye" id="eye-icon" style="width:20px;height:20px;"></i>
+                </div>
+            </div>
+            <button onclick="verifyAccess()" class="gate-btn">입장하기</button>
+        </div>
+        <p id="gate-error" class="gate-error">올바른 코드가 아닙니다. 다시 시도해 주세요.</p>
+    </div>
+</div>
+
+<div id="main-app-content" class="blurred">
 
 <!-- ── Header ── -->
 <header class="site-header">
@@ -19,6 +42,7 @@
             FIRE-KIT PASS
         </a>
         <div style="display:flex;align-items:center;gap:12px;">
+            <button class="header-logout-btn" onclick="handleLogout()">LOG OUT</button>
             <span class="header-badge">퀴즈 모드 전용</span>
             <button id="theme-toggle-btn" class="theme-btn">
                 <i data-lucide="moon" id="theme-icon"></i>
@@ -29,8 +53,6 @@
 
 <!-- ── Hero ── -->
 <section class="hero">
-
-    <!-- 배경 글로우 오브 -->
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
@@ -39,7 +61,7 @@
         <div class="hero-badge">
             <span class="badge-dot"></span>
             <i data-lucide="zap"></i>
-            2,000+ 기출 문항 · AI 합격 최적화
+            2,500+ 기출 문항 · AI 합격 최적화
         </div>
 
         <h1 class="hero-title">
@@ -49,10 +71,9 @@
 
         <p class="hero-desc">시험에 꼭 나오는 핵심 유형을 완벽 해설과 함께 정복하세요.</p>
 
-        <!-- 카운터 통계 -->
         <div class="stats-grid">
             <div class="stat-box">
-                <div class="stat-num" data-target="2000">0</div>
+                <div class="stat-value counter" data-target="2500">2,500</div>
                 <div class="stat-label">기출 문항</div>
             </div>
             <div class="stat-divider"></div>
@@ -71,20 +92,22 @@
                 <div class="stat-label">전문가 꿀팁 →</div>
             </div>
         </div>
+        
+        <!-- 최근 10개년 안내 문구 -->
+        <div class="stats-notice">
+            <i data-lucide="info" style="width:12px;height:12px;vertical-align:middle;"></i>
+            최근 10년간의 기출문제 위주로 구성하였습니다.
+        </div>
     </div>
 </section>
 
-<!-- ── 섹션 라벨 ── -->
 <div class="section-header">
     <div class="section-line"></div>
     <h2 class="section-title">자격증 카테고리 별 선택</h2>
     <div class="section-line"></div>
 </div>
 
-<!-- ── Main ── -->
 <main class="container">
-
-    <!-- 합격 가이드 모달 -->
     <div id="guide-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -103,61 +126,44 @@
                         <span class="secret-tag">가닥수 마스터</span>
                         <p>발신기는 6선(벨/표/응/발/전/공)이 기본! 연면적 3,000㎡ 초과 건물의 '우선경보방식' 적용 시 경종선과 표시등 공통선이 추가되는 로직(n+1)을 완벽히 이해해야 합니다.</p>
                     </div>
-                    <div class="secret-item">
-                        <span class="secret-tag">시퀀스/도면</span>
-                        <p>Y-△ 기동 회로는 펌프의 기동전류를 낮추기 위한 필수 도면입니다. 타이머(T) 접점 위치와 인터록(Interlock) 회로의 결선 누락은 실격 사유이니 주의하세요.</p>
-                    </div>
                 </div>
                 <div id="mech-tab" class="tab-content">
                     <div class="secret-item">
                         <span class="secret-tag">수계 소화설비</span>
-                        <p>방수압(0.17~0.7MPa)과 방수량(130ℓ/min)은 옥내소화전의 핵심! 펌프의 양정(H) 계산 시 실양정 + 배관마찰손실 + 방수압(17m)을 더하는 것을 잊지 마세요.</p>
-                    </div>
-                    <div class="secret-item">
-                        <span class="secret-tag">가스계 소화설비</span>
-                        <p>CO2 약제량 산출 시 방호구역의 체적(V)에 따른 보정계수 K1, K2를 외우는 게 승부처입니다. 할로겐화합물(Halon 1301 등)의 분자량과 비체적 공식도 필수!</p>
+                        <p>방수압(0.17~0.7MPa)과 방수량(130ℓ/min)은 옥내소화전의 핵심!</p>
                     </div>
                 </div>
                 <div id="law-tab" class="tab-content">
                     <div class="secret-item highlight">
                         <span class="secret-tag">NFTC 핵심 수치</span>
                         <ul>
-                            <li><strong>0.8m ~ 1.5m</strong>: 발신기, 소화기, 수동함</li>
-                            <li><strong>1.5m 이하</strong>: 수신기, 유도등(소형/통로)</li>
-                            <li><strong>1.5m 이상</strong>: 시각경보장치 (천장에서 0.15m 이내)</li>
-                            <li><strong>수평거리 25m</strong>: 발신기, 소화기, 경종</li>
+                            <li><strong>0.8m ~ 1.5m</strong>: 발신기, 소화기</li>
+                            <li><strong>1.5m 이하</strong>: 수신기, 유도등</li>
                         </ul>
                     </div>
                 </div>
                 <div id="mind-tab" class="tab-content">
                     <div class="secret-item">
                         <span class="secret-tag">합격 전략</span>
-                        <p><strong>이론 1회독 후 바로 기출로!</strong> 7개년 기출을 3회 반복하면 문제만 봐도 답이 보이는 '패턴 인식' 단계에 도달합니다. 실기는 부분 점수를 노려 모든 문항에 답을 채우는 것이 핵심 전략입니다.</p>
+                        <p>7개년 기출을 3회 반복하면 문제만 봐도 답이 보이는 단계에 도달합니다.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 카드 그리드 -->
     <div class="grid">
-
         <!-- 전기 -->
         <div class="category-card tilt-card" style="--cat-color:#3b82f6;--cat-soft:rgba(59,130,246,0.08);--cat-glow:rgba(59,130,246,0.25);">
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="zap"></i></div>
-                <span class="cat-badge">500 문항</span>
+                <span class="cat-badge">625 문항</span>
             </div>
             <h3 class="cat-title">소방설비기사 (전기)</h3>
-            <p class="cat-desc">가닥수 계산, 시퀀스 도면, 감지기 회로 등 전기 분야 핵심 기출을 한 문제씩 완벽히 정복하세요.</p>
+            <p class="cat-desc">가닥수 계산, 시퀀스 도면, 감지기 회로 등 핵심 기출을 완벽히 정복하세요.</p>
             <div class="cat-meta">
                 <span class="cat-count">⚡ 전기분야</span>
-                <div class="cat-difficulty">
-                    <div class="cat-dot on"></div>
-                    <div class="cat-dot on"></div>
-                    <div class="cat-dot on"></div>
-                </div>
             </div>
             <div class="difficulty-selector">
                 <a href="quiz.html?cat=elec&level=1" class="diff-btn lv1">⭐ 기초</a>
@@ -172,17 +178,12 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="settings-2"></i></div>
-                <span class="cat-badge">500 문항</span>
+                <span class="cat-badge">625 문항</span>
             </div>
             <h3 class="cat-title">소방설비기사 (기계)</h3>
-            <p class="cat-desc">펌프 동력, 약제량 산출, 유체역학 계산 등 까다로운 기계 분야 문제를 쉽고 정확하게 학습합니다.</p>
+            <p class="cat-desc">펌프 동력, 약제량 산출, 유체역학 계산 등 까다로운 문제를 학습합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count" style="color:#8b5cf6;background:rgba(139,92,246,0.1);">⚙️ 기계분야</span>
-                <div class="cat-difficulty">
-                    <div class="cat-dot on" style="background:#8b5cf6;"></div>
-                    <div class="cat-dot on" style="background:#8b5cf6;"></div>
-                    <div class="cat-dot on" style="background:#8b5cf6;"></div>
-                </div>
             </div>
             <div class="difficulty-selector">
                 <a href="quiz.html?cat=mech&level=1" class="diff-btn lv1">⭐ 기초</a>
@@ -197,17 +198,12 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="flame"></i></div>
-                <span class="cat-badge">500 문항</span>
+                <span class="cat-badge">625 문항</span>
             </div>
             <h3 class="cat-title">위험물 산업기사</h3>
-            <p class="cat-desc">1~6류 위험물의 성질, 지정수량, 저장·취급 기준 등 화학 반응식을 퀴즈 형식으로 완벽 암기합니다.</p>
+            <p class="cat-desc">1~6류 위험물의 성질, 지정수량 등 암기 사항을 퀴즈로 정복합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count">🔥 위험물</span>
-                <div class="cat-difficulty">
-                    <div class="cat-dot on"></div>
-                    <div class="cat-dot on"></div>
-                    <div class="cat-dot on"></div>
-                </div>
             </div>
             <div class="difficulty-selector">
                 <a href="quiz.html?cat=danger&level=1" class="diff-btn lv1">⭐ 기초</a>
@@ -222,17 +218,12 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="clipboard-check"></i></div>
-                <span class="cat-badge">500 문항</span>
+                <span class="cat-badge">625 문항</span>
             </div>
             <h3 class="cat-title">소방시설관리사</h3>
-            <p class="cat-desc">점검 기준, NFTC 핵심 수치, 행정처분 및 법령 등 고난도 관리사 시험의 모든 출제 유형을 정복합니다.</p>
+            <p class="cat-desc">점검 기준, NFTC 핵심 수치, 법령 등 모든 출제 유형을 정복합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count" style="color:#10b981;background:rgba(16,185,129,0.1);">📋 관리사</span>
-                <div class="cat-difficulty">
-                    <div class="cat-dot on" style="background:#10b981;"></div>
-                    <div class="cat-dot on" style="background:#10b981;"></div>
-                    <div class="cat-dot on" style="background:#10b981;"></div>
-                </div>
             </div>
             <div class="difficulty-selector">
                 <a href="quiz.html?cat=manager&level=1" class="diff-btn lv1">⭐ 기초</a>
@@ -246,59 +237,103 @@
 
 <footer class="site-footer">
     <p>© dv sck.. | 소방방재학과 합격 지원 시스템</p>
-    <p>본 사이트는 교육용 참고 사이트로 법적인 효력은 없음을 고지합니다.</p>
 </footer>
+</div> <!-- End main-app-content -->
 
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
-lucide.createIcons();
-
-// ── 모달 ──
-function openModal() { document.getElementById('guide-modal').classList.add('show'); }
-function closeModal() { document.getElementById('guide-modal').classList.remove('show'); }
-function showTab(tabId, btn) {
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
-    btn.classList.add('active');
-}
-window.onclick = e => { if (e.target === document.getElementById('guide-modal')) closeModal(); };
-
-// ── 다크모드 토글 ──
-const themeBtn = document.getElementById('theme-toggle-btn');
-const themeIcon = document.getElementById('theme-icon');
-if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    themeIcon.setAttribute('data-lucide', 'sun');
     lucide.createIcons();
-}
-themeBtn.addEventListener('click', () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
-    if (isDark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('theme','light'); themeIcon.setAttribute('data-lucide','moon'); }
-    else { localStorage.setItem('theme','dark'); themeIcon.setAttribute('data-lucide','sun'); }
-    lucide.createIcons();
-});
 
-// ── 카운터 애니메이션 ──
-function animateCounters() {
-    document.querySelectorAll('.stat-num[data-target]').forEach(el => {
-        const target = +el.dataset.target;
-        const suffix = target >= 1000 ? '+' : '';
-        let cur = 0;
-        const step = Math.ceil(target / 50);
-        const timer = setInterval(() => {
-            cur = Math.min(cur + step, target);
-            el.textContent = cur.toLocaleString() + suffix;
-            if (cur >= target) clearInterval(timer);
-        }, 30);
+    // ── 액세스 검증 로직 ──
+    const _0x4f2a = "c3N1MTE5"; // ssu119 암호화값
+
+    function verifyAccess() {
+        const input = document.getElementById('access-code');
+        const error = document.getElementById('gate-error');
+        const overlay = document.getElementById('gatekeeper-overlay');
+        const app = document.getElementById('main-app-content');
+
+        if (btoa(input.value) === _0x4f2a) {
+            sessionStorage.setItem('firekit_unlocked', 'true');
+            overlay.classList.add('unlocked');
+            app.classList.remove('blurred');
+            setTimeout(() => { overlay.style.display = 'none'; }, 500);
+        } else {
+            error.style.display = 'block';
+            input.classList.add('shake');
+            setTimeout(() => input.classList.remove('shake'), 500);
+            input.value = "";
+        }
+    }
+
+    function showPassword() {
+        const input = document.getElementById('access-code');
+        const icon = document.getElementById('eye-icon');
+        input.type = 'text';
+        icon.setAttribute('data-lucide', 'eye');
+        lucide.createIcons();
+    }
+
+    function hidePassword() {
+        const input = document.getElementById('access-code');
+        const icon = document.getElementById('eye-icon');
+        input.type = 'password';
+        icon.setAttribute('data-lucide', 'eye');
+        lucide.createIcons();
+    }
+
+    function handleLogout() {
+        sessionStorage.removeItem('firekit_unlocked');
+        location.reload();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        if (sessionStorage.getItem('firekit_unlocked') === 'true') {
+            document.getElementById('gatekeeper-overlay').style.display = 'none';
+            document.getElementById('main-app-content').classList.remove('blurred');
+        }
     });
-}
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { animateCounters(); observer.disconnect(); } });
-}, { threshold: 0.3 });
-observer.observe(document.querySelector('.stats-grid'));
 
+    // ── Theme Toggle ──
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    const body = document.body;
+    themeBtn.addEventListener('click', () => {
+        const isDark = body.getAttribute('data-theme') === 'dark';
+        body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    });
+
+    // ── Modal Logic ──
+    const modal = document.getElementById('guide-modal');
+    function openModal() { modal.classList.add('show'); }
+    function closeModal() { modal.classList.remove('show'); }
+    function showTab(tabId, btn) {
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        btn.classList.add('active');
+    }
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                let count = 0;
+                const updateCount = () => {
+                    count += target / 50;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count).toLocaleString();
+                        setTimeout(updateCount, 20);
+                    } else { counter.innerText = target.toLocaleString(); }
+                };
+                updateCount();
+                observer.unobserve(counter);
+            }
+        });
+    });
+    counters.forEach(c => observer.observe(c));
 </script>
 </body>
 </html>

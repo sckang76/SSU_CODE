@@ -9,6 +9,29 @@
 </head>
 <body>
 
+<!-- ── Gatekeeper: Access Control ── -->
+<div id="gatekeeper-overlay" class="gatekeeper-overlay">
+    <div class="gatekeeper-content">
+        <div class="gate-icon"><i data-lucide="lock"></i></div>
+        <h2 class="gate-title">소방자격증 한번에 합격!!</h2>
+        <p class="gate-desc">이 사이트는 승인된 인원만 이용 가능합니다.<br>비밀번호를 입력해 주세요.</p>
+        <div class="gate-input-group">
+            <div style="position:relative; width:100%;">
+                <input type="password" id="access-code" placeholder="비밀번호" onkeyup="if(event.key==='Enter') verifyAccess()">
+                <div class="pw-toggle-icon" 
+                     onmousedown="showPassword()" onmouseup="hidePassword()" onmouseleave="hidePassword()"
+                     ontouchstart="showPassword()" ontouchend="hidePassword()">
+                    <i data-lucide="eye" id="eye-icon" style="width:20px;height:20px;"></i>
+                </div>
+            </div>
+            <button onclick="verifyAccess()" class="gate-btn">입장하기</button>
+        </div>
+        <p id="gate-error" class="gate-error">올바른 코드가 아닙니다. 다시 시도해 주세요.</p>
+    </div>
+</div>
+
+<div id="main-app-content" class="blurred">
+
     <!-- ─── Header ─────────────────────────────────────── -->
     <header class="site-header">
         <div class="header-inner">
@@ -21,6 +44,7 @@
                     <div id="category-title" style="font-size:0.88rem; font-weight:800; color:var(--fire); line-height:1.2;">자격증 퀴즈</div>
                     <div style="font-size:0.72rem; color:var(--text-muted); font-weight:600; margin-top:2px;">합격 집중 모드</div>
                 </div>
+                <button class="header-logout-btn" onclick="handleLogout()">LOG OUT</button>
                 <button id="theme-toggle-btn" style="background:none; border:none; color:var(--text-main); cursor:pointer; display:flex; align-items:center; justify-content:center; padding:4px;">
                     <i data-lucide="moon" id="theme-icon"></i>
                 </button>
@@ -80,8 +104,64 @@
 
     </div>
 
+</div> <!-- End main-app-content -->
+
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="quiz.js"></script>
+    <script src="quiz.js?v=4.1"></script>
+    <script>
+        function showPassword() {
+            const input = document.getElementById('access-code');
+            const icon = document.getElementById('eye-icon');
+            input.type = 'text';
+            icon.setAttribute('data-lucide', 'eye');
+            lucide.createIcons();
+        }
+
+        function hidePassword() {
+            const input = document.getElementById('access-code');
+            const icon = document.getElementById('eye-icon');
+            input.type = 'password';
+            icon.setAttribute('data-lucide', 'eye');
+            lucide.createIcons();
+        }
+
+        function handleLogout() {
+            sessionStorage.removeItem('firekit_unlocked');
+            location.reload();
+        }
+
+        lucide.createIcons();
+
+        // ── 액세스 검증 로직 ──
+        const _0x4f2a = "c3N1MTE5"; // ssu119 암호화값
+
+        function verifyAccess() {
+            const input = document.getElementById('access-code');
+            const error = document.getElementById('gate-error');
+            const overlay = document.getElementById('gatekeeper-overlay');
+            const app = document.getElementById('main-app-content');
+
+            if (btoa(input.value) === _0x4f2a) {
+                sessionStorage.setItem('firekit_unlocked', 'true');
+                overlay.classList.add('unlocked');
+                app.classList.remove('blurred');
+                setTimeout(() => { overlay.style.display = 'none'; }, 500);
+            } else {
+                error.style.display = 'block';
+                input.classList.add('shake');
+                setTimeout(() => input.classList.remove('shake'), 500);
+                input.value = "";
+            }
+        }
+
+        // 로드 시 체크
+        window.addEventListener('DOMContentLoaded', () => {
+            if (sessionStorage.getItem('firekit_unlocked') === 'true') {
+                document.getElementById('gatekeeper-overlay').style.display = 'none';
+                document.getElementById('main-app-content').classList.remove('blurred');
+            }
+        });
+    </script>
     <script>
         lucide.createIcons();
         
