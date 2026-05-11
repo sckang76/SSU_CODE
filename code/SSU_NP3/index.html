@@ -44,10 +44,8 @@
         </div>
 
         <h1 class="hero-title">
-            소방 자격증<br>
-            <span class="typing-wrap">
-                <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
-            </span>
+            소방 자격증,<br>
+            <span class="hero-fire-text">한 번에 합격</span>
         </h1>
 
         <p class="hero-desc">시험에 꼭 나오는 핵심 유형을 완벽 해설과 함께 정복하세요.</p>
@@ -266,23 +264,6 @@ themeBtn.addEventListener('click', () => {
     else { localStorage.setItem('theme','dark'); themeIcon.setAttribute('data-lucide','sun'); }
     lucide.createIcons();
 });
-
-// ── 타이핑 애니메이션 ──
-const words = ['합격을 위한', '스마트 패스!', '한 번에 끝내는'];
-let wi = 0, ci = 0, deleting = false;
-const el = document.getElementById('typing-text');
-function typeLoop() {
-    const w = words[wi];
-    if (!deleting) {
-        el.textContent = w.slice(0, ++ci);
-        if (ci === w.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
-    } else {
-        el.textContent = w.slice(0, --ci);
-        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
-    }
-    setTimeout(typeLoop, deleting ? 60 : 100);
-}
-setTimeout(typeLoop, 800);
 
 // ── 카운터 애니메이션 ──
 function animateCounters() {

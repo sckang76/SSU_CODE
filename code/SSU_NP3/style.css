@@ -187,17 +187,12 @@ body {
   background: linear-gradient(135deg,#f8fafc 0%,#94a3b8 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
 }
-.typing-wrap { display: block; }
-.typing-text {
-  background: linear-gradient(135deg, var(--fire), #ef4444);
+.hero-fire-text {
+  display: block;
+  background: linear-gradient(135deg, var(--fire) 0%, #ef4444 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   font-style: italic;
 }
-.typing-cursor {
-  color: var(--fire); animation: blink 0.9s step-end infinite;
-  -webkit-text-fill-color: var(--fire);
-}
-@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
 .hero-desc {
   color: var(--text-sub); font-size: 1.1rem; font-weight: 500;
   max-width: 480px; margin: 0 auto 40px; line-height: 1.65;
