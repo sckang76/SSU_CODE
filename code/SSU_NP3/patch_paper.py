@@ -1,4 +1,120 @@
-let currentQuestions = [];
+import os
+
+# 1. Update style.css
+style_path = r'c:\Users\GFS\Desktop\SCK\SSU\code\SSU_NP3\style.css'
+with open(style_path, 'r', encoding='utf-8') as f:
+    style_content = f.read()
+
+if '.paper-mock' not in style_content:
+    paper_css = """
+/* --- 실전 시험지(Paper) 모드 스타일 --- */
+.paper-mock {
+    font-family: 'Batang', 'BatangChe', 'Gungsuh', 'Malgun Gothic', serif;
+    background: #fff;
+    color: #111;
+    padding: 30px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.paper-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.paper-top-right {
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.paper-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+.paper-table th, .paper-table td {
+    border: 1px solid #000;
+    padding: 10px 12px;
+    font-size: 1.1rem;
+}
+.paper-table th {
+    background: #f0f0f0;
+    width: 20%;
+    font-weight: bold;
+}
+.paper-subject-title {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 35px 0 25px 0;
+}
+.paper-q-item {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.paper-q-text {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    word-break: keep-all;
+}
+.paper-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+}
+.paper-options label {
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.paper-options input[type="radio"] {
+    margin-top: 6px;
+    transform: scale(1.3);
+    accent-color: #333;
+}
+.paper-nav-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px dashed #ccc;
+    padding-top: 25px;
+}
+.btn-paper {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #333;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.btn-paper:hover { background: #333; color: #fff; }
+.btn-paper-submit {
+    background: #dc2626; color: #fff; border-color: #dc2626;
+}
+.btn-paper-submit:hover { background: #b91c1c; }
+@media(min-width: 600px) {
+    .paper-options { flex-direction: row; flex-wrap: wrap; gap: 20px; }
+    .paper-options label { width: 45%; }
+}
+"""
+    with open(style_path, 'a', encoding='utf-8') as f:
+        f.write(paper_css)
+
+# 2. Complete rewrite of quiz.js to include Paging Logic
+quiz_js = """let currentQuestions = [];
 let currentIndex = 0;
 let score = 0;
 let wrongQuestions = [];
@@ -61,20 +177,11 @@ async function loadQuiz() {
             let mockQuestions = [];
             for (let s = 1; s <= config.numSubjects; s++) {
                 let subQ = data.filter(q => q.sub_subject === s);
-                let imgQs = subQ.filter(q => q.image);
-                let textQs = subQ.filter(q => !q.image);
-                
-                for (let i = textQs.length - 1; i > 0; i--) {
+                for (let i = subQ.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [textQs[i], textQs[j]] = [textQs[j], textQs[i]];
+                    [subQ[i], subQ[j]] = [subQ[j], subQ[i]];
                 }
-                for (let i = imgQs.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [imgQs[i], imgQs[j]] = [imgQs[j], imgQs[i]];
-                }
-                
-                let merged = imgQs.concat(textQs);
-                mockQuestions = mockQuestions.concat(merged.slice(0, config.perSubject));
+                mockQuestions = mockQuestions.concat(subQ.slice(0, config.perSubject));
             }
             currentQuestions = mockQuestions;
             currentPage = 0;
@@ -204,9 +311,8 @@ function renderStars(difficulty) {
 // ── 모의고사 전용 네비게이션 함수 ──
 window.selectMockAnswer = function(qIndex, optIndex) {
     currentQuestions[qIndex].userAnswer = optIndex;
-    const totalPages = Math.ceil(currentQuestions.length / Q_PER_PAGE);
-    let answeredCount = currentQuestions.filter(q => q.userAnswer !== undefined).length;
-    document.getElementById('progress-text').innerHTML = `마킹 완료: <strong style="color:var(--primary);">${answeredCount}</strong> / ${currentQuestions.length} 문항 <span style="margin-left:15px; color:var(--text-muted); font-size:0.9rem;">(시험지 ${currentPage + 1} / ${totalPages} 쪽)</span>`;
+    const step = document.getElementById(`step-${qIndex}`);
+    if (step) step.classList.add('active'); // 마킹됨 표시
 }
 window.prevPage = function() {
     if (currentPage > 0) { currentPage--; renderQuestion(); window.scrollTo(0,0); }
@@ -217,7 +323,7 @@ window.nextPage = function() {
 }
 window.submitMock = function() {
     let unans = currentQuestions.filter(q => q.userAnswer === undefined).length;
-    let msg = unans > 0 ? `아직 풀지 않은 문제가 ${unans}개 있습니다.\n그래도 제출하시겠습니까?` : '답안지를 제출하시겠습니까?';
+    let msg = unans > 0 ? `아직 풀지 않은 문제가 ${unans}개 있습니다.\\n그래도 제출하시겠습니까?` : '답안지를 제출하시겠습니까?';
     if (confirm(msg)) {
         evaluateMock();
     }
@@ -278,7 +384,6 @@ function renderQuestion() {
 
             html += `<div class="paper-q-item">
                 <div class="paper-q-text">${i + 1}. ${q.question}</div>
-                ${q.image ? `<div style="margin-bottom:15px; text-align:center;"><img src="${q.image}" style="max-width:90%; max-height:450px; object-fit:contain; border:1px solid #333;"></div>` : ''}
                 <div class="paper-options">`;
             
             const labels = ['가', '나', '다', '라'];
@@ -305,18 +410,31 @@ function renderQuestion() {
         html += `</div></div>`;
         quizBox.innerHTML = html;
 
+        // OMR 그리드
         const stepsContainer = document.getElementById('progress-steps');
-        if (stepsContainer) stepsContainer.style.display = 'none'; // 바둑판 숨김
-
-        let answeredCount = currentQuestions.filter(q => q.userAnswer !== undefined).length;
-        document.getElementById('progress-text').innerHTML = `마킹 완료: <strong style="color:var(--primary);">${answeredCount}</strong> / ${currentQuestions.length} 문항 <span style="margin-left:15px; color:var(--text-muted); font-size:0.9rem;">(시험지 ${currentPage + 1} / ${totalPages} 쪽)</span>`;
+        if (stepsContainer) {
+            stepsContainer.classList.add('mock-grid');
+            if (stepsContainer.children.length === 0) {
+                for (let i = 0; i < currentQuestions.length; i++) {
+                    const step = document.createElement('div');
+                    step.className = 'step';
+                    step.id = `step-${i}`;
+                    stepsContainer.appendChild(step);
+                }
+            }
+            for (let i = 0; i < currentQuestions.length; i++) {
+                const step = document.getElementById(`step-${i}`);
+                if (currentQuestions[i].userAnswer !== undefined) step.classList.add('active');
+                else step.classList.remove('active');
+            }
+        }
+        document.getElementById('progress-text').textContent = `시험지 ${currentPage + 1} / ${totalPages} 쪽`;
 
     } else {
         // ── 기존 1문항 진행 모드 ──
         const q = currentQuestions[currentIndex];
         const stepsContainer = document.getElementById('progress-steps');
         if (stepsContainer) {
-            stepsContainer.style.display = 'flex'; // 일반 모드에서는 다시 보이기
             stepsContainer.classList.remove('mock-grid');
             if (stepsContainer.children.length === 0) {
                 for (let i = 0; i < currentQuestions.length; i++) {
@@ -339,7 +457,6 @@ function renderQuestion() {
                     ${renderStars(q.difficulty)}
                 </div>
                 <div class="q-text">${q.question}</div>
-                ${q.image ? `<div style="margin-bottom:20px; text-align:center;"><img src="${q.image}" style="max-width:100%; max-height:450px; object-fit:contain; border-radius:8px; border:1px solid var(--border);"></div>` : ''}
                 <div class="options-list">
                     ${q.options.map((opt, i) => `
                         <button class="option-btn" onclick="checkAnswer(${i})">${opt}</button>
@@ -520,3 +637,6 @@ function showResults() {
 }
 
 loadQuiz();
+"""
+with open(r'c:\Users\GFS\Desktop\SCK\SSU\code\SSU_NP3\quiz.js', 'w', encoding='utf-8') as f:
+    f.write(quiz_js)

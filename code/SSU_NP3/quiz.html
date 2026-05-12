@@ -72,6 +72,28 @@
         </div>
 
         <!-- Progress Steps (10 segments) -->
+        <!-- Mock Exam Timer -->
+        <div id="mock-timer-box" style="display:none; text-align:center; padding:12px; background:var(--surface); border-radius:12px; border:2px solid var(--fire); margin-bottom:20px; font-weight:800; font-size:1.5rem; color:var(--fire); box-shadow:0 4px 15px rgba(239, 68, 68, 0.15); align-items:center; justify-content:center; gap:8px;">
+            <i data-lucide="timer" style="width:24px;height:24px;"></i> 남은 시간 <span id="mock-timer-display">00:00:00</span>
+        </div>
+
+        <style>
+            /* 모의고사용 그리드 네비게이션 스타일 */
+            .mock-grid {
+                flex-wrap: wrap !important;
+                gap: 4px !important;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .mock-grid .step {
+                width: 12px;
+                height: 12px;
+                border-radius: 4px;
+                flex: none;
+            }
+            .mock-grid .step.active { width: 16px; background: var(--fire); }
+        </style>
+
         <div class="quiz-header">
             <div id="progress-steps" class="progress-steps">
                 <!-- 10 steps will be injected here via JS -->

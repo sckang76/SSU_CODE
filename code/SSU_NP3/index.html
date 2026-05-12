@@ -61,7 +61,7 @@
         <div class="hero-badge">
             <span class="badge-dot"></span>
             <i data-lucide="zap"></i>
-            2,500+ 기출 문항 · AI 합격 최적화
+            4,000+ 기출 문항 · AI 합격 최적화
         </div>
 
         <h1 class="hero-title">
@@ -73,7 +73,7 @@
 
         <div class="stats-grid">
             <div class="stat-box">
-                <div class="stat-value counter" data-target="2500">2,500</div>
+                <div class="stat-value counter" data-target="4000">4,000</div>
                 <div class="stat-label">기출 문항</div>
             </div>
             <div class="stat-divider"></div>
@@ -158,19 +158,29 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="zap"></i></div>
-                <span class="cat-badge">625 문항</span>
+                <span class="cat-badge">1,000 문항</span>
             </div>
             <h3 class="cat-title">소방설비기사 (전기)</h3>
             <p class="cat-desc">가닥수 계산, 시퀀스 도면, 감지기 회로 등 핵심 기출을 완벽히 정복하세요.</p>
             <div class="cat-meta">
                 <span class="cat-count">⚡ 전기분야</span>
             </div>
+                        <select id="sub-elec" class="sub-select" style="width:100%; padding:10px 14px; border-radius:10px; border:1px solid rgba(148, 163, 184, 0.3); background:var(--surface); color:var(--text-main); margin-bottom:14px; font-weight:700; font-size:0.9rem; outline:none; cursor:pointer;">
+                <option value="all">📘 전체 과목 종합 (랜덤 출제)</option>
+                <option value="1">1과목: 소방원론</option>
+                <option value="2">2과목: 소방전기일반</option>
+                <option value="3">3과목: 소방관계법규</option>
+                <option value="4">4과목: 소방전기시설의 구조/원리</option>
+            </select>
             <div class="difficulty-selector">
-                <a href="quiz.html?cat=elec&level=1" class="diff-btn lv1">⭐ 기초</a>
-                <a href="quiz.html?cat=elec&level=2" class="diff-btn lv2">⭐⭐ 응용</a>
-                <a href="quiz.html?cat=elec&level=3" class="diff-btn lv3">⭐⭐⭐ 심화</a>
-                <a href="quiz.html?cat=elec&level=all" class="diff-btn lv-all"><i data-lucide="shuffle"></i> 랜덤</a>
+                <button onclick="startQuiz('elec', '1')" class="diff-btn lv1" style="border:1px solid var(--border); background:var(--surface);">⭐ 기초</button>
+                <button onclick="startQuiz('elec', '2')" class="diff-btn lv2" style="border:1px solid var(--border); background:var(--surface);">⭐⭐ 응용</button>
+                <button onclick="startQuiz('elec', '3')" class="diff-btn lv3" style="border:1px solid var(--border); background:var(--surface);">⭐⭐⭐ 심화</button>
+                <button onclick="startQuiz('elec', 'all')" class="diff-btn lv-all" style="border:none;"><i data-lucide="shuffle"></i> 랜덤</button>
             </div>
+            <button onclick="startMockExam('elec')" class="btn-mock" style="width:100%; margin-top:12px; padding:12px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #dc2626); color:white; border:none; font-weight:700; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; box-shadow:0 4px 15px rgba(239,68,68,0.3);">
+                <i data-lucide="timer" style="width:18px;height:18px;"></i> 실전 모의고사 (80문항 / 120분)
+            </button>
         </div>
 
         <!-- 기계 -->
@@ -178,19 +188,29 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="settings-2"></i></div>
-                <span class="cat-badge">625 문항</span>
+                <span class="cat-badge">1,000 문항</span>
             </div>
             <h3 class="cat-title">소방설비기사 (기계)</h3>
             <p class="cat-desc">펌프 동력, 약제량 산출, 유체역학 계산 등 까다로운 문제를 학습합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count" style="color:#8b5cf6;background:rgba(139,92,246,0.1);">⚙️ 기계분야</span>
             </div>
+                        <select id="sub-mech" class="sub-select" style="width:100%; padding:10px 14px; border-radius:10px; border:1px solid rgba(148, 163, 184, 0.3); background:var(--surface); color:var(--text-main); margin-bottom:14px; font-weight:700; font-size:0.9rem; outline:none; cursor:pointer;">
+                <option value="all">📘 전체 과목 종합 (랜덤 출제)</option>
+                <option value="1">1과목: 소방원론</option>
+                <option value="2">2과목: 소방유체역학</option>
+                <option value="3">3과목: 소방관계법규</option>
+                <option value="4">4과목: 소방기계시설의 구조/원리</option>
+            </select>
             <div class="difficulty-selector">
-                <a href="quiz.html?cat=mech&level=1" class="diff-btn lv1">⭐ 기초</a>
-                <a href="quiz.html?cat=mech&level=2" class="diff-btn lv2">⭐⭐ 응용</a>
-                <a href="quiz.html?cat=mech&level=3" class="diff-btn lv3">⭐⭐⭐ 심화</a>
-                <a href="quiz.html?cat=mech&level=all" class="diff-btn lv-all"><i data-lucide="shuffle"></i> 랜덤</a>
+                <button onclick="startQuiz('mech', '1')" class="diff-btn lv1" style="border:1px solid var(--border); background:var(--surface);">⭐ 기초</button>
+                <button onclick="startQuiz('mech', '2')" class="diff-btn lv2" style="border:1px solid var(--border); background:var(--surface);">⭐⭐ 응용</button>
+                <button onclick="startQuiz('mech', '3')" class="diff-btn lv3" style="border:1px solid var(--border); background:var(--surface);">⭐⭐⭐ 심화</button>
+                <button onclick="startQuiz('mech', 'all')" class="diff-btn lv-all" style="border:none;"><i data-lucide="shuffle"></i> 랜덤</button>
             </div>
+            <button onclick="startMockExam('mech')" class="btn-mock" style="width:100%; margin-top:12px; padding:12px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #dc2626); color:white; border:none; font-weight:700; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; box-shadow:0 4px 15px rgba(239,68,68,0.3);">
+                <i data-lucide="timer" style="width:18px;height:18px;"></i> 실전 모의고사 (80문항 / 120분)
+            </button>
         </div>
 
         <!-- 위험물 -->
@@ -198,19 +218,28 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="flame"></i></div>
-                <span class="cat-badge">625 문항</span>
+                <span class="cat-badge">1,000 문항</span>
             </div>
             <h3 class="cat-title">위험물 산업기사</h3>
             <p class="cat-desc">1~6류 위험물의 성질, 지정수량 등 암기 사항을 퀴즈로 정복합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count">🔥 위험물</span>
             </div>
+                        <select id="sub-danger" class="sub-select" style="width:100%; padding:10px 14px; border-radius:10px; border:1px solid rgba(148, 163, 184, 0.3); background:var(--surface); color:var(--text-main); margin-bottom:14px; font-weight:700; font-size:0.9rem; outline:none; cursor:pointer;">
+                <option value="all">📘 전체 과목 종합 (랜덤 출제)</option>
+                <option value="1">1과목: 일반화학</option>
+                <option value="2">2과목: 화재예방과 소화방법</option>
+                <option value="3">3과목: 위험물의 성질과 취급</option>
+            </select>
             <div class="difficulty-selector">
-                <a href="quiz.html?cat=danger&level=1" class="diff-btn lv1">⭐ 기초</a>
-                <a href="quiz.html?cat=danger&level=2" class="diff-btn lv2">⭐⭐ 응용</a>
-                <a href="quiz.html?cat=danger&level=3" class="diff-btn lv3">⭐⭐⭐ 심화</a>
-                <a href="quiz.html?cat=danger&level=all" class="diff-btn lv-all"><i data-lucide="shuffle"></i> 랜덤</a>
+                <button onclick="startQuiz('danger', '1')" class="diff-btn lv1" style="border:1px solid var(--border); background:var(--surface);">⭐ 기초</button>
+                <button onclick="startQuiz('danger', '2')" class="diff-btn lv2" style="border:1px solid var(--border); background:var(--surface);">⭐⭐ 응용</button>
+                <button onclick="startQuiz('danger', '3')" class="diff-btn lv3" style="border:1px solid var(--border); background:var(--surface);">⭐⭐⭐ 심화</button>
+                <button onclick="startQuiz('danger', 'all')" class="diff-btn lv-all" style="border:none;"><i data-lucide="shuffle"></i> 랜덤</button>
             </div>
+            <button onclick="startMockExam('danger')" class="btn-mock" style="width:100%; margin-top:12px; padding:12px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #dc2626); color:white; border:none; font-weight:700; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; box-shadow:0 4px 15px rgba(239,68,68,0.3);">
+                <i data-lucide="timer" style="width:18px;height:18px;"></i> 실전 모의고사 (60문항 / 90분)
+            </button>
         </div>
 
         <!-- 관리사 -->
@@ -218,25 +247,36 @@
             <div class="card-glow"></div>
             <div class="cat-header">
                 <div class="cat-icon-wrap"><i data-lucide="clipboard-check"></i></div>
-                <span class="cat-badge">625 문항</span>
+                <span class="cat-badge">1,000 문항</span>
             </div>
             <h3 class="cat-title">소방시설관리사</h3>
             <p class="cat-desc">점검 기준, NFTC 핵심 수치, 법령 등 모든 출제 유형을 정복합니다.</p>
             <div class="cat-meta">
                 <span class="cat-count" style="color:#10b981;background:rgba(16,185,129,0.1);">📋 관리사</span>
             </div>
+                        <select id="sub-manager" class="sub-select" style="width:100%; padding:10px 14px; border-radius:10px; border:1px solid rgba(148, 163, 184, 0.3); background:var(--surface); color:var(--text-main); margin-bottom:14px; font-weight:700; font-size:0.9rem; outline:none; cursor:pointer;">
+                <option value="all">📘 전체 과목 종합 (랜덤 출제)</option>
+                <option value="1">1과목: 안전관리론 및 화재역학</option>
+                <option value="2">2과목: 수리학/약제화학/소방전기</option>
+                <option value="3">3과목: 소방관련법령</option>
+                <option value="4">4과목: 위험물 성상 및 시설기준</option>
+                <option value="5">5과목: 소방시설의 구조원리</option>
+            </select>
             <div class="difficulty-selector">
-                <a href="quiz.html?cat=manager&level=1" class="diff-btn lv1">⭐ 기초</a>
-                <a href="quiz.html?cat=manager&level=2" class="diff-btn lv2">⭐⭐ 응용</a>
-                <a href="quiz.html?cat=manager&level=3" class="diff-btn lv3">⭐⭐⭐ 심화</a>
-                <a href="quiz.html?cat=manager&level=all" class="diff-btn lv-all"><i data-lucide="shuffle"></i> 랜덤</a>
+                <button onclick="startQuiz('manager', '1')" class="diff-btn lv1" style="border:1px solid var(--border); background:var(--surface);">⭐ 기초</button>
+                <button onclick="startQuiz('manager', '2')" class="diff-btn lv2" style="border:1px solid var(--border); background:var(--surface);">⭐⭐ 응용</button>
+                <button onclick="startQuiz('manager', '3')" class="diff-btn lv3" style="border:1px solid var(--border); background:var(--surface);">⭐⭐⭐ 심화</button>
+                <button onclick="startQuiz('manager', 'all')" class="diff-btn lv-all" style="border:none;"><i data-lucide="shuffle"></i> 랜덤</button>
             </div>
+            <button onclick="startMockExam('manager')" class="btn-mock" style="width:100%; margin-top:12px; padding:12px; border-radius:10px; background:linear-gradient(135deg, #ef4444, #dc2626); color:white; border:none; font-weight:700; cursor:pointer; display:flex; justify-content:center; align-items:center; gap:8px; box-shadow:0 4px 15px rgba(239,68,68,0.3);">
+                <i data-lucide="timer" style="width:18px;height:18px;"></i> 실전 모의고사 (125문항 / 125분)
+            </button>
         </div>
     </div>
 </main>
 
 <footer class="site-footer">
-    <p>© dv sck.. | 소방방재학과 합격 지원 시스템</p>
+    <p>© dv sck..</p>
 </footer>
 </div> <!-- End main-app-content -->
 
@@ -295,6 +335,20 @@
             initCounters(); // 이미 해제된 상태면 바로 실행
         }
     });
+
+    
+    function startQuiz(cat, level) {
+        const selectBox = document.getElementById('sub-' + cat);
+        const sub = selectBox.value;
+        let subName = '';
+        if(sub !== 'all') {
+            subName = selectBox.options[selectBox.selectedIndex].text;
+        }
+        window.location.href = `quiz.html?cat=${cat}&level=${level}&sub=${sub}&subName=${encodeURIComponent(subName)}`;
+    }
+    function startMockExam(cat) {
+        window.location.href = `quiz.html?cat=${cat}&mode=mock`;
+    }
 
     // ── Theme Toggle ──
     const themeBtn = document.getElementById('theme-toggle-btn');
